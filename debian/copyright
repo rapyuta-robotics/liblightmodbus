@@ -3,7 +3,7 @@ Upstream-Name: liblightmodbus
 Source: https://github.com/Jacajack/liblightmodbus
 
 Files: *
-Copyright: 2016 Jacek Wieczorek <mrjjot@gmail.com>
+Copyright: 2017 Jacek Wieczorek <mrjjot@gmail.com>
 License: GNU GPL3
  Liblightmodbus is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
