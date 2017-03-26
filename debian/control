@@ -10,7 +10,7 @@ Package: liblightmodbus-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Lightweight, multiplatform Modbus library.
+Description: Lightweight, multiplatform Modbus RTU library.
  Liblightmodbus is aimed to run on personal computers
  as well as on smaller systems, like AVR micro-controllers.
  Library requires minimal resources to run.
