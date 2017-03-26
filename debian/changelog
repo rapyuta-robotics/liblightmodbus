@@ -1,3 +1,23 @@
+liblightmodbus (1.3-1) trusty; urgency=low
+
+  * Fixed few critical bugs
+  * Added function 22
+  * Added tons of new security checks
+  * Added write protection for coils
+  * Optimized CRC calls and other checks
+  * Added null pointer checks
+  * Tidied up the status structures
+  * Changed some variable names
+  * New macros instead of enums
+  * Removed unnecessary typedefs
+  * Slight changes in the way memory is allocated
+  * Removed AVR build-helper
+  * Static library file for AVR is now generated automatically
+  * Added license headers to files
+  * Markdown and roff files are now separated
+
+ -- Jacek Wieczorek <mrjjot@gmail.com>  Sun, 25 March 2017 14:32:00 +0200
+
 liblightmodbus (1.2-2) trusty; urgency=low
 
   * Minor changes.
