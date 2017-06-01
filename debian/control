@@ -10,7 +10,12 @@ Package: liblightmodbus-dev
 Section: libdevel
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Lightweight, multiplatform Modbus RTU library.
- Liblightmodbus is aimed to run on personal computers
- as well as on smaller systems, like AVR micro-controllers.
- Library requires minimal resources to run.
+Description: A lightweight, cross-platform Modbus RTU library.
+ The liblightmodbus is a C library providing set of utilities
+ to parse and build Modbus RTU frames - it's not responsible
+ for sending or receiving the data. It is designed
+ to be platform independent and highly configurable. The most important
+ thing about the configuration is that the user can specifically pick,
+ which library routines he/she wants during customized build.
+ Features like this one shall enable it to be built for whole variety
+ of different devices, including the embedded ones (like Atmel AVR).
