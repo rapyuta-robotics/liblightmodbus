@@ -16,6 +16,6 @@ Description: A lightweight, cross-platform Modbus RTU library.
  for sending or receiving the data. It is designed
  to be platform independent and highly configurable. The most important
  thing about the configuration is that the user can specifically pick,
- which library routines he/she wants during customized build.
+ which library routines he/she wants to be included during customized build.
  Features like this one shall enable it to be built for whole variety
  of different devices, including the embedded ones (like Atmel AVR).
