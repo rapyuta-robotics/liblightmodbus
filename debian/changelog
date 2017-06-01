@@ -4,6 +4,7 @@ liblightmodbus (1.3-1) trusty; urgency=low
   * Added function 22
   * Added tons of new security checks
   * Added write protection for coils
+  * Input frames are now guaranteed to maintain unchanged during parsing
   * Optimized CRC calls and other checks
   * Added numerous null pointer checks
   * Tidied up the status structures
@@ -12,6 +13,7 @@ liblightmodbus (1.3-1) trusty; urgency=low
   * Removed unnecessary typedefs
   * Slight changes in the way memory is allocated
   * Dynamic memory allocation can be now disabled
+  * Library can be now built on big-endian machine
   * Added script for configuring build
   * Only desired Modbus can be included in customized build
   * Removed AVR build-helper
