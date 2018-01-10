@@ -1,10 +1,16 @@
+liblightmodbus (1.31-1) trusty; urgency=low
+
+  * Added addons system (experimental for now)
+  * Added frame examination module (examine.c)
+
+ -- Jacek Wieczorek <mrjjot@gmail.com>  Wed, 10 Jan 2018 17:41:00 +0200
+
 liblightmodbus (1.3-2) trusty; urgency=low
 
   * Fixed faulty build configuration script (broken static memory macros)
   * Travis CI now leaves copies of coverage testing logs
 
  -- Jacek Wieczorek <mrjjot@gmail.com>  Wed, 27 Dec 2017 21:58:00 +0200
-
 
 liblightmodbus (1.3-1) trusty; urgency=low
 
