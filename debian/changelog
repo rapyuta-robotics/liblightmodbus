@@ -1,3 +1,9 @@
+lliblightmodbus (1.31-2) trusty; urgency=low
+
+  * Fixed a bug in configuration generator (thanks go to Wihan)
+
+ -- Jacek Wieczorek <mrjjot@gmail.com>  Fri, 23 Feb 2018 01:14:00 +0200
+
 liblightmodbus (1.31-1) trusty; urgency=low
 
   * Added addons system (experimental for now)
