@@ -1,3 +1,19 @@
+lliblightmodbus (1.4-1) trusty; urgency=low
+
+  * CMake is to replace original messy build system
+  * Add user defined function parsing for master and slave
+  * Add option to disable master data buffer (pointer to frame returned)
+  * Add option to enable invasive master response frame parsing
+  * Add register/coil callback functions for slave
+  * ModbusSlave now stores last exception built by modbusBuildException
+  * Macro defined types replaced with enums
+  * Macro function wrappers replaced with static inline functions
+  * Improvements in endianness handling
+  * New LaTeX documentation
+
+ -- Jacek Wieczorek <mrjjot@gmail.com>  Sun, 1 Jul 2018 19:57:00 +0200
+
+
 lliblightmodbus (1.31-2) trusty; urgency=low
 
   * Fixed a bug in configuration generator (thanks go to Wihan)
