@@ -9,6 +9,7 @@ lliblightmodbus (1.40-1) trusty; urgency=low
   * Macro defined types replaced with enums
   * Macro function wrappers replaced with static inline functions
   * Improvements in endianness handling
+  * Improvements in error handling system
   * New LaTeX documentation
 
  -- Jacek Wieczorek <mrjjot@gmail.com>  Sun, 1 Jul 2018 19:57:00 +0200
