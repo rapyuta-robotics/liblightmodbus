@@ -1,4 +1,4 @@
-lliblightmodbus (1.4-1) trusty; urgency=low
+lliblightmodbus (1.40-1) trusty; urgency=low
 
   * CMake is to replace original messy build system
   * Add user defined function parsing for master and slave
