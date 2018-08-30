@@ -1,0 +1,12 @@
+<map id="modbusParseResponse" name="modbusParseResponse">
+<area shape="rect" id="node2" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="261,5,360,32"/>
+<area shape="rect" id="node4" href="$mpcoils_8h.html#a163851c7f7f2b37d08dff110f323595c" title="Processes responses for requests 01 (read multiple coils) and 02 (read multiple discrete inputs) ..." alt="" coords="216,56,405,83"/>
+<area shape="rect" id="node6" href="$mpregs_8h.html#aaae3160119cca3e3d6a1e0cb61f0d6d1" title="Processes responses for requests 03 (read multiple holding registers) and 04 (read multiple input reg..." alt="" coords="216,107,405,133"/>
+<area shape="rect" id="node7" href="$mpcoils_8h.html#adb892da5f7cf969a1105a02ac19c8ffb" title="Processes responses for request 05 (write a single coil) " alt="" coords="223,157,398,184"/>
+<area shape="rect" id="node8" href="$mpregs_8h.html#a0991813ab532b7cfc9aa82f897200079" title="Processes responses for request 06 (write a single holding register) " alt="" coords="223,208,398,235"/>
+<area shape="rect" id="node9" href="$mpcoils_8h.html#a0e04fc9ae03f6c39e19f14e6ed39adbb" title="Processes responses for request 15 (write multiple coils) " alt="" coords="223,259,398,285"/>
+<area shape="rect" id="node10" href="$mpregs_8h.html#a5cc585b086586ca01be265d19d4f0be5" title="Processes responses for request 15 (write multiple holding registers) " alt="" coords="223,309,398,336"/>
+<area shape="rect" id="node11" href="$mpregs_8h.html#a75c06bf85761503fcec43e49b7349c4e" title="Processes responses for request 22 (mask&#45;write holding register) " alt="" coords="223,360,398,387"/>
+<area shape="rect" id="node3" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="455,5,596,32"/>
+<area shape="rect" id="node5" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="453,208,597,235"/>
+</map>

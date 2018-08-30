@@ -1,0 +1,6 @@
+<map id="modbusMaskWrite" name="modbusMaskWrite">
+<area shape="rect" id="node2" href="$scoils_8h.html#affb7e8cd48f47e391d61facfaf1a2c1e" title="Processes requests 01 (read multiple coils) and 02 (read multiple discrete inputs). " alt="" coords="184,5,363,32"/>
+<area shape="rect" id="node4" href="$scoils_8h.html#a0d1c1f6dfd9c8c9a4cf4cac07b314fa9" title="Processes request 05 (write a single coil) " alt="" coords="191,56,356,83"/>
+<area shape="rect" id="node5" href="$scoils_8h.html#a1d9bf41efc5ff4d11b33d7b1509cd38e" title="Processes request 15 (write multiple coils) " alt="" coords="191,107,356,133"/>
+<area shape="rect" id="node3" href="$slave_8h.html#aaca489cb3c3242693d539c70da3f1251" title="Interprets incoming Modbus request frame located in the slave structure. " alt="" coords="411,56,562,83"/>
+</map>
