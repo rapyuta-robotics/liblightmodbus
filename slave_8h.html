@@ -170,7 +170,17 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Type representing a pointer to the user-defined register callback function. </p>
-<dl class="section see"><dt>See Also</dt><dd>register-callbacks </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="register-callback.html">User-defined Modbus register callback function</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>A register query (see <a class="el" href="slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4">ModbusRegisterQuery</a>) </td></tr>
+    <tr><td class="paramname">datatype</td><td>Modbus data type </td></tr>
+    <tr><td class="paramname">index</td><td>Address of the register </td></tr>
+    <tr><td class="paramname">value</td><td>Value of the register (only used with write access queries) </td></tr>
+    <tr><td class="paramname">ctx</td><td>User's context data (passed from <a class="el" href="structmodbusSlave.html#ac53bcfe99447ba06aa63fa2745af1b54">ModbusSlave::registerCallbackContext</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -186,7 +196,7 @@ Functions</h2></td></tr>
 
 <p>Represents register callback function. </p>
 <dl class="section note"><dt>Note</dt><dd>Requires <code>REGISTER_CALLBACK</code> or <code>COIL_CALLBACK</code> module (see <a class="el" href="building.html">Building liblightmodbus</a>) </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd>register-callback </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="register-callback.html">User-defined Modbus register callback function</a> </dd></dl>
 
 </div>
 </div>
@@ -219,7 +229,7 @@ Functions</h2></td></tr>
 
 <p>Represents register callback function. </p>
 <dl class="section note"><dt>Note</dt><dd>Requires <code>REGISTER_CALLBACK</code> or <code>COIL_CALLBACK</code> module (see <a class="el" href="building.html">Building liblightmodbus</a>) </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd>register-callback </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="register-callback.html">User-defined Modbus register callback function</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ad7f9ffab0ad53209066bb7a7a668e792a6b80870bbce488af3b4d8ae43e8b3308"></a>MODBUS_REGQ_R</em>&#160;</td><td class="fielddoc">
 <p>Requests callback function to return register value. </p>
@@ -269,7 +279,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Builds an exception frame and stores it in the <a class="el" href="slave_8h.html#aa2a76716e0f4937b0885b67bfb346d5d">ModbusSlave</a> structure. </p>
-<p>Updates lastException member in provided <a class="el" href="slave_8h.html#aa2a76716e0f4937b0885b67bfb346d5d">ModbusSlave</a> structure.</p>
+<p>The exception frame is only built if the request was not broadcasted.</p>
+<p>Updates <a class="el" href="structmodbusSlave.html#a591de1860c11e5e0555f55ae41d20001">ModbusSlave::lastException</a> member in provided <a class="el" href="slave_8h.html#aa2a76716e0f4937b0885b67bfb346d5d">ModbusSlave</a> structure.</p>
 <p>This function is used by more sophisticated <a class="el" href="slave_8h.html#a076e9e0b2b4c56e39a2a000cf222ad7c">modbusBuildExceptionErr()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -279,7 +290,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a> error code. Unlike other library functions, this one returns <code>MODBUS_ERROR_EXCEPTION</code> on success as a form of information that exception had been thrown. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Make not alter <a class="el" href="structmodbusSlave.html#a2a03374965cea9f13c5d17e7db0eb741">ModbusSlave::response</a> frame if broadcasted (may cause memory leaks in user code) <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a> error code. Unlike other library functions, this one returns <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1abad3e2ae9d0e134d9043afcb2d887e383c">MODBUS_ERROR_EXCEPTION</a> on success as a form of information that exception had been thrown. If the request was broadcasted, returns <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1aba13f83494c3ad28a7cc85a22968e66a98">MODBUS_ERROR_OK</a> </dd></dl>
+</dd></dl>
 
 <p><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
@@ -479,7 +491,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 03:02:40 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

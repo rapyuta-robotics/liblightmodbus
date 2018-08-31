@@ -102,22 +102,44 @@ Public Attributes</h2></td></tr>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlaveUserFunction.html#aa7f93c01464ed8d82526b9c02b655862">function</a></td></tr>
 <tr class="memdesc:aa7f93c01464ed8d82526b9c02b655862"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function code. <br/></td></tr>
 <tr class="separator:aa7f93c01464ed8d82526b9c02b655862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdcfbe219a25035afe1b221ad05e8e6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdcfbe219a25035afe1b221ad05e8e6d"></a>
-<a class="el" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlaveUserFunction.html#abdcfbe219a25035afe1b221ad05e8e6d">handler</a> )(struct <a class="el" href="structmodbusSlave.html">modbusSlave</a> *status, <a class="el" href="parser_8h.html#a0d0bfc0d1af3168ec94ee2c5d40c0e1c">ModbusParser</a> *parser)</td></tr>
-<tr class="memdesc:abdcfbe219a25035afe1b221ad05e8e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the user defined function. <br/></td></tr>
+<tr class="memitem:abdcfbe219a25035afe1b221ad05e8e6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlaveUserFunction.html#abdcfbe219a25035afe1b221ad05e8e6d">handler</a> )(struct <a class="el" href="structmodbusSlave.html">modbusSlave</a> *status, <a class="el" href="parser_8h.html#a0d0bfc0d1af3168ec94ee2c5d40c0e1c">ModbusParser</a> *parser)</td></tr>
+<tr class="memdesc:abdcfbe219a25035afe1b221ad05e8e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the user defined function.  <a href="#abdcfbe219a25035afe1b221ad05e8e6d">More...</a><br/></td></tr>
 <tr class="separator:abdcfbe219a25035afe1b221ad05e8e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Associates user defined parser function with the function ID. </p>
 <dl class="section note"><dt>Note</dt><dd>Requires <code>SLAVE_USER_FUNCTIONS</code> module (see <a class="el" href="building.html">Building liblightmodbus</a>) </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>user-functions </dd></dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="abdcfbe219a25035afe1b221ad05e8e6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a>( * modbusSlaveUserFunction::handler)(struct <a class="el" href="structmodbusSlave.html">modbusSlave</a> *status, <a class="el" href="parser_8h.html#a0d0bfc0d1af3168ec94ee2c5d40c0e1c">ModbusParser</a> *parser)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the user defined function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>Slave structure to work with </td></tr>
+    <tr><td class="paramname">parser</td><td>The parser structure containing frame data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a> error code </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/lightmodbus/<a class="el" href="slave_8h_source.html">slave.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 03:02:41 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

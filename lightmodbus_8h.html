@@ -268,10 +268,11 @@ Functions</h2></td></tr>
 <p>Indicates that slave had thrown an exception. </p>
 <p>This exception can be thrown either by master's parsing function (indicating incoming exception frame) or by slave's building function (indicating that some problem caused the slave to <b>build an exception frame</b>).</p>
 <dl class="section note"><dt>Note</dt><dd>This error code handles the superset of problems handled by <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1abaa763d8bd37084d22067867ddcfadd542">MODBUS_ERROR_PARSE</a>.</dd></dl>
-<p>When thrown on slave side, check <a class="el" href="structmodbusSlave.html#a591de1860c11e5e0555f55ae41d20001">ModbusSlave::lastException</a> and ModbusSlave.lastParseError for more information. </p>
+<p>When thrown on slave side, check <a class="el" href="structmodbusSlave.html#a591de1860c11e5e0555f55ae41d20001">ModbusSlave::lastException</a> and <a class="el" href="structmodbusSlave.html#a0c5796be31df37a1a33ce8dfc1af3dce">ModbusSlave::parseError</a> for more information. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0e53935196f8baab23b35aaac466a1aba57a43c191982928c0b36f85a0dce29d2"></a>MODBUS_ERROR_ALLOC</em>&#160;</td><td class="fielddoc">
-<p>Memory allocation problem. </p>
+<p>Memory problem. </p>
+<p>Either one of memory allocation functions returned NULL or fixed-size buffer is not big enough to fit the data (see <a class="el" href="static-mem.html">Disabling dynamic memory allocation</a>).Memory allocation problem </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0e53935196f8baab23b35aaac466a1aba867896b7a63055286dd5f0dc6a9020e2"></a>MODBUS_ERROR_OTHER</em>&#160;</td><td class="fielddoc">
 <p>Other reason causing the function to abort (eg. bad function parameter) </p>
@@ -284,7 +285,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This error code is returned instead of <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1abad3e2ae9d0e134d9043afcb2d887e383c">MODBUS_ERROR_EXCEPTION</a> when exception should have been thrown, but wasn't (eg. due to broadcasted request frame). These two error code should be treated similarly. </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0e53935196f8baab23b35aaac466a1aba6b4152f3b9a9e1129a21e9e52c6dae98"></a>MODBUS_ERROR_BUILD</em>&#160;</td><td class="fielddoc">
-<p>Building error occurred - check <a class="el" href="structmodbusMaster.html#a4d4331ff07592000b193b55c6ce70934">ModbusMaster::buildError</a>. </p>
+<p>Frame building error occurred - check <a class="el" href="structmodbusMaster.html#a4d4331ff07592000b193b55c6ce70934">ModbusMaster::buildError</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a0e53935196f8baab23b35aaac466a1abafbb178df49063323a6dcbf03dd0d88d2"></a>MODBUS_OK</em>&#160;</td><td class="fielddoc">
 <p>No error. Alias of <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1aba13f83494c3ad28a7cc85a22968e66a98">MODBUS_ERROR_OK</a>. </p>
@@ -598,7 +599,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Swaps endianness of provided 16-bit data portion if needed. </p>
-<dl class="section note"><dt>Note</dt><dd>This function works conditionally</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function works only if the system is not big-endian</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>A 16-bit data portion. </td></tr>
@@ -670,7 +671,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 03:02:39 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

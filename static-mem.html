@@ -80,10 +80,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Disabling dynamic memory allocation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>In embedded applications it's often desirable to avoid dynamic memory allocation for performance and/or safety reasons. In its configuration process, liblightmodbus allows user to disable dynamic memory allocation.</p>
+<p>Defining following CMake variables during configuration will have effect on the way memory is allocated in certain places:</p>
+<ul>
+<li>STATIC_MEM_SLAVE_REQUEST - replaces <a class="el" href="structmodbusSlave.html#aa4cc16ac40b371be2b2179523b8ff75b">ModbusSlave::request</a> frame pointer with fixed-size buffer</li>
+<li>STATIC_MEM_SLAVE_RESPONSE - replaces <a class="el" href="structmodbusSlave.html#a2a03374965cea9f13c5d17e7db0eb741">ModbusSlave::response</a> frame pointer with fixed-size buffer</li>
+<li>STATIC_MEM_MASTER_REQUEST - replaces <a class="el" href="structmodbusMaster.html#ab57061e09cac0c25d9c7e5225fb041e4">ModbusMaster::request</a> frame pointer with fixed-size buffer</li>
+<li>STATIC_MEM_MASTER_RESPONSE - replaces <a class="el" href="structmodbusMaster.html#a405ff7ecae677b06282ec883cc5d7179">ModbusMaster::response</a> frame pointer with fixed-size buffer</li>
+<li>STATIC_MEM_MASTER_DATA - replaces <a class="el" href="structmodbusMaster.html#a0e68533668809b672017f2591441bc9e">ModbusMaster::data</a> coil and registers data pointers with fixed-size buffers</li>
+</ul>
+<dl class="section warning"><dt>Warning</dt><dd><code>STATIC_MEM_MASTER_DATA</code> and <code>NO_MASTER_DATA_BUFFER</code> modules cannot be used at once.</dd></dl>
+<p>For example, following CMake invocation configures the library so that the slave's request buffer is only 128 bytes long. </p>
+<pre class="fragment">cmake -DSTATIC_MEM_SLAVE_REQUEST=128 ..
+</pre><p>For more information on how to build the library, see <a class="el" href="building.html">Building liblightmodbus</a>. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 03:02:40 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
