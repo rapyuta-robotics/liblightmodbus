@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="section note"><dt>Note</dt><dd>In order to build the library CMake 3.3 or newer is required. Versions up to 1.3 used script-based build system, no longer maintained as of version 1.4. For more information see <a class="el" href="building-old.html">Using old, proprietary build system</a>.</dd></dl>
-<p>The library's build configuration process is pretty complex, as the library consists of many modules that can be included in the build or omited. If you want to go with default configuration first, take a look at the section below.</p>
+<p>The library's build configuration process is pretty complex, as the library consists of many modules that can be included in the build or omitted. If you want to go with default configuration first, take a look at the section below.</p>
 <h2>Default build configuration</h2>
 <ol type="1">
 <li><code>mkdir build</code> - Create a new directory for build environment</li>
@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li><code>MASTER_USER_FUNCTIONS</code> - support for user-defined Modbus functions on master side (see <a class="el" href="user-functions.html">User-defined Modbus functions</a>)</li>
 <li><code>REGISTER_CALLBACK</code> - slave register callback function (see <a class="el" href="register-callback.html">User-defined Modbus register callback function</a>)</li>
 <li><code>COIL_CALLBACK</code> - slave coil callback function (see <a class="el" href="register-callback.html">User-defined Modbus register callback function</a>)</li>
-<li><code>NO_MASTER DATA_BUFFER</code> - disable exclusive master’s processed data buffer (see <a class="el" href="advanced-configuration.html">Advanced configuration</a>)</li>
+<li><code>NO_MASTER_DATA_BUFFER</code> - disable exclusive master’s processed data buffer (see <a class="el" href="advanced-configuration.html">Advanced configuration</a>)</li>
 <li><code>MASTER_INVASIVE_PARSING</code> - allow master to modify received frame (use with <code>NO_MASTER_DATA_BUFFER</code>)</li>
 <li><code>EXPERIMENTAL</code> - enable experimental features</li>
 </ul>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3>Disabling dynamic memory allocation</h3>
 <p>Liblightmodbus can work without dynamic memory allocation. See <a class="el" href="static-mem.html">Disabling dynamic memory allocation</a> for more information.</p>
 <h3>Setting endianness</h3>
-<p>Modbus is strictly big-endian protocol. That means you have to specify target system endianness when building. By default, CMake will check your system endainness and apply that setting, but in order to override it, set <code>ENDIANNES</code> CMake variable to either "big" or "little".</p>
+<p>Modbus is strictly big-endian protocol. That means you have to specify target system endianness when building. By default, CMake will check your system endianness and apply that setting, but in order to override it, set <code>ENDIANNESS</code> CMake variable to either "big" or "little".</p>
 <h3>Building for AVR</h3>
 <p>Building the library for AVR microcontrollers is pretty easy thanks to the <code>AVR</code> CMake variable. If you want to build for AVR, just add <code>-DAVR=&lt;part&gt;</code> argument to the CMake invocation, where <code>&lt;part&gt;</code> is the target microcontroller type (for instance <code>atmega328</code>).</p>
 <h3>Debug and release builds</h3>
@@ -138,7 +138,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 18:59:36 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -147,7 +147,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Processes responses for requests 03 (read multiple holding registers) and 04 (read multiple input registers) </p>
-<dl class="section note"><dt>Note</dt><dd>Requires <code>F03M</code> or <code>F04M</code> module (see <a class="el" href="building.html">Building liblightmodbus</a>) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Requires <code>F03M</code> or <code>F04M</code> module (see <a class="el" href="building.html">Building liblightmodbus</a>) </dd>
+<dd>
+<code>modbusParseResponse03</code> and <code>modbusParseResponse04</code> macros are aliases of this function </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>The master structure to work with </td></tr>
@@ -383,7 +385,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 18:59:36 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -89,8 +89,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    {77, foo},</div>
 <div class="line">    {16, NULL},</div>
 <div class="line">};</div>
-<div class="line">slave.userFunctions = userf;</div>
-<div class="line">slave.userFunctionCount = 2;</div>
+<div class="line">slave.<a class="code" href="structmodbusSlave.html#ae78bf2d5b197f3d7c42f82762a381909">userFunctions</a> = userf;</div>
+<div class="line">slave.<a class="code" href="structmodbusSlave.html#a80430118575e24946cb7e6c14b02b6bb">userFunctionCount</a> = 2;</div>
 </div><!-- fragment --><p>This code causes the library to attempt to parse request 77 with some <code>foo()</code> function and ignore request 16.</p>
 <dl class="section warning"><dt>Warning</dt><dd>User-defined functions override built-in functions</dd></dl>
 <p>The user-defined functions must have following form: </p>
@@ -100,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">{</div>
 <div class="line">    <span class="comment">//Throw exception if slave address is divisible by 2</span></div>
 <div class="line">    <span class="keywordflow">if</span> ( parser-&gt;base.address % 2 == 0 ) </div>
-<div class="line">        <span class="keywordflow">return</span> modbusBuilException( status, parser-&gt;base.function, MODBUS_EXCEPTION_SLAVE_FAILURE );</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="slave_8h.html#a6cfceebdf88ce18dae14d246374ff989">modbusBuildException</a>( status, parser-&gt;base.function, MODBUS_EXCEPTION_SLAVE_FAILURE );</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">//Return empty frame in response</span></div>
 <div class="line">    <span class="comment">//Assumes static slave response buffer is disabled</span></div>
@@ -130,10 +130,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    {77, bar},</div>
 <div class="line">    {16, NULL},</div>
 <div class="line">};</div>
-<div class="line">master.userFunctions = userf;</div>
-<div class="line">master.userFunctionCount = 2;</div>
+<div class="line">master.<a class="code" href="structmodbusMaster.html#a762aaf47133e7eff6c23de3817987ca9">userFunctions</a> = userf;</div>
+<div class="line">master.<a class="code" href="structmodbusMaster.html#a7d91ffabb3b145dff4ea552283fa579b">userFunctionCount</a> = 2;</div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>User-defined functions override built-in functions</dd></dl>
-<p>The parsing function, hovewer, needs to look a bit differently: </p>
+<p>The parsing function, however, needs to look a bit differently: </p>
 <div class="fragment"><div class="line"><a class="code" href="lightmodbus_8h.html#aa6575c769c8b11c39735b63657435993">ModbusError</a> userf( <a class="code" href="structmodbusMaster.html">ModbusMaster</a> *status, <a class="code" href="unionmodbusParser.html">ModbusParser</a> *parser, <a class="code" href="unionmodbusParser.html">ModbusParser</a> *requestParser )</div>
 </div><!-- fragment --><p>The difference is the <code>requestParser</code> parameter - it gives you access to the request frame to which response you are parsing.</p>
 <h3>User-defined function guidelines</h3>
@@ -148,7 +148,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 16:05:12 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 18:59:36 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
