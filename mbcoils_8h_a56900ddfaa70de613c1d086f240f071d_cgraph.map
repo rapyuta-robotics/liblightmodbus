@@ -1,5 +1,6 @@
 <map id="modbusBuildRequest15" name="modbusBuildRequest15">
-<area shape="rect" id="node2" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="213,5,357,32"/>
-<area shape="rect" id="node3" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="236,56,335,83"/>
-<area shape="rect" id="node4" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="405,56,547,83"/>
+<area shape="rect" id="node2" href="$lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58" title="Converts number of bits to number of bytes required to store them. " alt="" coords="215,5,355,32"/>
+<area shape="rect" id="node3" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="213,56,357,83"/>
+<area shape="rect" id="node4" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="236,107,335,133"/>
+<area shape="rect" id="node5" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="405,107,547,133"/>
 </map>

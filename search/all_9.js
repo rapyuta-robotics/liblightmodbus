@@ -44,6 +44,7 @@ var searchData=
   ['modbus_5fregq_5fr_5fcheck',['MODBUS_REGQ_R_CHECK',['../slave_8h.html#ad7f9ffab0ad53209066bb7a7a668e792a68672dc5badc4bd15dd12c168502930d',1,'slave.h']]],
   ['modbus_5fregq_5fw',['MODBUS_REGQ_W',['../slave_8h.html#ad7f9ffab0ad53209066bb7a7a668e792a3d41fd03043bb3eb8332e2fc55f208a1',1,'slave.h']]],
   ['modbus_5fregq_5fw_5fcheck',['MODBUS_REGQ_W_CHECK',['../slave_8h.html#ad7f9ffab0ad53209066bb7a7a668e792a0c01fdc7e834c204e355a160790b9932',1,'slave.h']]],
+  ['modbusbitstobytes',['modbusBitsToBytes',['../lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58',1,'lightmodbus.h']]],
   ['modbusbuildexception',['modbusBuildException',['../slave_8h.html#a6cfceebdf88ce18dae14d246374ff989',1,'slave.c']]],
   ['modbusbuildexceptionerr',['modbusBuildExceptionErr',['../slave_8h.html#a076e9e0b2b4c56e39a2a000cf222ad7c',1,'slave.h']]],
   ['modbusbuildrequest01',['modbusBuildRequest01',['../mbcoils_8h.html#a2ad440a0c44a883babab77f2dced4fde',1,'mbcoils.h']]],

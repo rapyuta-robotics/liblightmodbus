@@ -1,16 +1,17 @@
 <map id="modbusParseRequest" name="modbusParseRequest">
-<area shape="rect" id="node2" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="856,177,955,204"/>
-<area shape="rect" id="node4" href="$scoils_8h.html#affb7e8cd48f47e391d61facfaf1a2c1e" title="Processes requests 01 (read multiple coils) and 02 (read multiple discrete inputs). " alt="" coords="205,329,384,356"/>
-<area shape="rect" id="node5" href="$slave_8h.html#a076e9e0b2b4c56e39a2a000cf222ad7c" title="Handles Modbus parsing errors. " alt="" coords="433,177,605,204"/>
-<area shape="rect" id="node10" href="$sregs_8h.html#ac496ea22c5970b196cc3324b5c6e7d20" title="Processes request 03 (read multiple holding registers) and 04 (read multiple input registers) ..." alt="" coords="205,76,384,103"/>
-<area shape="rect" id="node11" href="$scoils_8h.html#a0d1c1f6dfd9c8c9a4cf4cac07b314fa9" title="Processes request 05 (write a single coil) " alt="" coords="212,380,377,407"/>
-<area shape="rect" id="node12" href="$sregs_8h.html#a5b5a3e6489fd768c28f4f306608db197" title="Processes request 06 (write multiple holding registers) " alt="" coords="212,177,377,204"/>
-<area shape="rect" id="node13" href="$scoils_8h.html#a1d9bf41efc5ff4d11b33d7b1509cd38e" title="Processes request 15 (write multiple coils) " alt="" coords="212,431,377,457"/>
-<area shape="rect" id="node14" href="$sregs_8h.html#a58755fe9699444688d783562366ed08b" title="Processes request 15 (write multiple holding registers) " alt="" coords="212,228,377,255"/>
-<area shape="rect" id="node15" href="$sregs_8h.html#a0e17d5c9c74060f85446f6cfb8d4c8f6" title="Processes request 22 (mask&#45;write holding register) " alt="" coords="212,279,377,305"/>
-<area shape="rect" id="node3" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="1003,177,1144,204"/>
-<area shape="rect" id="node7" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="447,279,591,305"/>
-<area shape="rect" id="node8" href="$lightmodbus_8h.html#aa89cf1cbcb0bd625a9e5b969b92a204a" title="Reads n&#45;th bit from an array. " alt="" coords="453,329,584,356"/>
-<area shape="rect" id="node9" href="$lightmodbus_8h.html#a6be91dfd3bcb6f31701be074018efc24" title="Writes n&#45;th bit in an array. " alt="" coords="453,481,584,508"/>
-<area shape="rect" id="node6" href="$slave_8h.html#a6cfceebdf88ce18dae14d246374ff989" title="Builds an exception frame and stores it in the ModbusSlave structure. " alt="" coords="653,177,808,204"/>
+<area shape="rect" id="node2" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="856,154,955,181"/>
+<area shape="rect" id="node4" href="$scoils_8h.html#affb7e8cd48f47e391d61facfaf1a2c1e" title="Processes requests 01 (read multiple coils) and 02 (read multiple discrete inputs). " alt="" coords="205,306,384,333"/>
+<area shape="rect" id="node5" href="$slave_8h.html#a076e9e0b2b4c56e39a2a000cf222ad7c" title="Handles Modbus parsing errors. " alt="" coords="433,154,605,181"/>
+<area shape="rect" id="node11" href="$sregs_8h.html#ac496ea22c5970b196cc3324b5c6e7d20" title="Processes request 03 (read multiple holding registers) and 04 (read multiple input registers) ..." alt="" coords="205,103,384,130"/>
+<area shape="rect" id="node12" href="$scoils_8h.html#a0d1c1f6dfd9c8c9a4cf4cac07b314fa9" title="Processes request 05 (write a single coil) " alt="" coords="212,357,377,383"/>
+<area shape="rect" id="node13" href="$sregs_8h.html#a5b5a3e6489fd768c28f4f306608db197" title="Processes request 06 (write multiple holding registers) " alt="" coords="212,154,377,181"/>
+<area shape="rect" id="node14" href="$scoils_8h.html#a1d9bf41efc5ff4d11b33d7b1509cd38e" title="Processes request 15 (write multiple coils) " alt="" coords="212,407,377,434"/>
+<area shape="rect" id="node15" href="$sregs_8h.html#a58755fe9699444688d783562366ed08b" title="Processes request 15 (write multiple holding registers) " alt="" coords="212,205,377,231"/>
+<area shape="rect" id="node16" href="$sregs_8h.html#a0e17d5c9c74060f85446f6cfb8d4c8f6" title="Processes request 22 (mask&#45;write holding register) " alt="" coords="212,255,377,282"/>
+<area shape="rect" id="node3" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="1003,154,1144,181"/>
+<area shape="rect" id="node7" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="447,255,591,282"/>
+<area shape="rect" id="node8" href="$lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58" title="Converts number of bits to number of bytes required to store them. " alt="" coords="449,407,589,434"/>
+<area shape="rect" id="node9" href="$lightmodbus_8h.html#aa89cf1cbcb0bd625a9e5b969b92a204a" title="Reads n&#45;th bit from an array. " alt="" coords="453,306,584,333"/>
+<area shape="rect" id="node10" href="$lightmodbus_8h.html#a6be91dfd3bcb6f31701be074018efc24" title="Writes n&#45;th bit in an array. " alt="" coords="453,458,584,485"/>
+<area shape="rect" id="node6" href="$slave_8h.html#a6cfceebdf88ce18dae14d246374ff989" title="Builds an exception frame and stores it in the ModbusSlave structure. " alt="" coords="653,154,808,181"/>
 </map>

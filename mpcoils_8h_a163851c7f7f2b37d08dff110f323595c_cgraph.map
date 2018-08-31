@@ -1,3 +1,4 @@
 <map id="modbusParseResponse0102" name="modbusParseResponse0102">
 <area shape="rect" id="node2" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="243,5,387,32"/>
+<area shape="rect" id="node3" href="$lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58" title="Converts number of bits to number of bytes required to store them. " alt="" coords="245,56,385,83"/>
 </map>

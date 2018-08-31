@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['modbusbitstobytes',['modbusBitsToBytes',['../lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58',1,'lightmodbus.h']]],
   ['modbusbuildexception',['modbusBuildException',['../slave_8h.html#a6cfceebdf88ce18dae14d246374ff989',1,'slave.c']]],
   ['modbusbuildexceptionerr',['modbusBuildExceptionErr',['../slave_8h.html#a076e9e0b2b4c56e39a2a000cf222ad7c',1,'slave.h']]],
   ['modbusbuildrequest01',['modbusBuildRequest01',['../mbcoils_8h.html#a2ad440a0c44a883babab77f2dced4fde',1,'mbcoils.h']]],
