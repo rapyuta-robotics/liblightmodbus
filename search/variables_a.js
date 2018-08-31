@@ -1,6 +1,7 @@
 var searchData=
 [
   ['registercallback',['registerCallback',['../structmodbusSlave.html#ad1dbc7192d813f9e2edda3648d8c8413',1,'modbusSlave']]],
+  ['registercallbackcontext',['registerCallbackContext',['../structmodbusSlave.html#ac53bcfe99447ba06aa63fa2745af1b54',1,'modbusSlave']]],
   ['registercount',['registerCount',['../structmodbusSlave.html#af59191e78cf6cce10cd39ea182412229',1,'modbusSlave']]],
   ['registermask',['registerMask',['../structmodbusSlave.html#ac0c698364c367c56718ab5d80a65ad7e',1,'modbusSlave']]],
   ['registermasklength',['registerMaskLength',['../structmodbusSlave.html#a17ac31a41d3be4d66249357f288642b2',1,'modbusSlave']]],

@@ -87,7 +87,7 @@ var searchData=
   ['modbusparseresponse15',['modbusParseResponse15',['../mpcoils_8h.html#a0e04fc9ae03f6c39e19f14e6ed39adbb',1,'mpcoils.c']]],
   ['modbusparseresponse16',['modbusParseResponse16',['../mpregs_8h.html#a5cc585b086586ca01be265d19d4f0be5',1,'mpregs.c']]],
   ['modbusparseresponse22',['modbusParseResponse22',['../mpregs_8h.html#a75c06bf85761503fcec43e49b7349c4e',1,'mpregs.c']]],
-  ['modbusregistercallbackfunction',['ModbusRegisterCallbackFunction',['../slave_8h.html#a2ca9d47f6b00f5a720b13da0f89ec1b2',1,'slave.h']]],
+  ['modbusregistercallbackfunction',['ModbusRegisterCallbackFunction',['../slave_8h.html#a6973bd22dc0647966fe206a334e40146',1,'slave.h']]],
   ['modbusregisterquery',['modbusRegisterQuery',['../slave_8h.html#ad7f9ffab0ad53209066bb7a7a668e792',1,'modbusRegisterQuery():&#160;slave.h'],['../slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4',1,'ModbusRegisterQuery():&#160;slave.h']]],
   ['modbusslave',['modbusSlave',['../structmodbusSlave.html',1,'modbusSlave'],['../slave_8h.html#aa2a76716e0f4937b0885b67bfb346d5d',1,'ModbusSlave():&#160;slave.h']]],
   ['modbusslaveend',['modbusSlaveEnd',['../slave_8h.html#a3d57b09a41be5b434864da06607d13c6',1,'slave.c']]],

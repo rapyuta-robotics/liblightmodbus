@@ -119,9 +119,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ace6c78a14a1fad1a78daac020fc59db4"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="slave_8h.html#ad7f9ffab0ad53209066bb7a7a668e792">modbusRegisterQuery</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4">ModbusRegisterQuery</a></td></tr>
 <tr class="memdesc:ace6c78a14a1fad1a78daac020fc59db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents register callback function.  <a href="#ace6c78a14a1fad1a78daac020fc59db4">More...</a><br/></td></tr>
 <tr class="separator:ace6c78a14a1fad1a78daac020fc59db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ca9d47f6b00f5a720b13da0f89ec1b2"><td class="memItemLeft" align="right" valign="top">typedef uint16_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a2ca9d47f6b00f5a720b13da0f89ec1b2">ModbusRegisterCallbackFunction</a> )(<a class="el" href="slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4">ModbusRegisterQuery</a> query, <a class="el" href="lightmodbus_8h.html#a0110f2fb9e2687ce3d01f8c9160df7b9">ModbusDataType</a> datatype, uint16_t index, uint16_t value)</td></tr>
-<tr class="memdesc:a2ca9d47f6b00f5a720b13da0f89ec1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type representing a pointer to the user-defined register callback function.  <a href="#a2ca9d47f6b00f5a720b13da0f89ec1b2">More...</a><br/></td></tr>
-<tr class="separator:a2ca9d47f6b00f5a720b13da0f89ec1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6973bd22dc0647966fe206a334e40146"><td class="memItemLeft" align="right" valign="top">typedef uint16_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a6973bd22dc0647966fe206a334e40146">ModbusRegisterCallbackFunction</a> )(<a class="el" href="slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4">ModbusRegisterQuery</a> query, <a class="el" href="lightmodbus_8h.html#a0110f2fb9e2687ce3d01f8c9160df7b9">ModbusDataType</a> datatype, uint16_t index, uint16_t value, void *ctx)</td></tr>
+<tr class="memdesc:a6973bd22dc0647966fe206a334e40146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type representing a pointer to the user-defined register callback function.  <a href="#a6973bd22dc0647966fe206a334e40146">More...</a><br/></td></tr>
+<tr class="separator:a6973bd22dc0647966fe206a334e40146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a76716e0f4937b0885b67bfb346d5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2a76716e0f4937b0885b67bfb346d5d"></a>
 typedef struct <a class="el" href="structmodbusSlave.html">modbusSlave</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#aa2a76716e0f4937b0885b67bfb346d5d">ModbusSlave</a></td></tr>
 <tr class="memdesc:aa2a76716e0f4937b0885b67bfb346d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents Modbus slave device's status and configuration. <br/></td></tr>
@@ -157,13 +157,14 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General Modbus slave functions. </p>
+<dl class="section note"><dt>Note</dt><dd>This header file is suitable for C++ </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="a2ca9d47f6b00f5a720b13da0f89ec1b2"></a>
+<a class="anchor" id="a6973bd22dc0647966fe206a334e40146"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef uint16_t( * ModbusRegisterCallbackFunction)(<a class="el" href="slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4">ModbusRegisterQuery</a> query, <a class="el" href="lightmodbus_8h.html#a0110f2fb9e2687ce3d01f8c9160df7b9">ModbusDataType</a> datatype, uint16_t index, uint16_t value)</td>
+          <td class="memname">typedef uint16_t( * ModbusRegisterCallbackFunction)(<a class="el" href="slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4">ModbusRegisterQuery</a> query, <a class="el" href="lightmodbus_8h.html#a0110f2fb9e2687ce3d01f8c9160df7b9">ModbusDataType</a> datatype, uint16_t index, uint16_t value, void *ctx)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -478,7 +479,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 01:40:41 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 03:02:40 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

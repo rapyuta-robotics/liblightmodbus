@@ -111,9 +111,12 @@ Public Attributes</h2></td></tr>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlave.html#a666c952711acdde4922395e867031127">address</a></td></tr>
 <tr class="memdesc:a666c952711acdde4922395e867031127"><td class="mdescLeft">&#160;</td><td class="mdescRight">The slave's address. <br/></td></tr>
 <tr class="separator:a666c952711acdde4922395e867031127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1dbc7192d813f9e2edda3648d8c8413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="slave_8h.html#a2ca9d47f6b00f5a720b13da0f89ec1b2">ModbusRegisterCallbackFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlave.html#ad1dbc7192d813f9e2edda3648d8c8413">registerCallback</a></td></tr>
+<tr class="memitem:ad1dbc7192d813f9e2edda3648d8c8413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="slave_8h.html#a6973bd22dc0647966fe206a334e40146">ModbusRegisterCallbackFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlave.html#ad1dbc7192d813f9e2edda3648d8c8413">registerCallback</a></td></tr>
 <tr class="memdesc:ad1dbc7192d813f9e2edda3648d8c8413"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pointer to the user-defined register callback function.  <a href="#ad1dbc7192d813f9e2edda3648d8c8413">More...</a><br/></td></tr>
 <tr class="separator:ad1dbc7192d813f9e2edda3648d8c8413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53bcfe99447ba06aa63fa2745af1b54"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlave.html#ac53bcfe99447ba06aa63fa2745af1b54">registerCallbackContext</a></td></tr>
+<tr class="memdesc:ac53bcfe99447ba06aa63fa2745af1b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user data pointer passed to the callback function each time it's used.  <a href="#ac53bcfe99447ba06aa63fa2745af1b54">More...</a><br/></td></tr>
+<tr class="separator:ac53bcfe99447ba06aa63fa2745af1b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087a68ac6cc2a32ffcabac619308c2a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a087a68ac6cc2a32ffcabac619308c2a9"></a>
 uint16_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmodbusSlave.html#a087a68ac6cc2a32ffcabac619308c2a9">registers</a></td></tr>
 <tr class="memdesc:a087a68ac6cc2a32ffcabac619308c2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to registers data. <br/></td></tr>
@@ -262,13 +265,28 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="slave_8h.html#a2ca9d47f6b00f5a720b13da0f89ec1b2">ModbusRegisterCallbackFunction</a> modbusSlave::registerCallback</td>
+          <td class="memname"><a class="el" href="slave_8h.html#a6973bd22dc0647966fe206a334e40146">ModbusRegisterCallbackFunction</a> modbusSlave::registerCallback</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The pointer to the user-defined register callback function. </p>
 <dl class="section note"><dt>Note</dt><dd>Requires <code>LIGHTMODBUS_COIL_CALLBACK</code> or <code>LIGHTMODBUS_REGISTER_CALLBACK</code> to be defined </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac53bcfe99447ba06aa63fa2745af1b54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* modbusSlave::registerCallbackContext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The user data pointer passed to the callback function each time it's used. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This pointer is not managed nor controlled by library. It's only set to NULL by <a class="el" href="slave_8h.html#ab5704a5117a7970d5b3750c730b13ace">modbusSlaveInit()</a>. </dd></dl>
 
 </div>
 </div>
@@ -326,7 +344,7 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 31 2018 01:40:41 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 31 2018 03:02:41 for liblightmodbus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
