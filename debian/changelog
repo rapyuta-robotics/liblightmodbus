@@ -1,4 +1,18 @@
-lliblightmodbus (1.40-1) trusty; urgency=low
+liblightmodbus (2.0-1) trusty; urgency=low
+
+  * Start of semantic versioning era - bump to 2.0
+  * New Doxygen documentation on http://jacajack.github.io/liblightmodbus
+  * Replaced BITSTOBYTES macro with modbusBitsToBytes function
+  * The register callback function now takes a context parameter
+  * The public header files are suitable for use with C++ now
+  * Minor internal changes in code
+  * Addons are to be compiled by user from now on
+
+ -- Jacek Wieczorek <mrjjot@gmail.com>  Fri, 31 Aug 2018 19:25:00 +0200
+
+
+
+liblightmodbus (1.40-1) trusty; urgency=low
 
   * CMake is to replace original messy build system
   * Add user defined function parsing for master and slave
@@ -15,7 +29,7 @@ lliblightmodbus (1.40-1) trusty; urgency=low
  -- Jacek Wieczorek <mrjjot@gmail.com>  Sun, 1 Jul 2018 19:57:00 +0200
 
 
-lliblightmodbus (1.31-2) trusty; urgency=low
+liblightmodbus (1.31-2) trusty; urgency=low
 
   * Fixed a bug in configuration generator (thanks go to Wihan)
 
