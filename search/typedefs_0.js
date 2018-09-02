@@ -7,7 +7,7 @@ var searchData=
   ['modbusmaster',['ModbusMaster',['../master_8h.html#ad6537390cf78a40acb49beb2896c8290',1,'master.h']]],
   ['modbusmasteruserfunction',['ModbusMasterUserFunction',['../master_8h.html#aacc7e068252d69b1a26cc84ecc23863c',1,'master.h']]],
   ['modbusparser',['ModbusParser',['../parser_8h.html#a0d0bfc0d1af3168ec94ee2c5d40c0e1c',1,'parser.h']]],
-  ['modbusregistercallbackfunction',['ModbusRegisterCallbackFunction',['../slave_8h.html#a6973bd22dc0647966fe206a334e40146',1,'slave.h']]],
+  ['modbusregistercallbackfunction',['ModbusRegisterCallbackFunction',['../slave_8h.html#a6b267aaa861a9512b3a7a6b85afd9330',1,'slave.h']]],
   ['modbusregisterquery',['ModbusRegisterQuery',['../slave_8h.html#ace6c78a14a1fad1a78daac020fc59db4',1,'slave.h']]],
   ['modbusslave',['ModbusSlave',['../slave_8h.html#aa2a76716e0f4937b0885b67bfb346d5d',1,'slave.h']]],
   ['modbusslaveuserfunction',['ModbusSlaveUserFunction',['../slave_8h.html#aae9c44ed7078afad108125e016ac62ba',1,'slave.h']]]

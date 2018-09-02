@@ -1,8 +1,9 @@
 <map id="modbusParseRequest16" name="modbusParseRequest16">
 <area shape="rect" id="node2" href="$slave_8h.html#a076e9e0b2b4c56e39a2a000cf222ad7c" title="Handles Modbus parsing errors. " alt="" coords="219,5,391,32"/>
-<area shape="rect" id="node4" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="643,31,741,57"/>
-<area shape="rect" id="node6" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="233,107,377,133"/>
-<area shape="rect" id="node7" href="$lightmodbus_8h.html#aa89cf1cbcb0bd625a9e5b969b92a204a" title="Reads n&#45;th bit from an array. " alt="" coords="240,157,371,184"/>
-<area shape="rect" id="node3" href="$slave_8h.html#a6cfceebdf88ce18dae14d246374ff989" title="Builds an exception frame and stores it in the ModbusSlave structure. " alt="" coords="440,5,595,32"/>
-<area shape="rect" id="node5" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="789,31,931,57"/>
+<area shape="rect" id="node4" href="$lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="641,81,740,108"/>
+<area shape="rect" id="node6" href="$lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="233,157,377,184"/>
+<area shape="rect" id="node7" href="$lightmodbus_8h.html#aa89cf1cbcb0bd625a9e5b969b92a204a" title="Reads n&#45;th bit from an array. " alt="" coords="451,259,581,285"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a6cfceebdf88ce18dae14d246374ff989" title="Builds an exception frame and stores it in the ModbusSlave structure. " alt="" coords="439,5,593,32"/>
+<area shape="rect" id="node5" href="$lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="788,120,929,147"/>
+<area shape="rect" id="node8" href="$lightmodbus_8h.html#a6be91dfd3bcb6f31701be074018efc24" title="Writes n&#45;th bit in an array. " alt="" coords="451,208,581,235"/>
 </map>
