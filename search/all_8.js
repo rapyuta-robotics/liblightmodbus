@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['liblightmodbus_20_2d_20a_20lightweight_20modbus_20rtu_20library',['liblightmodbus - a lightweight Modbus RTU library',['../index.html',1,'']]],
-  ['lastexception',['lastException',['../structmodbusSlave.html#a591de1860c11e5e0555f55ae41d20001',1,'modbusSlave']]],
-  ['length',['length',['../structmodbusMaster.html#a579ad7e6c6247024da2e63cf4a28cfbb',1,'modbusMaster::length()'],['../structmodbusSlave.html#ab401b648ffcefd59ce277821b2334353',1,'modbusSlave::length()']]],
-  ['lightmodbus_2eh',['lightmodbus.h',['../lightmodbus_8h.html',1,'']]]
+  ['index',['index',['../structmodbusMaster.html#a431ba0e9b52bba7d8b3e173da9830a7e',1,'modbusMaster']]],
+  ['inputregistercount',['inputRegisterCount',['../structmodbusSlave.html#a7cc02bd49660a98fb3a36c92e1e905bd',1,'modbusSlave']]],
+  ['inputregisters',['inputRegisters',['../structmodbusSlave.html#af8f7d004c8c999f22ca3294a4224ecec',1,'modbusSlave']]]
 ];

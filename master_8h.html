@@ -89,13 +89,11 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aacc7e068252d69b1a26cc84ecc23863c"><td class="memItemLeft" align="right" valign="top"><a id="aacc7e068252d69b1a26cc84ecc23863c"></a>
-typedef struct <a class="el" href="structmodbusMasterUserFunction.html">modbusMasterUserFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#aacc7e068252d69b1a26cc84ecc23863c">ModbusMasterUserFunction</a></td></tr>
-<tr class="memdesc:aacc7e068252d69b1a26cc84ecc23863c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates user-defined response parser function with the function ID. <br /></td></tr>
+<tr class="memitem:aacc7e068252d69b1a26cc84ecc23863c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmodbusMasterUserFunction.html">modbusMasterUserFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#aacc7e068252d69b1a26cc84ecc23863c">ModbusMasterUserFunction</a></td></tr>
+<tr class="memdesc:aacc7e068252d69b1a26cc84ecc23863c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates user-defined response parser function with the function ID.  <a href="#aacc7e068252d69b1a26cc84ecc23863c">More...</a><br /></td></tr>
 <tr class="separator:aacc7e068252d69b1a26cc84ecc23863c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6537390cf78a40acb49beb2896c8290"><td class="memItemLeft" align="right" valign="top"><a id="ad6537390cf78a40acb49beb2896c8290"></a>
-typedef struct <a class="el" href="structmodbusMaster.html">modbusMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad6537390cf78a40acb49beb2896c8290">ModbusMaster</a></td></tr>
-<tr class="memdesc:ad6537390cf78a40acb49beb2896c8290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents Modbus master device's status and configuration. <br /></td></tr>
+<tr class="memitem:ad6537390cf78a40acb49beb2896c8290"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structmodbusMaster.html">modbusMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad6537390cf78a40acb49beb2896c8290">ModbusMaster</a></td></tr>
+<tr class="memdesc:ad6537390cf78a40acb49beb2896c8290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents Modbus master device's status and configuration.  <a href="#ad6537390cf78a40acb49beb2896c8290">More...</a><br /></td></tr>
 <tr class="separator:ad6537390cf78a40acb49beb2896c8290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -113,7 +111,40 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General Modbus master functions. </p>
 <dl class="section note"><dt>Note</dt><dd>This header file is suitable for C++ </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="ad6537390cf78a40acb49beb2896c8290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6537390cf78a40acb49beb2896c8290">&#9670;&nbsp;</a></span>ModbusMaster</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmodbusMaster.html">modbusMaster</a>  <a class="el" href="master_8h.html#ad6537390cf78a40acb49beb2896c8290">ModbusMaster</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents Modbus master device's status and configuration. </p>
+
+</div>
+</div>
+<a id="aacc7e068252d69b1a26cc84ecc23863c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc7e068252d69b1a26cc84ecc23863c">&#9670;&nbsp;</a></span>ModbusMasterUserFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structmodbusMasterUserFunction.html">modbusMasterUserFunction</a>  <a class="el" href="master_8h.html#aacc7e068252d69b1a26cc84ecc23863c">ModbusMasterUserFunction</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Associates user-defined response parser function with the function ID. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="aee672157bcd8f786a54974305021860a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee672157bcd8f786a54974305021860a">&#9670;&nbsp;</a></span>modbusMasterEnd()</h2>
 
@@ -187,7 +218,7 @@ Functions</h2></td></tr>
 <p>Interprets the incoming response frame located in the master structure. </p>
 <p>Calling this function results in processing the frame located in <a class="el" href="structmodbusMaster.html#a405ff7ecae677b06282ec883cc5d7179">ModbusMaster::response</a>. The received data will be located in <a class="el" href="structmodbusMaster.html#a0e68533668809b672017f2591441bc9e">ModbusMaster::data</a> or <a class="el" href="structmodbusMaster.html#a23dc99278a95c0fd0841bc3bf1e2e0f9">ModbusMaster::exception</a> if slave has responded with an exception frame.</p>
 <p>Firstly, this function resets and freed data previously stored in <a class="el" href="structmodbusMaster.html#a23dc99278a95c0fd0841bc3bf1e2e0f9">ModbusMaster::exception</a> and <a class="el" href="structmodbusMaster.html#a0e68533668809b672017f2591441bc9e">ModbusMaster::data</a>.</p>
-<p>Afterwards, the frame is validated using <a class="el" href="lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393">modbusCRC()</a> function. If it's not consistent, it's discarded at this point and <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1abaa763d8bd37084d22067867ddcfadd542">MODBUS_ERROR_PARSE</a> is returned.</p>
+<p>Afterwards, the frame is validated using <a class="el" href="lightmodbus_8c.html#a11346a546b84663cd92cb30f4ffd1393">modbusCRC()</a> function. If it's not consistent, it's discarded at this point and <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1abaa763d8bd37084d22067867ddcfadd542">MODBUS_ERROR_PARSE</a> is returned.</p>
 <p>Then, array of user-defined functions is searched. It is important to mention that, user functions override built-in functions. That means, one can disable specific function by simply inserting NULL pointer into the array,</p>
 <p>If matching function is found among user-defined or built-in functions, the <a class="el" href="master_8h.html#afbcff357011e2f7c2eb0469ef80e0d7d" title="Interprets the incoming response frame located in the master structure. ">modbusParseResponse()</a> returns the exact error code the parsing function had returned. Otherwise, <a class="el" href="lightmodbus_8h.html#a0e53935196f8baab23b35aaac466a1abaa763d8bd37084d22067867ddcfadd542">MODBUS_ERROR_PARSE</a> is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -204,19 +235,21 @@ Functions</h2></td></tr>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="master_8h_afbcff357011e2f7c2eb0469ef80e0d7d_cgraph.png" border="0" usemap="#master_8h_afbcff357011e2f7c2eb0469ef80e0d7d_cgraph" alt=""/></div>
 <map name="master_8h_afbcff357011e2f7c2eb0469ef80e0d7d_cgraph" id="master_8h_afbcff357011e2f7c2eb0469ef80e0d7d_cgraph">
-<area shape="rect" id="node2" href="lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="660,84,759,111"/>
-<area shape="rect" id="node4" href="mpcoils_8h.html#a163851c7f7f2b37d08dff110f323595c" title="Processes responses for requests 01 (read multiple coils) and 02 (read multiple discrete inputs) ..." alt="" coords="215,59,404,85"/>
-<area shape="rect" id="node9" href="mpregs_8h.html#aaae3160119cca3e3d6a1e0cb61f0d6d1" title="Processes responses for requests 03 (read multiple holding registers) and 04 (read multiple input reg..." alt="" coords="215,109,404,136"/>
-<area shape="rect" id="node10" href="mpcoils_8h.html#adb892da5f7cf969a1105a02ac19c8ffb" title="Processes responses for request 05 (write a single coil) " alt="" coords="222,160,397,187"/>
-<area shape="rect" id="node11" href="mpregs_8h.html#a0991813ab532b7cfc9aa82f897200079" title="Processes responses for request 06 (write a single holding register) " alt="" coords="222,211,397,237"/>
-<area shape="rect" id="node12" href="mpcoils_8h.html#a0e04fc9ae03f6c39e19f14e6ed39adbb" title="Processes responses for request 15 (write multiple coils) " alt="" coords="222,261,397,288"/>
-<area shape="rect" id="node13" href="mpregs_8h.html#a5cc585b086586ca01be265d19d4f0be5" title="Processes responses for request 15 (write multiple holding registers) " alt="" coords="222,312,397,339"/>
-<area shape="rect" id="node14" href="mpregs_8h.html#a75c06bf85761503fcec43e49b7349c4e" title="Processes responses for request 22 (mask&#45;write holding register) " alt="" coords="222,363,397,389"/>
-<area shape="rect" id="node3" href="lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="823,109,964,136"/>
-<area shape="rect" id="node5" href="lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="452,185,596,212"/>
-<area shape="rect" id="node8" href="lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58" title="Converts number of bits to number of bytes required to store them. " alt="" coords="454,59,594,85"/>
-<area shape="rect" id="node6" href="lightmodbus_8h.html#aa89cf1cbcb0bd625a9e5b969b92a204a" title="Reads n&#45;th bit from an array. " alt="" coords="644,185,775,212"/>
-<area shape="rect" id="node7" href="lightmodbus_8h.html#a6be91dfd3bcb6f31701be074018efc24" title="Writes n&#45;th bit in an array. " alt="" coords="644,236,775,263"/>
+<area shape="rect" id="node2" href="lightmodbus_8c.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="475,20,573,47"/>
+<area shape="rect" id="node4" href="master_8c.html#a54b163779812a132d463b2abed160002" title="modbusParseException" alt="" coords="229,45,389,72"/>
+<area shape="rect" id="node5" href="mpcoils_8c.html#a163851c7f7f2b37d08dff110f323595c" title="Processes responses for requests 01 (read multiple coils) and 02 (read multiple discrete inputs) ..." alt="" coords="215,96,404,123"/>
+<area shape="rect" id="node11" href="mpregs_8c.html#aaae3160119cca3e3d6a1e0cb61f0d6d1" title="Processes responses for requests 03 (read multiple holding registers) and 04 (read multiple input reg..." alt="" coords="215,147,404,173"/>
+<area shape="rect" id="node12" href="mpcoils_8c.html#adb892da5f7cf969a1105a02ac19c8ffb" title="Processes responses for request 05 (write a single coil) " alt="" coords="222,197,397,224"/>
+<area shape="rect" id="node13" href="mpregs_8c.html#a0991813ab532b7cfc9aa82f897200079" title="Processes responses for request 06 (write a single holding register) " alt="" coords="222,248,397,275"/>
+<area shape="rect" id="node14" href="mpcoils_8c.html#a0e04fc9ae03f6c39e19f14e6ed39adbb" title="Processes responses for request 15 (write multiple coils) " alt="" coords="222,299,397,325"/>
+<area shape="rect" id="node15" href="mpregs_8c.html#a5cc585b086586ca01be265d19d4f0be5" title="Processes responses for request 15 (write multiple holding registers) " alt="" coords="222,349,397,376"/>
+<area shape="rect" id="node16" href="mpregs_8c.html#a75c06bf85761503fcec43e49b7349c4e" title="Processes responses for request 22 (mask&#45;write holding register) " alt="" coords="222,400,397,427"/>
+<area shape="rect" id="node3" href="lightmodbus_8h.html#ace574447e6e4b53e4c7d29f69a1c8358" title="Swaps endianness of provided 16&#45;bit data portion. " alt="" coords="823,121,964,148"/>
+<area shape="rect" id="node6" href="lightmodbus_8h.html#ae52f901ce7500d91457c00960fee0807" title="Swaps endianness of provided 16&#45;bit data portion if needed. " alt="" coords="452,223,596,249"/>
+<area shape="rect" id="node10" href="lightmodbus_8h.html#af23a50b36bef9c09ac82214a52ff4d58" title="Converts number of bits to number of bytes required to store them. " alt="" coords="454,96,594,123"/>
+<area shape="rect" id="node7" href="lightmodbus_8h.html#aa89cf1cbcb0bd625a9e5b969b92a204a" title="Reads n&#45;th bit from an array. " alt="" coords="644,172,775,199"/>
+<area shape="rect" id="node8" href="lightmodbus_8h.html#a6be91dfd3bcb6f31701be074018efc24" title="Writes n&#45;th bit in an array. " alt="" coords="644,223,775,249"/>
+<area shape="rect" id="node9" href="lightmodbus_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data. " alt="" coords="660,273,759,300"/>
 </map>
 </div>
 
