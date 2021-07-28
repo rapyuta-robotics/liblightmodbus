@@ -1,0 +1,4 @@
+<map id="modbusBuildRequest0304" name="modbusBuildRequest0304">
+<area shape="rect" id="node1" title="Builds request 03 (read multiple holding registers) or 04 (read multiple input registers) frame." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="245,5,347,32"/>
+</map>

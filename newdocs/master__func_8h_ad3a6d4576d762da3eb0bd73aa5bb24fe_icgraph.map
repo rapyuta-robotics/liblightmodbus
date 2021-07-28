@@ -1,0 +1,7 @@
+<map id="modbusBuildRequest01020304" name="modbusBuildRequest01020304">
+<area shape="rect" id="node1" title="Read mutiple coils/discrete inputs/holding registers/input registers." alt="" coords="229,81,453,108"/>
+<area shape="rect" id="node2" href="$master__func_8h.html#a899edde7b2c063fff4fc952f009eff6f" title="Read multiple coils." alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node3" href="$master__func_8h.html#a7d26baeb0dae90a0a1c9e48732baa431" title="Read multiple discrete inputs." alt="" coords="5,56,181,83"/>
+<area shape="rect" id="node4" href="$master__func_8h.html#a48714bd3a58663857b26202575e33031" title="Read multiple holding registers." alt="" coords="5,107,181,133"/>
+<area shape="rect" id="node5" href="$master__func_8h.html#ae3c3a0a196c531187f89368f9f9773fe" title="Read multiple input registers." alt="" coords="5,157,181,184"/>
+</map>

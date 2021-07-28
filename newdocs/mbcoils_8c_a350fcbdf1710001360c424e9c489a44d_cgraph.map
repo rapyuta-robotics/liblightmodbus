@@ -1,0 +1,5 @@
+<map id="modbusBuildRequest0102" name="modbusBuildRequest0102">
+<area shape="rect" id="node1" title="Builds request 01 (read multiple coils) or 02 (read multiple discrete inputs) frame." alt="" coords="5,31,197,57"/>
+<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="245,5,396,32"/>
+<area shape="rect" id="node3" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="270,56,371,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="modbusParseResponse" name="modbusParseResponse">
+<area shape="rect" id="node1" title="Interprets the incoming response frame located in the master structure." alt="" coords="5,208,179,235"/>
+<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="279,5,380,32"/>
+<area shape="rect" id="node3" href="$master_8c.html#a54b163779812a132d463b2abed160002" title=" " alt="" coords="242,56,417,83"/>
+<area shape="rect" id="node4" href="$mpcoils_8c.html#a163851c7f7f2b37d08dff110f323595c" title="Processes responses for requests 01 (read multiple coils) and 02 (read multiple discrete inputs)" alt="" coords="227,107,432,133"/>
+<area shape="rect" id="node6" href="$mpregs_8c.html#aaae3160119cca3e3d6a1e0cb61f0d6d1" title="Processes responses for requests 03 (read multiple holding registers) and 04 (read multiple input reg..." alt="" coords="227,157,432,184"/>
+<area shape="rect" id="node7" href="$mpcoils_8c.html#adb892da5f7cf969a1105a02ac19c8ffb" title="Processes responses for request 05 (write a single coil)" alt="" coords="235,208,424,235"/>
+<area shape="rect" id="node8" href="$mpregs_8c.html#a0991813ab532b7cfc9aa82f897200079" title="Processes responses for request 06 (write a single holding register)" alt="" coords="235,259,424,285"/>
+<area shape="rect" id="node9" href="$mpcoils_8c.html#a0e04fc9ae03f6c39e19f14e6ed39adbb" title="Processes responses for request 15 (write multiple coils)" alt="" coords="235,309,424,336"/>
+<area shape="rect" id="node10" href="$mpregs_8c.html#a5cc585b086586ca01be265d19d4f0be5" title="Processes responses for request 15 (write multiple holding registers)" alt="" coords="235,360,424,387"/>
+<area shape="rect" id="node11" href="$mpregs_8c.html#a75c06bf85761503fcec43e49b7349c4e" title="Processes responses for request 22 (mask&#45;write holding register)" alt="" coords="235,411,424,437"/>
+<area shape="rect" id="node5" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="480,107,631,133"/>
+</map>

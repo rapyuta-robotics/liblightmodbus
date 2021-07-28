@@ -1,0 +1,5 @@
+<map id="modbusBuildRequest0506" name="modbusBuildRequest0506">
+<area shape="rect" id="node1" title="Write single coil/holding register." alt="" coords="229,31,421,57"/>
+<area shape="rect" id="node2" href="$master__func_8h.html#a8ac535ee76be3362f5fc059a5ead7e95" title="Write single coil." alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node3" href="$master__func_8h.html#ac91422bd565e5bdfa140db98a7037e94" title="Write single holding register." alt="" coords="5,56,181,83"/>
+</map>

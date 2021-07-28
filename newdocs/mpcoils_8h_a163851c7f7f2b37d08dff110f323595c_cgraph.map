@@ -1,0 +1,4 @@
+<map id="modbusParseResponse0102" name="modbusParseResponse0102">
+<area shape="rect" id="node1" title="Processes responses for requests 01 (read multiple coils) and 02 (read multiple discrete inputs)" alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="259,5,409,32"/>
+</map>

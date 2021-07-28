@@ -1,0 +1,10 @@
+<map id="modbusParseRequest01020304" name="modbusParseRequest01020304">
+<area shape="rect" id="node1" title="Handles requests 01, 02, 03 and 04 (Read Multiple XX)" alt="" coords="5,132,232,159"/>
+<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="318,5,469,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a15ad90259b02455e46929f4b49502fe4" title="Builds an exception response frame." alt="" coords="308,56,479,83"/>
+<area shape="rect" id="node5" href="$base_8h.html#a7dca9da954f66416aeb47668db390afe" title="Writes n&#45;th bit in an array." alt="" coords="321,107,465,133"/>
+<area shape="rect" id="node6" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="343,157,443,184"/>
+<area shape="rect" id="node7" href="$slave_8h.html#aeb023acad1912b5c8f3821cc02c56b32" title="Allocates memory for slave&#39;s response frame." alt="" coords="280,208,507,235"/>
+<area shape="rect" id="node8" href="$base_8h.html#ae117274d7263b4d1bc696eb1874b3279" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="341,259,445,285"/>
+<area shape="rect" id="node4" href="$slave_8impl_8h.html#a9541a7e3d6ad9910e2a09234809ee5e3" title="Allocates memory for slave&#39;s response frame." alt="" coords="555,56,781,83"/>
+</map>

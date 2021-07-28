@@ -1,0 +1,4 @@
+<map id="ModbusMasterFunctionHandler" name="ModbusMasterFunctionHandler">
+<area shape="rect" id="node1" title="Associates Modbus function ID with a pointer to a response parsing function." alt="" coords="5,95,229,121"/>
+<area shape="rect" id="node2" href="$structModbusErrorInfo.html" title="Error represenation &#45; source and type of error." alt="" coords="53,5,182,32"/>
+</map>

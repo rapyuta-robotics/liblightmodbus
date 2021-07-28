@@ -1,0 +1,20 @@
+<map id="doc/lightmodbus.dox" name="doc/lightmodbus.dox">
+<area shape="rect" id="node1" title=" " alt="" coords="286,5,444,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="140,80,358,121"/>
+<area shape="rect" id="node3" href="$lightmodbus_8h.html" title=" " alt="" coords="382,87,582,114"/>
+<area shape="rect" id="node4" href="$slave_8h.html" title=" " alt="" coords="265,319,334,345"/>
+<area shape="rect" id="node8" href="$slave__func_8h.html" title=" " alt="" coords="145,244,249,271"/>
+<area shape="rect" id="node9" href="$master_8h.html" title=" " alt="" coords="437,319,517,345"/>
+<area shape="rect" id="node10" href="$master__func_8h.html" title=" " alt="" coords="514,244,629,271"/>
+<area shape="rect" id="node11" href="$debug_8h.html" title=" " alt="" coords="764,244,838,271"/>
+<area shape="rect" id="node12" href="$base_8impl_8h.html" title=" " alt="" coords="969,169,1068,196"/>
+<area shape="rect" id="node14" href="$slave_8impl_8h.html" title=" " alt="" coords="34,169,136,196"/>
+<area shape="rect" id="node15" href="$slave__func_8impl_8h.html" title=" " alt="" coords="212,169,350,196"/>
+<area shape="rect" id="node16" href="$master_8impl_8h.html" title=" " alt="" coords="426,169,539,196"/>
+<area shape="rect" id="node17" href="$master__func_8impl_8h.html" title=" " alt="" coords="615,169,763,196"/>
+<area shape="rect" id="node18" href="$debug_8impl_8h.html" title=" " alt="" coords="838,169,945,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="442,468,512,495"/>
+<area shape="rect" id="node6" title=" " alt="" coords="364,393,438,420"/>
+<area shape="rect" id="node7" href="$base_8h.html" title=" " alt="" coords="515,393,580,420"/>
+<area shape="rect" id="node13" title=" " alt="" coords="983,244,1054,271"/>
+</map>

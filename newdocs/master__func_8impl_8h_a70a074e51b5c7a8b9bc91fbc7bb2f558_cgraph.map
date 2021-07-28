@@ -1,0 +1,6 @@
+<map id="modbusBuildRequest02" name="modbusBuildRequest02">
+<area shape="rect" id="node1" title="Read multiple discrete inputs." alt="" coords="5,31,181,57"/>
+<area shape="rect" id="node2" href="$master__func_8impl_8h.html#a7d68553142d886294404b482e98aa265" title="Read mutiple coils/discrete inputs/holding registers/input registers." alt="" coords="229,31,453,57"/>
+<area shape="rect" id="node3" href="$master_8h.html#a1264d2a9672cdc0f25bb4af8bac3d517" title="Allocates memory for the request frame." alt="" coords="501,5,727,32"/>
+<area shape="rect" id="node4" href="$base_8h.html#ae117274d7263b4d1bc696eb1874b3279" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="562,56,666,83"/>
+</map>

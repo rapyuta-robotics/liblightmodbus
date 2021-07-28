@@ -1,0 +1,8 @@
+<map id="modbusIsOk" name="modbusIsOk">
+<area shape="rect" id="node1" title=" " alt="" coords="503,56,605,83"/>
+<area shape="rect" id="node2" href="$slave_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3" title="Parses provided Modbus RTU request frame." alt="" coords="259,5,449,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a11f5dfe3b6a3f37ca7c7eb179ca75864" title="Parses provided Modbus TCP request frame." alt="" coords="260,56,448,83"/>
+<area shape="rect" id="node4" href="$master_8h.html#a2a2853b9ec5742a5d4213532ebeefa93" title="Parses a PDU section of a slave response." alt="" coords="253,107,455,133"/>
+<area shape="rect" id="node5" href="$master_8h.html#acbcaff5b6c002edcb471b504e447727b" title="Parses a Modbus RTU slave response." alt="" coords="5,81,205,108"/>
+<area shape="rect" id="node6" href="$master_8h.html#ad0d0240bb8310791f3165b55734035aa" title="Parses a Modbus TCP slave response." alt="" coords="6,132,205,159"/>
+</map>

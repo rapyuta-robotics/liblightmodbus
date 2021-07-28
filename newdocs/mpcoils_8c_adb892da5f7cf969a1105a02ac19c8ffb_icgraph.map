@@ -1,0 +1,4 @@
+<map id="modbusParseResponse05" name="modbusParseResponse05">
+<area shape="rect" id="node1" title="Processes responses for request 05 (write a single coil)" alt="" coords="227,5,416,32"/>
+<area shape="rect" id="node2" href="$master_8c.html#afbcff357011e2f7c2eb0469ef80e0d7d" title="Interprets the incoming response frame located in the master structure." alt="" coords="5,5,179,32"/>
+</map>

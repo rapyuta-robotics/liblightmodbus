@@ -1,0 +1,15 @@
+<map id="modbusMasterAllocateRequest" name="modbusMasterAllocateRequest">
+<area shape="rect" id="node1" title="Allocates memory for the request frame." alt="" coords="501,284,727,311"/>
+<area shape="rect" id="node2" href="$master__func_8h.html#a7d68553142d886294404b482e98aa265" title="Read mutiple coils/discrete inputs/holding registers/input registers." alt="" coords="229,107,453,133"/>
+<area shape="rect" id="node7" href="$master__func_8h.html#a8d500acdae0d65c7bd2cd04ee38790ab" title="Write single coil/holding register." alt="" coords="245,208,437,235"/>
+<area shape="rect" id="node10" href="$master__func_8h.html#af629742f688ee1da7bf76612fc19052e" title="Write multiple coils." alt="" coords="253,259,429,285"/>
+<area shape="rect" id="node11" href="$master__func_8h.html#add131937ff19b7d0951196cd6d1bbfe3" title="Write multiple holding registers." alt="" coords="253,309,429,336"/>
+<area shape="rect" id="node12" href="$master__func_8h.html#a11d50cb48ce374ee3095f882a755cb42" title="Mask write register request." alt="" coords="253,360,429,387"/>
+<area shape="rect" id="node13" href="$master_8h.html#a5fe38fae0f89de04fa616d105f660d25" title="Deinitializes a ModbusMaster struct." alt="" coords="256,411,427,437"/>
+<area shape="rect" id="node3" href="$master__func_8h.html#ae1c8748eed702c76f0893b828edcc443" title="Read multiple coils." alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node4" href="$master__func_8h.html#a70a074e51b5c7a8b9bc91fbc7bb2f558" title="Read multiple discrete inputs." alt="" coords="5,56,181,83"/>
+<area shape="rect" id="node5" href="$master__func_8h.html#a775c8f1e27fd7aaacbc8d226109ffff8" title="Read multiple holding registers." alt="" coords="5,107,181,133"/>
+<area shape="rect" id="node6" href="$master__func_8h.html#ac5334f4d6c6f5d8ffd36e9f2edcceacd" title="Read multiple input registers." alt="" coords="5,157,181,184"/>
+<area shape="rect" id="node8" href="$master__func_8h.html#a8ac535ee76be3362f5fc059a5ead7e95" title="Write single coil." alt="" coords="5,208,181,235"/>
+<area shape="rect" id="node9" href="$master__func_8h.html#ac91422bd565e5bdfa140db98a7037e94" title="Write single holding register." alt="" coords="5,259,181,285"/>
+</map>
