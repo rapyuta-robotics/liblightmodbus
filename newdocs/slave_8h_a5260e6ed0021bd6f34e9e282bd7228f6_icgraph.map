@@ -1,5 +1,0 @@
-<map id="modbusParseRequestPDU" name="modbusParseRequestPDU">
-<area shape="rect" id="node1" title="Parses provided PDU (Protocol Data Unit)" alt="" coords="244,31,435,57"/>
-<area shape="rect" id="node2" href="$slave_8h.html#aef8125c523beb1eddd8810f7cb1d6fb4" title="Parses provided Modbus RTU request frame." alt="" coords="5,5,196,32"/>
-<area shape="rect" id="node3" href="$slave_8h.html#a35b108ad88e8f89fd9ef82a79631358e" title="Parses provided Modbus TCP request frame." alt="" coords="7,56,195,83"/>
-</map>

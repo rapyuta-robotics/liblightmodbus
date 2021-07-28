@@ -1,4 +1,0 @@
-<map id="modbusParseRequest0304" name="modbusParseRequest0304">
-<area shape="rect" id="node1" title="Processes request 03 (read multiple holding registers) and 04 (read multiple input registers)" alt="" coords="5,5,200,32"/>
-<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="248,5,349,32"/>
-</map>

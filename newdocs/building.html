@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -96,10 +95,12 @@ $(document).ready(function(){initNavTree('building.html',''); initResizable(); }
 <li><code>LIGHTMODBUS_MASTER</code> - include master part of the library</li>
 <li><code>LIGHTMODBUS_FULL</code> - include both slave and master modules and all of their functions</li>
 <li><code>LIGHTMODBUS_DEBUG</code> - include some debugging utilites</li>
+<li><code>LIGHTMODBUS_MASTER_OMIT_REQUEST_CRC</code> - omit request CRC calculation for request on master side</li>
+<li><code>LIGHTMODBUS_BIG_ENDIAN</code> - use when your platform uses big endian byte order</li>
 <li>Specific master/slave functions can be included by defining macros like <code>LIGHTMODBUS_F01M</code> or <code>LIGHTMODBUS_F22S</code>.</li>
 </ul>
 <p>Each time <code><a class="el" href="lightmodbus_8h.html">lightmodbus.h</a></code> is included, the set of defined configuration macros must be the same (except from <code>LIGHTMODBUS_IMPL</code> which should only be used <b>once</b>).</p>
-<p>Moreover, it's very important that you include implementation of the library functions (<code>LIGHTMODBUS_IMPL</code>) in exactly one** place in your codebase. It may be a good idea to create a source file dedicated specifically for including implementation of liblightmodbus. For instance, you may want to create <code>lightmodbus-impl.c</code> containing: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;my-consistent-liblightmodbus-config-macros.h&quot;</span></div>
+<p>Moreover, it's very important that you include implementation of the library functions (<code>LIGHTMODBUS_IMPL</code>) in <b>exactly one</b> place in your codebase. It may be a good idea to create a source file dedicated specifically for including implementation of liblightmodbus. For instance, you may want to create <code>lightmodbus-impl.c</code> containing: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;my-consistent-liblightmodbus-config-macros.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#define LIGHTMODBUS_IMPL</span></div>
 <div class="line"><span class="preprocessor">#include &lt;lightmodbus/lightmodbus.h&gt;</span></div>
 </div><!-- fragment --> </div></div><!-- contents -->

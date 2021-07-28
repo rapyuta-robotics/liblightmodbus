@@ -1,9 +1,0 @@
-<map id="modbusParseRequest0102" name="modbusParseRequest0102">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,200,133"/>
-<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="286,5,437,32"/>
-<area shape="rect" id="node3" href="$slave_8c.html#a6cfceebdf88ce18dae14d246374ff989" title=" " alt="" coords="276,56,447,83"/>
-<area shape="rect" id="node5" href="$base_8h.html#a7dca9da954f66416aeb47668db390afe" title="Writes n&#45;th bit in an array." alt="" coords="289,107,433,133"/>
-<area shape="rect" id="node6" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="311,157,411,184"/>
-<area shape="rect" id="node7" href="$slave_8h.html#a6fd2e6c30dbd7b70b9e00325fd4521e9" title="Allocates memory for slave&#39;s response frame." alt="" coords="248,208,475,235"/>
-<area shape="rect" id="node4" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="523,56,624,83"/>
-</map>

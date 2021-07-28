@@ -1,4 +1,0 @@
-<map id="modbusBuildRequest04" name="modbusBuildRequest04">
-<area shape="rect" id="node1" title="Builds request 04 (read multiple input registers) frame." alt="" coords="5,5,181,32"/>
-<area shape="rect" id="node2" href="$mbregs_8h.html#ad31e8445123115b417628ff6ab12ab91" title="Builds request 03 (read multiple holding registers) or 04 (read multiple input registers) frame." alt="" coords="229,5,421,32"/>
-</map>

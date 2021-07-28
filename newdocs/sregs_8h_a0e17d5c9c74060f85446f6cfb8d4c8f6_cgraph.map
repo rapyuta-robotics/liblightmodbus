@@ -1,5 +1,0 @@
-<map id="modbusParseRequest22" name="modbusParseRequest22">
-<area shape="rect" id="node1" title="Processes request 22 (mask&#45;write holding register)" alt="" coords="5,31,184,57"/>
-<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="253,5,354,32"/>
-<area shape="rect" id="node3" href="$base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b" title="Reads n&#45;th bit from an array." alt="" coords="232,56,375,83"/>
-</map>

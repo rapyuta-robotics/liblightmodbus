@@ -1,6 +1,0 @@
-<map id="modbusParseResponsePDU" name="modbusParseResponsePDU">
-<area shape="rect" id="node1" title="Parses a PDU section of a slave response." alt="" coords="5,31,207,57"/>
-<area shape="rect" id="node2" href="$base_8h.html#a48ae4611f5502d9ea3ba97701b0a532e" title=" " alt="" coords="255,31,357,57"/>
-<area shape="rect" id="node3" href="$base_8impl_8h.html#ad8b26198a26e2cee6c2fea3ddf684445" title=" " alt="" coords="411,5,572,32"/>
-<area shape="rect" id="node4" href="$base_8impl_8h.html#a2158ba99b9e655f572dd15a43a4ec8ae" title=" " alt="" coords="405,56,577,83"/>
-</map>

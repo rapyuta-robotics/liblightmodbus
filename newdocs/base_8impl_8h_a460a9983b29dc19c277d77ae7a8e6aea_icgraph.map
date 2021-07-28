@@ -1,5 +1,0 @@
-<map id="modbusRLE" name="modbusRLE">
-<area shape="rect" id="node1" title="Safely reads a little&#45;endian 16&#45;bit word from provided pointer." alt="" coords="253,31,352,57"/>
-<area shape="rect" id="node2" href="$slave_8h.html#aef8125c523beb1eddd8810f7cb1d6fb4" title="Parses provided Modbus RTU request frame." alt="" coords="10,5,201,32"/>
-<area shape="rect" id="node3" href="$master_8h.html#af34914440133bb1fc02904125d1a9376" title="Parses a Modbus RTU slave response." alt="" coords="5,56,205,83"/>
-</map>

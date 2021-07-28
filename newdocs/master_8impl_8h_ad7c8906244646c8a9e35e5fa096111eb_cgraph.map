@@ -1,4 +1,0 @@
-<map id="modbusEndRequestTCP" name="modbusEndRequestTCP">
-<area shape="rect" id="node1" title="Finalizes a Modbus TCP request." alt="" coords="5,5,181,32"/>
-<area shape="rect" id="node2" href="$base_8h.html#ae117274d7263b4d1bc696eb1874b3279" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="229,5,333,32"/>
-</map>

@@ -9,9 +9,11 @@ var master_8impl_8h =
     [ "modbusMasterAllocateRequest", "master_8impl_8h.html#a066afa4560907a7cdd46f2c887790bd6", null ],
     [ "modbusMasterDefaultAllocator", "master_8impl_8h.html#a51f83ba08c18745dd424b9dcf7579703", null ],
     [ "modbusMasterDestroy", "master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25", null ],
-    [ "modbusMasterInit", "master_8impl_8h.html#a6418390e28325cbc7f915e5f7155dc8c", null ],
-    [ "modbusParseResponsePDU", "master_8impl_8h.html#a2a2853b9ec5742a5d4213532ebeefa93", null ],
-    [ "modbusParseResponseRTU", "master_8impl_8h.html#acbcaff5b6c002edcb471b504e447727b", null ],
-    [ "modbusParseResponseTCP", "master_8impl_8h.html#ad0d0240bb8310791f3165b55734035aa", null ],
+    [ "modbusMasterFreeRequest", "master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6", null ],
+    [ "modbusMasterInit", "master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb", null ],
+    [ "modbusParseResponsePDU", "master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3", null ],
+    [ "modbusParseResponseRTU", "master_8impl_8h.html#a151b85c221ae43804856eb92737498e5", null ],
+    [ "modbusParseResponseTCP", "master_8impl_8h.html#a53ea67c733b1e627e1cdcb0003270a1b", null ],
+    [ "modbusMasterDefaultFunctionCount", "master_8impl_8h.html#abafe1a006897216d68be414d9f8623a7", null ],
     [ "modbusMasterDefaultFunctions", "master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8", null ]
 ];

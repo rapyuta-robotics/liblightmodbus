@@ -1,4 +1,0 @@
-<map id="modbusParseRequest0102" name="modbusParseRequest0102">
-<area shape="rect" id="node1" title="Processes requests 01 (read multiple coils) and 02 (read multiple discrete inputs)." alt="" coords="216,5,411,32"/>
-<area shape="rect" id="node2" href="$slave_8c.html#aaca489cb3c3242693d539c70da3f1251" title=" " alt="" coords="5,5,168,32"/>
-</map>

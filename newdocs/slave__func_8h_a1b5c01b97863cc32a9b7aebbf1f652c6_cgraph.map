@@ -1,10 +1,10 @@
 <map id="modbusParseRequest1516" name="modbusParseRequest1516">
-<area shape="rect" id="node1" title="Handles requests 15 and 16 (Write Multiple XX)" alt="" coords="5,132,200,159"/>
-<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="286,5,437,32"/>
-<area shape="rect" id="node3" href="$slave_8h.html#a01b0b86602f899214d564f5bbe6ffdb2" title="Builds an exception response frame." alt="" coords="276,56,447,83"/>
-<area shape="rect" id="node5" href="$base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b" title="Reads n&#45;th bit from an array." alt="" coords="290,107,433,133"/>
-<area shape="rect" id="node6" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="311,157,411,184"/>
-<area shape="rect" id="node7" href="$slave_8h.html#af92eebc644e36158bddfba128235fef6" title="Allocates memory for slave&#39;s response frame." alt="" coords="248,208,475,235"/>
-<area shape="rect" id="node8" href="$base_8h.html#ae117274d7263b4d1bc696eb1874b3279" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="309,259,413,285"/>
-<area shape="rect" id="node4" href="$slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame." alt="" coords="523,56,749,83"/>
+<area shape="rect" id="node1" title="Handles requests 15 and 16 (Write Multiple XX)" alt="" coords="5,132,184,159"/>
+<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="266,5,405,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a01b0b86602f899214d564f5bbe6ffdb2" title="Builds an exception response frame." alt="" coords="259,56,412,83"/>
+<area shape="rect" id="node5" href="$base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b" title="Reads n&#45;th bit from an array." alt="" coords="270,107,401,133"/>
+<area shape="rect" id="node6" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="288,157,383,184"/>
+<area shape="rect" id="node7" href="$slave_8h.html#af92eebc644e36158bddfba128235fef6" title="Allocates memory for slave&#39;s response frame." alt="" coords="232,208,439,235"/>
+<area shape="rect" id="node8" href="$base_8h.html#ae117274d7263b4d1bc696eb1874b3279" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="287,259,384,285"/>
+<area shape="rect" id="node4" href="$slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame." alt="" coords="487,56,693,83"/>
 </map>

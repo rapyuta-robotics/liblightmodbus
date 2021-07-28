@@ -3,7 +3,6 @@ var base_8impl_8h =
     [ "modbusBitsToBytes", "base_8impl_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112", null ],
     [ "modbusCRC", "base_8impl_8h.html#a11346a546b84663cd92cb30f4ffd1393", null ],
     [ "modbusDefaultAllocator", "base_8impl_8h.html#a44aa66c5af48ac588c9392b2e62b126b", null ],
-    [ "modbusGetCallbackError", "base_8impl_8h.html#a714f91145c46e1f4869ed95a3c117e64", null ],
     [ "modbusGetErrorCode", "base_8impl_8h.html#ab01c2addaafe619040a2e0fa302ed5d4", null ],
     [ "modbusGetErrorSource", "base_8impl_8h.html#ad3119b6543dcad7c77b4e534c4545112", null ],
     [ "modbusGetGeneralError", "base_8impl_8h.html#ab217024b21790b1f2d2570129f89854e", null ],

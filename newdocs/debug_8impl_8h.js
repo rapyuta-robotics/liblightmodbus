@@ -1,6 +1,5 @@
 var debug_8impl_8h =
 [
-    [ "ARRAY_SIZE", "debug_8impl_8h.html#a6242a25f9d996f0cc4f4cdb911218b75", null ],
     [ "ECASE", "debug_8impl_8h.html#a976e9097a2c3473134baa40e170fab2b", null ],
     [ "ESTR", "debug_8impl_8h.html#a5042104432b84aa9aa0db601e767df52", null ],
     [ "modbusBufferPurposeStr", "debug_8impl_8h.html#aef5a0446796f646f381463bd278342da", null ],

@@ -1,12 +1,12 @@
 <map id="modbusParseRequestRTU" name="modbusParseRequestRTU">
-<area shape="rect" id="node1" title="Parses provided Modbus RTU request frame." alt="" coords="5,107,196,133"/>
-<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="289,5,390,32"/>
-<area shape="rect" id="node3" href="$base_8h.html#ab945e5e4e573e91a217e0e0a389daa48" title=" " alt="" coords="288,56,391,83"/>
-<area shape="rect" id="node6" href="$slave_8impl_8h.html#a678436c7849be06c8871bc589d0c7011" title="Parses provided PDU (Protocol Data Unit)" alt="" coords="244,107,435,133"/>
-<area shape="rect" id="node9" href="$base_8h.html#a76f815c35e0b571e6cb75325822f94b4" title="Safely reads a little&#45;endian 16&#45;bit word from provided pointer." alt="" coords="290,157,389,184"/>
-<area shape="rect" id="node10" href="$base_8h.html#a0d0b3f5227ad052c53cf754ce32820fd" title="Safely writes a little&#45;endian 16&#45;bit word to provided pointer." alt="" coords="288,208,391,235"/>
-<area shape="rect" id="node4" href="$base_8impl_8h.html#ab01c2addaafe619040a2e0fa302ed5d4" title=" " alt="" coords="488,5,649,32"/>
-<area shape="rect" id="node5" href="$base_8impl_8h.html#ad3119b6543dcad7c77b4e534c4545112" title=" " alt="" coords="483,56,655,83"/>
-<area shape="rect" id="node7" href="$slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2" title="Builds an exception response frame." alt="" coords="483,107,654,133"/>
-<area shape="rect" id="node8" href="$slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame." alt="" coords="703,107,929,133"/>
+<area shape="rect" id="node1" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response." alt="" coords="5,107,183,133"/>
+<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="259,5,353,32"/>
+<area shape="rect" id="node3" href="$base_8h.html#ab945e5e4e573e91a217e0e0a389daa48" title="Checks if ModbusErrorInfo contains an error." alt="" coords="258,56,354,83"/>
+<area shape="rect" id="node6" href="$slave_8impl_8h.html#a418b412059b7882bf53b0bfdb11dea31" title="Parses provided PDU and generates response honorinng pduOffset and padding set in ModbusSlave." alt="" coords="231,107,381,133"/>
+<area shape="rect" id="node9" href="$base_8h.html#a76f815c35e0b571e6cb75325822f94b4" title="Safely reads a little&#45;endian 16&#45;bit word from provided pointer." alt="" coords="259,157,353,184"/>
+<area shape="rect" id="node10" href="$base_8h.html#a0d0b3f5227ad052c53cf754ce32820fd" title="Safely writes a little&#45;endian 16&#45;bit word to provided pointer." alt="" coords="258,208,354,235"/>
+<area shape="rect" id="node4" href="$base_8impl_8h.html#ab01c2addaafe619040a2e0fa302ed5d4" title="Returns ModbusError contained in ModbusErrorInfo." alt="" coords="435,5,581,32"/>
+<area shape="rect" id="node5" href="$base_8impl_8h.html#ad3119b6543dcad7c77b4e534c4545112" title="Returns uint8_t describing error source of ModbusErrorInfo." alt="" coords="429,56,587,83"/>
+<area shape="rect" id="node7" href="$slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2" title="Builds an exception response frame." alt="" coords="431,107,585,133"/>
+<area shape="rect" id="node8" href="$slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame." alt="" coords="635,107,841,133"/>
 </map>

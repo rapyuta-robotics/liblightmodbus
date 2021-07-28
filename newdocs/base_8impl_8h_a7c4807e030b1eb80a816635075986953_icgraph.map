@@ -1,6 +1,0 @@
-<map id="modbusMaskRead" name="modbusMaskRead">
-<area shape="rect" id="node1" title="Reads n&#45;th bit from an array." alt="" coords="291,56,433,83"/>
-<area shape="rect" id="node2" href="$master__func_8h.html#af629742f688ee1da7bf76612fc19052e" title="Write multiple coils." alt="" coords="36,5,212,32"/>
-<area shape="rect" id="node3" href="$slave__func_8h.html#accbe8028e62460838187a58f566a19b1" title="Handles requests 15 and 16 (Write Multiple XX)" alt="" coords="27,56,221,83"/>
-<area shape="rect" id="node4" href="$master__func_8h.html#ac26e825b9f195f2599958ea9aa6f8522" title="Parses response to requests 01, 02, 03 and 04." alt="" coords="5,107,243,133"/>
-</map>

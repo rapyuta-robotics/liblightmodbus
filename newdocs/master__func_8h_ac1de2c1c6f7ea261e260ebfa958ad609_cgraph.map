@@ -1,4 +1,0 @@
-<map id="modbusParseResponse1516" name="modbusParseResponse1516">
-<area shape="rect" id="node1" title="Parses response to requests 15 and 16." alt="" coords="5,5,211,32"/>
-<area shape="rect" id="node2" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="259,5,359,32"/>
-</map>

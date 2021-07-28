@@ -8,8 +8,8 @@ var indexSectionsWithContent =
   5: "m",
   6: "m",
   7: "m",
-  8: "aelm",
-  9: "blptu"
+  8: "elm",
+  9: "bdlptu"
 };
 
 var indexSectionNames =

@@ -1,7 +1,0 @@
-<map id="modbusParseRequest0102" name="modbusParseRequest0102">
-<area shape="rect" id="node1" title="Processes requests 01 (read multiple coils) and 02 (read multiple discrete inputs)." alt="" coords="5,81,200,108"/>
-<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="248,5,399,32"/>
-<area shape="rect" id="node3" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="273,56,374,83"/>
-<area shape="rect" id="node4" href="$base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b" title="Reads n&#45;th bit from an array." alt="" coords="252,107,395,133"/>
-<area shape="rect" id="node5" href="$base_8h.html#a7dca9da954f66416aeb47668db390afe" title="Writes n&#45;th bit in an array." alt="" coords="251,157,395,184"/>
-</map>

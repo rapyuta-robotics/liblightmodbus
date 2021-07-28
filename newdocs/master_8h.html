@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -86,7 +85,6 @@ $(document).ready(function(){initNavTree('master_8h.html',''); initResizable(); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -102,14 +100,16 @@ $(document).ready(function(){initNavTree('master_8h.html',''); initResizable(); 
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h__incl.svg" width="216" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h__incl.svg" width="198" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h__dep__incl.svg" width="418" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h__dep__incl.svg" width="386" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="master_8h_source.html">Go to the source code of this file.</a></p>
@@ -126,18 +126,13 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master device status.  <a href="structModbusMaster.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a3c7873af9b7984811d0bd26a0f059675"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a3c7873af9b7984811d0bd26a0f059675">MODBUS_MASTER_DEFAULT_FUNCTION_COUNT</a>&#160;&#160;&#160;(sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>) / sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>[0]))</td></tr>
-<tr class="separator:a3c7873af9b7984811d0bd26a0f059675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMaster.html">ModbusMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">ModbusMaster</a></td></tr>
 <tr class="memdesc:ad0e3310720fcc07d509b0572dcea7cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master device status.  <a href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">More...</a><br /></td></tr>
 <tr class="separator:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42764187368975434a03b85c64e26409"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a42764187368975434a03b85c64e26409">ModbusMasterParsingFunction</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td></tr>
-<tr class="memdesc:a42764187368975434a03b85c64e26409"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to response parsing function.  <a href="master_8h.html#a42764187368975434a03b85c64e26409">More...</a><br /></td></tr>
+<tr class="memdesc:a42764187368975434a03b85c64e26409"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a response parsing function.  <a href="master_8h.html#a42764187368975434a03b85c64e26409">More...</a><br /></td></tr>
 <tr class="separator:a42764187368975434a03b85c64e26409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbd68fce6ff652ebb88e3bf2412485b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b">ModbusMasterFunctionHandler</a></td></tr>
 <tr class="memdesc:abdbd68fce6ff652ebb88e3bf2412485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates Modbus function ID with a pointer to a response parsing function.  <a href="master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b">More...</a><br /></td></tr>
@@ -152,17 +147,26 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:af623d388dc043577d9011bdeea54ad19"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback called when a Modbus exception is generated (for master)  <a href="master_8h.html#af623d388dc043577d9011bdeea54ad19">More...</a><br /></td></tr>
 <tr class="separator:af623d388dc043577d9011bdeea54ad19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
-<tr class="memdesc:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to allocator function called to allocate frame buffers (for master)  <a href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">More...</a><br /></td></tr>
+<tr class="memdesc:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to master frame buffer allocator.  <a href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">More...</a><br /></td></tr>
 <tr class="separator:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6418390e28325cbc7f915e5f7155dc8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a6418390e28325cbc7f915e5f7155dc8c">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#af623d388dc043577d9011bdeea54ad19">ModbusMasterExceptionCallback</a> exceptionCallback)</td></tr>
-<tr class="memdesc:a6418390e28325cbc7f915e5f7155dc8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8h.html#a6418390e28325cbc7f915e5f7155dc8c">More...</a><br /></td></tr>
-<tr class="separator:a6418390e28325cbc7f915e5f7155dc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d1322b5da2029288f46f43d14480fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#af4d1322b5da2029288f46f43d14480fb">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#af623d388dc043577d9011bdeea54ad19">ModbusMasterExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memdesc:af4d1322b5da2029288f46f43d14480fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8h.html#af4d1322b5da2029288f46f43d14480fb">More...</a><br /></td></tr>
+<tr class="separator:af4d1322b5da2029288f46f43d14480fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe38fae0f89de04fa616d105f660d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:a5fe38fae0f89de04fa616d105f660d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25">More...</a><br /></td></tr>
 <tr class="separator:a5fe38fae0f89de04fa616d105f660d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51f83ba08c18745dd424b9dcf7579703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
+<tr class="memdesc:a51f83ba08c18745dd424b9dcf7579703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator for master device. Based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>.  <a href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">More...</a><br /></td></tr>
+<tr class="separator:a51f83ba08c18745dd424b9dcf7579703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f754195d448ab90661dd55351064e59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a2f754195d448ab90661dd55351064e59">modbusMasterAllocateRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint16_t size)</td></tr>
+<tr class="memdesc:a2f754195d448ab90661dd55351064e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for the request frame.  <a href="master_8h.html#a2f754195d448ab90661dd55351064e59">More...</a><br /></td></tr>
+<tr class="separator:a2f754195d448ab90661dd55351064e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee980bf753f0cadb1fac4f590e739fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#aee980bf753f0cadb1fac4f590e739fa6">modbusMasterFreeRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
+<tr class="memdesc:aee980bf753f0cadb1fac4f590e739fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for master's request frame.  <a href="master_8h.html#aee980bf753f0cadb1fac4f590e739fa6">More...</a><br /></td></tr>
+<tr class="separator:aee980bf753f0cadb1fac4f590e739fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad71d034901cd8e22b4d74da7f86cdda9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:ad71d034901cd8e22b4d74da7f86cdda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a PDU-only request.  <a href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">More...</a><br /></td></tr>
 <tr class="separator:ad71d034901cd8e22b4d74da7f86cdda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,42 +185,25 @@ Functions</h2></td></tr>
 <tr class="memitem:a117f6d4b5ec63dac5e4e5ea0af78d079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint16_t transaction, uint8_t unit)</td></tr>
 <tr class="memdesc:a117f6d4b5ec63dac5e4e5ea0af78d079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes a Modbus TCP request.  <a href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">More...</a><br /></td></tr>
 <tr class="separator:a117f6d4b5ec63dac5e4e5ea0af78d079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f83ba08c18745dd424b9dcf7579703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
-<tr class="memdesc:a51f83ba08c18745dd424b9dcf7579703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator for master device. Based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>.  <a href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">More...</a><br /></td></tr>
-<tr class="separator:a51f83ba08c18745dd424b9dcf7579703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f754195d448ab90661dd55351064e59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a2f754195d448ab90661dd55351064e59">modbusMasterAllocateRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint16_t size)</td></tr>
-<tr class="memdesc:a2f754195d448ab90661dd55351064e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for the request frame.  <a href="master_8h.html#a2f754195d448ab90661dd55351064e59">More...</a><br /></td></tr>
-<tr class="separator:a2f754195d448ab90661dd55351064e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a2853b9ec5742a5d4213532ebeefa93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a2a2853b9ec5742a5d4213532ebeefa93">modbusParseResponsePDU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, const uint8_t *request, uint8_t requestLength, const uint8_t *response, uint8_t responseLength, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> *responseError)</td></tr>
-<tr class="memdesc:a2a2853b9ec5742a5d4213532ebeefa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a PDU section of a slave response.  <a href="master_8h.html#a2a2853b9ec5742a5d4213532ebeefa93">More...</a><br /></td></tr>
-<tr class="separator:a2a2853b9ec5742a5d4213532ebeefa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcaff5b6c002edcb471b504e447727b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#acbcaff5b6c002edcb471b504e447727b">modbusParseResponseRTU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const uint8_t *request, uint16_t requestLength, const uint8_t *response, uint16_t responseLength, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> *responseError)</td></tr>
-<tr class="memdesc:acbcaff5b6c002edcb471b504e447727b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a Modbus RTU slave response.  <a href="master_8h.html#acbcaff5b6c002edcb471b504e447727b">More...</a><br /></td></tr>
-<tr class="separator:acbcaff5b6c002edcb471b504e447727b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d0240bb8310791f3165b55734035aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad0d0240bb8310791f3165b55734035aa">modbusParseResponseTCP</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const uint8_t *request, uint16_t requestLength, const uint8_t *response, uint16_t responseLength, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> *responseError)</td></tr>
-<tr class="memdesc:ad0d0240bb8310791f3165b55734035aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a Modbus TCP slave response.  <a href="master_8h.html#ad0d0240bb8310791f3165b55734035aa">More...</a><br /></td></tr>
-<tr class="separator:ad0d0240bb8310791f3165b55734035aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e87b7bdda035ea42cacc2241b406e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad8e87b7bdda035ea42cacc2241b406e3">modbusParseResponsePDU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, const uint8_t *request, uint8_t requestLength, const uint8_t *response, uint8_t responseLength)</td></tr>
+<tr class="memdesc:ad8e87b7bdda035ea42cacc2241b406e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a PDU section of a slave response.  <a href="master_8h.html#ad8e87b7bdda035ea42cacc2241b406e3">More...</a><br /></td></tr>
+<tr class="separator:ad8e87b7bdda035ea42cacc2241b406e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151b85c221ae43804856eb92737498e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a151b85c221ae43804856eb92737498e5">modbusParseResponseRTU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const uint8_t *request, uint16_t requestLength, const uint8_t *response, uint16_t responseLength)</td></tr>
+<tr class="memdesc:a151b85c221ae43804856eb92737498e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a Modbus RTU slave response.  <a href="master_8h.html#a151b85c221ae43804856eb92737498e5">More...</a><br /></td></tr>
+<tr class="separator:a151b85c221ae43804856eb92737498e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ea67c733b1e627e1cdcb0003270a1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a53ea67c733b1e627e1cdcb0003270a1b">modbusParseResponseTCP</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const uint8_t *request, uint16_t requestLength, const uint8_t *response, uint16_t responseLength)</td></tr>
+<tr class="memdesc:a53ea67c733b1e627e1cdcb0003270a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a Modbus TCP slave response.  <a href="master_8h.html#a53ea67c733b1e627e1cdcb0003270a1b">More...</a><br /></td></tr>
+<tr class="separator:a53ea67c733b1e627e1cdcb0003270a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ab7ae0464095b7a5f02a0dcb0643145f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a> []</td></tr>
+<tr class="memdesc:ab7ae0464095b7a5f02a0dcb0643145f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.  <a href="master_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">More...</a><br /></td></tr>
 <tr class="separator:ab7ae0464095b7a5f02a0dcb0643145f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abafe1a006897216d68be414d9f8623a7"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#abafe1a006897216d68be414d9f8623a7">modbusMasterDefaultFunctionCount</a></td></tr>
+<tr class="memdesc:abafe1a006897216d68be414d9f8623a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores length of modbusMasterDefaultFunctions array.  <a href="master_8h.html#abafe1a006897216d68be414d9f8623a7">More...</a><br /></td></tr>
+<tr class="separator:abafe1a006897216d68be414d9f8623a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a3c7873af9b7984811d0bd26a0f059675"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c7873af9b7984811d0bd26a0f059675">&#9670;&nbsp;</a></span>MODBUS_MASTER_DEFAULT_FUNCTION_COUNT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MODBUS_MASTER_DEFAULT_FUNCTION_COUNT&#160;&#160;&#160;(sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>) / sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>[0]))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="abb59c4728d4895a57f95fd883542106c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb59c4728d4895a57f95fd883542106c">&#9670;&nbsp;</a></span>ModbusDataCallback</h2>
@@ -278,7 +265,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A pointer to allocator function called to allocate frame buffers (for master) </p>
+<p>A pointer to master frame buffer allocator. </p>
 
 </div>
 </div>
@@ -326,7 +313,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>A pointer to response parsing function. </p>
+<p>A pointer to a response parsing function. </p>
 
 </div>
 </div>
@@ -348,6 +335,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begins a PDU-only request. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> </dd></dl>
 
 </div>
 </div>
@@ -368,6 +356,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begins a RTU request. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> </dd></dl>
 
 </div>
 </div>
@@ -388,6 +377,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Begins a TCP request. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> </dd></dl>
 
 </div>
 </div>
@@ -408,6 +398,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a PDU-only request. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> </dd></dl>
 
 </div>
 </div>
@@ -438,13 +429,16 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus RTU request. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea2ff20d4c974a80f70e1c66c954b2301b">MODBUS_ERROR_LENGTH</a> if the allocated frame is too short </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame is too short </dd>
+<dd>
+<a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a4623d6d41d5e4a148e399fe19051183c_cgraph.svg" width="340" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a4623d6d41d5e4a148e399fe19051183c_cgraph.svg" width="320" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -482,13 +476,16 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus TCP request. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea2ff20d4c974a80f70e1c66c954b2301b">MODBUS_ERROR_LENGTH</a> if the allocated frame is too short </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame is too short </dd>
+<dd>
+<a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a117f6d4b5ec63dac5e4e5ea0af78d079_cgraph.svg" width="339" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a117f6d4b5ec63dac5e4e5ea0af78d079_cgraph.svg" width="320" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -526,7 +523,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> on allocation failure</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_ERROR_ALLOC on allocation failure</dd></dl>
 <p>If called with size == 0, the request buffer is freed. Otherwise a buffer for <code>(pdusize + status-&gt;request.padding)</code> bytes is allocated. This guarantees that if a response is made, the buffer is big enough to hold the entire ADU.</p>
 <p>This function is responsible for managing <code>data</code>, <code>pdu</code> and <code>length</code> fields in the request struct. The <code>pdu</code> pointer is set up to point <code>pduOffset</code> bytes after the <code>data</code> pointer unless <code>data</code> is a null pointer. </p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -534,7 +531,8 @@ Variables</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a2f754195d448ab90661dd55351064e59_icgraph.svg" width="732" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a2f754195d448ab90661dd55351064e59_icgraph.svg" width="670" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -581,17 +579,21 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>pointer to the pointer to the buffer </td></tr>
-    <tr><td class="paramname">size</td><td></td></tr>
+    <tr><td class="paramname">size</td><td>requested size of the buffer </td></tr>
+    <tr><td class="paramname">purpose</td><td>purpose of the buffer </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> on allocation failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_ERROR_ALLOC on allocation failure </dd>
+<dd>
+MODBUS_OK on success </dd></dl>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a51f83ba08c18745dd424b9dcf7579703_cgraph.svg" width="464" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a51f83ba08c18745dd424b9dcf7579703_cgraph.svg" width="419" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -613,18 +615,55 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Deinitializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct to be destroyed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This does not free the memory pointed to by the <code>status</code> pointer and only cleans up the interals ofthe <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct. </dd></dl>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a5fe38fae0f89de04fa616d105f660d25_cgraph.svg" width="455" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a5fe38fae0f89de04fa616d105f660d25_cgraph.svg" width="414" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="a6418390e28325cbc7f915e5f7155dc8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6418390e28325cbc7f915e5f7155dc8c">&#9670;&nbsp;</a></span>modbusMasterInit()</h2>
+<a id="aee980bf753f0cadb1fac4f590e739fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee980bf753f0cadb1fac4f590e739fa6">&#9670;&nbsp;</a></span>modbusMasterFreeRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modbusMasterFreeRequest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees memory allocated for master's request frame. </p>
+<p>Calls <a class="el" href="master_8impl_8h.html#a066afa4560907a7cdd46f2c887790bd6" title="Allocates memory for the request frame.">modbusMasterAllocateRequest()</a> with size == 0. </p>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_aee980bf753f0cadb1fac4f590e739fa6_cgraph.svg" width="444" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="af4d1322b5da2029288f46f43d14480fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4d1322b5da2029288f46f43d14480fb">&#9670;&nbsp;</a></span>modbusMasterInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,7 +690,19 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="master_8h.html#af623d388dc043577d9011bdeea54ad19">ModbusMasterExceptionCallback</a>&#160;</td>
-          <td class="paramname"><em>exceptionCallback</em>&#160;</td>
+          <td class="paramname"><em>exceptionCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *&#160;</td>
+          <td class="paramname"><em>functions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>functionCount</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -665,20 +716,23 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct to be initialized </td></tr>
-    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="master_8impl_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator</a>) (required) </td></tr>
+    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator()</a>) (required) </td></tr>
     <tr><td class="paramname">dataCallback</td><td>Callback function for handling incoming data (required) </td></tr>
-    <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional)</td></tr>
+    <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
+    <tr><td class="paramname">functions</td><td>Pointer to an array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the master. </td></tr>
+    <tr><td class="paramname">functionCount</td><td>Number of elements in the <code>functions</code> array (required) </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
 <dd>
-<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a> </dd></dl>
+<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8" title="Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.">modbusMasterDefaultFunctions</a> </dd></dl>
 
 </div>
 </div>
-<a id="a2a2853b9ec5742a5d4213532ebeefa93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a2853b9ec5742a5d4213532ebeefa93">&#9670;&nbsp;</a></span>modbusParseResponsePDU()</h2>
+<a id="ad8e87b7bdda035ea42cacc2241b406e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e87b7bdda035ea42cacc2241b406e3">&#9670;&nbsp;</a></span>modbusParseResponsePDU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,13 +771,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>responseLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> *&#160;</td>
-          <td class="paramname"><em>responseError</em>&#160;</td>
+          <td class="paramname"><em>responseLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -741,36 +789,39 @@ Variables</h2></td></tr>
     <tr><td class="paramname">requestLength</td><td>Length of the request PDU </td></tr>
     <tr><td class="paramname">response</td><td>Pointer to the PDU section of the response </td></tr>
     <tr><td class="paramname">responseLength</td><td>Length of the response PDU </td></tr>
-    <tr><td class="paramname">responseError</td><td>Pointer to a variable where error regarding response should be returned (optional) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result from the parsing function on success </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request has zero length </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0003c3727cb45c32b46f66a931a2572b">MODBUS_ERROR_FUNCTION</a> if the function code in request doesn't match the one in response </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has zero length </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0003c3727cb45c32b46f66a931a2572b">MODBUS_ERROR_FUNCTION</a> if the function is not supported </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(FUNCTION)</a> if the function code in request doesn't match the one in response </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea2ff20d4c974a80f70e1c66c954b2301b">MODBUS_ERROR_LENGTH</a> if either the request or response has zero length </dd></dl>
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a2a2853b9ec5742a5d4213532ebeefa93_cgraph.svg" width="583" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(FUNCTION)</a> if the function code is not supported </dd>
+<dd>
+Result from the parsing function on success (modbusParseRequest*() functions) </dd></dl>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a2a2853b9ec5742a5d4213532ebeefa93_icgraph.svg" width="460" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_ad8e87b7bdda035ea42cacc2241b406e3_cgraph.svg" width="548" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_ad8e87b7bdda035ea42cacc2241b406e3_icgraph.svg" width="434" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="acbcaff5b6c002edcb471b504e447727b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbcaff5b6c002edcb471b504e447727b">&#9670;&nbsp;</a></span>modbusParseResponseRTU()</h2>
+<a id="a151b85c221ae43804856eb92737498e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a151b85c221ae43804856eb92737498e5">&#9670;&nbsp;</a></span>modbusParseResponseRTU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,13 +854,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>responseLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> *&#160;</td>
-          <td class="paramname"><em>responseError</em>&#160;</td>
+          <td class="paramname"><em>responseLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -829,26 +874,30 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result of <a class="el" href="master_8h.html#a2a2853b9ec5742a5d4213532ebeefa93">modbusParseResponsePDU()</a> if the PDU extraction was successful </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request is less than 4 bytes long </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea30e0fa05d0cd54528b75d0b1a217ca99">MODBUS_ERROR_CRC</a> if the frame CRC is invalid </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response is less than 4 bytes long </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eaa15817d114a6bf59df1cb0b953f23c41">MODBUS_ERROR_ADDRESS</a> if the address is 0 or request/response addresess don't match </dd>
+<a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(CRC)</a> if the request CRC is invalid </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea2ff20d4c974a80f70e1c66c954b2301b">MODBUS_ERROR_LENGTH</a> if request or response is too short</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Consider omitting CRC for request for better perf? </dd></dl>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(CRC)</a> if the response CRC is invalid </dd>
+<dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> if the address is 0 or if request/response addressess don't match </dd>
+<dd>
+Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response.">modbusParseResponsePDU()</a> otherwise </dd></dl>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_acbcaff5b6c002edcb471b504e447727b_cgraph.svg" width="831" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a151b85c221ae43804856eb92737498e5_cgraph.svg" width="783" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
-<a id="ad0d0240bb8310791f3165b55734035aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0d0240bb8310791f3165b55734035aa">&#9670;&nbsp;</a></span>modbusParseResponseTCP()</h2>
+<a id="a53ea67c733b1e627e1cdcb0003270a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ea67c733b1e627e1cdcb0003270a1b">&#9670;&nbsp;</a></span>modbusParseResponseTCP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -881,13 +930,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>responseLength</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> *&#160;</td>
-          <td class="paramname"><em>responseError</em>&#160;</td>
+          <td class="paramname"><em>responseLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -907,27 +950,54 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Result of <a class="el" href="master_8h.html#a2a2853b9ec5742a5d4213532ebeefa93">modbusParseResponsePDU()</a> if the PDU extraction was successful </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request is less than 8 bytes long or if the request frame has different from declared one </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea2ff20d4c974a80f70e1c66c954b2301b">MODBUS_ERROR_LENGTH</a> if request or response is too short </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response is less than 8 bytes long or if the response frame has different from declared one </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea8332eb56292e902a0a694d62994a80d3">MODBUS_ERROR_BAD_PROTOCOL</a> if the Protocol ID field is non-zero </dd>
+<a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(BAD_PROTOCOL)</a> if the protocol ID in request is not 0 </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea4da2b61dedbfbe1edd5863a4ec3598b4">MODBUS_ERROR_BAD_TRANSACTION</a> if the request and response transaction IDs don't match </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(BAD_PROTOCOL)</a> if the protocol ID in response is not 0 </dd>
 <dd>
-<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea2ff20d4c974a80f70e1c66c954b2301b">MODBUS_ERROR_LENGTH</a> if the request/response lengths don't match the declared ones </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Check addresses (but how?) </dd></dl>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(BAD_TRANSACTION)</a> if the transaction ID in request is not the same as in response </dd>
+<dd>
+Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response.">modbusParseResponsePDU()</a> otherwise </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Check addresses (but how?) </dd></dl>
+<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_ad0d0240bb8310791f3165b55734035aa_cgraph.svg" width="830" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a53ea67c733b1e627e1cdcb0003270a1b_cgraph.svg" width="783" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="abafe1a006897216d68be414d9f8623a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafe1a006897216d68be414d9f8623a7">&#9670;&nbsp;</a></span>modbusMasterDefaultFunctionCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t modbusMasterDefaultFunctionCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores length of modbusMasterDefaultFunctions array. </p>
+
+</div>
+</div>
 <a id="ab7ae0464095b7a5f02a0dcb0643145f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7ae0464095b7a5f02a0dcb0643145f8">&#9670;&nbsp;</a></span>modbusMasterDefaultFunctions</h2>
 
@@ -947,6 +1017,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount. </p>
+<p>Contents are controlled by defining <code>LIGHTMODBUS_FxxM</code> macros. </p>
 
 </div>
 </div>

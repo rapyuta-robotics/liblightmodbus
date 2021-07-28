@@ -1,5 +1,5 @@
 <map id="modbusWLE" name="modbusWLE">
-<area shape="rect" id="node1" title="Safely writes a little&#45;endian 16&#45;bit word to provided pointer." alt="" coords="244,31,347,57"/>
-<area shape="rect" id="node2" href="$master_8h.html#a4623d6d41d5e4a148e399fe19051183c" title="Finalizes a Modbus RTU request." alt="" coords="11,5,190,32"/>
-<area shape="rect" id="node3" href="$slave_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3" title="Parses provided Modbus RTU request frame." alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node1" title="Safely writes a little&#45;endian 16&#45;bit word to provided pointer." alt="" coords="231,31,327,57"/>
+<area shape="rect" id="node2" href="$master_8h.html#a4623d6d41d5e4a148e399fe19051183c" title="Finalizes a Modbus RTU request." alt="" coords="11,5,177,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response." alt="" coords="5,56,183,83"/>
 </map>

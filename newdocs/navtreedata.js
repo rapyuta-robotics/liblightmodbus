@@ -25,12 +25,39 @@
 var NAVTREE =
 [
   [ "liblightmodbus", "index.html", [
-    [ "liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library", "index.html", null ],
+    [ "liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library", "index.html", [
+      [ "About this release", "index.html#about", null ],
+      [ "Getting started", "index.html#getting-started", null ]
+    ] ],
     [ "Building and integrating liblightmodbus", "building.html", null ],
-    [ "Basic usage", "basic-usage.html", null ],
-    [ "Porting exisiting code to liblightmodbus v3.0", "porting.html", null ],
+    [ "Basic usage", "basic-usage.html", [
+      [ "Slave", "basic-usage.html#slave", [
+        [ "Slave initialization", "basic-usage.html#slave-init", null ],
+        [ "Register callback", "basic-usage.html#slave-callback", null ],
+        [ "Request processing", "basic-usage.html#slave-requests", null ],
+        [ "Slave cleanup", "basic-usage.html#slave-cleanup", null ]
+      ] ],
+      [ "Master", "basic-usage.html#master", [
+        [ "Master initialization", "basic-usage.html#master-init", null ],
+        [ "Data callback", "basic-usage.html#master-data-callback", null ],
+        [ "Exception callback", "basic-usage.html#master-exception-callback", null ],
+        [ "Building requests", "basic-usage.html#master-requests", null ],
+        [ "Processing responses", "basic-usage.html#master-response", null ],
+        [ "Master cleanup", "basic-usage.html#master-cleanup", null ]
+      ] ]
+    ] ],
+    [ "Porting exisiting code to liblightmodbus v3.0", "porting.html", [
+      [ "Initialization and cleanup", "porting.html#init-and-cleanup", null ],
+      [ "Error handling", "porting.html#error-handling", null ],
+      [ "Slave code", "porting.html#slave-code", null ],
+      [ "Master code", "porting.html#master-code", null ],
+      [ "Static memory allocation", "porting.html#static-memory", null ],
+      [ "Mask reads and writes", "porting.html#mask-rw", null ],
+      [ "Endianness operations", "porting.html#endiannnes", null ]
+    ] ],
     [ "User-defined callback functions", "callbacks.html", null ],
     [ "User-defined allocators", "allocators.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -58,7 +85,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "allocators.html",
-"master__func_8impl_8h.html#a1623e2b882d71e60d4a82bfa11d04daf"
+"master__func_8h.html#afeaddc62f81c2cb558048140e110e942"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

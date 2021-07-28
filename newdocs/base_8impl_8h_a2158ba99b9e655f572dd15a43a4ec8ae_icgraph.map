@@ -1,9 +1,0 @@
-<map id="modbusGetErrorSource" name="modbusGetErrorSource">
-<area shape="rect" id="node1" title=" " alt="" coords="653,56,825,83"/>
-<area shape="rect" id="node2" href="$base_8h.html#a48ae4611f5502d9ea3ba97701b0a532e" title=" " alt="" coords="503,56,605,83"/>
-<area shape="rect" id="node3" href="$slave_8h.html#aef8125c523beb1eddd8810f7cb1d6fb4" title="Parses provided Modbus RTU request frame." alt="" coords="259,5,449,32"/>
-<area shape="rect" id="node4" href="$slave_8h.html#a35b108ad88e8f89fd9ef82a79631358e" title="Parses provided Modbus TCP request frame." alt="" coords="260,56,448,83"/>
-<area shape="rect" id="node5" href="$master_8h.html#a40ac76050ae4eba8468ca13d987935a2" title="Parses a PDU section of a slave response." alt="" coords="253,107,455,133"/>
-<area shape="rect" id="node6" href="$master_8h.html#af34914440133bb1fc02904125d1a9376" title="Parses a Modbus RTU slave response." alt="" coords="5,81,205,108"/>
-<area shape="rect" id="node7" href="$master_8h.html#a087ad966efcb0966932f0e960ea4615c" title="Parses a Modbus TCP slave response." alt="" coords="6,132,205,159"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="modbusParseResponsePDU" name="modbusParseResponsePDU">
-<area shape="rect" id="node1" title="Parses a PDU section of a slave response." alt="" coords="253,31,455,57"/>
-<area shape="rect" id="node2" href="$master_8h.html#ae8e861498ae9cda7be27a8ec454a8594" title="Parses a Modbus RTU slave response." alt="" coords="5,5,205,32"/>
-<area shape="rect" id="node3" href="$master_8h.html#a7404645a7b1fec46dd4c17edc5d9e824" title="Parses a Modbus TCP slave response." alt="" coords="6,56,205,83"/>
-</map>

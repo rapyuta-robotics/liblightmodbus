@@ -1,5 +1,0 @@
-<map id="modbusParseResponseTCP" name="modbusParseResponseTCP">
-<area shape="rect" id="node1" title="Parses a Modbus TCP slave response." alt="" coords="5,31,204,57"/>
-<area shape="rect" id="node2" href="$master_8impl_8h.html#a9e2773750fd5c9b26af75ecc8f9d2564" title="Parses a PDU section of a slave response." alt="" coords="252,5,453,32"/>
-<area shape="rect" id="node3" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="303,56,403,83"/>
-</map>

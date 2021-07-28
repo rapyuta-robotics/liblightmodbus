@@ -6,7 +6,7 @@ var structModbusSlave =
     [ "data", "structModbusSlave.html#a86a54fc835bb0422239f61a96e24f607", null ],
     [ "exceptionCallback", "structModbusSlave.html#a1b7a8b269856777d1f5395cd9957f11f", null ],
     [ "functionCount", "structModbusSlave.html#a032692261e4c61f673c5a90b661d5917", null ],
-    [ "functions", "structModbusSlave.html#a1fa3c302296a064179ddc6eaa44eaf29", null ],
+    [ "functions", "structModbusSlave.html#a317bf6a51a6b0fb3b8fee77bbc517fe1", null ],
     [ "length", "structModbusSlave.html#a8746c42662f47bc9e22f9e29851da41d", null ],
     [ "padding", "structModbusSlave.html#a1c17a1c909a7e757ff9208538fee9596", null ],
     [ "pdu", "structModbusSlave.html#a41242dfb257c88ea60d77eb1c0ba5b77", null ],

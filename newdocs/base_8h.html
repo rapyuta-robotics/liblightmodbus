@@ -17,7 +17,6 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -100,14 +99,16 @@ $(document).ready(function(){initNavTree('base_8h.html',''); initResizable(); })
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__incl.svg" width="166" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__incl.svg" width="148" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__dep__incl.svg" width="1146" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__dep__incl.svg" width="1075" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="base_8h_source.html">Go to the source code of this file.</a></p>
@@ -115,7 +116,7 @@ $(document).ready(function(){initNavTree('base_8h.html',''); initResizable(); })
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error represenation - source and type of error.  <a href="structModbusErrorInfo.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Richer error represenation - source and type of error.  <a href="structModbusErrorInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -123,30 +124,40 @@ Macros</h2></td></tr>
 <tr class="memitem:a084ec56bbbca3d40231f7107fa578ae1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a>&#160;&#160;&#160;__attribute__((warn_unused_result))</td></tr>
 <tr class="separator:a084ec56bbbca3d40231f7107fa578ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c88698d15eed4b7fc4cee4938e57f56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56">LIGHTMODBUS_RET_ERROR</a>&#160;&#160;&#160;<a class="el" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a></td></tr>
+<tr class="memdesc:a7c88698d15eed4b7fc4cee4938e57f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type for library functions returning <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> that should be handled properly.  <a href="base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56">More...</a><br /></td></tr>
 <tr class="separator:a7c88698d15eed4b7fc4cee4938e57f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73b551b47500629c9b764f52f8d044ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>&#160;&#160;&#160;0u</td></tr>
+<tr class="memdesc:a73b551b47500629c9b764f52f8d044ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">General library error - can be caused by providing an incorrect argument or a internal library error.  <a href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">More...</a><br /></td></tr>
 <tr class="separator:a73b551b47500629c9b764f52f8d044ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b683ba411cd60b253d98e0cf8c1dd54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">MODBUS_ERROR_SOURCE_REQUEST</a>&#160;&#160;&#160;1u</td></tr>
+<tr class="memdesc:a4b683ba411cd60b253d98e0cf8c1dd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">The request frame contains errors.  <a href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">More...</a><br /></td></tr>
 <tr class="separator:a4b683ba411cd60b253d98e0cf8c1dd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fabdaaa158c388c6fc500b490085a80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a5fabdaaa158c388c6fc500b490085a80">MODBUS_ERROR_SOURCE_RESPONSE</a>&#160;&#160;&#160;2u</td></tr>
+<tr class="memdesc:a5fabdaaa158c388c6fc500b490085a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">The response frame contains errors.  <a href="base_8h.html#a5fabdaaa158c388c6fc500b490085a80">More...</a><br /></td></tr>
 <tr class="separator:a5fabdaaa158c388c6fc500b490085a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec7c72889dc808ceef4f6f2f25f104c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a7ec7c72889dc808ceef4f6f2f25f104c">MODBUS_ERROR_SOURCE_CALLBACK</a>&#160;&#160;&#160;3u</td></tr>
-<tr class="separator:a7ec7c72889dc808ceef4f6f2f25f104c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ca74bfb26426897ba58db0b5084d0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ad5ca74bfb26426897ba58db0b5084d0e">MODBUS_ERROR_SOURCE_RESERVED</a>&#160;&#160;&#160;3u</td></tr>
+<tr class="memdesc:ad5ca74bfb26426897ba58db0b5084d0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserved for future use.  <a href="base_8h.html#ad5ca74bfb26426897ba58db0b5084d0e">More...</a><br /></td></tr>
+<tr class="separator:ad5ca74bfb26426897ba58db0b5084d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa2bd1e697e8df6944aef344675dd123"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(s,  e)&#160;&#160;&#160;((<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>){.source = (s), .error = (e)})</td></tr>
+<tr class="memdesc:aaa2bd1e697e8df6944aef344675dd123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> object from a ModbusErrorCode and a <code>MODBUS_ERROR_SOURCE_*</code> macro.  <a href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">More...</a><br /></td></tr>
 <tr class="separator:aaa2bd1e697e8df6944aef344675dd123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54565f6f8e69ad70c1eb6f78b4717aa1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>()&#160;&#160;&#160;<a class="el" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="el" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</td></tr>
+<tr class="memdesc:a54565f6f8e69ad70c1eb6f78b4717aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construcs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> object for which <code>modbusIsOK()</code> is guaranteed to return true.  <a href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">More...</a><br /></td></tr>
 <tr class="separator:a54565f6f8e69ad70c1eb6f78b4717aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc0a0e92a43d63f96a642115e2b67e89"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89">MODBUS_GENERAL_ERROR</a>(e)&#160;&#160;&#160;<a class="el" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="el" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>, (MODBUS_ERROR_##e))</td></tr>
+<tr class="memdesc:acc0a0e92a43d63f96a642115e2b67e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> where source is set to <code>MODBUS_ERROR_SOURCE_GENERAL</code> and the error code is set to <code>MODBUS_ERROR_##e</code>.  <a href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89">More...</a><br /></td></tr>
 <tr class="separator:acc0a0e92a43d63f96a642115e2b67e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a102ec3dde6764e3ccdbc5b85f4e33976"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976">MODBUS_REQUEST_ERROR</a>(e)&#160;&#160;&#160;<a class="el" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="el" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">MODBUS_ERROR_SOURCE_REQUEST</a>, (MODBUS_ERROR_##e))</td></tr>
+<tr class="memdesc:a102ec3dde6764e3ccdbc5b85f4e33976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> where source is set to <code>MODBUS_ERROR_SOURCE_REQUESTL</code> and the error code is set to <code>MODBUS_ERROR_##e</code>.  <a href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976">More...</a><br /></td></tr>
 <tr class="separator:a102ec3dde6764e3ccdbc5b85f4e33976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a251ef1759007d2a1d4f823492d1bbc57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57">MODBUS_RESPONSE_ERROR</a>(e)&#160;&#160;&#160;<a class="el" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="el" href="base_8h.html#a5fabdaaa158c388c6fc500b490085a80">MODBUS_ERROR_SOURCE_RESPONSE</a>, (MODBUS_ERROR_##e))</td></tr>
+<tr class="memdesc:a251ef1759007d2a1d4f823492d1bbc57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> where source is set to <code>MODBUS_ERROR_SOURCE_RESPONSE</code> and the error code is set to <code>MODBUS_ERROR_##e</code>.  <a href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57">More...</a><br /></td></tr>
 <tr class="separator:a251ef1759007d2a1d4f823492d1bbc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a5ce750d35634cee7dc605d140955766b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a5ce750d35634cee7dc605d140955766b">ModbusErrorInfo</a></td></tr>
-<tr class="memdesc:a5ce750d35634cee7dc605d140955766b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error represenation - source and type of error.  <a href="base_8h.html#a5ce750d35634cee7dc605d140955766b">More...</a><br /></td></tr>
+<tr class="memdesc:a5ce750d35634cee7dc605d140955766b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Richer error represenation - source and type of error.  <a href="base_8h.html#a5ce750d35634cee7dc605d140955766b">More...</a><br /></td></tr>
 <tr class="separator:a5ce750d35634cee7dc605d140955766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7d2ca32c0808656f4914bea803bc09"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#abe7d2ca32c0808656f4914bea803bc09">ModbusError</a></td></tr>
 <tr class="memdesc:abe7d2ca32c0808656f4914bea803bc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represtents different kinds of errors.  <a href="base_8h.html#abe7d2ca32c0808656f4914bea803bc09">More...</a><br /></td></tr>
@@ -160,9 +171,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae1893e0929fd03cb640330271caa3e8b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ae1893e0929fd03cb640330271caa3e8b">ModbusBufferPurpose</a></td></tr>
 <tr class="memdesc:ae1893e0929fd03cb640330271caa3e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes what content will be held in the buffer.  <a href="base_8h.html#ae1893e0929fd03cb640330271caa3e8b">More...</a><br /></td></tr>
 <tr class="separator:ae1893e0929fd03cb640330271caa3e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1df82156125e4e60cdab0b2585aea0d8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a1df82156125e4e60cdab0b2585aea0d8">ModbusAllocator</a>) (uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose, void *ctx)</td></tr>
-<tr class="memdesc:a1df82156125e4e60cdab0b2585aea0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory allocator.  <a href="base_8h.html#a1df82156125e4e60cdab0b2585aea0d8">More...</a><br /></td></tr>
-<tr class="separator:a1df82156125e4e60cdab0b2585aea0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -243,16 +251,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae117274d7263b4d1bc696eb1874b3279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely writes a big-endian 16-bit word to provided pointer.  <a href="base_8h.html#ae117274d7263b4d1bc696eb1874b3279">More...</a><br /></td></tr>
 <tr class="separator:ae117274d7263b4d1bc696eb1874b3279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3119b6543dcad7c77b4e534c4545112"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ad3119b6543dcad7c77b4e534c4545112">modbusGetErrorSource</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:ad3119b6543dcad7c77b4e534c4545112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns uint8_t describing error source of <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#ad3119b6543dcad7c77b4e534c4545112">More...</a><br /></td></tr>
 <tr class="separator:ad3119b6543dcad7c77b4e534c4545112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01c2addaafe619040a2e0fa302ed5d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab01c2addaafe619040a2e0fa302ed5d4">modbusGetErrorCode</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:ab01c2addaafe619040a2e0fa302ed5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns ModbusError contained in <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#ab01c2addaafe619040a2e0fa302ed5d4">More...</a><br /></td></tr>
 <tr class="separator:ab01c2addaafe619040a2e0fa302ed5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab945e5e4e573e91a217e0e0a389daa48"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab945e5e4e573e91a217e0e0a389daa48">modbusIsOk</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:ab945e5e4e573e91a217e0e0a389daa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error.  <a href="base_8h.html#ab945e5e4e573e91a217e0e0a389daa48">More...</a><br /></td></tr>
 <tr class="separator:ab945e5e4e573e91a217e0e0a389daa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab217024b21790b1f2d2570129f89854e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab217024b21790b1f2d2570129f89854e">modbusGetGeneralError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:ab217024b21790b1f2d2570129f89854e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns general error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#ab217024b21790b1f2d2570129f89854e">More...</a><br /></td></tr>
 <tr class="separator:ab217024b21790b1f2d2570129f89854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf04c2614190d4cd0c7dd463afcab4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a3cf04c2614190d4cd0c7dd463afcab4a">modbusGetRequestError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a3cf04c2614190d4cd0c7dd463afcab4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns request error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#a3cf04c2614190d4cd0c7dd463afcab4a">More...</a><br /></td></tr>
 <tr class="separator:a3cf04c2614190d4cd0c7dd463afcab4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf409a598de00e18bc9ad729cb75aabb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aaf409a598de00e18bc9ad729cb75aabb">modbusGetResponseError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:aaf409a598de00e18bc9ad729cb75aabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns response error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#aaf409a598de00e18bc9ad729cb75aabb">More...</a><br /></td></tr>
 <tr class="separator:aaf409a598de00e18bc9ad729cb75aabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714f91145c46e1f4869ed95a3c117e64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a714f91145c46e1f4869ed95a3c117e64">modbusGetCallbackError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
 <tr class="separator:a714f91145c46e1f4869ed95a3c117e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +284,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Return type for library functions returning <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> that should be handled properly. </p>
+
 </div>
 </div>
 <a id="a084ec56bbbca3d40231f7107fa578ae1"></a>
@@ -280,21 +296,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define LIGHTMODBUS_WARN_UNUSED&#160;&#160;&#160;__attribute__((warn_unused_result))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This macro can be used to check if all ModbusErrors coming from library functions are handled properly </p>
-
-</div>
-</div>
-<a id="a7ec7c72889dc808ceef4f6f2f25f104c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec7c72889dc808ceef4f6f2f25f104c">&#9670;&nbsp;</a></span>MODBUS_ERROR_SOURCE_CALLBACK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MODBUS_ERROR_SOURCE_CALLBACK&#160;&#160;&#160;3u</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -313,6 +314,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>General library error - can be caused by providing an incorrect argument or a internal library error. </p>
+
 </div>
 </div>
 <a id="a4b683ba411cd60b253d98e0cf8c1dd54"></a>
@@ -327,6 +330,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The request frame contains errors. </p>
+
+</div>
+</div>
+<a id="ad5ca74bfb26426897ba58db0b5084d0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ca74bfb26426897ba58db0b5084d0e">&#9670;&nbsp;</a></span>MODBUS_ERROR_SOURCE_RESERVED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MODBUS_ERROR_SOURCE_RESERVED&#160;&#160;&#160;3u</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reserved for future use. </p>
+
 </div>
 </div>
 <a id="a5fabdaaa158c388c6fc500b490085a80"></a>
@@ -340,6 +361,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The response frame contains errors. </p>
 
 </div>
 </div>
@@ -358,6 +381,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> where source is set to <code>MODBUS_ERROR_SOURCE_GENERAL</code> and the error code is set to <code>MODBUS_ERROR_##e</code>. </p>
 
 </div>
 </div>
@@ -387,6 +412,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> object from a ModbusErrorCode and a <code>MODBUS_ERROR_SOURCE_*</code> macro. </p>
+
 </div>
 </div>
 <a id="a54565f6f8e69ad70c1eb6f78b4717aa1"></a>
@@ -403,6 +430,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Construcs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> object for which <code>modbusIsOK()</code> is guaranteed to return true. </p>
 
 </div>
 </div>
@@ -422,6 +451,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> where source is set to <code>MODBUS_ERROR_SOURCE_REQUESTL</code> and the error code is set to <code>MODBUS_ERROR_##e</code>. </p>
+
 </div>
 </div>
 <a id="a251ef1759007d2a1d4f823492d1bbc57"></a>
@@ -440,25 +471,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> where source is set to <code>MODBUS_ERROR_SOURCE_RESPONSE</code> and the error code is set to <code>MODBUS_ERROR_##e</code>. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a1df82156125e4e60cdab0b2585aea0d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1df82156125e4e60cdab0b2585aea0d8">&#9670;&nbsp;</a></span>ModbusAllocator</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusAllocator) (uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose, void *ctx)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory allocator. </p>
-
-</div>
-</div>
 <a id="ae1893e0929fd03cb640330271caa3e8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1893e0929fd03cb640330271caa3e8b">&#9670;&nbsp;</a></span>ModbusBufferPurpose</h2>
 
@@ -519,7 +536,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Error represenation - source and type of error. </p>
+<p>Richer error represenation - source and type of error. </p>
 
 </div>
 </div>
@@ -554,8 +571,10 @@ Functions</h2></td></tr>
 
 <p>Describes what content will be held in the buffer. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a09746f06dca2690c9172c09e2edee187afc08cdf31cc125bfef8eef786078a59b"></a>MODBUS_SLAVE_RESPONSE_BUFFER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a09746f06dca2690c9172c09e2edee187a390ec86cc797a5ab3ca5d85ea8681316"></a>MODBUS_MASTER_REQUEST_BUFFER&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a09746f06dca2690c9172c09e2edee187afc08cdf31cc125bfef8eef786078a59b"></a>MODBUS_SLAVE_RESPONSE_BUFFER&#160;</td><td class="fielddoc"><p>Slave's buffer holding response frame. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a09746f06dca2690c9172c09e2edee187a390ec86cc797a5ab3ca5d85ea8681316"></a>MODBUS_MASTER_REQUEST_BUFFER&#160;</td><td class="fielddoc"><p>Master's buffer holding request frame. </p>
+</td></tr>
 </table>
 
 </div>
@@ -623,22 +642,23 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea9181de79fe60c475f2fa24b74d2de101"></a>MODBUS_ERROR_COUNT&#160;</td><td class="fielddoc"><p>Invalid register count. </p>
 <p>Provided register count is 0 or exceeds maximum allowed value. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6eaecaff3fffe67614b65f116fde819ded5"></a>MODBUS_ERROR_INDEX&#160;</td><td class="fielddoc"><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Do we need this? </dd></dl>
+<tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6eaecaff3fffe67614b65f116fde819ded5"></a>MODBUS_ERROR_INDEX&#160;</td><td class="fielddoc"><p>Invalid index value. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Not used anywhere </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Do we need this? </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea0a5b103f8d7292f73314f98a82abf68f"></a>MODBUS_ERROR_RANGE&#160;</td><td class="fielddoc"><p>Invalid register range. </p>
-<p>Returned when accessing <code>count</code> registers starting at <code>index</code> would cause 16-bit unsigned int overflow. </p>
+<p>Returned when accessing <code>count</code> registers starting at <code>index</code> would cause a 16-bit unsigned int overflow. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea30e0fa05d0cd54528b75d0b1a217ca99"></a>MODBUS_ERROR_CRC&#160;</td><td class="fielddoc"><p>CRC invalid. </p>
-<p>CRC is invalid in either the request or the response.</p>
-<dl class="section note"><dt>Note</dt><dd>Only in Modbus RTU </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only in Modbus RTU</dd></dl>
+<p>CRC is invalid in either the request or the response. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea8332eb56292e902a0a694d62994a80d3"></a>MODBUS_ERROR_BAD_PROTOCOL&#160;</td><td class="fielddoc"><p>Invalid protocol ID. </p>
-<p>The protocol ID in either the request or response frame is not 0.</p>
+<tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea8332eb56292e902a0a694d62994a80d3"></a>MODBUS_ERROR_BAD_PROTOCOL&#160;</td><td class="fielddoc"><p>Invalid protocol ID (nonzero) </p>
 <dl class="section note"><dt>Note</dt><dd>Only in Modbus TCP </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea4da2b61dedbfbe1edd5863a4ec3598b4"></a>MODBUS_ERROR_BAD_TRANSACTION&#160;</td><td class="fielddoc"><p>Mismatched transaction ID. </p>
-<p>The transaction identifier in the response does not match the one in the request frame.</p>
-<dl class="section note"><dt>Note</dt><dd>Only in Modbus TCP </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only in Modbus TCP</dd></dl>
+<p>The transaction identifier in the response does not match the one in the request frame. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6eaa15817d114a6bf59df1cb0b953f23c41"></a>MODBUS_ERROR_ADDRESS&#160;</td><td class="fielddoc"><p>Invalid slave address. </p>
 <ul>
@@ -715,13 +735,14 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes requred to hold n bits </dd></dl>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a98cb625b5c4b9ee5d7f529650c4d9112_icgraph.svg" width="447" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a98cb625b5c4b9ee5d7f529650c4d9112_icgraph.svg" width="414" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -766,7 +787,8 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a11346a546b84663cd92cb30f4ffd1393_icgraph.svg" width="360" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a11346a546b84663cd92cb30f4ffd1393_icgraph.svg" width="340" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -812,14 +834,17 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> on allocation failure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_ERROR_ALLOC on allocation failure </dd>
+<dd>
+MODBUS_OK on success </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>allocators </dd></dl>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a44aa66c5af48ac588c9392b2e62b126b_icgraph.svg" width="464" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a44aa66c5af48ac588c9392b2e62b126b_icgraph.svg" width="419" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -829,9 +854,6 @@ Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetCallbackError </td>
@@ -841,19 +863,7 @@ Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a714f91145c46e1f4869ed95a3c117e64_cgraph.svg" width="404" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -880,12 +890,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+
+<p>Returns ModbusError contained in <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>MdobusError contained in <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> </dd></dl>
+<div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab01c2addaafe619040a2e0fa302ed5d4_icgraph.svg" width="908" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab01c2addaafe619040a2e0fa302ed5d4_icgraph.svg" width="851" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -913,12 +927,21 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+
+<p>Returns uint8_t describing error source of <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>error source</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba" title="General library error - can be caused by providing an incorrect argument or a internal library error.">MODBUS_ERROR_SOURCE_GENERAL</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54" title="The request frame contains errors.">MODBUS_ERROR_SOURCE_REQUEST</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54" title="The request frame contains errors.">MODBUS_ERROR_SOURCE_REQUEST</a> </dd></dl>
+<div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ad3119b6543dcad7c77b4e534c4545112_icgraph.svg" width="831" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ad3119b6543dcad7c77b4e534c4545112_icgraph.svg" width="783" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -946,12 +969,18 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+
+<p>Returns general error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>ModbusError if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error from MODBUS_ERROR_SOURCE_GENERAL </dd>
+<dd>
+MODBUS_OK otherwise </dd></dl>
+<div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab217024b21790b1f2d2570129f89854e_cgraph.svg" width="399" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab217024b21790b1f2d2570129f89854e_cgraph.svg" width="367" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -979,12 +1008,18 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+
+<p>Returns request error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>ModbusError if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error from MODBUS_ERROR_SOURCE_REQUEST </dd>
+<dd>
+MODBUS_OK otherwise </dd></dl>
+<div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a3cf04c2614190d4cd0c7dd463afcab4a_cgraph.svg" width="402" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a3cf04c2614190d4cd0c7dd463afcab4a_cgraph.svg" width="370" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1012,12 +1047,18 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+
+<p>Returns response error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>ModbusError if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error from MODBUS_ERROR_SOURCE_RESPONSE </dd>
+<dd>
+MODBUS_OK otherwise </dd></dl>
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_aaf409a598de00e18bc9ad729cb75aabb_cgraph.svg" width="411" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_aaf409a598de00e18bc9ad729cb75aabb_cgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1045,19 +1086,25 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Checks if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> </dd></dl>
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab945e5e4e573e91a217e0e0a389daa48_cgraph.svg" width="312" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab945e5e4e573e91a217e0e0a389daa48_cgraph.svg" width="334" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab945e5e4e573e91a217e0e0a389daa48_icgraph.svg" width="578" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab945e5e4e573e91a217e0e0a389daa48_icgraph.svg" width="611" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1097,12 +1144,13 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The bit value </dd></dl>
-<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ad0d4b7190cf5fcc183f3656ce1c03b0b_icgraph.svg" width="439" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ad0d4b7190cf5fcc183f3656ce1c03b0b_icgraph.svg" width="406" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1148,12 +1196,13 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a7dca9da954f66416aeb47668db390afe_icgraph.svg" width="430" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a7dca9da954f66416aeb47668db390afe_icgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1183,12 +1232,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Safely reads a big-endian 16-bit word from provided pointer. </p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a724223277fcf6255904a91f181aa1ac8_icgraph.svg" width="396" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a724223277fcf6255904a91f181aa1ac8_icgraph.svg" width="370" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1218,12 +1268,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Safely reads a little-endian 16-bit word from provided pointer. </p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a76f815c35e0b571e6cb75325822f94b4_icgraph.svg" width="358" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a76f815c35e0b571e6cb75325822f94b4_icgraph.svg" width="339" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1263,12 +1314,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Safely writes a big-endian 16-bit word to provided pointer. </p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ae117274d7263b4d1bc696eb1874b3279_icgraph.svg" width="614" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ae117274d7263b4d1bc696eb1874b3279_icgraph.svg" width="570" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
@@ -1308,12 +1360,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Safely writes a little-endian 16-bit word to provided pointer. </p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a0d0b3f5227ad052c53cf754ce32820fd_icgraph.svg" width="352" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a0d0b3f5227ad052c53cf754ce32820fd_icgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 
 </div>
