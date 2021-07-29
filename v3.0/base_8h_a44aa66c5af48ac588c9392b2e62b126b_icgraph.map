@@ -1,0 +1,5 @@
+<map id="modbusDefaultAllocator" name="modbusDefaultAllocator">
+<area shape="rect" id="node1" title="The default memory allocator based on realloc()" alt="" coords="253,31,413,57"/>
+<area shape="rect" id="node2" href="$master_8h.html#a51f83ba08c18745dd424b9dcf7579703" title="Default allocator for master device. Based on modbusDefaultAllocator()." alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator()." alt="" coords="9,56,202,83"/>
+</map>

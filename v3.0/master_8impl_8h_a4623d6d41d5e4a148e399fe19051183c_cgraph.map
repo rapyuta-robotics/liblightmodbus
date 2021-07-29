@@ -1,0 +1,5 @@
+<map id="modbusEndRequestRTU" name="modbusEndRequestRTU">
+<area shape="rect" id="node1" title="Finalizes a Modbus RTU request." alt="" coords="5,31,171,57"/>
+<area shape="rect" id="node2" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="219,5,314,32"/>
+<area shape="rect" id="node3" href="$base_8h.html#a0d0b3f5227ad052c53cf754ce32820fd" title="Safely writes a little&#45;endian 16&#45;bit word to provided pointer." alt="" coords="219,56,315,83"/>
+</map>

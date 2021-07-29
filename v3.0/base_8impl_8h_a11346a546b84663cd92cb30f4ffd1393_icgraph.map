@@ -1,0 +1,6 @@
+<map id="modbusCRC" name="modbusCRC">
+<area shape="rect" id="node1" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="240,56,335,83"/>
+<area shape="rect" id="node2" href="$master_8h.html#a4623d6d41d5e4a148e399fe19051183c" title="Finalizes a Modbus RTU request." alt="" coords="16,5,181,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response." alt="" coords="10,56,187,83"/>
+<area shape="rect" id="node4" href="$master_8h.html#a151b85c221ae43804856eb92737498e5" title="Parses a Modbus RTU slave response." alt="" coords="5,107,192,133"/>
+</map>
