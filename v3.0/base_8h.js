@@ -1,6 +1,7 @@
 var base_8h =
 [
     [ "ModbusErrorInfo", "structModbusErrorInfo.html", "structModbusErrorInfo" ],
+    [ "ModbusFrameBuffer", "structModbusFrameBuffer.html", "structModbusFrameBuffer" ],
     [ "LIGHTMODBUS_RET_ERROR", "base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56", null ],
     [ "LIGHTMODBUS_WARN_UNUSED", "base_8h.html#a084ec56bbbca3d40231f7107fa578ae1", null ],
     [ "MODBUS_ERROR_SOURCE_GENERAL", "base_8h.html#a73b551b47500629c9b764f52f8d044ba", null ],
@@ -17,6 +18,7 @@ var base_8h =
     [ "ModbusError", "base_8h.html#abe7d2ca32c0808656f4914bea803bc09", null ],
     [ "ModbusErrorInfo", "base_8h.html#a5ce750d35634cee7dc605d140955766b", null ],
     [ "ModbusExceptionCode", "base_8h.html#aa194a0d6fed2e0fd37e4f5b9d3747db5", null ],
+    [ "ModbusFrameBuffer", "base_8h.html#aff8aea45c29db66634c31cb43239a203", null ],
     [ "ModbusBufferPurpose", "base_8h.html#a09746f06dca2690c9172c09e2edee187", [
       [ "MODBUS_SLAVE_RESPONSE_BUFFER", "base_8h.html#a09746f06dca2690c9172c09e2edee187afc08cdf31cc125bfef8eef786078a59b", null ],
       [ "MODBUS_MASTER_REQUEST_BUFFER", "base_8h.html#a09746f06dca2690c9172c09e2edee187a390ec86cc797a5ab3ca5d85ea8681316", null ]
@@ -51,20 +53,19 @@ var base_8h =
       [ "MODBUS_EXCEP_ACK", "base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72a44eb0cbf95947bce21a3cd8cdabc7a6c", null ],
       [ "MODBUS_EXCEP_NACK", "base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72ab24ca3a3b7540bcb1dc7d4d49912d85d", null ]
     ] ],
-    [ "modbusBitsToBytes", "base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112", null ],
+    [ "modbusBitsToBytes", "base_8h.html#af23a50b36bef9c09ac82214a52ff4d58", null ],
     [ "modbusCRC", "base_8h.html#a11346a546b84663cd92cb30f4ffd1393", null ],
     [ "modbusDefaultAllocator", "base_8h.html#a44aa66c5af48ac588c9392b2e62b126b", null ],
-    [ "modbusGetCallbackError", "base_8h.html#a714f91145c46e1f4869ed95a3c117e64", null ],
-    [ "modbusGetErrorCode", "base_8h.html#ab01c2addaafe619040a2e0fa302ed5d4", null ],
-    [ "modbusGetErrorSource", "base_8h.html#ad3119b6543dcad7c77b4e534c4545112", null ],
-    [ "modbusGetGeneralError", "base_8h.html#ab217024b21790b1f2d2570129f89854e", null ],
-    [ "modbusGetRequestError", "base_8h.html#a3cf04c2614190d4cd0c7dd463afcab4a", null ],
-    [ "modbusGetResponseError", "base_8h.html#aaf409a598de00e18bc9ad729cb75aabb", null ],
-    [ "modbusIsOk", "base_8h.html#ab945e5e4e573e91a217e0e0a389daa48", null ],
-    [ "modbusMaskRead", "base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b", null ],
-    [ "modbusMaskWrite", "base_8h.html#a7dca9da954f66416aeb47668db390afe", null ],
-    [ "modbusRBE", "base_8h.html#a724223277fcf6255904a91f181aa1ac8", null ],
-    [ "modbusRLE", "base_8h.html#a76f815c35e0b571e6cb75325822f94b4", null ],
-    [ "modbusWBE", "base_8h.html#ae117274d7263b4d1bc696eb1874b3279", null ],
-    [ "modbusWLE", "base_8h.html#a0d0b3f5227ad052c53cf754ce32820fd", null ]
+    [ "modbusGetErrorCode", "base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5", null ],
+    [ "modbusGetErrorSource", "base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e", null ],
+    [ "modbusGetGeneralError", "base_8h.html#a84765449265aa5a31877b749f04cb568", null ],
+    [ "modbusGetRequestError", "base_8h.html#a5c6f792a259423b2df55d8d49e91fd06", null ],
+    [ "modbusGetResponseError", "base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9", null ],
+    [ "modbusIsOk", "base_8h.html#a64880e7075f445881485396f3aa869c5", null ],
+    [ "modbusMaskRead", "base_8h.html#aff2248343762719cdacf818e4dae3709", null ],
+    [ "modbusMaskWrite", "base_8h.html#a5d9947eb500e2d0c87491a0adce53c2a", null ],
+    [ "modbusRBE", "base_8h.html#ace96da9afdf1e1796a6e2d7ac1f6c81a", null ],
+    [ "modbusRLE", "base_8h.html#a0fc3f293c746d39a93e4c1158f792404", null ],
+    [ "modbusWBE", "base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b", null ],
+    [ "modbusWLE", "base_8h.html#af718da7da634f311c2ae8db6be3d9027", null ]
 ];

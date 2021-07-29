@@ -2,5 +2,5 @@
 <area shape="rect" id="node1" title="Parses provided PDU and generates PDU for the response frame." alt="" coords="5,5,184,32"/>
 <area shape="rect" id="node2" href="$slave_8impl_8h.html#a418b412059b7882bf53b0bfdb11dea31" title="Parses provided PDU and generates response honorinng pduOffset and padding set in ModbusSlave." alt="" coords="232,5,383,32"/>
 <area shape="rect" id="node3" href="$slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2" title="Builds an exception response frame." alt="" coords="431,5,584,32"/>
-<area shape="rect" id="node4" href="$slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame." alt="" coords="632,5,839,32"/>
+<area shape="rect" id="node4" href="$slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" title="Allocates memory for slave&#39;s response frame." alt="" coords="632,5,839,32"/>
 </map>

@@ -133,9 +133,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa0d5a7f6e38aad10e5ef58443f31832a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusSlave.html">ModbusSlave</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#aa0d5a7f6e38aad10e5ef58443f31832a">ModbusSlave</a></td></tr>
 <tr class="memdesc:aa0d5a7f6e38aad10e5ef58443f31832a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slave device status.  <a href="slave_8h.html#aa0d5a7f6e38aad10e5ef58443f31832a">More...</a><br /></td></tr>
 <tr class="separator:aa0d5a7f6e38aad10e5ef58443f31832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d83922c49b5692d486feb35784dd5d7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a5d83922c49b5692d486feb35784dd5d7">ModbusSlaveParsingFunction</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, const uint8_t *data, uint8_t size)</td></tr>
-<tr class="memdesc:a5d83922c49b5692d486feb35784dd5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to request parsing function.  <a href="slave_8h.html#a5d83922c49b5692d486feb35784dd5d7">More...</a><br /></td></tr>
-<tr class="separator:a5d83922c49b5692d486feb35784dd5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e90f517dc76ec6e2815b29c5f997948"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a8e90f517dc76ec6e2815b29c5f997948">ModbusSlaveParsingFunction</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength)</td></tr>
+<tr class="memdesc:a8e90f517dc76ec6e2815b29c5f997948"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to request parsing function.  <a href="slave_8h.html#a8e90f517dc76ec6e2815b29c5f997948">More...</a><br /></td></tr>
+<tr class="separator:a8e90f517dc76ec6e2815b29c5f997948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a4829ed1b1fcec9b02960c99d9f2cf"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a55a4829ed1b1fcec9b02960c99d9f2cf">ModbusSlaveFunctionHandler</a></td></tr>
 <tr class="memdesc:a55a4829ed1b1fcec9b02960c99d9f2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates Modbus function ID with a pointer to a parsing function.  <a href="slave_8h.html#a55a4829ed1b1fcec9b02960c99d9f2cf">More...</a><br /></td></tr>
 <tr class="separator:a55a4829ed1b1fcec9b02960c99d9f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +173,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">modbusSlaveDestroy</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
 <tr class="memdesc:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated in the <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> struct.  <a href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">More...</a><br /></td></tr>
 <tr class="separator:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9228f4b8d62ad31378ab3fef7c3a2b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3">modbusSlaveSetUserPointer</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, void *ptr)</td></tr>
+<tr class="memdesc:ad9228f4b8d62ad31378ab3fef7c3a2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows user to set the custom context pointer.  <a href="slave_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3">More...</a><br /></td></tr>
+<tr class="separator:ad9228f4b8d62ad31378ab3fef7c3a2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8a4c8a9325c297c60506321c82b341"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a4d8a4c8a9325c297c60506321c82b341">modbusSlaveGetUserPointer</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
+<tr class="memdesc:a4d8a4c8a9325c297c60506321c82b341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreieves the custom context pointer.  <a href="slave_8h.html#a4d8a4c8a9325c297c60506321c82b341">More...</a><br /></td></tr>
+<tr class="separator:a4d8a4c8a9325c297c60506321c82b341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b0b86602f899214d564f5bbe6ffdb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a01b0b86602f899214d564f5bbe6ffdb2">modbusBuildException</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
 <tr class="memdesc:a01b0b86602f899214d564f5bbe6ffdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an exception response frame.  <a href="slave_8h.html#a01b0b86602f899214d564f5bbe6ffdb2">More...</a><br /></td></tr>
 <tr class="separator:a01b0b86602f899214d564f5bbe6ffdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,14 +328,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5d83922c49b5692d486feb35784dd5d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d83922c49b5692d486feb35784dd5d7">&#9670;&nbsp;</a></span>ModbusSlaveParsingFunction</h2>
+<a id="a8e90f517dc76ec6e2815b29c5f997948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e90f517dc76ec6e2815b29c5f997948">&#9670;&nbsp;</a></span>ModbusSlaveParsingFunction</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusSlaveParsingFunction) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, const uint8_t *data, uint8_t size)</td>
+          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusSlaveParsingFunction) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -692,7 +698,7 @@ Any errors from parsing functions </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>pdusize</em>&#160;</td>
+          <td class="paramname"><em>pduSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -705,12 +711,12 @@ Any errors from parsing functions </dd></dl>
 <p>Allocates memory for slave's response frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pdusize</td><td>size of the PDU section. 0 if the slave doesn't want to respond. </td></tr>
+    <tr><td class="paramname">pduSize</td><td>size of the PDU section. 0 if the slave doesn't want to respond. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> on allocation failure</dd></dl>
-<p>If called with size == 0, the response buffer is freed. Otherwise a buffer for <code>(pdusize + status-&gt;response.padding)</code> bytes is allocated. This guarantees that if a response is made, the buffer is big enough to hold the entire ADU.</p>
+<p>If called with size == 0, the response buffer is freed. Otherwise a buffer for <code>(pduSize + status-&gt;response.padding)</code> bytes is allocated. This guarantees that if a response is made, the buffer is big enough to hold the entire ADU.</p>
 <p>This function is responsible for managing <code>data</code>, <code>pdu</code> and <code>length</code> fields in the response struct. The <code>pdu</code> pointer is set up to point <code>pduOffset</code> bytes after the <code>data</code> pointer unless <code>data</code> is a null pointer. </p>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
@@ -829,7 +835,7 @@ MODBUS_OK on success </dd></dl>
 </div><div class="memdoc">
 
 <p>Frees memory allocated for slave's response frame. </p>
-<p>Calls <a class="el" href="slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame.">modbusSlaveAllocateResponse()</a> with size == 0. </p>
+<p>Calls <a class="el" href="slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" title="Allocates memory for slave&#39;s response frame.">modbusSlaveAllocateResponse()</a> with size == 0. </p>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
@@ -838,6 +844,26 @@ MODBUS_OK on success </dd></dl>
 <div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a5e517b65cb8b32010146fa80b78bc848_cgraph.svg" width="451" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a4d8a4c8a9325c297c60506321c82b341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8a4c8a9325c297c60506321c82b341">&#9670;&nbsp;</a></span>modbusSlaveGetUserPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* modbusSlaveGetUserPointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retreieves the custom context pointer. </p>
 
 </div>
 </div>
@@ -914,6 +940,36 @@ MODBUS_OK on success </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8impl_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
 <dd>
 <a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3" title="Associates function IDs with pointers to functions responsible for parsing. Length of this array is s...">modbusSlaveDefaultFunctions</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad9228f4b8d62ad31378ab3fef7c3a2b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9228f4b8d62ad31378ab3fef7c3a2b3">&#9670;&nbsp;</a></span>modbusSlaveSetUserPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modbusSlaveSetUserPointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows user to set the custom context pointer. </p>
 
 </div>
 </div>

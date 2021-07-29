@@ -119,6 +119,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Richer error represenation - source and type of error.  <a href="structModbusErrorInfo.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusFrameBuffer.html">ModbusFrameBuffer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a Modbus frame.  <a href="structModbusFrameBuffer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -172,6 +175,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ae1893e0929fd03cb640330271caa3e8b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ae1893e0929fd03cb640330271caa3e8b">ModbusBufferPurpose</a></td></tr>
 <tr class="memdesc:ae1893e0929fd03cb640330271caa3e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes what content will be held in the buffer.  <a href="base_8h.html#ae1893e0929fd03cb640330271caa3e8b">More...</a><br /></td></tr>
 <tr class="separator:ae1893e0929fd03cb640330271caa3e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8aea45c29db66634c31cb43239a203"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusFrameBuffer.html">ModbusFrameBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aff8aea45c29db66634c31cb43239a203">ModbusFrameBuffer</a></td></tr>
+<tr class="memdesc:aff8aea45c29db66634c31cb43239a203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a Modbus frame.  <a href="base_8h.html#aff8aea45c29db66634c31cb43239a203">More...</a><br /></td></tr>
+<tr class="separator:aff8aea45c29db66634c31cb43239a203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -230,47 +236,45 @@ Functions</h2></td></tr>
 <tr class="memitem:a11346a546b84663cd92cb30f4ffd1393"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a11346a546b84663cd92cb30f4ffd1393">modbusCRC</a> (const uint8_t *data, uint16_t length)</td></tr>
 <tr class="memdesc:a11346a546b84663cd92cb30f4ffd1393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates 16-bit Modbus CRC of provided data.  <a href="base_8h.html#a11346a546b84663cd92cb30f4ffd1393">More...</a><br /></td></tr>
 <tr class="separator:a11346a546b84663cd92cb30f4ffd1393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d4b7190cf5fcc183f3656ce1c03b0b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b">modbusMaskRead</a> (const uint8_t *mask, uint16_t n)</td></tr>
-<tr class="memdesc:ad0d4b7190cf5fcc183f3656ce1c03b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n-th bit from an array.  <a href="base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b">More...</a><br /></td></tr>
-<tr class="separator:ad0d4b7190cf5fcc183f3656ce1c03b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dca9da954f66416aeb47668db390afe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a7dca9da954f66416aeb47668db390afe">modbusMaskWrite</a> (uint8_t *mask, uint16_t n, uint8_t value)</td></tr>
-<tr class="memdesc:a7dca9da954f66416aeb47668db390afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes n-th bit in an array.  <a href="base_8h.html#a7dca9da954f66416aeb47668db390afe">More...</a><br /></td></tr>
-<tr class="separator:a7dca9da954f66416aeb47668db390afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98cb625b5c4b9ee5d7f529650c4d9112"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112">modbusBitsToBytes</a> (uint16_t n)</td></tr>
-<tr class="memdesc:a98cb625b5c4b9ee5d7f529650c4d9112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of bytes necessary to hold given number of bits.  <a href="base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112">More...</a><br /></td></tr>
-<tr class="separator:a98cb625b5c4b9ee5d7f529650c4d9112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f815c35e0b571e6cb75325822f94b4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a76f815c35e0b571e6cb75325822f94b4">modbusRLE</a> (const uint8_t *p)</td></tr>
-<tr class="memdesc:a76f815c35e0b571e6cb75325822f94b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely reads a little-endian 16-bit word from provided pointer.  <a href="base_8h.html#a76f815c35e0b571e6cb75325822f94b4">More...</a><br /></td></tr>
-<tr class="separator:a76f815c35e0b571e6cb75325822f94b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d0b3f5227ad052c53cf754ce32820fd"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a0d0b3f5227ad052c53cf754ce32820fd">modbusWLE</a> (uint8_t *p, uint16_t val)</td></tr>
-<tr class="memdesc:a0d0b3f5227ad052c53cf754ce32820fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely writes a little-endian 16-bit word to provided pointer.  <a href="base_8h.html#a0d0b3f5227ad052c53cf754ce32820fd">More...</a><br /></td></tr>
-<tr class="separator:a0d0b3f5227ad052c53cf754ce32820fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724223277fcf6255904a91f181aa1ac8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a724223277fcf6255904a91f181aa1ac8">modbusRBE</a> (const uint8_t *p)</td></tr>
-<tr class="memdesc:a724223277fcf6255904a91f181aa1ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely reads a big-endian 16-bit word from provided pointer.  <a href="base_8h.html#a724223277fcf6255904a91f181aa1ac8">More...</a><br /></td></tr>
-<tr class="separator:a724223277fcf6255904a91f181aa1ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae117274d7263b4d1bc696eb1874b3279"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ae117274d7263b4d1bc696eb1874b3279">modbusWBE</a> (uint8_t *p, uint16_t val)</td></tr>
-<tr class="memdesc:ae117274d7263b4d1bc696eb1874b3279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely writes a big-endian 16-bit word to provided pointer.  <a href="base_8h.html#ae117274d7263b4d1bc696eb1874b3279">More...</a><br /></td></tr>
-<tr class="separator:ae117274d7263b4d1bc696eb1874b3279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3119b6543dcad7c77b4e534c4545112"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ad3119b6543dcad7c77b4e534c4545112">modbusGetErrorSource</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="memdesc:ad3119b6543dcad7c77b4e534c4545112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns uint8_t describing error source of <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#ad3119b6543dcad7c77b4e534c4545112">More...</a><br /></td></tr>
-<tr class="separator:ad3119b6543dcad7c77b4e534c4545112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab01c2addaafe619040a2e0fa302ed5d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab01c2addaafe619040a2e0fa302ed5d4">modbusGetErrorCode</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="memdesc:ab01c2addaafe619040a2e0fa302ed5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns ModbusError contained in <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#ab01c2addaafe619040a2e0fa302ed5d4">More...</a><br /></td></tr>
-<tr class="separator:ab01c2addaafe619040a2e0fa302ed5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab945e5e4e573e91a217e0e0a389daa48"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab945e5e4e573e91a217e0e0a389daa48">modbusIsOk</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="memdesc:ab945e5e4e573e91a217e0e0a389daa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error.  <a href="base_8h.html#ab945e5e4e573e91a217e0e0a389daa48">More...</a><br /></td></tr>
-<tr class="separator:ab945e5e4e573e91a217e0e0a389daa48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab217024b21790b1f2d2570129f89854e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ab217024b21790b1f2d2570129f89854e">modbusGetGeneralError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="memdesc:ab217024b21790b1f2d2570129f89854e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns general error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#ab217024b21790b1f2d2570129f89854e">More...</a><br /></td></tr>
-<tr class="separator:ab217024b21790b1f2d2570129f89854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf04c2614190d4cd0c7dd463afcab4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a3cf04c2614190d4cd0c7dd463afcab4a">modbusGetRequestError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="memdesc:a3cf04c2614190d4cd0c7dd463afcab4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns request error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#a3cf04c2614190d4cd0c7dd463afcab4a">More...</a><br /></td></tr>
-<tr class="separator:a3cf04c2614190d4cd0c7dd463afcab4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf409a598de00e18bc9ad729cb75aabb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aaf409a598de00e18bc9ad729cb75aabb">modbusGetResponseError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="memdesc:aaf409a598de00e18bc9ad729cb75aabb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns response error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#aaf409a598de00e18bc9ad729cb75aabb">More...</a><br /></td></tr>
-<tr class="separator:aaf409a598de00e18bc9ad729cb75aabb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a714f91145c46e1f4869ed95a3c117e64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a714f91145c46e1f4869ed95a3c117e64">modbusGetCallbackError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
-<tr class="separator:a714f91145c46e1f4869ed95a3c117e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2248343762719cdacf818e4dae3709"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#aff2248343762719cdacf818e4dae3709">modbusMaskRead</a> (const uint8_t *mask, uint16_t n)</td></tr>
+<tr class="memdesc:aff2248343762719cdacf818e4dae3709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads n-th bit from an array.  <a href="base_8h.html#aff2248343762719cdacf818e4dae3709">More...</a><br /></td></tr>
+<tr class="separator:aff2248343762719cdacf818e4dae3709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9947eb500e2d0c87491a0adce53c2a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a5d9947eb500e2d0c87491a0adce53c2a">modbusMaskWrite</a> (uint8_t *mask, uint16_t n, uint8_t value)</td></tr>
+<tr class="memdesc:a5d9947eb500e2d0c87491a0adce53c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes n-th bit in an array.  <a href="base_8h.html#a5d9947eb500e2d0c87491a0adce53c2a">More...</a><br /></td></tr>
+<tr class="separator:a5d9947eb500e2d0c87491a0adce53c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23a50b36bef9c09ac82214a52ff4d58"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#af23a50b36bef9c09ac82214a52ff4d58">modbusBitsToBytes</a> (uint16_t n)</td></tr>
+<tr class="memdesc:af23a50b36bef9c09ac82214a52ff4d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of bytes necessary to hold given number of bits.  <a href="base_8h.html#af23a50b36bef9c09ac82214a52ff4d58">More...</a><br /></td></tr>
+<tr class="separator:af23a50b36bef9c09ac82214a52ff4d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc3f293c746d39a93e4c1158f792404"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a0fc3f293c746d39a93e4c1158f792404">modbusRLE</a> (const uint8_t *p)</td></tr>
+<tr class="memdesc:a0fc3f293c746d39a93e4c1158f792404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely reads a little-endian 16-bit word from provided pointer.  <a href="base_8h.html#a0fc3f293c746d39a93e4c1158f792404">More...</a><br /></td></tr>
+<tr class="separator:a0fc3f293c746d39a93e4c1158f792404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af718da7da634f311c2ae8db6be3d9027"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#af718da7da634f311c2ae8db6be3d9027">modbusWLE</a> (uint8_t *p, uint16_t val)</td></tr>
+<tr class="memdesc:af718da7da634f311c2ae8db6be3d9027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely writes a little-endian 16-bit word to provided pointer.  <a href="base_8h.html#af718da7da634f311c2ae8db6be3d9027">More...</a><br /></td></tr>
+<tr class="separator:af718da7da634f311c2ae8db6be3d9027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace96da9afdf1e1796a6e2d7ac1f6c81a"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#ace96da9afdf1e1796a6e2d7ac1f6c81a">modbusRBE</a> (const uint8_t *p)</td></tr>
+<tr class="memdesc:ace96da9afdf1e1796a6e2d7ac1f6c81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely reads a big-endian 16-bit word from provided pointer.  <a href="base_8h.html#ace96da9afdf1e1796a6e2d7ac1f6c81a">More...</a><br /></td></tr>
+<tr class="separator:ace96da9afdf1e1796a6e2d7ac1f6c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b9f793bbe67a1968cc8c53a22d4c4b"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b">modbusWBE</a> (uint8_t *p, uint16_t val)</td></tr>
+<tr class="memdesc:a73b9f793bbe67a1968cc8c53a22d4c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely writes a big-endian 16-bit word to provided pointer.  <a href="base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b">More...</a><br /></td></tr>
+<tr class="separator:a73b9f793bbe67a1968cc8c53a22d4c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee4c2e633c7a42f88acc09b95f8171e"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e">modbusGetErrorSource</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a9ee4c2e633c7a42f88acc09b95f8171e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns uint8_t describing error source of <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e">More...</a><br /></td></tr>
+<tr class="separator:a9ee4c2e633c7a42f88acc09b95f8171e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d2a7853b328113e4fcddae85fd3ce5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5">modbusGetErrorCode</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a29d2a7853b328113e4fcddae85fd3ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns ModbusError contained in <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5">More...</a><br /></td></tr>
+<tr class="separator:a29d2a7853b328113e4fcddae85fd3ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64880e7075f445881485396f3aa869c5"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a64880e7075f445881485396f3aa869c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a> contains an error.  <a href="base_8h.html#a64880e7075f445881485396f3aa869c5">More...</a><br /></td></tr>
+<tr class="separator:a64880e7075f445881485396f3aa869c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84765449265aa5a31877b749f04cb568"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568">modbusGetGeneralError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a84765449265aa5a31877b749f04cb568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns general error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#a84765449265aa5a31877b749f04cb568">More...</a><br /></td></tr>
+<tr class="separator:a84765449265aa5a31877b749f04cb568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6f792a259423b2df55d8d49e91fd06"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06">modbusGetRequestError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a5c6f792a259423b2df55d8d49e91fd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns request error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06">More...</a><br /></td></tr>
+<tr class="separator:a5c6f792a259423b2df55d8d49e91fd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf9b7e6b679be88ce4e10ffb617d3e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">modbusGetResponseError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:acbf9b7e6b679be88ce4e10ffb617d3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns response error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">More...</a><br /></td></tr>
+<tr class="separator:acbf9b7e6b679be88ce4e10ffb617d3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a7c88698d15eed4b7fc4cee4938e57f56"></a>
@@ -538,6 +542,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Richer error represenation - source and type of error. </p>
+<dl class="section warning"><dt>Warning</dt><dd>You should not be accessing <code>source</code> and <code>error</code> directly. The internal implementation of this struct may change in future releases. For this reason, please use <a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo.">modbusGetGeneralError()</a>, <a class="el" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo.">modbusGetRequestError()</a>, <a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9" title="Returns response error from ModbusErrorInfo.">modbusGetResponseError()</a>, <a class="el" href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo.">modbusGetErrorSource()</a> and <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -554,6 +559,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Represents a Modbus exception code. </p>
+
+</div>
+</div>
+<a id="aff8aea45c29db66634c31cb43239a203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8aea45c29db66634c31cb43239a203">&#9670;&nbsp;</a></span>ModbusFrameBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structModbusFrameBuffer.html">ModbusFrameBuffer</a> <a class="el" href="structModbusFrameBuffer.html">ModbusFrameBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores a Modbus frame. </p>
 
 </div>
 </div>
@@ -705,8 +726,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a98cb625b5c4b9ee5d7f529650c4d9112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98cb625b5c4b9ee5d7f529650c4d9112">&#9670;&nbsp;</a></span>modbusBitsToBytes()</h2>
+<a id="af23a50b36bef9c09ac82214a52ff4d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23a50b36bef9c09ac82214a52ff4d58">&#9670;&nbsp;</a></span>modbusBitsToBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -715,7 +736,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t modbusBitsToBytes </td>
+          <td class="memname">static uint16_t modbusBitsToBytes </td>
           <td>(</td>
           <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -724,7 +745,7 @@ Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -742,7 +763,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a98cb625b5c4b9ee5d7f529650c4d9112_icgraph.svg" width="414" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af23a50b36bef9c09ac82214a52ff4d58_icgraph.svg" width="414" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -850,26 +871,8 @@ MODBUS_OK on success </dd></dl>
 
 </div>
 </div>
-<a id="a714f91145c46e1f4869ed95a3c117e64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a714f91145c46e1f4869ed95a3c117e64">&#9670;&nbsp;</a></span>modbusGetCallbackError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetCallbackError </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
-          <td class="paramname"><em>err</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab01c2addaafe619040a2e0fa302ed5d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab01c2addaafe619040a2e0fa302ed5d4">&#9670;&nbsp;</a></span>modbusGetErrorCode()</h2>
+<a id="a29d2a7853b328113e4fcddae85fd3ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d2a7853b328113e4fcddae85fd3ce5">&#9670;&nbsp;</a></span>modbusGetErrorCode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,7 +881,7 @@ MODBUS_OK on success </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetErrorCode </td>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetErrorCode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -887,7 +890,7 @@ MODBUS_OK on success </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -899,14 +902,14 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab01c2addaafe619040a2e0fa302ed5d4_icgraph.svg" width="851" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a29d2a7853b328113e4fcddae85fd3ce5_icgraph.svg" width="851" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ad3119b6543dcad7c77b4e534c4545112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3119b6543dcad7c77b4e534c4545112">&#9670;&nbsp;</a></span>modbusGetErrorSource()</h2>
+<a id="a9ee4c2e633c7a42f88acc09b95f8171e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee4c2e633c7a42f88acc09b95f8171e">&#9670;&nbsp;</a></span>modbusGetErrorSource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -915,7 +918,7 @@ MODBUS_OK on success </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t modbusGetErrorSource </td>
+          <td class="memname">static uint8_t modbusGetErrorSource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -924,7 +927,7 @@ MODBUS_OK on success </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -941,14 +944,14 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ad3119b6543dcad7c77b4e534c4545112_icgraph.svg" width="783" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a9ee4c2e633c7a42f88acc09b95f8171e_icgraph.svg" width="783" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ab217024b21790b1f2d2570129f89854e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab217024b21790b1f2d2570129f89854e">&#9670;&nbsp;</a></span>modbusGetGeneralError()</h2>
+<a id="a84765449265aa5a31877b749f04cb568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84765449265aa5a31877b749f04cb568">&#9670;&nbsp;</a></span>modbusGetGeneralError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -957,7 +960,7 @@ MODBUS_OK on success </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetGeneralError </td>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetGeneralError </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -966,7 +969,7 @@ MODBUS_OK on success </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -980,14 +983,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab217024b21790b1f2d2570129f89854e_cgraph.svg" width="367" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a84765449265aa5a31877b749f04cb568_cgraph.svg" width="367" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a3cf04c2614190d4cd0c7dd463afcab4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cf04c2614190d4cd0c7dd463afcab4a">&#9670;&nbsp;</a></span>modbusGetRequestError()</h2>
+<a id="a5c6f792a259423b2df55d8d49e91fd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c6f792a259423b2df55d8d49e91fd06">&#9670;&nbsp;</a></span>modbusGetRequestError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -996,7 +999,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetRequestError </td>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetRequestError </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -1005,7 +1008,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1019,14 +1022,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a3cf04c2614190d4cd0c7dd463afcab4a_cgraph.svg" width="370" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a5c6f792a259423b2df55d8d49e91fd06_cgraph.svg" width="370" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="aaf409a598de00e18bc9ad729cb75aabb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf409a598de00e18bc9ad729cb75aabb">&#9670;&nbsp;</a></span>modbusGetResponseError()</h2>
+<a id="acbf9b7e6b679be88ce4e10ffb617d3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf9b7e6b679be88ce4e10ffb617d3e9">&#9670;&nbsp;</a></span>modbusGetResponseError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1035,7 +1038,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetResponseError </td>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusGetResponseError </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -1044,7 +1047,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1058,14 +1061,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_aaf409a598de00e18bc9ad729cb75aabb_cgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_acbf9b7e6b679be88ce4e10ffb617d3e9_cgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ab945e5e4e573e91a217e0e0a389daa48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab945e5e4e573e91a217e0e0a389daa48">&#9670;&nbsp;</a></span>modbusIsOk()</h2>
+<a id="a64880e7075f445881485396f3aa869c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64880e7075f445881485396f3aa869c5">&#9670;&nbsp;</a></span>modbusIsOk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1074,7 +1077,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t modbusIsOk </td>
+          <td class="memname">static uint8_t modbusIsOk </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
@@ -1083,7 +1086,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1096,7 +1099,7 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab945e5e4e573e91a217e0e0a389daa48_cgraph.svg" width="312" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a64880e7075f445881485396f3aa869c5_cgraph.svg" width="312" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1104,20 +1107,23 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ab945e5e4e573e91a217e0e0a389daa48_icgraph.svg" width="578" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a64880e7075f445881485396f3aa869c5_icgraph.svg" width="578" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ad0d4b7190cf5fcc183f3656ce1c03b0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0d4b7190cf5fcc183f3656ce1c03b0b">&#9670;&nbsp;</a></span>modbusMaskRead()</h2>
+<a id="aff2248343762719cdacf818e4dae3709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2248343762719cdacf818e4dae3709">&#9670;&nbsp;</a></span>modbusMaskRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t modbusMaskRead </td>
+          <td class="memname">static uint8_t modbusMaskRead </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
@@ -1134,6 +1140,11 @@ MODBUS_OK otherwise </dd></dl>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Reads n-th bit from an array. </p>
@@ -1150,20 +1161,23 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ad0d4b7190cf5fcc183f3656ce1c03b0b_icgraph.svg" width="406" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_aff2248343762719cdacf818e4dae3709_icgraph.svg" width="406" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a7dca9da954f66416aeb47668db390afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dca9da954f66416aeb47668db390afe">&#9670;&nbsp;</a></span>modbusMaskWrite()</h2>
+<a id="a5d9947eb500e2d0c87491a0adce53c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9947eb500e2d0c87491a0adce53c2a">&#9670;&nbsp;</a></span>modbusMaskWrite()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void modbusMaskWrite </td>
+          <td class="memname">static void modbusMaskWrite </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
@@ -1186,6 +1200,11 @@ MODBUS_OK otherwise </dd></dl>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Writes n-th bit in an array. </p>
@@ -1202,14 +1221,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a7dca9da954f66416aeb47668db390afe_icgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a5d9947eb500e2d0c87491a0adce53c2a_icgraph.svg" width="396" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a724223277fcf6255904a91f181aa1ac8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724223277fcf6255904a91f181aa1ac8">&#9670;&nbsp;</a></span>modbusRBE()</h2>
+<a id="ace96da9afdf1e1796a6e2d7ac1f6c81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace96da9afdf1e1796a6e2d7ac1f6c81a">&#9670;&nbsp;</a></span>modbusRBE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1218,7 +1237,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t modbusRBE </td>
+          <td class="memname">static uint16_t modbusRBE </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -1227,7 +1246,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1238,14 +1257,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a724223277fcf6255904a91f181aa1ac8_icgraph.svg" width="370" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ace96da9afdf1e1796a6e2d7ac1f6c81a_icgraph.svg" width="370" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a76f815c35e0b571e6cb75325822f94b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76f815c35e0b571e6cb75325822f94b4">&#9670;&nbsp;</a></span>modbusRLE()</h2>
+<a id="a0fc3f293c746d39a93e4c1158f792404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fc3f293c746d39a93e4c1158f792404">&#9670;&nbsp;</a></span>modbusRLE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1254,7 +1273,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t modbusRLE </td>
+          <td class="memname">static uint16_t modbusRLE </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
@@ -1263,7 +1282,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1274,14 +1293,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a76f815c35e0b571e6cb75325822f94b4_icgraph.svg" width="339" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a0fc3f293c746d39a93e4c1158f792404_icgraph.svg" width="339" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ae117274d7263b4d1bc696eb1874b3279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae117274d7263b4d1bc696eb1874b3279">&#9670;&nbsp;</a></span>modbusWBE()</h2>
+<a id="a73b9f793bbe67a1968cc8c53a22d4c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b9f793bbe67a1968cc8c53a22d4c4b">&#9670;&nbsp;</a></span>modbusWBE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1290,7 +1309,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t modbusWBE </td>
+          <td class="memname">static uint16_t modbusWBE </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -1309,7 +1328,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1320,14 +1339,14 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ae117274d7263b4d1bc696eb1874b3279_icgraph.svg" width="570" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a73b9f793bbe67a1968cc8c53a22d4c4b_icgraph.svg" width="570" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a0d0b3f5227ad052c53cf754ce32820fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d0b3f5227ad052c53cf754ce32820fd">&#9670;&nbsp;</a></span>modbusWLE()</h2>
+<a id="af718da7da634f311c2ae8db6be3d9027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af718da7da634f311c2ae8db6be3d9027">&#9670;&nbsp;</a></span>modbusWLE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1336,7 +1355,7 @@ MODBUS_OK otherwise </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t modbusWLE </td>
+          <td class="memname">static uint16_t modbusWLE </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -1355,7 +1374,7 @@ MODBUS_OK otherwise </dd></dl>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1366,7 +1385,7 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a0d0b3f5227ad052c53cf754ce32820fd_icgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af718da7da634f311c2ae8db6be3d9027_icgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" target="_top" xlink:title="Returns number of bytes necessary to hold given number of bits.">
+<g id="a_node2"><a xlink:href="base_8h.html#af23a50b36bef9c09ac82214a52ff4d58" target="_top" xlink:title="Returns number of bytes necessary to hold given number of bits.">
 <polygon fill="none" stroke="black" points="179,-152.5 179,-171.5 283,-171.5 283,-152.5 179,-152.5"/>
 <text text-anchor="middle" x="231" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBitsToBytes</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b" target="_top" xlink:title="Reads n&#45;th bit from an array.">
+<g id="a_node3"><a xlink:href="base_8h.html#aff2248343762719cdacf818e4dae3709" target="_top" xlink:title="Reads n&#45;th bit from an array.">
 <polygon fill="none" stroke="black" points="182,-114.5 182,-133.5 280,-133.5 280,-114.5 182,-114.5"/>
 <text text-anchor="middle" x="231" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusMaskRead</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="base_8h.html#a7dca9da954f66416aeb47668db390afe" target="_top" xlink:title="Writes n&#45;th bit in an array.">
+<g id="a_node4"><a xlink:href="base_8h.html#a5d9947eb500e2d0c87491a0adce53c2a" target="_top" xlink:title="Writes n&#45;th bit in an array.">
 <polygon fill="none" stroke="black" points="182,-76.5 182,-95.5 280,-95.5 280,-76.5 182,-76.5"/>
 <text text-anchor="middle" x="231" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusMaskWrite</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="base_8h.html#ae117274d7263b4d1bc696eb1874b3279" target="_top" xlink:title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer.">
+<g id="a_node6"><a xlink:href="base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b" target="_top" xlink:title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer.">
 <polygon fill="none" stroke="black" points="194.5,-0.5 194.5,-19.5 267.5,-19.5 267.5,-0.5 194.5,-0.5"/>
 <text text-anchor="middle" x="231" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusWBE</text>
 </a>

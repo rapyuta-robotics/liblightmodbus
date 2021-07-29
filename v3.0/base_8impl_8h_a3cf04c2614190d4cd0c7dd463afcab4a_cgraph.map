@@ -1,4 +1,0 @@
-<map id="modbusGetRequestError" name="modbusGetRequestError">
-<area shape="rect" id="node1" title="Returns request error from ModbusErrorInfo." alt="" coords="5,5,169,32"/>
-<area shape="rect" id="node2" href="$base_8impl_8h.html#ab01c2addaafe619040a2e0fa302ed5d4" title="Returns ModbusError contained in ModbusErrorInfo." alt="" coords="217,5,364,32"/>
-</map>

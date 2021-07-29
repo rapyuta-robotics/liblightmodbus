@@ -117,9 +117,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a51f83ba08c18745dd424b9dcf7579703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
 <tr class="memdesc:a51f83ba08c18745dd424b9dcf7579703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator for master device. Based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>.  <a href="master_8impl_8h.html#a51f83ba08c18745dd424b9dcf7579703">More...</a><br /></td></tr>
 <tr class="separator:a51f83ba08c18745dd424b9dcf7579703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a066afa4560907a7cdd46f2c887790bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a066afa4560907a7cdd46f2c887790bd6">modbusMasterAllocateRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint16_t pdusize)</td></tr>
-<tr class="memdesc:a066afa4560907a7cdd46f2c887790bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for the request frame.  <a href="master_8impl_8h.html#a066afa4560907a7cdd46f2c887790bd6">More...</a><br /></td></tr>
-<tr class="separator:a066afa4560907a7cdd46f2c887790bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e13ec54b0d9c8afa4467fb6da452f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a7e13ec54b0d9c8afa4467fb6da452f6a">modbusMasterAllocateRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint16_t pduSize)</td></tr>
+<tr class="memdesc:a7e13ec54b0d9c8afa4467fb6da452f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for the request frame.  <a href="master_8impl_8h.html#a7e13ec54b0d9c8afa4467fb6da452f6a">More...</a><br /></td></tr>
+<tr class="separator:a7e13ec54b0d9c8afa4467fb6da452f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee980bf753f0cadb1fac4f590e739fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6">modbusMasterFreeRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:aee980bf753f0cadb1fac4f590e739fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for master's request frame.  <a href="master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6">More...</a><br /></td></tr>
 <tr class="separator:aee980bf753f0cadb1fac4f590e739fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +129,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5fe38fae0f89de04fa616d105f660d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:a5fe38fae0f89de04fa616d105f660d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">More...</a><br /></td></tr>
 <tr class="separator:a5fe38fae0f89de04fa616d105f660d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec970523e07cb3dabeac6dbba16811a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a8ec970523e07cb3dabeac6dbba16811a">modbusMasterSetUserPointer</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, void *ptr)</td></tr>
+<tr class="memdesc:a8ec970523e07cb3dabeac6dbba16811a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows user to set the custom context pointer.  <a href="master_8impl_8h.html#a8ec970523e07cb3dabeac6dbba16811a">More...</a><br /></td></tr>
+<tr class="separator:a8ec970523e07cb3dabeac6dbba16811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d006618bd2bd9007316bc83cd06ee85"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a5d006618bd2bd9007316bc83cd06ee85">modbusMasterGetUserPointer</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
+<tr class="memdesc:a5d006618bd2bd9007316bc83cd06ee85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreieves the custom context pointer.  <a href="master_8impl_8h.html#a5d006618bd2bd9007316bc83cd06ee85">More...</a><br /></td></tr>
+<tr class="separator:a5d006618bd2bd9007316bc83cd06ee85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad71d034901cd8e22b4d74da7f86cdda9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:ad71d034901cd8e22b4d74da7f86cdda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a PDU-only request.  <a href="master_8impl_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">More...</a><br /></td></tr>
 <tr class="separator:ad71d034901cd8e22b4d74da7f86cdda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,8 +345,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a066afa4560907a7cdd46f2c887790bd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a066afa4560907a7cdd46f2c887790bd6">&#9670;&nbsp;</a></span>modbusMasterAllocateRequest()</h2>
+<a id="a7e13ec54b0d9c8afa4467fb6da452f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e13ec54b0d9c8afa4467fb6da452f6a">&#9670;&nbsp;</a></span>modbusMasterAllocateRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,7 +361,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>pdusize</em>&#160;</td>
+          <td class="paramname"><em>pduSize</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -368,19 +374,19 @@ Variables</h2></td></tr>
 <p>Allocates memory for the request frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pdusize</td><td>size of the PDU section of the frame. 0 implies no request at all. </td></tr>
+    <tr><td class="paramname">pduSize</td><td>size of the PDU section of the frame. 0 implies no request at all. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>MODBUS_ERROR_ALLOC on allocation failure</dd></dl>
-<p>If called with size == 0, the request buffer is freed. Otherwise a buffer for <code>(pdusize + status-&gt;request.padding)</code> bytes is allocated. This guarantees that if a response is made, the buffer is big enough to hold the entire ADU.</p>
+<p>If called with size == 0, the request buffer is freed. Otherwise a buffer for <code>(pduSize + status-&gt;request.padding)</code> bytes is allocated. This guarantees that if a response is made, the buffer is big enough to hold the entire ADU.</p>
 <p>This function is responsible for managing <code>data</code>, <code>pdu</code> and <code>length</code> fields in the request struct. The <code>pdu</code> pointer is set up to point <code>pduOffset</code> bytes after the <code>data</code> pointer unless <code>data</code> is a null pointer. </p>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8impl_8h_a066afa4560907a7cdd46f2c887790bd6_icgraph.svg" width="670" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8impl_8h_a7e13ec54b0d9c8afa4467fb6da452f6a_icgraph.svg" width="670" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -499,7 +505,7 @@ MODBUS_OK on success </dd></dl>
 </div><div class="memdoc">
 
 <p>Frees memory allocated for master's request frame. </p>
-<p>Calls <a class="el" href="master_8impl_8h.html#a066afa4560907a7cdd46f2c887790bd6" title="Allocates memory for the request frame.">modbusMasterAllocateRequest()</a> with size == 0. </p>
+<p>Calls <a class="el" href="master_8impl_8h.html#a7e13ec54b0d9c8afa4467fb6da452f6a" title="Allocates memory for the request frame.">modbusMasterAllocateRequest()</a> with size == 0. </p>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
@@ -508,6 +514,26 @@ MODBUS_OK on success </dd></dl>
 <div class="center"><iframe scrolling="no" frameborder="0" src="master_8impl_8h_aee980bf753f0cadb1fac4f590e739fa6_cgraph.svg" width="444" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
+
+</div>
+</div>
+<a id="a5d006618bd2bd9007316bc83cd06ee85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d006618bd2bd9007316bc83cd06ee85">&#9670;&nbsp;</a></span>modbusMasterGetUserPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* modbusMasterGetUserPointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retreieves the custom context pointer. </p>
 
 </div>
 </div>
@@ -577,6 +603,36 @@ MODBUS_OK on success </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
 <dd>
 <a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8" title="Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.">modbusMasterDefaultFunctions</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8ec970523e07cb3dabeac6dbba16811a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec970523e07cb3dabeac6dbba16811a">&#9670;&nbsp;</a></span>modbusMasterSetUserPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modbusMasterSetUserPointer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows user to set the custom context pointer. </p>
 
 </div>
 </div>

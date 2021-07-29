@@ -10,7 +10,7 @@ var slave_8h =
     [ "ModbusSlaveAllocator", "slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7", null ],
     [ "ModbusSlaveExceptionCallback", "slave_8h.html#a3f9f914dc3f4bc62f38c11580b09f7ad", null ],
     [ "ModbusSlaveFunctionHandler", "slave_8h.html#a55a4829ed1b1fcec9b02960c99d9f2cf", null ],
-    [ "ModbusSlaveParsingFunction", "slave_8h.html#a5d83922c49b5692d486feb35784dd5d7", null ],
+    [ "ModbusSlaveParsingFunction", "slave_8h.html#a8e90f517dc76ec6e2815b29c5f997948", null ],
     [ "ModbusRegisterQuery", "slave_8h.html#af3b062fa65ce1ab33f86b8cbc9d250bc", [
       [ "MODBUS_REGQ_R_CHECK", "slave_8h.html#af3b062fa65ce1ab33f86b8cbc9d250bca68672dc5badc4bd15dd12c168502930d", null ],
       [ "MODBUS_REGQ_W_CHECK", "slave_8h.html#af3b062fa65ce1ab33f86b8cbc9d250bca0c01fdc7e834c204e355a160790b9932", null ],
@@ -26,7 +26,9 @@ var slave_8h =
     [ "modbusSlaveDefaultAllocator", "slave_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df", null ],
     [ "modbusSlaveDestroy", "slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f", null ],
     [ "modbusSlaveFreeResponse", "slave_8h.html#a5e517b65cb8b32010146fa80b78bc848", null ],
+    [ "modbusSlaveGetUserPointer", "slave_8h.html#a4d8a4c8a9325c297c60506321c82b341", null ],
     [ "modbusSlaveInit", "slave_8h.html#aa48a592d418b5d822e25814ad048d954", null ],
+    [ "modbusSlaveSetUserPointer", "slave_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3", null ],
     [ "modbusSlaveDefaultFunctionCount", "slave_8h.html#a1ed4f578aa9ac64591f7da2a50aca910", null ],
     [ "modbusSlaveDefaultFunctions", "slave_8h.html#a0c75d5358eca0b3d71261269c55870d3", null ]
 ];

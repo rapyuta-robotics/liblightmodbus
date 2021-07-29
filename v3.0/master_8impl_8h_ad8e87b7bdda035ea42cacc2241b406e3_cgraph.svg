@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="base_8h.html#ab945e5e4e573e91a217e0e0a389daa48" target="_top" xlink:title="Checks if ModbusErrorInfo contains an error.">
+<g id="a_node2"><a xlink:href="base_8h.html#a64880e7075f445881485396f3aa869c5" target="_top" xlink:title="Checks if ModbusErrorInfo contains an error.">
 <polygon fill="none" stroke="black" points="177,-19.5 177,-38.5 249,-38.5 249,-19.5 177,-19.5"/>
 <text text-anchor="middle" x="213" y="-26.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusIsOk</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="base_8impl_8h.html#ab01c2addaafe619040a2e0fa302ed5d4" target="_top" xlink:title="Returns ModbusError contained in ModbusErrorInfo.">
+<g id="a_node3"><a xlink:href="base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" target="_top" xlink:title="Returns ModbusError contained in ModbusErrorInfo.">
 <polygon fill="none" stroke="black" points="289,-38.5 289,-57.5 399,-57.5 399,-38.5 289,-38.5"/>
 <text text-anchor="middle" x="344" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusGetErrorCode</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="base_8impl_8h.html#ad3119b6543dcad7c77b4e534c4545112" target="_top" xlink:title="Returns uint8_t describing error source of ModbusErrorInfo.">
+<g id="a_node4"><a xlink:href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" target="_top" xlink:title="Returns uint8_t describing error source of ModbusErrorInfo.">
 <polygon fill="none" stroke="black" points="285,-0.5 285,-19.5 403,-19.5 403,-0.5 285,-0.5"/>
 <text text-anchor="middle" x="344" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusGetErrorSource</text>
 </a>

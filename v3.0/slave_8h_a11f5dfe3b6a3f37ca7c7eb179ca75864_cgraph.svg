@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="base_8h.html#ab945e5e4e573e91a217e0e0a389daa48" target="_top" xlink:title="Checks if ModbusErrorInfo contains an error.">
+<g id="a_node2"><a xlink:href="base_8h.html#a64880e7075f445881485396f3aa869c5" target="_top" xlink:title="Checks if ModbusErrorInfo contains an error.">
 <polygon fill="none" stroke="black" points="188.5,-114.5 188.5,-133.5 260.5,-133.5 260.5,-114.5 188.5,-114.5"/>
 <text text-anchor="middle" x="224.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusIsOk</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="base_8h.html#a724223277fcf6255904a91f181aa1ac8" target="_top" xlink:title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer.">
+<g id="a_node8"><a xlink:href="base_8h.html#ace96da9afdf1e1796a6e2d7ac1f6c81a" target="_top" xlink:title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer.">
 <polygon fill="none" stroke="black" points="189,-38.5 189,-57.5 260,-57.5 260,-38.5 189,-38.5"/>
 <text text-anchor="middle" x="224.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusRBE</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="base_8h.html#ae117274d7263b4d1bc696eb1874b3279" target="_top" xlink:title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer.">
+<g id="a_node9"><a xlink:href="base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b" target="_top" xlink:title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer.">
 <polygon fill="none" stroke="black" points="188,-0.5 188,-19.5 261,-19.5 261,-0.5 188,-0.5"/>
 <text text-anchor="middle" x="224.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusWBE</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="base_8impl_8h.html#ab01c2addaafe619040a2e0fa302ed5d4" target="_top" xlink:title="Returns ModbusError contained in ModbusErrorInfo.">
+<g id="a_node3"><a xlink:href="base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" target="_top" xlink:title="Returns ModbusError contained in ModbusErrorInfo.">
 <polygon fill="none" stroke="black" points="321,-152.5 321,-171.5 431,-171.5 431,-152.5 321,-152.5"/>
 <text text-anchor="middle" x="376" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusGetErrorCode</text>
 </a>
@@ -95,7 +95,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="base_8impl_8h.html#ad3119b6543dcad7c77b4e534c4545112" target="_top" xlink:title="Returns uint8_t describing error source of ModbusErrorInfo.">
+<g id="a_node4"><a xlink:href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" target="_top" xlink:title="Returns uint8_t describing error source of ModbusErrorInfo.">
 <polygon fill="none" stroke="black" points="317,-114.5 317,-133.5 435,-133.5 435,-114.5 317,-114.5"/>
 <text text-anchor="middle" x="376" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusGetErrorSource</text>
 </a>
@@ -125,7 +125,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" target="_top" xlink:title="Allocates memory for slave&#39;s response frame.">
+<g id="a_node7"><a xlink:href="slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" target="_top" xlink:title="Allocates memory for slave&#39;s response frame.">
 <polygon fill="none" stroke="black" points="471,-76.5 471,-95.5 626,-95.5 626,-76.5 471,-76.5"/>
 <text text-anchor="middle" x="548.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusSlaveAllocateResponse</text>
 </a>
