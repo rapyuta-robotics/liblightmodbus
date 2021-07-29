@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list_475',['Deprecated List',['../deprecated.html',1,'']]]
+  ['custom_20allocators_482',['Custom allocators',['../allocators.html',1,'']]]
 ];

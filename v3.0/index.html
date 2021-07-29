@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -88,19 +89,20 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="title">liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This is a reference manual for the liblightmodbus library.</p>
+<div class="textblock"><p>This is the reference manual for the version v3.0 liblightmodbus library.</p>
+<p>If you're looking for the docs for older versions, please visit: <a href="https://jacajack.github.io/liblightmodbus/olddocs/">https://jacajack.github.io/liblightmodbus/olddocs/</a></p>
 <h1><a class="anchor" id="about"></a>
 About this release</h1>
-<p>Version v3.0 brings the most changes in the history of liblightmodbus.</p>
-<p>If you're looking for docs for older versions, please visit: <a href="https://jacajack.github.io/liblightmodbus/olddocs/">https://jacajack.github.io/liblightmodbus/olddocs/</a></p>
+<p>Version v3.0 brings the most changes in the history of liblightmodbus. Majority of the source code has been rewritten from scratch. The library is now header-only, which makes it much easier to compile on different platforms and introduces support for Modbus TCP.</p>
+<p>All this changes resulted in a significant binary size reduction (around 2x) and more maintainable and flexible code.</p>
 <h1><a class="anchor" id="getting-started"></a>
 Getting started</h1>
 <ul>
 <li><a class="el" href="building.html">Building and integrating liblightmodbus</a></li>
-<li><a class="el" href="basic-usage.html">Basic usage</a></li>
-<li><a class="el" href="porting.html">Porting exisiting code to liblightmodbus v3.0</a></li>
-<li><a class="el" href="callbacks.html">User-defined callback functions</a></li>
-<li><a class="el" href="allocators.html">User-defined allocators</a> </li>
+<li><a class="el" href="slave.html">Slave device</a></li>
+<li><a class="el" href="master.html">Master</a></li>
+<li><a class="el" href="porting.html">Porting code from v2.0 to v3.0</a></li>
+<li><a class="el" href="allocators.html">Custom allocators</a> </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

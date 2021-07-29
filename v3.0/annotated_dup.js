@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "Static memory allocation", "allocators.html#autotoc_md0", null ],
     [ "ModbusDataCallbackArgs", "structModbusDataCallbackArgs.html", "structModbusDataCallbackArgs" ],
     [ "ModbusErrorInfo", "structModbusErrorInfo.html", "structModbusErrorInfo" ],
     [ "ModbusFrameBuffer", "structModbusFrameBuffer.html", "structModbusFrameBuffer" ],

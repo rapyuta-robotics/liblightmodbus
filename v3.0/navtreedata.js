@@ -29,35 +29,31 @@ var NAVTREE =
       [ "About this release", "index.html#about", null ],
       [ "Getting started", "index.html#getting-started", null ]
     ] ],
-    [ "Building and integrating liblightmodbus", "building.html", null ],
-    [ "Basic usage", "basic-usage.html", [
-      [ "Slave", "basic-usage.html#slave", [
-        [ "Slave initialization", "basic-usage.html#slave-init", null ],
-        [ "Register callback", "basic-usage.html#slave-callback", null ],
-        [ "Request processing", "basic-usage.html#slave-requests", null ],
-        [ "Slave cleanup", "basic-usage.html#slave-cleanup", null ]
-      ] ],
-      [ "Master", "basic-usage.html#master", [
-        [ "Master initialization", "basic-usage.html#master-init", null ],
-        [ "Data callback", "basic-usage.html#master-data-callback", null ],
-        [ "Exception callback", "basic-usage.html#master-exception-callback", null ],
-        [ "Building requests", "basic-usage.html#master-requests", null ],
-        [ "Processing responses", "basic-usage.html#master-response", null ],
-        [ "Master cleanup", "basic-usage.html#master-cleanup", null ]
+    [ "Building and integrating liblightmodbus", "building.html", [
+      [ "Embedded platforms", "building.html#embedded", [
+        [ "ESP-IDF", "building.html#ESP-IDF", null ]
       ] ]
     ] ],
-    [ "Porting exisiting code to liblightmodbus v3.0", "porting.html", [
-      [ "Initialization and cleanup", "porting.html#init-and-cleanup", null ],
-      [ "Error handling", "porting.html#error-handling", null ],
-      [ "Slave code", "porting.html#slave-code", null ],
-      [ "Master code", "porting.html#master-code", null ],
-      [ "Static memory allocation", "porting.html#static-memory", null ],
-      [ "Mask reads and writes", "porting.html#mask-rw", null ],
-      [ "Endianness operations", "porting.html#endiannnes", null ]
+    [ "Slave device", "slave.html", [
+      [ "Slave initialization", "slave.html#slave-init", null ],
+      [ "Register callback", "slave.html#slave-register-callback", null ],
+      [ "Slave exception callback", "slave.html#slave-exception-callback", null ],
+      [ "Request processing", "slave.html#slave-requests", null ],
+      [ "Slave cleanup", "slave.html#slave-cleanup", null ]
     ] ],
-    [ "User-defined callback functions", "callbacks.html", null ],
-    [ "User-defined allocators", "allocators.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
+    [ "Master", "master.html", [
+      [ "Master initialization", "master.html#master-init", null ],
+      [ "Data callback", "master.html#master-data-callback", null ],
+      [ "Exception callback", "master.html#master-exception-callback", null ],
+      [ "Building requests", "master.html#master-requests", null ],
+      [ "Processing responses", "master.html#master-response", null ],
+      [ "Master cleanup", "master.html#master-cleanup", null ]
+    ] ],
+    [ "Error handling", "error-handling.html", null ],
+    [ "Custom allocators", "allocators.html", [
+      [ "Static memory allocation", "allocators.html#static-mem", null ]
+    ] ],
+    [ "Porting code from v2.0 to v3.0", "porting.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -85,7 +81,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "allocators.html",
-"master__func_8impl_8h.html#acf15843f080ad8ac8f4d095b5556d19b"
+"master__func_8impl_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

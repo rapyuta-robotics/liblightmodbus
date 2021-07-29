@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="slave_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3" target="_top" xlink:title="Parses provided Modbus RTU request frame and generates a Modbus RTU response.">
+<g id="a_node2"><a xlink:href="slave_8h.html#a28b9fe2f4559cd0b1c39aff30099d591" target="_top" xlink:title="Parses provided Modbus RTU request frame and generates a Modbus RTU response.">
 <polygon fill="none" stroke="black" points="3.5,-38.5 3.5,-57.5 136.5,-57.5 136.5,-38.5 3.5,-38.5"/>
 <text text-anchor="middle" x="70" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseRequestRTU</text>
 </a>

@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="slave_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3" target="_top" xlink:title="Parses provided Modbus RTU request frame and generates a Modbus RTU response.">
+<g id="a_node3"><a xlink:href="slave_8h.html#a28b9fe2f4559cd0b1c39aff30099d591" target="_top" xlink:title="Parses provided Modbus RTU request frame and generates a Modbus RTU response.">
 <polygon fill="none" stroke="black" points="180,-95.5 180,-114.5 313,-114.5 313,-95.5 180,-95.5"/>
 <text text-anchor="middle" x="246.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseRequestRTU</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="slave_8h.html#a11f5dfe3b6a3f37ca7c7eb179ca75864" target="_top" xlink:title="Parses provided Modbus TCP request frame and generates a Modbus TCP response.">
+<g id="a_node4"><a xlink:href="slave_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e" target="_top" xlink:title="Parses provided Modbus TCP request frame and generates a Modbus TCP response.">
 <polygon fill="none" stroke="black" points="180.5,-57.5 180.5,-76.5 312.5,-76.5 312.5,-57.5 180.5,-57.5"/>
 <text text-anchor="middle" x="246.5" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseRequestTCP</text>
 </a>

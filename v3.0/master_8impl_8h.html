@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -123,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memitem:aee980bf753f0cadb1fac4f590e739fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6">modbusMasterFreeRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:aee980bf753f0cadb1fac4f590e739fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for master's request frame.  <a href="master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6">More...</a><br /></td></tr>
 <tr class="separator:aee980bf753f0cadb1fac4f590e739fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d1322b5da2029288f46f43d14480fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#af623d388dc043577d9011bdeea54ad19">ModbusMasterExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memitem:af4d1322b5da2029288f46f43d14480fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
 <tr class="memdesc:af4d1322b5da2029288f46f43d14480fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb">More...</a><br /></td></tr>
 <tr class="separator:af4d1322b5da2029288f46f43d14480fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe38fae0f89de04fa616d105f660d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
@@ -564,7 +565,7 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="master_8h.html#af623d388dc043577d9011bdeea54ad19">ModbusMasterExceptionCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a>&#160;</td>
           <td class="paramname"><em>exceptionCallback</em>, </td>
         </tr>
         <tr>
@@ -865,8 +866,9 @@ Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b4
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(BAD_TRANSACTION)</a> if the transaction ID in request is not the same as in response </dd>
 <dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> if the address in response is not the same as in request </dd>
+<dd>
 Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response.">modbusParseResponsePDU()</a> otherwise </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Check addresses (but how?) </dd></dl>
 <div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">

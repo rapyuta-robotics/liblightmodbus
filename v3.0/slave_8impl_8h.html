@@ -18,6 +18,7 @@
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -123,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a5e517b65cb8b32010146fa80b78bc848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a5e517b65cb8b32010146fa80b78bc848">modbusSlaveFreeResponse</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
 <tr class="memdesc:a5e517b65cb8b32010146fa80b78bc848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for slave's response frame.  <a href="slave_8impl_8h.html#a5e517b65cb8b32010146fa80b78bc848">More...</a><br /></td></tr>
 <tr class="separator:a5e517b65cb8b32010146fa80b78bc848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa48a592d418b5d822e25814ad048d954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#aa48a592d418b5d822e25814ad048d954">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, <a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a> allocator, <a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#a3f9f914dc3f4bc62f38c11580b09f7ad">ModbusSlaveExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memitem:aa48a592d418b5d822e25814ad048d954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#aa48a592d418b5d822e25814ad048d954">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, <a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a> allocator, <a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
 <tr class="memdesc:aa48a592d418b5d822e25814ad048d954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes slave device.  <a href="slave_8impl_8h.html#aa48a592d418b5d822e25814ad048d954">More...</a><br /></td></tr>
 <tr class="separator:aa48a592d418b5d822e25814ad048d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">modbusSlaveDestroy</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
@@ -138,18 +139,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a01b0b86602f899214d564f5bbe6ffdb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2">modbusBuildException</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
 <tr class="memdesc:a01b0b86602f899214d564f5bbe6ffdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an exception response frame.  <a href="slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2">More...</a><br /></td></tr>
 <tr class="separator:a01b0b86602f899214d564f5bbe6ffdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a418b412059b7882bf53b0bfdb11dea31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a418b412059b7882bf53b0bfdb11dea31">modbusParseRequest</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *data, uint8_t length)</td></tr>
-<tr class="memdesc:a418b412059b7882bf53b0bfdb11dea31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates response honorinng <code>pduOffset</code> and <code>padding</code> set in <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a>.  <a href="slave_8impl_8h.html#a418b412059b7882bf53b0bfdb11dea31">More...</a><br /></td></tr>
-<tr class="separator:a418b412059b7882bf53b0bfdb11dea31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678436c7849be06c8871bc589d0c7011"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a678436c7849be06c8871bc589d0c7011">modbusParseRequestPDU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *data, uint8_t length)</td></tr>
-<tr class="memdesc:a678436c7849be06c8871bc589d0c7011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates PDU for the response frame.  <a href="slave_8impl_8h.html#a678436c7849be06c8871bc589d0c7011">More...</a><br /></td></tr>
-<tr class="separator:a678436c7849be06c8871bc589d0c7011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9da6d040ddc4a1ba71b03fad7a2fece3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3">modbusParseRequestRTU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const uint8_t *data, uint16_t length)</td></tr>
-<tr class="memdesc:a9da6d040ddc4a1ba71b03fad7a2fece3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided Modbus RTU request frame and generates a Modbus RTU response.  <a href="slave_8impl_8h.html#a9da6d040ddc4a1ba71b03fad7a2fece3">More...</a><br /></td></tr>
-<tr class="separator:a9da6d040ddc4a1ba71b03fad7a2fece3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11f5dfe3b6a3f37ca7c7eb179ca75864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a11f5dfe3b6a3f37ca7c7eb179ca75864">modbusParseRequestTCP</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const uint8_t *data, uint16_t length)</td></tr>
-<tr class="memdesc:a11f5dfe3b6a3f37ca7c7eb179ca75864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided Modbus TCP request frame and generates a Modbus TCP response.  <a href="slave_8impl_8h.html#a11f5dfe3b6a3f37ca7c7eb179ca75864">More...</a><br /></td></tr>
-<tr class="separator:a11f5dfe3b6a3f37ca7c7eb179ca75864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4be93ca41808b56714f199dd21302541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a4be93ca41808b56714f199dd21302541">modbusParseRequest</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *request, uint8_t requestLength)</td></tr>
+<tr class="memdesc:a4be93ca41808b56714f199dd21302541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates response honorinng <code>pduOffset</code> and <code>padding</code> set in <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> during response generation.  <a href="slave_8impl_8h.html#a4be93ca41808b56714f199dd21302541">More...</a><br /></td></tr>
+<tr class="separator:a4be93ca41808b56714f199dd21302541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad438e2f643c3237f52c445f699dbcc96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#ad438e2f643c3237f52c445f699dbcc96">modbusParseRequestPDU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *request, uint8_t requestLength)</td></tr>
+<tr class="memdesc:ad438e2f643c3237f52c445f699dbcc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates PDU for the response frame.  <a href="slave_8impl_8h.html#ad438e2f643c3237f52c445f699dbcc96">More...</a><br /></td></tr>
+<tr class="separator:ad438e2f643c3237f52c445f699dbcc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b9fe2f4559cd0b1c39aff30099d591"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a28b9fe2f4559cd0b1c39aff30099d591">modbusParseRequestRTU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const uint8_t *request, uint16_t requestLength)</td></tr>
+<tr class="memdesc:a28b9fe2f4559cd0b1c39aff30099d591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided Modbus RTU request frame and generates a Modbus RTU response.  <a href="slave_8impl_8h.html#a28b9fe2f4559cd0b1c39aff30099d591">More...</a><br /></td></tr>
+<tr class="separator:a28b9fe2f4559cd0b1c39aff30099d591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad3fe86aa14f8982d7c459c68cd8b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">modbusParseRequestTCP</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const uint8_t *request, uint16_t requestLength)</td></tr>
+<tr class="memdesc:a5ad3fe86aa14f8982d7c459c68cd8b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided Modbus TCP request frame and generates a Modbus TCP response.  <a href="slave_8impl_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">More...</a><br /></td></tr>
+<tr class="separator:a5ad3fe86aa14f8982d7c459c68cd8b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -231,8 +232,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a418b412059b7882bf53b0bfdb11dea31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a418b412059b7882bf53b0bfdb11dea31">&#9670;&nbsp;</a></span>modbusParseRequest()</h2>
+<a id="a4be93ca41808b56714f199dd21302541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4be93ca41808b56714f199dd21302541">&#9670;&nbsp;</a></span>modbusParseRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,13 +254,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>requestLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -269,23 +270,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parses provided PDU and generates response honorinng <code>pduOffset</code> and <code>padding</code> set in <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a>. </p>
+<p>Parses provided PDU and generates response honorinng <code>pduOffset</code> and <code>padding</code> set in <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> during response generation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>address of the slave </td></tr>
-    <tr><td class="paramname">data</td><td>pointer to the PDU data </td></tr>
-    <tr><td class="paramname">length</td><td>length of the PDU </td></tr>
+    <tr><td class="paramname">request</td><td>pointer to the PDU data </td></tr>
+    <tr><td class="paramname">requestLength</td><td>of the PDU </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Any errors from parsing functions</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function expects ModbusSlave::response::pduOffset and ModbusSlave::response::padding to be set properly! If you're looking for a function that operates strictly on the PDU, please use <a class="el" href="slave_8impl_8h.html#a678436c7849be06c8871bc589d0c7011" title="Parses provided PDU and generates PDU for the response frame.">modbusParseRequestPDU()</a> instead. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function expects ModbusSlave::response::pduOffset and ModbusSlave::response::padding to be set properly! If you're looking for a function that operates strictly on the PDU, please use <a class="el" href="slave_8impl_8h.html#ad438e2f643c3237f52c445f699dbcc96" title="Parses provided PDU and generates PDU for the response frame.">modbusParseRequestPDU()</a> instead. </dd></dl>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a418b412059b7882bf53b0bfdb11dea31_cgraph.svg" width="618" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a4be93ca41808b56714f199dd21302541_cgraph.svg" width="618" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-5" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -293,14 +294,14 @@ Variables</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a418b412059b7882bf53b0bfdb11dea31_icgraph.svg" width="388" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a4be93ca41808b56714f199dd21302541_icgraph.svg" width="388" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a678436c7849be06c8871bc589d0c7011"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a678436c7849be06c8871bc589d0c7011">&#9670;&nbsp;</a></span>modbusParseRequestPDU()</h2>
+<a id="ad438e2f643c3237f52c445f699dbcc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad438e2f643c3237f52c445f699dbcc96">&#9670;&nbsp;</a></span>modbusParseRequestPDU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,13 +322,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>requestLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -341,8 +342,8 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>address of the slave </td></tr>
-    <tr><td class="paramname">data</td><td>pointer to the PDU data </td></tr>
-    <tr><td class="paramname">length</td><td>length of the PDU </td></tr>
+    <tr><td class="paramname">request</td><td>pointer to the PDU data </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the PDU </td></tr>
   </table>
   </dd>
 </dl>
@@ -352,14 +353,14 @@ Variables</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a678436c7849be06c8871bc589d0c7011_cgraph.svg" width="844" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_ad438e2f643c3237f52c445f699dbcc96_cgraph.svg" width="844" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a9da6d040ddc4a1ba71b03fad7a2fece3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9da6d040ddc4a1ba71b03fad7a2fece3">&#9670;&nbsp;</a></span>modbusParseRequestRTU()</h2>
+<a id="a28b9fe2f4559cd0b1c39aff30099d591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b9fe2f4559cd0b1c39aff30099d591">&#9670;&nbsp;</a></span>modbusParseRequestRTU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,13 +375,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>requestLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -393,8 +394,8 @@ Variables</h2></td></tr>
 <p>Parses provided Modbus RTU request frame and generates a Modbus RTU response. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>pointer to a Modbus RTU frame </td></tr>
-    <tr><td class="paramname">length</td><td>length of the frame </td></tr>
+    <tr><td class="paramname">request</td><td>pointer to a Modbus RTU frame </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the frame </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,20 +404,19 @@ Variables</h2></td></tr>
 <a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(CRC)</a> if CRC is invalid </dd>
 <dd>
 Any errors from parsing functions </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Should we check if address is less than 248? </dd></dl>
 <div id="dynsection-7" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a9da6d040ddc4a1ba71b03fad7a2fece3_cgraph.svg" width="847" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a28b9fe2f4559cd0b1c39aff30099d591_cgraph.svg" width="847" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a11f5dfe3b6a3f37ca7c7eb179ca75864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11f5dfe3b6a3f37ca7c7eb179ca75864">&#9670;&nbsp;</a></span>modbusParseRequestTCP()</h2>
+<a id="a5ad3fe86aa14f8982d7c459c68cd8b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad3fe86aa14f8982d7c459c68cd8b3e">&#9670;&nbsp;</a></span>modbusParseRequestTCP()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,13 +431,13 @@ Any errors from parsing functions </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramname"><em>request</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>length</em>&#160;</td>
+          <td class="paramname"><em>requestLength</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -450,8 +450,8 @@ Any errors from parsing functions </dd></dl>
 <p>Parses provided Modbus TCP request frame and generates a Modbus TCP response. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>pointer to a Modbus TCP frame </td></tr>
-    <tr><td class="paramname">length</td><td>length of the frame </td></tr>
+    <tr><td class="paramname">request</td><td>pointer to a Modbus TCP frame </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the frame </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,7 +465,7 @@ Any errors from parsing functions </dd></dl>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a11f5dfe3b6a3f37ca7c7eb179ca75864_cgraph.svg" width="846" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a5ad3fe86aa14f8982d7c459c68cd8b3e_cgraph.svg" width="846" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -689,7 +689,7 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="slave_8h.html#a3f9f914dc3f4bc62f38c11580b09f7ad">ModbusSlaveExceptionCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a>&#160;</td>
           <td class="paramname"><em>exceptionCallback</em>, </td>
         </tr>
         <tr>
