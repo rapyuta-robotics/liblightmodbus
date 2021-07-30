@@ -9,7 +9,7 @@ var master_8h =
     [ "ModbusMasterAllocator", "master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40", null ],
     [ "ModbusMasterExceptionCallback", "master_8h.html#a70fad8e09a20ca15d7bef094facd75b4", null ],
     [ "ModbusMasterFunctionHandler", "master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b", null ],
-    [ "ModbusMasterParsingFunction", "master_8h.html#a42764187368975434a03b85c64e26409", null ],
+    [ "ModbusMasterParsingFunction", "master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8", null ],
     [ "modbusBeginRequestPDU", "master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9", null ],
     [ "modbusBeginRequestRTU", "master_8h.html#ade3cfa7c2201895b2f768cca5d424ee5", null ],
     [ "modbusBeginRequestTCP", "master_8h.html#afd1467296480779237ab090a8579efb5", null ],

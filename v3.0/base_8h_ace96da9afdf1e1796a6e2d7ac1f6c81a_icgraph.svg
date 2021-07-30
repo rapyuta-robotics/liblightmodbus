@@ -95,7 +95,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="master__func_8h.html#acf15843f080ad8ac8f4d095b5556d19b" target="_top" xlink:title="Parses response to requests 01, 02, 03 and 04.">
+<g id="a_node7"><a xlink:href="master__func_8h.html#adafbaa72d4df36b3577ce5494b460a2b" target="_top" xlink:title="Parses response to requests 01, 02, 03 and 04.">
 <polygon fill="none" stroke="black" points="0,-76.5 0,-95.5 162,-95.5 162,-76.5 0,-76.5"/>
 <text text-anchor="middle" x="81" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseResponse01020304</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="master__func_8h.html#afeaddc62f81c2cb558048140e110e942" target="_top" xlink:title="Parses response to requests 15 and 16 (write mutliple regsiters/coils)">
+<g id="a_node8"><a xlink:href="master__func_8h.html#a0c53ade25c249f6aeed8c877b98f8016" target="_top" xlink:title="Parses response to requests 15 and 16 (write mutliple regsiters/coils)">
 <polygon fill="none" stroke="black" points="10.5,-38.5 10.5,-57.5 151.5,-57.5 151.5,-38.5 10.5,-38.5"/>
 <text text-anchor="middle" x="81" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseResponse1516</text>
 </a>

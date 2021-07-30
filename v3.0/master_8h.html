@@ -133,9 +133,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMaster.html">ModbusMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">ModbusMaster</a></td></tr>
 <tr class="memdesc:ad0e3310720fcc07d509b0572dcea7cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master device status.  <a href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">More...</a><br /></td></tr>
 <tr class="separator:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42764187368975434a03b85c64e26409"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a42764187368975434a03b85c64e26409">ModbusMasterParsingFunction</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td></tr>
-<tr class="memdesc:a42764187368975434a03b85c64e26409"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a response parsing function.  <a href="master_8h.html#a42764187368975434a03b85c64e26409">More...</a><br /></td></tr>
-<tr class="separator:a42764187368975434a03b85c64e26409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19654463fbbcf8c7e00f87a45afc73a8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8">ModbusMasterParsingFunction</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td></tr>
+<tr class="memdesc:a19654463fbbcf8c7e00f87a45afc73a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a response parsing function.  <a href="master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8">More...</a><br /></td></tr>
+<tr class="separator:a19654463fbbcf8c7e00f87a45afc73a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbd68fce6ff652ebb88e3bf2412485b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b">ModbusMasterFunctionHandler</a></td></tr>
 <tr class="memdesc:abdbd68fce6ff652ebb88e3bf2412485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates Modbus function ID with a pointer to a response parsing function.  <a href="master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b">More...</a><br /></td></tr>
 <tr class="separator:abdbd68fce6ff652ebb88e3bf2412485b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,14 +318,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a42764187368975434a03b85c64e26409"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42764187368975434a03b85c64e26409">&#9670;&nbsp;</a></span>ModbusMasterParsingFunction</h2>
+<a id="a19654463fbbcf8c7e00f87a45afc73a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19654463fbbcf8c7e00f87a45afc73a8">&#9670;&nbsp;</a></span>ModbusMasterParsingFunction</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusMasterParsingFunction) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td>
+          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusMasterParsingFunction) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -919,24 +919,18 @@ MODBUS_OK on success </dd></dl>
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has zero length </dd>
 <dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> on attempt to parse a response to a broadcast request </dd>
+<dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(FUNCTION)</a> if the function code in request doesn't match the one in response </dd>
 <dd>
 <a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(FUNCTION)</a> if the function code is not supported </dd>
 <dd>
 Result from the parsing function on success (modbusParseRequest*() functions) </dd></dl>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_ad8e87b7bdda035ea42cacc2241b406e3_cgraph.svg" width="548" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_ad8e87b7bdda035ea42cacc2241b406e3_icgraph.svg" width="434" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
@@ -1008,12 +1002,12 @@ Result from the parsing function on success (modbusParseRequest*() functions) </
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> if the address is 0 or if request/response addressess don't match </dd>
 <dd>
 Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response.">modbusParseResponsePDU()</a> otherwise </dd></dl>
-<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a151b85c221ae43804856eb92737498e5_cgraph.svg" width="783" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a151b85c221ae43804856eb92737498e5_cgraph.svg" width="434" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1086,12 +1080,12 @@ Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b4
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> if the address in response is not the same as in request </dd>
 <dd>
 Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response.">modbusParseResponsePDU()</a> otherwise </dd></dl>
-<div id="dynsection-11" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a53ea67c733b1e627e1cdcb0003270a1b_cgraph.svg" width="783" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a53ea67c733b1e627e1cdcb0003270a1b_cgraph.svg" width="434" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

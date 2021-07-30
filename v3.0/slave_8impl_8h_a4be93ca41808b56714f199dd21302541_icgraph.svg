@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="slave_8h.html#ad438e2f643c3237f52c445f699dbcc96" target="_top" xlink:title="Parses provided PDU and generates PDU for the response frame.">
+<g id="a_node2"><a xlink:href="slave_8h.html#a374f14849a7108d2578044348e79c2b5" target="_top" xlink:title="Parses provided PDU and generates PDU for the response frame.">
 <polygon fill="none" stroke="black" points="0,-76.5 0,-95.5 134,-95.5 134,-76.5 0,-76.5"/>
 <text text-anchor="middle" x="67" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseRequestPDU</text>
 </a>

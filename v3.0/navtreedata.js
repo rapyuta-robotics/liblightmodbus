@@ -53,6 +53,7 @@ var NAVTREE =
     [ "Custom allocators", "allocators.html", [
       [ "Static memory allocation", "allocators.html#static-mem", null ]
     ] ],
+    [ "Examples", "examples.html", null ],
     [ "Porting code from v2.0 to v3.0", "porting.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Data Structures", "annotated.html", [
@@ -81,7 +82,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "allocators.html",
-"master__func_8impl_8h_source.html"
+"master__func_8impl_8h.html#a2268e967480c9281b88760dc752e5fa1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
