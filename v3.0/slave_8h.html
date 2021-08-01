@@ -168,9 +168,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa48a592d418b5d822e25814ad048d954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#aa48a592d418b5d822e25814ad048d954">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, <a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a> allocator, <a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
-<tr class="memdesc:aa48a592d418b5d822e25814ad048d954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes slave device.  <a href="slave_8h.html#aa48a592d418b5d822e25814ad048d954">More...</a><br /></td></tr>
-<tr class="separator:aa48a592d418b5d822e25814ad048d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d001a589643a3d893924dbbd276e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70d001a589643a3d893924dbbd276e2f">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, <a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a> exceptionCallback, <a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a> allocator, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memdesc:a70d001a589643a3d893924dbbd276e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes slave device.  <a href="slave_8h.html#a70d001a589643a3d893924dbbd276e2f">More...</a><br /></td></tr>
+<tr class="separator:a70d001a589643a3d893924dbbd276e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">modbusSlaveDestroy</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
 <tr class="memdesc:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated in the <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> struct.  <a href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">More...</a><br /></td></tr>
 <tr class="separator:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -937,8 +937,8 @@ MODBUS_OK on success </dd></dl>
 
 </div>
 </div>
-<a id="aa48a592d418b5d822e25814ad048d954"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa48a592d418b5d822e25814ad048d954">&#9670;&nbsp;</a></span>modbusSlaveInit()</h2>
+<a id="a70d001a589643a3d893924dbbd276e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d001a589643a3d893924dbbd276e2f">&#9670;&nbsp;</a></span>modbusSlaveInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -958,12 +958,6 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a>&#160;</td>
-          <td class="paramname"><em>allocator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a>&#160;</td>
           <td class="paramname"><em>registerCallback</em>, </td>
         </tr>
@@ -972,6 +966,12 @@ MODBUS_OK on success </dd></dl>
           <td></td>
           <td class="paramtype"><a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a>&#160;</td>
           <td class="paramname"><em>exceptionCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a>&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -997,9 +997,9 @@ MODBUS_OK on success </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>ID of the slave </td></tr>
-    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="slave_8impl_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df">modbusSlaveDefaultAllocator</a>) (required) </td></tr>
     <tr><td class="paramname">registerCallback</td><td>Callback function for handling all register operations (required) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
+    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="slave_8impl_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df">modbusSlaveDefaultAllocator</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the slave. </td></tr>
     <tr><td class="paramname">functionCount</td><td>Number of function handlers in the array (required) </td></tr>
   </table>

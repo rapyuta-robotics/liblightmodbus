@@ -23,7 +23,7 @@ var master_8h =
     [ "modbusMasterGetRequest", "master_8h.html#a7bf896eb0e5ec0f2cfad680442342fd2", null ],
     [ "modbusMasterGetRequestLength", "master_8h.html#aee8eaa8896feb09e4546b94f2172f203", null ],
     [ "modbusMasterGetUserPointer", "master_8h.html#a5d006618bd2bd9007316bc83cd06ee85", null ],
-    [ "modbusMasterInit", "master_8h.html#af4d1322b5da2029288f46f43d14480fb", null ],
+    [ "modbusMasterInit", "master_8h.html#a4318ea143c223c051ea4d3e3543b796c", null ],
     [ "modbusMasterSetUserPointer", "master_8h.html#a8ec970523e07cb3dabeac6dbba16811a", null ],
     [ "modbusParseResponsePDU", "master_8h.html#ad8e87b7bdda035ea42cacc2241b406e3", null ],
     [ "modbusParseResponseRTU", "master_8h.html#a151b85c221ae43804856eb92737498e5", null ],

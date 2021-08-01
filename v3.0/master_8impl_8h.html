@@ -124,9 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aee980bf753f0cadb1fac4f590e739fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6">modbusMasterFreeRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:aee980bf753f0cadb1fac4f590e739fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for master's request frame.  <a href="master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6">More...</a><br /></td></tr>
 <tr class="separator:aee980bf753f0cadb1fac4f590e739fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d1322b5da2029288f46f43d14480fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a> exceptionCallback, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
-<tr class="memdesc:af4d1322b5da2029288f46f43d14480fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb">More...</a><br /></td></tr>
-<tr class="separator:af4d1322b5da2029288f46f43d14480fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4318ea143c223c051ea4d3e3543b796c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a4318ea143c223c051ea4d3e3543b796c">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a> exceptionCallback, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memdesc:a4318ea143c223c051ea4d3e3543b796c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8impl_8h.html#a4318ea143c223c051ea4d3e3543b796c">More...</a><br /></td></tr>
+<tr class="separator:a4318ea143c223c051ea4d3e3543b796c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe38fae0f89de04fa616d105f660d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:a5fe38fae0f89de04fa616d105f660d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">More...</a><br /></td></tr>
 <tr class="separator:a5fe38fae0f89de04fa616d105f660d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -538,8 +538,8 @@ MODBUS_OK on success </dd></dl>
 
 </div>
 </div>
-<a id="af4d1322b5da2029288f46f43d14480fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4d1322b5da2029288f46f43d14480fb">&#9670;&nbsp;</a></span>modbusMasterInit()</h2>
+<a id="a4318ea143c223c051ea4d3e3543b796c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4318ea143c223c051ea4d3e3543b796c">&#9670;&nbsp;</a></span>modbusMasterInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,12 +553,6 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a>&#160;</td>
-          <td class="paramname"><em>allocator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a>&#160;</td>
           <td class="paramname"><em>dataCallback</em>, </td>
         </tr>
@@ -567,6 +561,12 @@ MODBUS_OK on success </dd></dl>
           <td></td>
           <td class="paramtype"><a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a>&#160;</td>
           <td class="paramname"><em>exceptionCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a>&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -592,9 +592,9 @@ MODBUS_OK on success </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct to be initialized </td></tr>
-    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator()</a>) (required) </td></tr>
     <tr><td class="paramname">dataCallback</td><td>Callback function for handling incoming data (required) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
+    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator()</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to an array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the master. </td></tr>
     <tr><td class="paramname">functionCount</td><td>Number of elements in the <code>functions</code> array (required) </td></tr>
   </table>

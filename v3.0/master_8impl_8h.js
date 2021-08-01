@@ -11,7 +11,7 @@ var master_8impl_8h =
     [ "modbusMasterDestroy", "master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25", null ],
     [ "modbusMasterFreeRequest", "master_8impl_8h.html#aee980bf753f0cadb1fac4f590e739fa6", null ],
     [ "modbusMasterGetUserPointer", "master_8impl_8h.html#a5d006618bd2bd9007316bc83cd06ee85", null ],
-    [ "modbusMasterInit", "master_8impl_8h.html#af4d1322b5da2029288f46f43d14480fb", null ],
+    [ "modbusMasterInit", "master_8impl_8h.html#a4318ea143c223c051ea4d3e3543b796c", null ],
     [ "modbusMasterSetUserPointer", "master_8impl_8h.html#a8ec970523e07cb3dabeac6dbba16811a", null ],
     [ "modbusParseResponsePDU", "master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3", null ],
     [ "modbusParseResponseRTU", "master_8impl_8h.html#a151b85c221ae43804856eb92737498e5", null ],

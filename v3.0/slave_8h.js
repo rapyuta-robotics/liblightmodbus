@@ -29,7 +29,7 @@ var slave_8h =
     [ "modbusSlaveGetResponse", "slave_8h.html#a193bbc26c3169b8df63640fb42091621", null ],
     [ "modbusSlaveGetResponseLength", "slave_8h.html#a3f1d9c35e9547f200b2dc28578b6b944", null ],
     [ "modbusSlaveGetUserPointer", "slave_8h.html#a4d8a4c8a9325c297c60506321c82b341", null ],
-    [ "modbusSlaveInit", "slave_8h.html#aa48a592d418b5d822e25814ad048d954", null ],
+    [ "modbusSlaveInit", "slave_8h.html#a70d001a589643a3d893924dbbd276e2f", null ],
     [ "modbusSlaveSetUserPointer", "slave_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3", null ],
     [ "modbusSlaveDefaultFunctionCount", "slave_8h.html#a1ed4f578aa9ac64591f7da2a50aca910", null ],
     [ "modbusSlaveDefaultFunctions", "slave_8h.html#a0c75d5358eca0b3d71261269c55870d3", null ]
