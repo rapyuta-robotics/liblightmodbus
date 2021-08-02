@@ -114,16 +114,70 @@ Master initialization</h1>
 <div class="ttc" id="astructModbusMaster_html"><div class="ttname"><a href="structModbusMaster.html">ModbusMaster</a></div><div class="ttdoc">Master device status.</div><div class="ttdef"><b>Definition:</b> master.h:76</div></div>
 </div><!-- fragment --><p>Similarly to slave, master has two callbacks - data callback and exception callback. The first is used for processing all register data incoming to master, the latter for handling exceptions reported by the slave. These callback are described in more detail in <a class="el" href="master.html#master-data-callback">Data callback</a> and <a class="el" href="master.html#master-exception-callback">Exception callback</a>.</p>
 <p>Master also has its own memory allocator - please refer to <a class="el" href="allocators.html">Custom allocators</a> for more information.</p>
-<p>The 5th argument determines the set of functions supported by the master device. It should be a pointer to an array of <a class="el" href="structModbusMasterFunctionHandler.html" title="Associates Modbus function ID with a pointer to a response parsing function.">ModbusMasterFunctionHandler</a> structures which associate function codes with callbacks. The lifetime of this array must not be shorter than the lifetime of the master. The last argument should contain length of this array.</p>
+<p>The 5th argument determines the set of functions supported by the master device. It should be a pointer to an array of <code><a class="el" href="structModbusMasterFunctionHandler.html" title="Associates Modbus function ID with a pointer to a response parsing function.">ModbusMasterFunctionHandler</a></code> structures which associate function codes with callbacks. The lifetime of this array must not be shorter than the lifetime of the master. The last argument should contain length of this array.</p>
 <h1><a class="anchor" id="master-data-callback"></a>
 Data callback</h1>
-<dl class="section note"><dt>Note</dt><dd>Return values from this callback are ignored. This functionality, however, should not be relied upon and may be subject to change in future releases.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>Complete this section</dd></dl>
-<h1><a class="anchor" id="master-exception-callback"></a>
+<p>The data callback is a function matching <code>ModbusDataCallback</code>, used to receive data read from the slaves.</p>
+<p>This function is called from <code>modbusParseResponse*()</code> for every received register/coil/input value. The address of the slave, index of the register, its value and function used to acquire it are provided inside <code><a class="el" href="structModbusDataCallbackArgs.html" title="Arguments for the data callback.">ModbusDataCallbackArgs</a></code> provided as an argument.</p>
+<p>The data callback must return a <code>ModbusError</code>. It should always return <code>MODBUS_OK</code>.</p>
+<dl class="section note"><dt>Note</dt><dd>Return values from this callback are ignored. This, however, should not be relied upon and may be subject to change in future releases.</dd></dl>
+<p>An example of a simple data callback printing out all received data: </p><div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">    Data callback for printing all incoming data</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> dataCallback(<a class="code" href="structModbusMaster.html">ModbusMaster</a> *master, <span class="keyword">const</span> <a class="code" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</div>
+<div class="line">{</div>
+<div class="line">    printf(</div>
+<div class="line">        <span class="stringliteral">&quot;Received data:\n&quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;\t from: %d\n&quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;\t  fun: %d\n&quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;\t type: %s\n&quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;\t   id: %d\n&quot;</span></div>
+<div class="line">        <span class="stringliteral">&quot;\tvalue: %d\n&quot;</span>,</div>
+<div class="line">        args-&gt;<a class="code" href="structModbusDataCallbackArgs.html#afb3c81cbf60b1c461e25bd7a5115b5bd">address</a>,</div>
+<div class="line">        args-&gt;<a class="code" href="structModbusDataCallbackArgs.html#a164f69c8dc82314a92fbbcfc8fbab7dc">function</a>,</div>
+<div class="line">        <a class="code" href="debug_8h.html#ac176d9d1249e4585c0f3cbca47a14646">modbusDataTypeStr</a>(args-&gt;<a class="code" href="structModbusDataCallbackArgs.html#ae1743537afa977b2d0301d0cd6d6b155">type</a>), <span class="comment">// Requires LIGHTMODBUS_DEBUG</span></div>
+<div class="line">        args-&gt;<a class="code" href="structModbusDataCallbackArgs.html#aa74530fdd8af6db1bf86226c61c02235">index</a>,</div>
+<div class="line">        args-&gt;<a class="code" href="structModbusDataCallbackArgs.html#a698a52a6233be7a94bcea8e707c1e853">value</a></div>
+<div class="line">    );</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Always return MODBUS_OK</span></div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>;</div>
+<div class="line">}</div>
+<div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6e"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a></div><div class="ttdeci">ModbusError</div><div class="ttdoc">Represtents different kinds of errors.</div><div class="ttdef"><b>Definition:</b> base.h:99</div></div>
+<div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a></div><div class="ttdeci">@ MODBUS_OK</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> base.h:105</div></div>
+<div class="ttc" id="adebug_8h_html_ac176d9d1249e4585c0f3cbca47a14646"><div class="ttname"><a href="debug_8h.html#ac176d9d1249e4585c0f3cbca47a14646">modbusDataTypeStr</a></div><div class="ttdeci">const char * modbusDataTypeStr(ModbusDataType type)</div><div class="ttdoc">Returns a string containing the name of the ModbusDataType enum value.</div><div class="ttdef"><b>Definition:</b> debug.impl.h:91</div></div>
+<div class="ttc" id="astructModbusDataCallbackArgs_html"><div class="ttname"><a href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a></div><div class="ttdoc">Arguments for the data callback.</div><div class="ttdef"><b>Definition:</b> master.h:35</div></div>
+<div class="ttc" id="astructModbusDataCallbackArgs_html_a164f69c8dc82314a92fbbcfc8fbab7dc"><div class="ttname"><a href="structModbusDataCallbackArgs.html#a164f69c8dc82314a92fbbcfc8fbab7dc">ModbusDataCallbackArgs::function</a></div><div class="ttdeci">uint8_t function</div><div class="ttdoc">Function that reported this value.</div><div class="ttdef"><b>Definition:</b> master.h:39</div></div>
+<div class="ttc" id="astructModbusDataCallbackArgs_html_a698a52a6233be7a94bcea8e707c1e853"><div class="ttname"><a href="structModbusDataCallbackArgs.html#a698a52a6233be7a94bcea8e707c1e853">ModbusDataCallbackArgs::value</a></div><div class="ttdeci">uint16_t value</div><div class="ttdoc">Value of the register.</div><div class="ttdef"><b>Definition:</b> master.h:38</div></div>
+<div class="ttc" id="astructModbusDataCallbackArgs_html_aa74530fdd8af6db1bf86226c61c02235"><div class="ttname"><a href="structModbusDataCallbackArgs.html#aa74530fdd8af6db1bf86226c61c02235">ModbusDataCallbackArgs::index</a></div><div class="ttdeci">uint16_t index</div><div class="ttdoc">Index of the register.</div><div class="ttdef"><b>Definition:</b> master.h:37</div></div>
+<div class="ttc" id="astructModbusDataCallbackArgs_html_ae1743537afa977b2d0301d0cd6d6b155"><div class="ttname"><a href="structModbusDataCallbackArgs.html#ae1743537afa977b2d0301d0cd6d6b155">ModbusDataCallbackArgs::type</a></div><div class="ttdeci">ModbusDataType type</div><div class="ttdoc">Type of Modbus register.</div><div class="ttdef"><b>Definition:</b> master.h:36</div></div>
+<div class="ttc" id="astructModbusDataCallbackArgs_html_afb3c81cbf60b1c461e25bd7a5115b5bd"><div class="ttname"><a href="structModbusDataCallbackArgs.html#afb3c81cbf60b1c461e25bd7a5115b5bd">ModbusDataCallbackArgs::address</a></div><div class="ttdeci">uint8_t address</div><div class="ttdoc">Address of the slave.</div><div class="ttdef"><b>Definition:</b> master.h:40</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="master-exception-callback"></a>
 Exception callback</h1>
-<dl class="section note"><dt>Note</dt><dd>Return values from this callback are ignored. This functionality, however, should not be relied upon and may be subject to change in future releases.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Complete this section</dd></dl>
-<h1><a class="anchor" id="master-requests"></a>
+<p>Master exception callback is a function matching <code>ModbusMasterExceptionCallback</code> called when an exception response frame is parsed by one of the <code>modbusParseResponse*()</code> functions.</p>
+<p>The function is provided with address of the slave that reported this exception, function code of the function that caused it and a Modbus exception code (<code>ModbusExceptionCode</code>). It must return a <code>ModbusError</code> value, which should be <code>MODBUS_OK</code>.</p>
+<dl class="section note"><dt>Note</dt><dd>Return values from this callback are ignored. This, however, should not be relied upon and may be subject to change in future releases.</dd></dl>
+<p>An example of a simple exception callback printing out all received exceptions: </p><div class="fragment"><div class="line"><span class="comment">/*</span></div>
+<div class="line"><span class="comment">    Exception callback for printing out exceptions on master side</span></div>
+<div class="line"><span class="comment">*/</span></div>
+<div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> masterExceptionCallback(</div>
+<div class="line">    <a class="code" href="structModbusMaster.html">ModbusMaster</a> *master,</div>
+<div class="line">    uint8_t address,</div>
+<div class="line">    uint8_t <span class="keyword">function</span>,</div>
+<div class="line">    <a class="code" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</div>
+<div class="line">{</div>
+<div class="line">    printf(</div>
+<div class="line">        <span class="stringliteral">&quot;Received exception %s (function %d) from slave %d\n&quot;</span>,</div>
+<div class="line">        <a class="code" href="debug_8h.html#adfffce55a1aa44629a0334ca7b93e767">modbusExceptionCodeStr</a>(code),</div>
+<div class="line">        <span class="keyword">function</span>,</div>
+<div class="line">        address);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Always return MODBUS_OK</span></div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>;</div>
+<div class="line">}</div>
+<div class="ttc" id="abase_8h_html_a0b7f726dfaa2b4cf98aaaed1eb42fa72"><div class="ttname"><a href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a></div><div class="ttdeci">ModbusExceptionCode</div><div class="ttdoc">Represents a Modbus exception code.</div><div class="ttdef"><b>Definition:</b> base.h:196</div></div>
+<div class="ttc" id="adebug_8h_html_adfffce55a1aa44629a0334ca7b93e767"><div class="ttname"><a href="debug_8h.html#adfffce55a1aa44629a0334ca7b93e767">modbusExceptionCodeStr</a></div><div class="ttdeci">const char * modbusExceptionCodeStr(ModbusExceptionCode code)</div><div class="ttdoc">Returns a string containing the name of the ModbusExceptionCode enum value.</div><div class="ttdef"><b>Definition:</b> debug.impl.h:72</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="master-requests"></a>
 Building requests</h1>
 <p>Master side of the library provides a set of functions for building requests. They are named according to the pattern <code>modbusMasterBuildRequest*()</code>. Where <code>*</code> is code of the function followed by the Modbus request format to be generated (PDU, RTU or TCP).</p>
 <p>The functions without PDU, RTU or TCP at the end of their name are generic functions responsible for building the request frame and must only be used in between calls to <code>modbusBeginRequest*()</code> and <code>modbusEndRequest*()</code>.</p>
@@ -131,65 +185,65 @@ Building requests</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Function code   </th><th class="markdownTableHeadNone">Description   </th><th class="markdownTableHeadNone">Functions    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">01   </td><td class="markdownTableBodyNone">Read multiple coils   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#a43625f73409a29020da28f377e0de02d" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01()</a><br  />
-<a class="el" href="master__func_8h.html#a036fd7e438c21e4436eb9e1992a64c67" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01PDU()</a><br  />
-<a class="el" href="master__func_8h.html#acb7c8487c5dfd3e2bde1d2eb4e1c7811" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01RTU()</a><br  />
-<a class="el" href="master__func_8h.html#a49c51b80e31a0ab3ee254c5f82c760ec" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">01   </td><td class="markdownTableBodyNone">Read multiple coils   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#a43625f73409a29020da28f377e0de02d" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a036fd7e438c21e4436eb9e1992a64c67" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#acb7c8487c5dfd3e2bde1d2eb4e1c7811" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a49c51b80e31a0ab3ee254c5f82c760ec" title="Read multiple coils - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest01TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">02   </td><td class="markdownTableBodyNone">Read multiple discrete inputs   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#a9843a13972c4fca9c0f252405ad1d3e5" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02()</a><br  />
-<a class="el" href="master__func_8h.html#aa4e2b9bc734bcf9cfe11446978ad2749" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a7c9e76a1b3413934be7db3ad9a7c4376" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02RTU()</a><br  />
-<a class="el" href="master__func_8h.html#a8b59ff3c710176c0dbf34406fe655626" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">02   </td><td class="markdownTableBodyNone">Read multiple discrete inputs   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#a9843a13972c4fca9c0f252405ad1d3e5" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#aa4e2b9bc734bcf9cfe11446978ad2749" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a7c9e76a1b3413934be7db3ad9a7c4376" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a8b59ff3c710176c0dbf34406fe655626" title="Read multiple discrete inputs - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest02TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">03   </td><td class="markdownTableBodyNone">Read multiple holding registers   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#aac59dbdb7f5e29c4aeca3be13bd13b0c" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03()</a><br  />
-<a class="el" href="master__func_8h.html#adf65ea5a34d043faa37140f6a55d89cf" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a981113c60842ea2229c3d3e257121d10" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03RTU()</a><br  />
-<a class="el" href="master__func_8h.html#acbc595bfdd31376ef9888734d7e16afd" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">03   </td><td class="markdownTableBodyNone">Read multiple holding registers   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#aac59dbdb7f5e29c4aeca3be13bd13b0c" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#adf65ea5a34d043faa37140f6a55d89cf" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a981113c60842ea2229c3d3e257121d10" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#acbc595bfdd31376ef9888734d7e16afd" title="Read multiple holding registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest03TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">04   </td><td class="markdownTableBodyNone">Read multiple input registers   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#a3e418028607e875aafd104c1b6b37ccd" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04()</a><br  />
-<a class="el" href="master__func_8h.html#a71851993d0a0918462301d9f4d6fe6aa" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04PDU()</a><br  />
-<a class="el" href="master__func_8h.html#adb03361e5219534d6f7dc18d787660e6" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04RTU()</a><br  />
-<a class="el" href="master__func_8h.html#a12df31965315bcddfcb4c3bb68a579b7" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">04   </td><td class="markdownTableBodyNone">Read multiple input registers   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#a3e418028607e875aafd104c1b6b37ccd" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a71851993d0a0918462301d9f4d6fe6aa" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#adb03361e5219534d6f7dc18d787660e6" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a12df31965315bcddfcb4c3bb68a579b7" title="Read multiple input registers - a wrapper for modbusBuildRequest01020304()">modbusBuildRequest04TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">05   </td><td class="markdownTableBodyNone">Write a single coil   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#ae27d88c4804620b47abc98dbc6e1640c" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05()</a><br  />
-<a class="el" href="master__func_8h.html#aa5a433b3e7a48e1f3256e9a7ebc2d5f9" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a1ad7f539bc45d5d943fb1339c7d1f2bd" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05RTU()</a><br  />
-<a class="el" href="master__func_8h.html#ada83898ef1eb626e2d6a04d02f3ee714" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">05   </td><td class="markdownTableBodyNone">Write a single coil   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#ae27d88c4804620b47abc98dbc6e1640c" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#aa5a433b3e7a48e1f3256e9a7ebc2d5f9" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a1ad7f539bc45d5d943fb1339c7d1f2bd" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#ada83898ef1eb626e2d6a04d02f3ee714" title="Write single coil - a wrapper for modbusBuildRequest0506()">modbusBuildRequest05TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">06   </td><td class="markdownTableBodyNone">Write a single holding register   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#ab34ba3d6251baf43facf29e8d02816a7" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06()</a><br  />
-<a class="el" href="master__func_8h.html#ad75b916525fbf3ba80ae77d1e6acc6d0" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a21ea9d0c54ab7551f43934e930a6d39c" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06RTU()</a><br  />
-<a class="el" href="master__func_8h.html#af636ca3cae6a341e1f05e58d23fb3a01" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">06   </td><td class="markdownTableBodyNone">Write a single holding register   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#ab34ba3d6251baf43facf29e8d02816a7" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#ad75b916525fbf3ba80ae77d1e6acc6d0" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a21ea9d0c54ab7551f43934e930a6d39c" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#af636ca3cae6a341e1f05e58d23fb3a01" title="Write single holding register - a wrapper for modbusBuildRequest0506()">modbusBuildRequest06TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">15   </td><td class="markdownTableBodyNone">Write multiple coils   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#a0870a4601ed4e853673660ce94e6361c" title="Write multiple coils.">modbusBuildRequest15()</a><br  />
-<a class="el" href="master__func_8h.html#aa789e4539bf44290fa66eab485b3a8ed" title="Write multiple coils.">modbusBuildRequest15PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a826f619c6a0fcb8647dcc8ec32ea177d" title="Write multiple coils.">modbusBuildRequest15RTU()</a><br  />
-<a class="el" href="master__func_8h.html#ac1c338853c53fa88dfd8f844092a92b0" title="Write multiple coils.">modbusBuildRequest15TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">15   </td><td class="markdownTableBodyNone">Write multiple coils   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#a0870a4601ed4e853673660ce94e6361c" title="Write multiple coils.">modbusBuildRequest15()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#aa789e4539bf44290fa66eab485b3a8ed" title="Write multiple coils.">modbusBuildRequest15PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a826f619c6a0fcb8647dcc8ec32ea177d" title="Write multiple coils.">modbusBuildRequest15RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#ac1c338853c53fa88dfd8f844092a92b0" title="Write multiple coils.">modbusBuildRequest15TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">16   </td><td class="markdownTableBodyNone">Write multiple holding registers   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#a2268e967480c9281b88760dc752e5fa1" title="Write multiple holding registers.">modbusBuildRequest16()</a><br  />
-<a class="el" href="master__func_8h.html#a32e386df6141f16eb8e60ea23c2f333e" title="Write multiple holding registers.">modbusBuildRequest16PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a99ba6b883a865fc1e099d7c85cfa6dbf" title="Write multiple holding registers.">modbusBuildRequest16RTU()</a><br  />
-<a class="el" href="master__func_8h.html#a1a8d9a46ac9b209d10015c52b53b4b31" title="Write multiple holding registers.">modbusBuildRequest16TCP()</a>    </td></tr>
+<td class="markdownTableBodyNone">16   </td><td class="markdownTableBodyNone">Write multiple holding registers   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#a2268e967480c9281b88760dc752e5fa1" title="Write multiple holding registers.">modbusBuildRequest16()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a32e386df6141f16eb8e60ea23c2f333e" title="Write multiple holding registers.">modbusBuildRequest16PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a99ba6b883a865fc1e099d7c85cfa6dbf" title="Write multiple holding registers.">modbusBuildRequest16RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a1a8d9a46ac9b209d10015c52b53b4b31" title="Write multiple holding registers.">modbusBuildRequest16TCP()</a></code>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">22   </td><td class="markdownTableBodyNone">Mask write register   </td><td class="markdownTableBodyNone"><a class="el" href="master__func_8h.html#a1e2e9087a1bd52b7d1329b05324339e6" title="Mask write register request.">modbusBuildRequest22()</a><br  />
-<a class="el" href="master__func_8h.html#ab1f3aaf911b17aea73957f7f276d8d7e" title="Mask write register request.">modbusBuildRequest22PDU()</a><br  />
-<a class="el" href="master__func_8h.html#a1cf59e366f7f160d823b1018fb139d78" title="Mask write register request.">modbusBuildRequest22RTU()</a><br  />
-<a class="el" href="master__func_8h.html#a8febfb77e31253fe6ba709dfa13158a1" title="Mask write register request.">modbusBuildRequest22TCP()</a>   </td></tr>
+<td class="markdownTableBodyNone">22   </td><td class="markdownTableBodyNone">Mask write register   </td><td class="markdownTableBodyNone"><code><a class="el" href="master__func_8h.html#a1e2e9087a1bd52b7d1329b05324339e6" title="Mask write register request.">modbusBuildRequest22()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#ab1f3aaf911b17aea73957f7f276d8d7e" title="Mask write register request.">modbusBuildRequest22PDU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a1cf59e366f7f160d823b1018fb139d78" title="Mask write register request.">modbusBuildRequest22RTU()</a></code><br  />
+<code><a class="el" href="master__func_8h.html#a8febfb77e31253fe6ba709dfa13158a1" title="Mask write register request.">modbusBuildRequest22TCP()</a></code>   </td></tr>
 </table>
 <p>Please see <a class="el" href="master__func_8impl_8h.html">master_func.impl.h</a> for more details.</p>
 <p>For instance, a request to read holding register 17 from slave with id 1 can be built using: </p><div class="fragment"><div class="line"><span class="comment">// For Modbus RTU</span></div>
 <div class="line"><a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err;</div>
 <div class="line">err = modbusMasterBuildRequest03RTU(&amp;master, 1, 17, 1);</div>
 <div class="line">assert(<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err) &amp;&amp; <span class="stringliteral">&quot;modbusMasterBuildRequest03RTU() failed&quot;</span>);</div>
-</div><!-- fragment --><p>If the request has been built successfully, it's avaiable at <code>master.request.data</code> and has length of <code>master.request.length</code> bytes and can be sent to the slave.</p>
+</div><!-- fragment --><p>If the request has been built successfully, it can be acquired using <code><a class="el" href="master_8h.html#a7bf896eb0e5ec0f2cfad680442342fd2" title="Returns a pointer to the request generated by the master.">modbusMasterGetRequest()</a></code>, has length of <code><a class="el" href="master_8h.html#aee8eaa8896feb09e4546b94f2172f203" title="Returns the length of the request generated by the master.">modbusMasterGetRequestLength()</a></code> bytes and can be sent to the slave.</p>
 <h1><a class="anchor" id="master-response"></a>
 Processing responses</h1>
 <p>After obtaining the response from the slave, it's time to process it. In order to do that one of the <code>modbusParseResponse*()</code> functions can be used: </p><div class="fragment"><div class="line"><span class="comment">// For Modbus RTU</span></div>
 <div class="line"><a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err;</div>
 <div class="line">err = <a class="code" href="master_8h.html#a151b85c221ae43804856eb92737498e5">modbusParseResponseRTU</a>(</div>
 <div class="line">    &amp;master,</div>
-<div class="line">    master.<a class="code" href="structModbusMaster.html#a11bbed64eedf431fccb506df8a73cc96">request</a>.<a class="code" href="structModbusFrameBuffer.html#aeb768ff03dc94f043a99adb5405c21e1">data</a>,</div>
-<div class="line">    master.<a class="code" href="structModbusMaster.html#a11bbed64eedf431fccb506df8a73cc96">request</a>.<a class="code" href="structModbusFrameBuffer.html#a78957366a4822aa584702054a38c58b6">length</a>,</div>
+<div class="line">    <a class="code" href="master_8h.html#a7bf896eb0e5ec0f2cfad680442342fd2">modbusMasterGetRequest</a>(&amp;master),</div>
+<div class="line">    <a class="code" href="master_8h.html#aee8eaa8896feb09e4546b94f2172f203">modbusMasterGetRequestLength</a>(&amp;master),</div>
 <div class="line">    slaveResponseData,</div>
 <div class="line">    slaveResponseLength);</div>
 <div class="line"> </div>
@@ -211,14 +265,15 @@ Processing responses</h1>
 <div class="ttc" id="abase_8h_html_a84765449265aa5a31877b749f04cb568"><div class="ttname"><a href="base_8h.html#a84765449265aa5a31877b749f04cb568">modbusGetGeneralError</a></div><div class="ttdeci">static ModbusError modbusGetGeneralError(ModbusErrorInfo err)</div><div class="ttdoc">Returns general error from ModbusErrorInfo.</div><div class="ttdef"><b>Definition:</b> base.h:359</div></div>
 <div class="ttc" id="abase_8h_html_acbf9b7e6b679be88ce4e10ffb617d3e9"><div class="ttname"><a href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">modbusGetResponseError</a></div><div class="ttdeci">static ModbusError modbusGetResponseError(ModbusErrorInfo err)</div><div class="ttdoc">Returns response error from ModbusErrorInfo.</div><div class="ttdef"><b>Definition:</b> base.h:379</div></div>
 <div class="ttc" id="amaster_8h_html_a151b85c221ae43804856eb92737498e5"><div class="ttname"><a href="master_8h.html#a151b85c221ae43804856eb92737498e5">modbusParseResponseRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusParseResponseRTU(ModbusMaster *status, const uint8_t *request, uint16_t requestLength, const uint8_t *response, uint16_t responseLength)</div><div class="ttdoc">Parses a Modbus RTU slave response.</div><div class="ttdef"><b>Definition:</b> master.impl.h:344</div></div>
+<div class="ttc" id="amaster_8h_html_a7bf896eb0e5ec0f2cfad680442342fd2"><div class="ttname"><a href="master_8h.html#a7bf896eb0e5ec0f2cfad680442342fd2">modbusMasterGetRequest</a></div><div class="ttdeci">static const uint8_t * modbusMasterGetRequest(const ModbusMaster *status)</div><div class="ttdoc">Returns a pointer to the request generated by the master.</div><div class="ttdef"><b>Definition:</b> master.h:138</div></div>
+<div class="ttc" id="amaster_8h_html_aee8eaa8896feb09e4546b94f2172f203"><div class="ttname"><a href="master_8h.html#aee8eaa8896feb09e4546b94f2172f203">modbusMasterGetRequestLength</a></div><div class="ttdeci">static const uint16_t modbusMasterGetRequestLength(const ModbusMaster *status)</div><div class="ttdoc">Returns the length of the request generated by the master.</div><div class="ttdef"><b>Definition:</b> master.h:146</div></div>
 <div class="ttc" id="amaster_8h_html_aee980bf753f0cadb1fac4f590e739fa6"><div class="ttname"><a href="master_8h.html#aee980bf753f0cadb1fac4f590e739fa6">modbusMasterFreeRequest</a></div><div class="ttdeci">void modbusMasterFreeRequest(ModbusMaster *status)</div><div class="ttdoc">Frees memory allocated for master's request frame.</div><div class="ttdef"><b>Definition:</b> master.impl.h:113</div></div>
-<div class="ttc" id="astructModbusFrameBuffer_html_a78957366a4822aa584702054a38c58b6"><div class="ttname"><a href="structModbusFrameBuffer.html#a78957366a4822aa584702054a38c58b6">ModbusFrameBuffer::length</a></div><div class="ttdeci">uint16_t length</div><div class="ttdoc">Length of the entire frame (PDU size + padding)</div><div class="ttdef"><b>Definition:</b> base.h:233</div></div>
-<div class="ttc" id="astructModbusFrameBuffer_html_aeb768ff03dc94f043a99adb5405c21e1"><div class="ttname"><a href="structModbusFrameBuffer.html#aeb768ff03dc94f043a99adb5405c21e1">ModbusFrameBuffer::data</a></div><div class="ttdeci">uint8_t * data</div><div class="ttdoc">Pointer to the frame buffer.</div><div class="ttdef"><b>Definition:</b> base.h:231</div></div>
-<div class="ttc" id="astructModbusMaster_html_a11bbed64eedf431fccb506df8a73cc96"><div class="ttname"><a href="structModbusMaster.html#a11bbed64eedf431fccb506df8a73cc96">ModbusMaster::request</a></div><div class="ttdeci">ModbusFrameBuffer request</div><div class="ttdoc">Stores master's request for slave.</div><div class="ttdef"><b>Definition:</b> master.h:87</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="master-cleanup"></a>
 Master cleanup</h1>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Complete this section</dd></dl>
-</div></div><!-- contents -->
+<p>When you're done using an instance of <code><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a></code>, you can destroy it using <code><a class="el" href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25" title="Deinitializes a ModbusMaster struct.">modbusMasterDestroy()</a></code>.</p>
+<div class="fragment"><div class="line"><a class="code" href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a>(&amp;master);</div>
+<div class="ttc" id="amaster_8h_html_a5fe38fae0f89de04fa616d105f660d25"><div class="ttname"><a href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a></div><div class="ttdeci">void modbusMasterDestroy(ModbusMaster *status)</div><div class="ttdoc">Deinitializes a ModbusMaster struct.</div><div class="ttdef"><b>Definition:</b> master.impl.h:164</div></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

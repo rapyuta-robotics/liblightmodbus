@@ -13,6 +13,8 @@ var NAVTREEINDEX1 =
 "slave.html#slave-exception-callback":[2,2],
 "slave.html#slave-init":[2,0],
 "slave.html#slave-register-callback":[2,1],
+"slave.html#slave-register-callback-access":[2,1,0],
+"slave.html#slave-register-callback-rw":[2,1,1],
 "slave.html#slave-requests":[2,3],
 "slave_8h.html":[10,0,1,0,9],
 "slave_8h.html#a01b0b86602f899214d564f5bbe6ffdb2":[10,0,1,0,9,12],
