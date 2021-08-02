@@ -40,6 +40,7 @@ var NAVTREE =
         [ "R/W access check queries", "slave.html#slave-register-callback-access", null ],
         [ "Read queries", "slave.html#slave-register-callback-r", null ],
         [ "Write queries", "slave.html#slave-register-callback-w", null ],
+        [ "Summary", "slave.html#slave-register-callback-summary", null ],
         [ "Example", "slave.html#slave-register-callback-example", null ]
       ] ],
       [ "Slave exception callback", "slave.html#slave-exception-callback", null ],

@@ -133,9 +133,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad9228f4b8d62ad31378ab3fef7c3a2b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3">modbusSlaveSetUserPointer</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, void *ptr)</td></tr>
 <tr class="memdesc:ad9228f4b8d62ad31378ab3fef7c3a2b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows user to set the custom context pointer.  <a href="slave_8impl_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3">More...</a><br /></td></tr>
 <tr class="separator:ad9228f4b8d62ad31378ab3fef7c3a2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d8a4c8a9325c297c60506321c82b341"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a4d8a4c8a9325c297c60506321c82b341">modbusSlaveGetUserPointer</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
-<tr class="memdesc:a4d8a4c8a9325c297c60506321c82b341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreieves the custom context pointer.  <a href="slave_8impl_8h.html#a4d8a4c8a9325c297c60506321c82b341">More...</a><br /></td></tr>
-<tr class="separator:a4d8a4c8a9325c297c60506321c82b341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf87609b7c450972a151dd7966ccd972"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#aaf87609b7c450972a151dd7966ccd972">modbusSlaveGetUserPointer</a> (const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
+<tr class="memdesc:aaf87609b7c450972a151dd7966ccd972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreieves the custom context pointer.  <a href="slave_8impl_8h.html#aaf87609b7c450972a151dd7966ccd972">More...</a><br /></td></tr>
+<tr class="separator:aaf87609b7c450972a151dd7966ccd972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b0b86602f899214d564f5bbe6ffdb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2">modbusBuildException</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
 <tr class="memdesc:a01b0b86602f899214d564f5bbe6ffdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an exception response frame.  <a href="slave_8impl_8h.html#a01b0b86602f899214d564f5bbe6ffdb2">More...</a><br /></td></tr>
 <tr class="separator:a01b0b86602f899214d564f5bbe6ffdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -643,8 +643,8 @@ MODBUS_OK on success </dd></dl>
 
 </div>
 </div>
-<a id="a4d8a4c8a9325c297c60506321c82b341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d8a4c8a9325c297c60506321c82b341">&#9670;&nbsp;</a></span>modbusSlaveGetUserPointer()</h2>
+<a id="aaf87609b7c450972a151dd7966ccd972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf87609b7c450972a151dd7966ccd972">&#9670;&nbsp;</a></span>modbusSlaveGetUserPointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -652,7 +652,7 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="memname">void* modbusSlaveGetUserPointer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
           <td></td>
         </tr>

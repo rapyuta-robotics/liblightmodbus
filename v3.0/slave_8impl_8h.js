@@ -9,7 +9,7 @@ var slave_8impl_8h =
     [ "modbusSlaveDefaultAllocator", "slave_8impl_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df", null ],
     [ "modbusSlaveDestroy", "slave_8impl_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f", null ],
     [ "modbusSlaveFreeResponse", "slave_8impl_8h.html#a5e517b65cb8b32010146fa80b78bc848", null ],
-    [ "modbusSlaveGetUserPointer", "slave_8impl_8h.html#a4d8a4c8a9325c297c60506321c82b341", null ],
+    [ "modbusSlaveGetUserPointer", "slave_8impl_8h.html#aaf87609b7c450972a151dd7966ccd972", null ],
     [ "modbusSlaveInit", "slave_8impl_8h.html#a70d001a589643a3d893924dbbd276e2f", null ],
     [ "modbusSlaveSetUserPointer", "slave_8impl_8h.html#ad9228f4b8d62ad31378ab3fef7c3a2b3", null ],
     [ "modbusSlaveDefaultFunctionCount", "slave_8impl_8h.html#a1ed4f578aa9ac64591f7da2a50aca910", null ],
