@@ -2,9 +2,11 @@ var slave_8h =
 [
     [ "ModbusSlaveFunctionHandler", "structModbusSlaveFunctionHandler.html", "structModbusSlaveFunctionHandler" ],
     [ "ModbusRegisterCallbackArgs", "structModbusRegisterCallbackArgs.html", "structModbusRegisterCallbackArgs" ],
+    [ "ModbusRegisterCallbackResult", "structModbusRegisterCallbackResult.html", "structModbusRegisterCallbackResult" ],
     [ "ModbusSlave", "structModbusSlave.html", "structModbusSlave" ],
-    [ "ModbusRegisterCallback", "slave_8h.html#a929001ed76f79c22c54a0595073d2543", null ],
+    [ "ModbusRegisterCallback", "slave_8h.html#a0c4ee8977078bad93fa06d355938a894", null ],
     [ "ModbusRegisterCallbackArgs", "slave_8h.html#af8fcd41e7835c0f3a3db273b825fecdb", null ],
+    [ "ModbusRegisterCallbackResult", "slave_8h.html#a7861fdcfba7900d1c7e78159374c62e0", null ],
     [ "ModbusRegisterQuery", "slave_8h.html#a9beec9b20c9bccb826fe2072c6362f88", null ],
     [ "ModbusSlave", "slave_8h.html#aa0d5a7f6e38aad10e5ef58443f31832a", null ],
     [ "ModbusSlaveAllocator", "slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7", null ],

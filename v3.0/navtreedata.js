@@ -38,7 +38,9 @@ var NAVTREE =
       [ "Slave initialization", "slave.html#slave-init", null ],
       [ "Register callback", "slave.html#slave-register-callback", [
         [ "R/W access check queries", "slave.html#slave-register-callback-access", null ],
-        [ "R/W queries", "slave.html#slave-register-callback-rw", null ]
+        [ "Read queries", "slave.html#slave-register-callback-r", null ],
+        [ "Write queries", "slave.html#slave-register-callback-w", null ],
+        [ "Example", "slave.html#slave-register-callback-example", null ]
       ] ],
       [ "Slave exception callback", "slave.html#slave-exception-callback", null ],
       [ "Request processing", "slave.html#slave-requests", null ],

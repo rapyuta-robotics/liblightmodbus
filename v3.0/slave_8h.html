@@ -125,6 +125,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusRegisterCallbackArgs.html">ModbusRegisterCallbackArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains arguments for the register callback function.  <a href="structModbusRegisterCallbackArgs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusRegisterCallbackResult.html">ModbusRegisterCallbackResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains values returned by the slave register callback.  <a href="structModbusRegisterCallbackResult.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusSlave.html">ModbusSlave</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slave device status.  <a href="structModbusSlave.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,9 +149,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:af8fcd41e7835c0f3a3db273b825fecdb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusRegisterCallbackArgs.html">ModbusRegisterCallbackArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#af8fcd41e7835c0f3a3db273b825fecdb">ModbusRegisterCallbackArgs</a></td></tr>
 <tr class="memdesc:af8fcd41e7835c0f3a3db273b825fecdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains arguments for the register callback function.  <a href="slave_8h.html#af8fcd41e7835c0f3a3db273b825fecdb">More...</a><br /></td></tr>
 <tr class="separator:af8fcd41e7835c0f3a3db273b825fecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929001ed76f79c22c54a0595073d2543"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const <a class="el" href="structModbusRegisterCallbackArgs.html">ModbusRegisterCallbackArgs</a> *args, uint16_t *result)</td></tr>
-<tr class="memdesc:a929001ed76f79c22c54a0595073d2543"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to callback for performing all register operations.  <a href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">More...</a><br /></td></tr>
-<tr class="separator:a929001ed76f79c22c54a0595073d2543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7861fdcfba7900d1c7e78159374c62e0"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusRegisterCallbackResult.html">ModbusRegisterCallbackResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a7861fdcfba7900d1c7e78159374c62e0">ModbusRegisterCallbackResult</a></td></tr>
+<tr class="memdesc:a7861fdcfba7900d1c7e78159374c62e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains values returned by the slave register callback.  <a href="slave_8h.html#a7861fdcfba7900d1c7e78159374c62e0">More...</a><br /></td></tr>
+<tr class="separator:a7861fdcfba7900d1c7e78159374c62e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c4ee8977078bad93fa06d355938a894"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a0c4ee8977078bad93fa06d355938a894">ModbusRegisterCallback</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const <a class="el" href="structModbusRegisterCallbackArgs.html">ModbusRegisterCallbackArgs</a> *args, <a class="el" href="structModbusRegisterCallbackResult.html">ModbusRegisterCallbackResult</a> *out)</td></tr>
+<tr class="memdesc:a0c4ee8977078bad93fa06d355938a894"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to callback for performing all register operations.  <a href="slave_8h.html#a0c4ee8977078bad93fa06d355938a894">More...</a><br /></td></tr>
+<tr class="separator:a0c4ee8977078bad93fa06d355938a894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d11c69d7c564af353ab8b36ecd03214"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
 <tr class="memdesc:a1d11c69d7c564af353ab8b36ecd03214"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback called when a Modbus exception is generated (for slave)  <a href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">More...</a><br /></td></tr>
 <tr class="separator:a1d11c69d7c564af353ab8b36ecd03214"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,7 +174,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a70d001a589643a3d893924dbbd276e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70d001a589643a3d893924dbbd276e2f">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, <a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a> exceptionCallback, <a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a> allocator, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memitem:a70d001a589643a3d893924dbbd276e2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70d001a589643a3d893924dbbd276e2f">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, <a class="el" href="slave_8h.html#a0c4ee8977078bad93fa06d355938a894">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#a1d11c69d7c564af353ab8b36ecd03214">ModbusSlaveExceptionCallback</a> exceptionCallback, <a class="el" href="slave_8h.html#a63d5fede3f183535cc24968f6c2d1cf7">ModbusSlaveAllocator</a> allocator, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
 <tr class="memdesc:a70d001a589643a3d893924dbbd276e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes slave device.  <a href="slave_8h.html#a70d001a589643a3d893924dbbd276e2f">More...</a><br /></td></tr>
 <tr class="separator:a70d001a589643a3d893924dbbd276e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">modbusSlaveDestroy</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
@@ -221,14 +227,14 @@ Variables</h2></td></tr>
 <tr class="separator:a1ed4f578aa9ac64591f7da2a50aca910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a929001ed76f79c22c54a0595073d2543"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a929001ed76f79c22c54a0595073d2543">&#9670;&nbsp;</a></span>ModbusRegisterCallback</h2>
+<a id="a0c4ee8977078bad93fa06d355938a894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4ee8977078bad93fa06d355938a894">&#9670;&nbsp;</a></span>ModbusRegisterCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusRegisterCallback) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const <a class="el" href="structModbusRegisterCallbackArgs.html">ModbusRegisterCallbackArgs</a> *args, uint16_t *result)</td>
+          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusRegisterCallback) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const <a class="el" href="structModbusRegisterCallbackArgs.html">ModbusRegisterCallbackArgs</a> *args, <a class="el" href="structModbusRegisterCallbackResult.html">ModbusRegisterCallbackResult</a> *out)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -251,6 +257,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Contains arguments for the register callback function. </p>
+
+</div>
+</div>
+<a id="a7861fdcfba7900d1c7e78159374c62e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7861fdcfba7900d1c7e78159374c62e0">&#9670;&nbsp;</a></span>ModbusRegisterCallbackResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structModbusRegisterCallbackResult.html">ModbusRegisterCallbackResult</a> <a class="el" href="structModbusRegisterCallbackResult.html">ModbusRegisterCallbackResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contains values returned by the slave register callback. </p>
 
 </div>
 </div>
@@ -960,7 +982,7 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="slave_8h.html#a929001ed76f79c22c54a0595073d2543">ModbusRegisterCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="slave_8h.html#a0c4ee8977078bad93fa06d355938a894">ModbusRegisterCallback</a>&#160;</td>
           <td class="paramname"><em>registerCallback</em>, </td>
         </tr>
         <tr>
