@@ -54,6 +54,7 @@ var base_8h =
       [ "MODBUS_EXCEP_NACK", "base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72ab24ca3a3b7540bcb1dc7d4d49912d85d", null ]
     ] ],
     [ "modbusBitsToBytes", "base_8h.html#af23a50b36bef9c09ac82214a52ff4d58", null ],
+    [ "modbusCheckRangeU16", "base_8h.html#a61619958551d902c14ab6e51fb842ea0", null ],
     [ "modbusCRC", "base_8h.html#a11346a546b84663cd92cb30f4ffd1393", null ],
     [ "modbusDefaultAllocator", "base_8h.html#a44aa66c5af48ac588c9392b2e62b126b", null ],
     [ "modbusGetErrorCode", "base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5", null ],

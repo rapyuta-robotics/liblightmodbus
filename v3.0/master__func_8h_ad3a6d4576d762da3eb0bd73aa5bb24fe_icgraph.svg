@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="master__func_8h.html#a43625f73409a29020da28f377e0de02d" target="_top" xlink:title="Read multiple coils &#45; a wrapper for modbusBuildRequest01020304()">
+<g id="a_node2"><a xlink:href="master__func_8h.html#aadb2b7e2d3ee4fbde22cdf076713d75e" target="_top" xlink:title="Read multiple coils &#45; a wrapper for modbusBuildRequest01020304()">
 <polygon fill="none" stroke="black" points="0,-114.5 0,-133.5 119,-133.5 119,-114.5 0,-114.5"/>
 <text text-anchor="middle" x="59.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBuildRequest01</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="master__func_8h.html#a9843a13972c4fca9c0f252405ad1d3e5" target="_top" xlink:title="Read multiple discrete inputs &#45; a wrapper for modbusBuildRequest01020304()">
+<g id="a_node3"><a xlink:href="master__func_8h.html#a2a6452a8200d77483254bef08ee2cf8c" target="_top" xlink:title="Read multiple discrete inputs &#45; a wrapper for modbusBuildRequest01020304()">
 <polygon fill="none" stroke="black" points="0,-76.5 0,-95.5 119,-95.5 119,-76.5 0,-76.5"/>
 <text text-anchor="middle" x="59.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBuildRequest02</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="master__func_8h.html#aac59dbdb7f5e29c4aeca3be13bd13b0c" target="_top" xlink:title="Read multiple holding registers &#45; a wrapper for modbusBuildRequest01020304()">
+<g id="a_node4"><a xlink:href="master__func_8h.html#a1c7ed51c58b1ef42ee176833c7fd0515" target="_top" xlink:title="Read multiple holding registers &#45; a wrapper for modbusBuildRequest01020304()">
 <polygon fill="none" stroke="black" points="0,-38.5 0,-57.5 119,-57.5 119,-38.5 0,-38.5"/>
 <text text-anchor="middle" x="59.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBuildRequest03</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="master__func_8h.html#a3e418028607e875aafd104c1b6b37ccd" target="_top" xlink:title="Read multiple input registers &#45; a wrapper for modbusBuildRequest01020304()">
+<g id="a_node5"><a xlink:href="master__func_8h.html#a22bf4541196b3e88c0a86861d334e3b1" target="_top" xlink:title="Read multiple input registers &#45; a wrapper for modbusBuildRequest01020304()">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 119,-19.5 119,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="59.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBuildRequest04</text>
 </a>

@@ -1,6 +1,6 @@
 <map id="modbusBitsToBytes" name="modbusBitsToBytes">
 <area shape="rect" id="node1" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="269,81,408,108"/>
-<area shape="rect" id="node2" href="$master__func_8h.html#a0870a4601ed4e853673660ce94e6361c" title="Write multiple coils." alt="" coords="34,5,193,32"/>
+<area shape="rect" id="node2" href="$master__func_8h.html#ae9842e659ccd8942905e685923de8916" title="Write multiple coils." alt="" coords="34,5,193,32"/>
 <area shape="rect" id="node3" href="$slave__func_8h.html#aff8edb5d03d53414296edee03a83691a" title="Handles requests 01, 02, 03 and 04 (Read Multiple XX) and generates response." alt="" coords="10,56,217,83"/>
 <area shape="rect" id="node4" href="$slave__func_8h.html#a50a1e72594d7aec7101698bf9089b4de" title="Handles requests 15 and 16 (Write Multiple XX) and generates response." alt="" coords="24,107,203,133"/>
 <area shape="rect" id="node5" href="$master__func_8h.html#adafbaa72d4df36b3577ce5494b460a2b" title="Parses response to requests 01, 02, 03 and 04." alt="" coords="5,157,221,184"/>

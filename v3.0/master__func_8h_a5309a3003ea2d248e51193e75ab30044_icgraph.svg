@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="master__func_8h.html#ae27d88c4804620b47abc98dbc6e1640c" target="_top" xlink:title="Write single coil &#45; a wrapper for modbusBuildRequest0506()">
+<g id="a_node2"><a xlink:href="master__func_8h.html#a7151355c8c34af355fd779f88a64e125" target="_top" xlink:title="Write single coil &#45; a wrapper for modbusBuildRequest0506()">
 <polygon fill="none" stroke="black" points="0,-38.5 0,-57.5 119,-57.5 119,-38.5 0,-38.5"/>
 <text text-anchor="middle" x="59.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBuildRequest05</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="master__func_8h.html#ab34ba3d6251baf43facf29e8d02816a7" target="_top" xlink:title="Write single holding register &#45; a wrapper for modbusBuildRequest0506()">
+<g id="a_node3"><a xlink:href="master__func_8h.html#a56779853bdfd2bb75601be746c20eb09" target="_top" xlink:title="Write single holding register &#45; a wrapper for modbusBuildRequest0506()">
 <polygon fill="none" stroke="black" points="0,-0.5 0,-19.5 119,-19.5 119,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="59.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBuildRequest06</text>
 </a>

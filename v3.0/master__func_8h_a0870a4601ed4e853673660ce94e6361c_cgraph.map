@@ -1,8 +1,0 @@
-<map id="modbusBuildRequest15" name="modbusBuildRequest15">
-<area shape="rect" id="node1" title="Write multiple coils." alt="" coords="5,107,164,133"/>
-<area shape="rect" id="node2" href="$base_8h.html#af23a50b36bef9c09ac82214a52ff4d58" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="244,5,383,32"/>
-<area shape="rect" id="node3" href="$base_8h.html#aff2248343762719cdacf818e4dae3709" title="Reads n&#45;th bit from an array." alt="" coords="248,56,379,83"/>
-<area shape="rect" id="node4" href="$base_8h.html#a5d9947eb500e2d0c87491a0adce53c2a" title="Writes n&#45;th bit in an array." alt="" coords="248,107,379,133"/>
-<area shape="rect" id="node5" href="$master_8h.html#a2f754195d448ab90661dd55351064e59" title="Allocates memory for the request frame." alt="" coords="212,157,415,184"/>
-<area shape="rect" id="node6" href="$base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="265,208,362,235"/>
-</map>
