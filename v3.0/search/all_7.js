@@ -28,10 +28,11 @@ var searchData=
   ['lightmodbus_5ff16s_48',['LIGHTMODBUS_F16S',['../lightmodbus_8h.html#a844051353c39c06bb44e550a5bfd186e',1,'lightmodbus.h']]],
   ['lightmodbus_5ff22m_49',['LIGHTMODBUS_F22M',['../lightmodbus_8h.html#a989e6cd70a451fdaf1a9542aeaef385e',1,'lightmodbus.h']]],
   ['lightmodbus_5ff22s_50',['LIGHTMODBUS_F22S',['../lightmodbus_8h.html#a87bc0d8aee610e1bc7e0964b9809da89',1,'lightmodbus.h']]],
-  ['lightmodbus_5fmaster_51',['LIGHTMODBUS_MASTER',['../lightmodbus_8h.html#a1e62f3bba555542e54b8266b0ca0e98d',1,'lightmodbus.h']]],
-  ['lightmodbus_5fmaster_5ffull_52',['LIGHTMODBUS_MASTER_FULL',['../lightmodbus_8h.html#a641a19119db29787f2461ad945a546bc',1,'lightmodbus.h']]],
-  ['lightmodbus_5fret_5ferror_53',['LIGHTMODBUS_RET_ERROR',['../base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56',1,'base.h']]],
-  ['lightmodbus_5fslave_54',['LIGHTMODBUS_SLAVE',['../lightmodbus_8h.html#a5dddad386080bcdd4a0c105e416bbac1',1,'lightmodbus.h']]],
-  ['lightmodbus_5fslave_5ffull_55',['LIGHTMODBUS_SLAVE_FULL',['../lightmodbus_8h.html#a9d01e700f2bdad1959e00d30b600ba62',1,'lightmodbus.h']]],
-  ['lightmodbus_5fwarn_5funused_56',['LIGHTMODBUS_WARN_UNUSED',['../base_8h.html#a084ec56bbbca3d40231f7107fa578ae1',1,'base.h']]]
+  ['lightmodbus_5fh_51',['LIGHTMODBUS_H',['../lightmodbus_8h.html#a0ab6f2d64a73a1a88d6b089095a51937',1,'lightmodbus.h']]],
+  ['lightmodbus_5fmaster_52',['LIGHTMODBUS_MASTER',['../lightmodbus_8h.html#a1e62f3bba555542e54b8266b0ca0e98d',1,'lightmodbus.h']]],
+  ['lightmodbus_5fmaster_5ffull_53',['LIGHTMODBUS_MASTER_FULL',['../lightmodbus_8h.html#a641a19119db29787f2461ad945a546bc',1,'lightmodbus.h']]],
+  ['lightmodbus_5fret_5ferror_54',['LIGHTMODBUS_RET_ERROR',['../base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56',1,'base.h']]],
+  ['lightmodbus_5fslave_55',['LIGHTMODBUS_SLAVE',['../lightmodbus_8h.html#a5dddad386080bcdd4a0c105e416bbac1',1,'lightmodbus.h']]],
+  ['lightmodbus_5fslave_5ffull_56',['LIGHTMODBUS_SLAVE_FULL',['../lightmodbus_8h.html#a9d01e700f2bdad1959e00d30b600ba62',1,'lightmodbus.h']]],
+  ['lightmodbus_5fwarn_5funused_57',['LIGHTMODBUS_WARN_UNUSED',['../base_8h.html#a084ec56bbbca3d40231f7107fa578ae1',1,'base.h']]]
 ];
