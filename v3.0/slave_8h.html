@@ -1029,7 +1029,9 @@ MODBUS_OK on success </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>return <a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(ADDRESS)</a> if address is 0 </dd>
+<dd>
+<a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function must not be called on an already initialized <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> struct. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8impl_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
 <dd>

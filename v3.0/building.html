@@ -97,16 +97,14 @@ $(document).ready(function(){initNavTree('building.html',''); initResizable(); }
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>LIGHTMODBUS_IMPL</code>   </td><td class="markdownTableBodyNone">Include implementation    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>LIGHTMODBUS_BIG_ENDIAN</code>   </td><td class="markdownTableBodyNone">Use when your platform uses big endian byte order    </td></tr>
-<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>LIGHTMODBUS_SLAVE</code>   </td><td class="markdownTableBodyNone">Includes slave part of the library    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>LIGHTMODBUS_MASTER</code>   </td><td class="markdownTableBodyNone">Includes master part of the library    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>LIGHTMODBUS_FULL</code>   </td><td class="markdownTableBodyNone">Includes both slave and master modules and all of their functions    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>LIGHTMODBUS_DEBUG</code>   </td><td class="markdownTableBodyNone">Includes some debugging utilities    </td></tr>
+<td class="markdownTableBodyNone"><code>LIGHTMODBUS_FULL</code>   </td><td class="markdownTableBodyNone">Includes both slave and master modules and all of their functions    </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><code>LIGHTMODBUS_DEBUG</code>   </td><td class="markdownTableBodyNone">Includes some debugging utilities    </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>LIGHTMODBUS_MASTER_OMIT_REQUEST_CRC</code>   </td><td class="markdownTableBodyNone">Omits request CRC calculation for request on master side   </td></tr>
 </table>
 <p>Specific master/slave functions can be included by defining macros like <code>LIGHTMODBUS_F01M</code> or <code>LIGHTMODBUS_F22S</code>.</p>
