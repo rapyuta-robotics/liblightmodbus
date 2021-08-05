@@ -21,7 +21,7 @@ var slave_8h =
     ] ],
     [ "modbusBuildException", "slave_8h.html#a01b0b86602f899214d564f5bbe6ffdb2", null ],
     [ "modbusParseRequest", "slave_8h.html#a4be93ca41808b56714f199dd21302541", null ],
-    [ "modbusParseRequestPDU", "slave_8h.html#a374f14849a7108d2578044348e79c2b5", null ],
+    [ "modbusParseRequestPDU", "slave_8h.html#ad438e2f643c3237f52c445f699dbcc96", null ],
     [ "modbusParseRequestRTU", "slave_8h.html#a28b9fe2f4559cd0b1c39aff30099d591", null ],
     [ "modbusParseRequestTCP", "slave_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e", null ],
     [ "modbusSlaveAllocateResponse", "slave_8h.html#af92eebc644e36158bddfba128235fef6", null ],

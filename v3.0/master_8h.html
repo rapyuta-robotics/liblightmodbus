@@ -446,7 +446,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus RTU request. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame is too short </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -493,7 +493,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus TCP request. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame is too short </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -909,15 +909,15 @@ MODBUS_OK on success </dd></dl>
   <table class="params">
     <tr><td class="paramname">address</td><td>Address of the slave that sent in the data </td></tr>
     <tr><td class="paramname">request</td><td>Pointer to the PDU section of the request frame </td></tr>
-    <tr><td class="paramname">requestLength</td><td>Length of the request PDU </td></tr>
+    <tr><td class="paramname">requestLength</td><td>Length of the request PDU (valid range: 1 - 253) </td></tr>
     <tr><td class="paramname">response</td><td>Pointer to the PDU section of the response </td></tr>
-    <tr><td class="paramname">responseLength</td><td>Length of the response PDU </td></tr>
+    <tr><td class="paramname">responseLength</td><td>Length of the response PDU (valid range: 1 - 253) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request has zero length </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request has invalid length </dd>
 <dd>
-<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has zero length </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> on attempt to parse a response to a broadcast request </dd>
 <dd>
@@ -985,15 +985,15 @@ Result from the parsing function on success (modbusParseRequest*() functions) </
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>Pointer to the request frame </td></tr>
-    <tr><td class="paramname">requestLength</td><td>Length of the request </td></tr>
+    <tr><td class="paramname">requestLength</td><td>Length of the request (valid range: 4 - 256) </td></tr>
     <tr><td class="paramname">response</td><td>Pointer to the response frame </td></tr>
-    <tr><td class="paramname">responseLength</td><td>Length of the response </td></tr>
+    <tr><td class="paramname">responseLength</td><td>Length of the response (valid range: 4 - 256) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request is less than 4 bytes long </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request has invalid length </dd>
 <dd>
-<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response is less than 4 bytes long </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(CRC)</a> if the request CRC is invalid </dd>
 <dd>
@@ -1061,15 +1061,15 @@ Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b4
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>Pointer to the request frame </td></tr>
-    <tr><td class="paramname">requestLength</td><td>Length of the request </td></tr>
+    <tr><td class="paramname">requestLength</td><td>Length of the request (valid range: 8 - 260) </td></tr>
     <tr><td class="paramname">response</td><td>Pointer to the response frame </td></tr>
-    <tr><td class="paramname">responseLength</td><td>Length of the response </td></tr>
+    <tr><td class="paramname">responseLength</td><td>Length of the response (valid range: 8 - 260) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request is less than 8 bytes long or if the request frame has different from declared one </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request has invalid length or if the request frame has different from declared one </dd>
 <dd>
-<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response is less than 8 bytes long or if the response frame has different from declared one </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has invalid length or if the response frame has different from declared one </dd>
 <dd>
 <a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(BAD_PROTOCOL)</a> if the protocol ID in request is not 0 </dd>
 <dd>

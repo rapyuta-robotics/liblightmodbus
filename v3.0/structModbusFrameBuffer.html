@@ -108,12 +108,12 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a78957366a4822aa584702054a38c58b6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusFrameBuffer.html#a78957366a4822aa584702054a38c58b6">length</a></td></tr>
 <tr class="memdesc:a78957366a4822aa584702054a38c58b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the entire frame (PDU size + padding)  <a href="structModbusFrameBuffer.html#a78957366a4822aa584702054a38c58b6">More...</a><br /></td></tr>
 <tr class="separator:a78957366a4822aa584702054a38c58b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e6338cd755fffda610de09fdcdd2348"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusFrameBuffer.html#a1e6338cd755fffda610de09fdcdd2348">padding</a></td></tr>
-<tr class="memdesc:a1e6338cd755fffda610de09fdcdd2348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of extra bytes surrounding the PDU.  <a href="structModbusFrameBuffer.html#a1e6338cd755fffda610de09fdcdd2348">More...</a><br /></td></tr>
-<tr class="separator:a1e6338cd755fffda610de09fdcdd2348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabbec1dca38824b10a17da8638e07477"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusFrameBuffer.html#aabbec1dca38824b10a17da8638e07477">pduOffset</a></td></tr>
-<tr class="memdesc:aabbec1dca38824b10a17da8638e07477"><td class="mdescLeft">&#160;</td><td class="mdescRight">PDU offset relative to the beginning of the frame.  <a href="structModbusFrameBuffer.html#aabbec1dca38824b10a17da8638e07477">More...</a><br /></td></tr>
-<tr class="separator:aabbec1dca38824b10a17da8638e07477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3deac7559cf6a5704234465c0e78bb4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusFrameBuffer.html#af3deac7559cf6a5704234465c0e78bb4">padding</a></td></tr>
+<tr class="memdesc:af3deac7559cf6a5704234465c0e78bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of extra bytes surrounding the PDU.  <a href="structModbusFrameBuffer.html#af3deac7559cf6a5704234465c0e78bb4">More...</a><br /></td></tr>
+<tr class="separator:af3deac7559cf6a5704234465c0e78bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33654ca5fa1e215ec38befb86729fd9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModbusFrameBuffer.html#ab33654ca5fa1e215ec38befb86729fd9">pduOffset</a></td></tr>
+<tr class="memdesc:ab33654ca5fa1e215ec38befb86729fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">PDU offset relative to the beginning of the frame.  <a href="structModbusFrameBuffer.html#ab33654ca5fa1e215ec38befb86729fd9">More...</a><br /></td></tr>
+<tr class="separator:ab33654ca5fa1e215ec38befb86729fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores a Modbus frame. </p>
@@ -150,14 +150,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e6338cd755fffda610de09fdcdd2348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e6338cd755fffda610de09fdcdd2348">&#9670;&nbsp;</a></span>padding</h2>
+<a id="af3deac7559cf6a5704234465c0e78bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3deac7559cf6a5704234465c0e78bb4">&#9670;&nbsp;</a></span>padding</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t ModbusFrameBuffer::padding</td>
+          <td class="memname">uint8_t ModbusFrameBuffer::padding</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -182,14 +182,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aabbec1dca38824b10a17da8638e07477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabbec1dca38824b10a17da8638e07477">&#9670;&nbsp;</a></span>pduOffset</h2>
+<a id="ab33654ca5fa1e215ec38befb86729fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33654ca5fa1e215ec38befb86729fd9">&#9670;&nbsp;</a></span>pduOffset</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t ModbusFrameBuffer::pduOffset</td>
+          <td class="memname">uint8_t ModbusFrameBuffer::pduOffset</td>
         </tr>
       </table>
 </div><div class="memdoc">

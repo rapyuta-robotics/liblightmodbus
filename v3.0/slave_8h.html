@@ -201,9 +201,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a4be93ca41808b56714f199dd21302541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a4be93ca41808b56714f199dd21302541">modbusParseRequest</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *request, uint8_t requestLength)</td></tr>
 <tr class="memdesc:a4be93ca41808b56714f199dd21302541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates response honorinng <code>pduOffset</code> and <code>padding</code> set in <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> during response generation.  <a href="slave_8h.html#a4be93ca41808b56714f199dd21302541">More...</a><br /></td></tr>
 <tr class="separator:a4be93ca41808b56714f199dd21302541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374f14849a7108d2578044348e79c2b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a374f14849a7108d2578044348e79c2b5">modbusParseRequestPDU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *request, uint16_t requestLength)</td></tr>
-<tr class="memdesc:a374f14849a7108d2578044348e79c2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates PDU for the response frame.  <a href="slave_8h.html#a374f14849a7108d2578044348e79c2b5">More...</a><br /></td></tr>
-<tr class="separator:a374f14849a7108d2578044348e79c2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad438e2f643c3237f52c445f699dbcc96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#ad438e2f643c3237f52c445f699dbcc96">modbusParseRequestPDU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t address, const uint8_t *request, uint8_t requestLength)</td></tr>
+<tr class="memdesc:ad438e2f643c3237f52c445f699dbcc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates PDU for the response frame.  <a href="slave_8h.html#ad438e2f643c3237f52c445f699dbcc96">More...</a><br /></td></tr>
+<tr class="separator:ad438e2f643c3237f52c445f699dbcc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28b9fe2f4559cd0b1c39aff30099d591"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a28b9fe2f4559cd0b1c39aff30099d591">modbusParseRequestRTU</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const uint8_t *request, uint16_t requestLength)</td></tr>
 <tr class="memdesc:a28b9fe2f4559cd0b1c39aff30099d591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided Modbus RTU request frame and generates a Modbus RTU response.  <a href="slave_8h.html#a28b9fe2f4559cd0b1c39aff30099d591">More...</a><br /></td></tr>
 <tr class="separator:a28b9fe2f4559cd0b1c39aff30099d591"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -515,12 +515,12 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">address</td><td>address of the slave </td></tr>
     <tr><td class="paramname">request</td><td>pointer to the PDU data </td></tr>
-    <tr><td class="paramname">requestLength</td><td>of the PDU </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the PDU (valid range: 1 - 253) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Any errors from parsing functions</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This function expects ModbusSlave::response::pduOffset and ModbusSlave::response::padding to be set properly! If you're looking for a function that operates strictly on the PDU, please use <a class="el" href="slave_8impl_8h.html#a374f14849a7108d2578044348e79c2b5" title="Parses provided PDU and generates PDU for the response frame.">modbusParseRequestPDU()</a> instead.</dd>
+<dl class="section warning"><dt>Warning</dt><dd>This function expects ModbusSlave::response::pduOffset and ModbusSlave::response::padding to be set properly! If you're looking for a function to parse PDU and generate a PDU response, please use <a class="el" href="slave_8impl_8h.html#ad438e2f643c3237f52c445f699dbcc96" title="Parses provided PDU and generates PDU for the response frame.">modbusParseRequestPDU()</a> instead.</dd>
 <dd>
 The response frame can only be accessed if <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> called on the return value of this function evaluates to true. </dd></dl>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -542,8 +542,8 @@ The response frame can only be accessed if <a class="el" href="base_8h.html#a648
 
 </div>
 </div>
-<a id="a374f14849a7108d2578044348e79c2b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a374f14849a7108d2578044348e79c2b5">&#9670;&nbsp;</a></span>modbusParseRequestPDU()</h2>
+<a id="ad438e2f643c3237f52c445f699dbcc96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad438e2f643c3237f52c445f699dbcc96">&#9670;&nbsp;</a></span>modbusParseRequestPDU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,7 +569,7 @@ The response frame can only be accessed if <a class="el" href="base_8h.html#a648
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>requestLength</em>&#160;</td>
         </tr>
         <tr>
@@ -585,20 +585,22 @@ The response frame can only be accessed if <a class="el" href="base_8h.html#a648
   <table class="params">
     <tr><td class="paramname">address</td><td>address of the slave </td></tr>
     <tr><td class="paramname">request</td><td>pointer to the PDU data </td></tr>
-    <tr><td class="paramname">requestLength</td><td>length of the PDU </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the PDU (valid range: 1 - 253) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if length of the frame is invalid </dd>
 <dd>
 Any errors from parsing functions</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The response frame can only be accessed if <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> called on the return value of this function evaluates to true. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The response frame can only be accessed if <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> called on the return value from this function evaluates to true.</dd>
+<dd>
+The <code>requestLength</code> argument is of type <code>uint8_t</code> and not <code>uint16_t</code> as in case of Modbus RTU and TCP. </dd></dl>
 <div id="dynsection-6" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a374f14849a7108d2578044348e79c2b5_cgraph.svg" width="844" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_ad438e2f643c3237f52c445f699dbcc96_cgraph.svg" width="844" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -640,13 +642,15 @@ Any errors from parsing functions</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>pointer to a Modbus RTU frame </td></tr>
-    <tr><td class="paramname">requestLength</td><td>length of the frame </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the frame (valid range: 4 - 256) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if length of the frame is invalid </dd>
 <dd>
 <a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(CRC)</a> if CRC is invalid </dd>
+<dd>
+<a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(ADDRESS)</a> if a response was generated to a broadcast request </dd>
 <dd>
 Any errors from parsing functions</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The response frame can only be accessed if <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> called on the return value of this function evaluates to true. </dd></dl>
@@ -697,7 +701,7 @@ Any errors from parsing functions</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td>pointer to a Modbus TCP frame </td></tr>
-    <tr><td class="paramname">requestLength</td><td>length of the frame </td></tr>
+    <tr><td class="paramname">requestLength</td><td>length of the frame (valid range: 8 - 260) </td></tr>
   </table>
   </dd>
 </dl>
