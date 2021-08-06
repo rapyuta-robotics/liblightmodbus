@@ -30,9 +30,7 @@ var NAVTREE =
       [ "Getting started", "index.html#getting-started", null ]
     ] ],
     [ "Building and integrating liblightmodbus", "building.html", [
-      [ "Embedded platforms", "building.html#embedded", [
-        [ "ESP-IDF", "building.html#ESP-IDF", null ]
-      ] ]
+      [ "Embedded platforms", "building.html#embedded", null ]
     ] ],
     [ "Slave device", "slave.html", [
       [ "Slave initialization", "slave.html#slave-init", null ],
@@ -61,7 +59,6 @@ var NAVTREE =
     ] ],
     [ "Examples", "examples.html", null ],
     [ "Porting code from v2.0 to v3.0", "porting.html", null ],
-    [ "Todo List", "todo.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -88,7 +85,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "allocators.html",
-"pages.html"
+"slave.html#slave-cleanup"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

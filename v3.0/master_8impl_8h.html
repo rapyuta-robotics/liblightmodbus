@@ -130,12 +130,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a5fe38fae0f89de04fa616d105f660d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:a5fe38fae0f89de04fa616d105f660d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25">More...</a><br /></td></tr>
 <tr class="separator:a5fe38fae0f89de04fa616d105f660d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ec970523e07cb3dabeac6dbba16811a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a8ec970523e07cb3dabeac6dbba16811a">modbusMasterSetUserPointer</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, void *ptr)</td></tr>
-<tr class="memdesc:a8ec970523e07cb3dabeac6dbba16811a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows user to set the custom context pointer.  <a href="master_8impl_8h.html#a8ec970523e07cb3dabeac6dbba16811a">More...</a><br /></td></tr>
-<tr class="separator:a8ec970523e07cb3dabeac6dbba16811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e5023edd92e1efb5f92b4948b70a759"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#a8e5023edd92e1efb5f92b4948b70a759">modbusMasterGetUserPointer</a> (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
-<tr class="memdesc:a8e5023edd92e1efb5f92b4948b70a759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreieves the custom context pointer.  <a href="master_8impl_8h.html#a8e5023edd92e1efb5f92b4948b70a759">More...</a><br /></td></tr>
-<tr class="separator:a8e5023edd92e1efb5f92b4948b70a759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad71d034901cd8e22b4d74da7f86cdda9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:ad71d034901cd8e22b4d74da7f86cdda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a PDU-only request.  <a href="master_8impl_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">More...</a><br /></td></tr>
 <tr class="separator:ad71d034901cd8e22b4d74da7f86cdda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -518,26 +512,6 @@ MODBUS_OK on success </dd></dl>
 
 </div>
 </div>
-<a id="a8e5023edd92e1efb5f92b4948b70a759"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e5023edd92e1efb5f92b4948b70a759">&#9670;&nbsp;</a></span>modbusMasterGetUserPointer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* modbusMasterGetUserPointer </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retreieves the custom context pointer. </p>
-
-</div>
-</div>
 <a id="a4318ea143c223c051ea4d3e3543b796c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4318ea143c223c051ea4d3e3543b796c">&#9670;&nbsp;</a></span>modbusMasterInit()</h2>
 
@@ -604,36 +578,6 @@ MODBUS_OK on success </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
 <dd>
 <a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8" title="Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.">modbusMasterDefaultFunctions</a> </dd></dl>
-
-</div>
-</div>
-<a id="a8ec970523e07cb3dabeac6dbba16811a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ec970523e07cb3dabeac6dbba16811a">&#9670;&nbsp;</a></span>modbusMasterSetUserPointer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void modbusMasterSetUserPointer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
-          <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ptr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allows user to set the custom context pointer. </p>
 
 </div>
 </div>
