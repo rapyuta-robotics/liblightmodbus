@@ -295,7 +295,7 @@ Functions</h2></td></tr>
 <div class="line">        if (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err = modbusBuildRequest##f_suffix(status, __VA_ARGS__))) <span class="keywordflow">return</span> err; \</div>
 <div class="line">        return <a class="code" href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a>(status); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="abase_8h_html_a64880e7075f445881485396f3aa869c5"><div class="ttname"><a href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a></div><div class="ttdeci">static uint8_t modbusIsOk(ModbusErrorInfo err)</div><div class="ttdoc">Checks if ModbusErrorInfo contains an error.</div><div class="ttdef"><b>Definition:</b> base.h:366</div></div>
+<div class="ttc" id="abase_8h_html_a64880e7075f445881485396f3aa869c5"><div class="ttname"><a href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a></div><div class="ttdeci">static uint8_t modbusIsOk(ModbusErrorInfo err)</div><div class="ttdoc">Checks if ModbusErrorInfo contains an error.</div><div class="ttdef"><b>Definition:</b> base.h:370</div></div>
 <div class="ttc" id="amaster_8h_html_a973d0a0734fd9bf274a4dd0a43668144"><div class="ttname"><a href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Finalizes a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:188</div></div>
 <div class="ttc" id="amaster_8h_html_ad71d034901cd8e22b4d74da7f86cdda9"><div class="ttname"><a href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Begins a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:177</div></div>
 </div><!-- fragment -->
@@ -3257,9 +3257,19 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if response frame has invalid length </dd>
 <dd>
-<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(OTHER)</a> if the response is different from the request </dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(INDEX)</a> if the register index is different in request and response </dd>
+<dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(VALUE)</a> if the register value is different in request and response </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a1a105f7339569601abe367a3254d38dc_cgraph.svg" width="342" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -3344,12 +3354,12 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(COUNT)</a> if the count differs between the request and response </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a0c53ade25c249f6aeed8c877b98f8016_cgraph.svg" width="414" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a0c53ade25c249f6aeed8c877b98f8016_cgraph.svg" width="414" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

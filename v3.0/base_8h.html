@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('base_8h.html',''); initResizable(); })
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__dep__incl.svg" width="1154" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h__dep__incl.svg" width="1091" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -221,14 +221,15 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0003c3727cb45c32b46f66a931a2572b">MODBUS_ERROR_FUNCTION</a>
 , <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea9181de79fe60c475f2fa24b74d2de101">MODBUS_ERROR_COUNT</a>
 , <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eaecaff3fffe67614b65f116fde819ded5">MODBUS_ERROR_INDEX</a>
-, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0a5b103f8d7292f73314f98a82abf68f">MODBUS_ERROR_RANGE</a>
+, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0b56db1e4db8679480db563bed5e302a">MODBUS_ERROR_VALUE</a>
 , <br />
-&#160;&#160;<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea30e0fa05d0cd54528b75d0b1a217ca99">MODBUS_ERROR_CRC</a>
+&#160;&#160;<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0a5b103f8d7292f73314f98a82abf68f">MODBUS_ERROR_RANGE</a>
+, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea30e0fa05d0cd54528b75d0b1a217ca99">MODBUS_ERROR_CRC</a>
 , <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea8332eb56292e902a0a694d62994a80d3">MODBUS_ERROR_BAD_PROTOCOL</a>
 , <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea4da2b61dedbfbe1edd5863a4ec3598b4">MODBUS_ERROR_BAD_TRANSACTION</a>
-, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eaa15817d114a6bf59df1cb0b953f23c41">MODBUS_ERROR_ADDRESS</a>
 , <br />
-&#160;&#160;<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea867896b7a63055286dd5f0dc6a9020e2">MODBUS_ERROR_OTHER</a>
+&#160;&#160;<a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eaa15817d114a6bf59df1cb0b953f23c41">MODBUS_ERROR_ADDRESS</a>
+, <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea867896b7a63055286dd5f0dc6a9020e2">MODBUS_ERROR_OTHER</a>
 <br />
  }</td></tr>
 <tr class="memdesc:a3e91ea9ea1b4d5927573e6ec1d1cce6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represtents different kinds of errors.  <a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">More...</a><br /></td></tr>
@@ -855,7 +856,8 @@ Functions</h2></td></tr>
 <p>Provided register count is 0 or exceeds maximum allowed value. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6eaecaff3fffe67614b65f116fde819ded5"></a>MODBUS_ERROR_INDEX&#160;</td><td class="fielddoc"><p>Invalid index value. </p>
-<dl class="section note"><dt>Note</dt><dd>Not used anywhere, left for future use. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea0b56db1e4db8679480db563bed5e302a"></a>MODBUS_ERROR_VALUE&#160;</td><td class="fielddoc"><p>Invalid register value. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a3e91ea9ea1b4d5927573e6ec1d1cce6ea0a5b103f8d7292f73314f98a82abf68f"></a>MODBUS_ERROR_RANGE&#160;</td><td class="fielddoc"><p>Invalid register range. </p>
 <p>Returned when accessing <code>count</code> registers starting at <code>index</code> would cause a 16-bit unsigned int overflow. </p>
@@ -947,7 +949,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af23a50b36bef9c09ac82214a52ff4d58_icgraph.svg" width="414" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af23a50b36bef9c09ac82214a52ff4d58_icgraph.svg" width="414" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1495,7 +1497,7 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ace96da9afdf1e1796a6e2d7ac1f6c81a_icgraph.svg" width="370" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ace96da9afdf1e1796a6e2d7ac1f6c81a_icgraph.svg" width="370" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

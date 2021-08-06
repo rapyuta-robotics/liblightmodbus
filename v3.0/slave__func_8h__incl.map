@@ -1,5 +1,7 @@
 <map id="include/lightmodbus/slave_func.h" name="include/lightmodbus/slave_func.h">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,143,47"/>
-<area shape="rect" id="node2" href="$base_8h.html" title=" " alt="" coords="44,95,104,121"/>
-<area shape="rect" id="node3" title=" " alt="" coords="42,169,106,196"/>
+<area shape="rect" id="node2" href="$base_8h.html" title=" " alt="" coords="9,169,69,196"/>
+<area shape="rect" id="node4" href="$slave_8h.html" title=" " alt="" coords="77,95,140,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="41,244,105,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="145,169,213,196"/>
 </map>

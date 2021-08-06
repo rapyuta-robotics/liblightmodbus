@@ -85,7 +85,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "allocators.html",
-"slave.html#slave-cleanup"
+"slave.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

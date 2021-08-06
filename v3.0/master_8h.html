@@ -131,7 +131,6 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMaster.html">ModbusMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">ModbusMaster</a></td></tr>
-<tr class="memdesc:ad0e3310720fcc07d509b0572dcea7cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Master device status.  <a href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">More...</a><br /></td></tr>
 <tr class="separator:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19654463fbbcf8c7e00f87a45afc73a8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8">ModbusMasterParsingFunction</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td></tr>
 <tr class="memdesc:a19654463fbbcf8c7e00f87a45afc73a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a response parsing function.  <a href="master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8">More...</a><br /></td></tr>
@@ -142,27 +141,27 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a44b1b4bf8c66b122837dda359483c8c6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a44b1b4bf8c66b122837dda359483c8c6">ModbusDataCallbackArgs</a></td></tr>
 <tr class="memdesc:a44b1b4bf8c66b122837dda359483c8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arguments for the data callback.  <a href="master_8h.html#a44b1b4bf8c66b122837dda359483c8c6">More...</a><br /></td></tr>
 <tr class="separator:a44b1b4bf8c66b122837dda359483c8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb59c4728d4895a57f95fd883542106c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const <a class="el" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</td></tr>
-<tr class="memdesc:abb59c4728d4895a57f95fd883542106c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback used for handling data incoming to master.  <a href="master_8h.html#abb59c4728d4895a57f95fd883542106c">More...</a><br /></td></tr>
-<tr class="separator:abb59c4728d4895a57f95fd883542106c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70fad8e09a20ca15d7bef094facd75b4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
-<tr class="memdesc:a70fad8e09a20ca15d7bef094facd75b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback called when a Modbus exception is generated (for master)  <a href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">More...</a><br /></td></tr>
-<tr class="separator:a70fad8e09a20ca15d7bef094facd75b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
-<tr class="memdesc:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to master frame buffer allocator.  <a href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">More...</a><br /></td></tr>
-<tr class="separator:a6959120b6e7a5b46bb5c29cac6a91b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72568d58b84e35534eda87b106b34271"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a72568d58b84e35534eda87b106b34271">ModbusDataCallback</a>) (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const <a class="el" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</td></tr>
+<tr class="memdesc:a72568d58b84e35534eda87b106b34271"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback used for handling data incoming to master.  <a href="master_8h.html#a72568d58b84e35534eda87b106b34271">More...</a><br /></td></tr>
+<tr class="separator:a72568d58b84e35534eda87b106b34271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3eef8284352773b30fcfd74a6064b5a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#af3eef8284352773b30fcfd74a6064b5a">ModbusMasterExceptionCallback</a>) (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
+<tr class="memdesc:af3eef8284352773b30fcfd74a6064b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback called when a Modbus exception is generated (for master)  <a href="master_8h.html#af3eef8284352773b30fcfd74a6064b5a">More...</a><br /></td></tr>
+<tr class="separator:af3eef8284352773b30fcfd74a6064b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad420a29101998772033e53c2aa2d4637"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad420a29101998772033e53c2aa2d4637">ModbusMasterAllocator</a>) (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
+<tr class="memdesc:ad420a29101998772033e53c2aa2d4637"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to master frame buffer allocator.  <a href="master_8h.html#ad420a29101998772033e53c2aa2d4637">More...</a><br /></td></tr>
+<tr class="separator:ad420a29101998772033e53c2aa2d4637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4318ea143c223c051ea4d3e3543b796c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a4318ea143c223c051ea4d3e3543b796c">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a> exceptionCallback, <a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a> allocator, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memitem:a4318ea143c223c051ea4d3e3543b796c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a4318ea143c223c051ea4d3e3543b796c">modbusMasterInit</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, <a class="el" href="master_8h.html#a72568d58b84e35534eda87b106b34271">ModbusDataCallback</a> dataCallback, <a class="el" href="master_8h.html#af3eef8284352773b30fcfd74a6064b5a">ModbusMasterExceptionCallback</a> exceptionCallback, <a class="el" href="master_8h.html#ad420a29101998772033e53c2aa2d4637">ModbusMasterAllocator</a> allocator, const <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
 <tr class="memdesc:a4318ea143c223c051ea4d3e3543b796c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8h.html#a4318ea143c223c051ea4d3e3543b796c">More...</a><br /></td></tr>
 <tr class="separator:a4318ea143c223c051ea4d3e3543b796c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fe38fae0f89de04fa616d105f660d25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25">modbusMasterDestroy</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status)</td></tr>
 <tr class="memdesc:a5fe38fae0f89de04fa616d105f660d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes a <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct.  <a href="master_8h.html#a5fe38fae0f89de04fa616d105f660d25">More...</a><br /></td></tr>
 <tr class="separator:a5fe38fae0f89de04fa616d105f660d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51f83ba08c18745dd424b9dcf7579703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
-<tr class="memdesc:a51f83ba08c18745dd424b9dcf7579703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator for master device. Based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>.  <a href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">More...</a><br /></td></tr>
-<tr class="separator:a51f83ba08c18745dd424b9dcf7579703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6a7a79c306b4f38e2633288a26ad7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a3d6a7a79c306b4f38e2633288a26ad7b">modbusMasterDefaultAllocator</a> (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
+<tr class="memdesc:a3d6a7a79c306b4f38e2633288a26ad7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator for master device. Based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>.  <a href="master_8h.html#a3d6a7a79c306b4f38e2633288a26ad7b">More...</a><br /></td></tr>
+<tr class="separator:a3d6a7a79c306b4f38e2633288a26ad7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f754195d448ab90661dd55351064e59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a2f754195d448ab90661dd55351064e59">modbusMasterAllocateRequest</a> (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint16_t size)</td></tr>
 <tr class="memdesc:a2f754195d448ab90661dd55351064e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for the request frame.  <a href="master_8h.html#a2f754195d448ab90661dd55351064e59">More...</a><br /></td></tr>
 <tr class="separator:a2f754195d448ab90661dd55351064e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,14 +218,14 @@ Variables</h2></td></tr>
 <tr class="separator:abafe1a006897216d68be414d9f8623a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="abb59c4728d4895a57f95fd883542106c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb59c4728d4895a57f95fd883542106c">&#9670;&nbsp;</a></span>ModbusDataCallback</h2>
+<a id="a72568d58b84e35534eda87b106b34271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72568d58b84e35534eda87b106b34271">&#9670;&nbsp;</a></span>ModbusDataCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusDataCallback) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const <a class="el" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</td>
+          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusDataCallback) (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, const <a class="el" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,18 +263,16 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Master device status. </p>
-
 </div>
 </div>
-<a id="a6959120b6e7a5b46bb5c29cac6a91b40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6959120b6e7a5b46bb5c29cac6a91b40">&#9670;&nbsp;</a></span>ModbusMasterAllocator</h2>
+<a id="ad420a29101998772033e53c2aa2d4637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad420a29101998772033e53c2aa2d4637">&#9670;&nbsp;</a></span>ModbusMasterAllocator</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusMasterAllocator) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td>
+          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusMasterAllocator) (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -285,14 +282,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a70fad8e09a20ca15d7bef094facd75b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70fad8e09a20ca15d7bef094facd75b4">&#9670;&nbsp;</a></span>ModbusMasterExceptionCallback</h2>
+<a id="af3eef8284352773b30fcfd74a6064b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3eef8284352773b30fcfd74a6064b5a">&#9670;&nbsp;</a></span>ModbusMasterExceptionCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusMasterExceptionCallback) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td>
+          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusMasterExceptionCallback) (const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -554,8 +551,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a51f83ba08c18745dd424b9dcf7579703"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51f83ba08c18745dd424b9dcf7579703">&#9670;&nbsp;</a></span>modbusMasterDefaultAllocator()</h2>
+<a id="a3d6a7a79c306b4f38e2633288a26ad7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6a7a79c306b4f38e2633288a26ad7b">&#9670;&nbsp;</a></span>modbusMasterDefaultAllocator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -563,7 +560,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusMasterDefaultAllocator </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structModbusMaster.html">ModbusMaster</a> *&#160;</td>
           <td class="paramname"><em>status</em>, </td>
         </tr>
         <tr>
@@ -609,7 +606,7 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a51f83ba08c18745dd424b9dcf7579703_cgraph.svg" width="419" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a3d6a7a79c306b4f38e2633288a26ad7b_cgraph.svg" width="419" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -778,19 +775,19 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="master_8h.html#abb59c4728d4895a57f95fd883542106c">ModbusDataCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="master_8h.html#a72568d58b84e35534eda87b106b34271">ModbusDataCallback</a>&#160;</td>
           <td class="paramname"><em>dataCallback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="master_8h.html#a70fad8e09a20ca15d7bef094facd75b4">ModbusMasterExceptionCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="master_8h.html#af3eef8284352773b30fcfd74a6064b5a">ModbusMasterExceptionCallback</a>&#160;</td>
           <td class="paramname"><em>exceptionCallback</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="master_8h.html#a6959120b6e7a5b46bb5c29cac6a91b40">ModbusMasterAllocator</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="master_8h.html#ad420a29101998772033e53c2aa2d4637">ModbusMasterAllocator</a>&#160;</td>
           <td class="paramname"><em>allocator</em>, </td>
         </tr>
         <tr>
@@ -819,14 +816,14 @@ MODBUS_OK on success </dd></dl>
     <tr><td class="paramname">status</td><td><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct to be initialized </td></tr>
     <tr><td class="paramname">dataCallback</td><td>Callback function for handling incoming data (required) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
-    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="master_8h.html#a51f83ba08c18745dd424b9dcf7579703">modbusMasterDefaultAllocator()</a>) (required) </td></tr>
+    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="master_8h.html#a3d6a7a79c306b4f38e2633288a26ad7b">modbusMasterDefaultAllocator()</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to an array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the master. </td></tr>
     <tr><td class="paramname">functionCount</td><td>Number of elements in the <code>functions</code> array (required) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8h.html#afea4c9a9b7c29a34aa1674429bf7a5df" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8h.html#a09196cc7e43237c4a98b16c10109e56a" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
 <dd>
 <a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8" title="Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.">modbusMasterDefaultFunctions</a> </dd></dl>
 

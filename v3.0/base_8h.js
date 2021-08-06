@@ -47,6 +47,7 @@ var base_8h =
       [ "MODBUS_ERROR_FUNCTION", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0003c3727cb45c32b46f66a931a2572b", null ],
       [ "MODBUS_ERROR_COUNT", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea9181de79fe60c475f2fa24b74d2de101", null ],
       [ "MODBUS_ERROR_INDEX", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eaecaff3fffe67614b65f116fde819ded5", null ],
+      [ "MODBUS_ERROR_VALUE", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0b56db1e4db8679480db563bed5e302a", null ],
       [ "MODBUS_ERROR_RANGE", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea0a5b103f8d7292f73314f98a82abf68f", null ],
       [ "MODBUS_ERROR_CRC", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea30e0fa05d0cd54528b75d0b1a217ca99", null ],
       [ "MODBUS_ERROR_BAD_PROTOCOL", "base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea8332eb56292e902a0a694d62994a80d3", null ],
