@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('allocators.html',''); initResizable();
 </ul>
 <p>However, certain guarantees are made by the library:</p><ul>
 <li>All allocation requests originating from a <b>single</b> <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> or <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> instance with identical <code>purpose</code> argument are assumed to refer to the same buffer. <b>This allows for static memory allocation if the allocator can distinguish between different <a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> and <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> instances issuing the allocation requests.</b></li>
+<li>All errors returned from the allocator when <code>size</code> is greater than zero will be reported by the library as <code><a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(ALLOC)</a></code>.</li>
+<li>Errors reported from the allocator if <code>size</code> is 0 may or may not be reported by the library. This behavior might change depending on the context and in future versions of the library. For your safety, though, it is recommended that you do not any errors from the allocator if <code>size == 0</code>.</li>
 </ul>
 <h1><a class="anchor" id="static-mem"></a>
 Static memory allocation</h1>

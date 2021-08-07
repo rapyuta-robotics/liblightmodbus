@@ -404,7 +404,9 @@ The <code>requestLength</code> argument is of type <code>uint8_t</code> and not 
 <dd>
 <a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(CRC)</a> if CRC is invalid </dd>
 <dd>
-<a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(ADDRESS)</a> if a response was generated to a broadcast request </dd>
+<a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(ADDRESS)</a> if the request is meant for other slave </dd>
+<dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if a response was generated to a broadcast request </dd>
 <dd>
 Any errors from parsing functions</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The response frame can only be accessed if <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> called on the return value of this function evaluates to true. </dd></dl>
@@ -413,7 +415,7 @@ Any errors from parsing functions</dd></dl>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a28b9fe2f4559cd0b1c39aff30099d591_cgraph.svg" width="847" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_a28b9fe2f4559cd0b1c39aff30099d591_cgraph.svg" width="847" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -517,7 +519,7 @@ Any errors from parsing functions</dd></dl>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_aa87aa17ffca453550f7b0489b39f077b_icgraph.svg" width="932" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8impl_8h_aa87aa17ffca453550f7b0489b39f077b_icgraph.svg" width="932" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
