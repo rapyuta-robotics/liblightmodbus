@@ -122,7 +122,11 @@ $(document).ready(function(){initNavTree('building.html',''); initResizable(); }
 <h1><a class="anchor" id="embedded"></a>
 Embedded platforms</h1>
 <p>Since v3.0 building liblightmodbus on embedded platforms is no different from building it on your PC. You're only required to add the header files to your project.</p>
-<dl class="section note"><dt>Note</dt><dd>Tip: Be sure to enable linking time optimizations (<code>-flto</code>) when building your project to further reduce the size of your binary. If your compiler doesn't support it, you can also use <code>-ffunction-sections -fdata-sections -Wl,--gc-sections</code> to delete unused functions. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Tip: Be sure to enable linking time optimizations (<code>-flto</code>) when building your project to further reduce the size of your binary. If your compiler doesn't support it, you can also use <code>-ffunction-sections -fdata-sections -Wl,--gc-sections</code> to delete unused functions.</dd></dl>
+<h1><a class="anchor" id="ESP-IDF"></a>
+ESP-IDF</h1>
+<p>Liblightmodbus can be used as an ESP-IDF component. The relevant configuration is kept on <a href="https://github.com/Jacajack/liblightmodbus/tree/esp-idf"><code>esp-idf</code></a> branch and can be cloned directly to your components directory using: </p><div class="fragment"><div class="line">git clone --single-branch --branch esp-idf https://github.com/Jacajack/liblightmodbus.git</div>
+</div><!-- fragment --><p>When using liblightmodbus with ESP-IDF, the implementation of the library functions is automatically included for you - you shouldn't use <code>LIGHTMODBUS_IMPL</code> anywhere in your code. You shouldn't define any config options when including <code><a class="el" href="lightmodbus_8h.html">lightmodbus.h</a></code> either. Library configuration is read from <code>esp.config.h</code> and <code>sdkconfig.h</code> and should be edited with <code>idf.py menuconfig</code>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

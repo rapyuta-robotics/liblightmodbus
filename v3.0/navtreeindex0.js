@@ -84,6 +84,7 @@ var NAVTREEINDEX0 =
 "base_8impl_8h.html#a44aa66c5af48ac588c9392b2e62b126b":[9,0,1,0,1,1],
 "base_8impl_8h_source.html":[9,0,1,0,1],
 "building.html":[1],
+"building.html#ESP-IDF":[1,1],
 "building.html#embedded":[1,0],
 "classes.html":[8,1],
 "debug_8h.html":[9,0,1,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "master__func_8impl_8h.html#adafbaa72d4df36b3577ce5494b460a2b":[9,0,1,0,8,5],
 "master__func_8impl_8h.html#ae9842e659ccd8942905e685923de8916":[9,0,1,0,8,2],
 "master__func_8impl_8h_source.html":[9,0,1,0,8],
-"pages.html":[],
-"porting.html":[7]
+"pages.html":[]
 };
