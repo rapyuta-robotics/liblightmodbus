@@ -1,6 +1,5 @@
 var structModbusSlave =
 [
-    [ "address", "structModbusSlave.html#a59a81f13b400eead47fad900c67667e6", null ],
     [ "allocator", "structModbusSlave.html#a370dd158874efa144f0916f4cedcf077", null ],
     [ "context", "structModbusSlave.html#a72df77ddc9096f601c022a33606e1143", null ],
     [ "exceptionCallback", "structModbusSlave.html#a1b7a8b269856777d1f5395cd9957f11f", null ],

@@ -443,7 +443,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus RTU request. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -451,7 +451,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a4623d6d41d5e4a148e399fe19051183c_cgraph.svg" width="320" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a4623d6d41d5e4a148e399fe19051183c_cgraph.svg" width="494" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -490,7 +490,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus TCP request. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -498,7 +498,7 @@ Variables</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a117f6d4b5ec63dac5e4e5ea0af78d079_cgraph.svg" width="320" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a117f6d4b5ec63dac5e4e5ea0af78d079_cgraph.svg" width="492" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -920,7 +920,7 @@ MODBUS_OK on success </dd></dl>
 <p>Parses a PDU section of a slave response. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">address</td><td>Address of the slave that sent in the data </td></tr>
+    <tr><td class="paramname">address</td><td>Value to be reported as slave address </td></tr>
     <tr><td class="paramname">request</td><td>Pointer to the PDU section of the request frame </td></tr>
     <tr><td class="paramname">requestLength</td><td>Length of the request PDU (valid range: 1 - 253) </td></tr>
     <tr><td class="paramname">response</td><td>Pointer to the PDU section of the response </td></tr>
@@ -931,8 +931,6 @@ MODBUS_OK on success </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(LENGTH)</a> if the request has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(LENGTH)</a> if the response has invalid length </dd>
-<dd>
-<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> on attempt to parse a response to a broadcast request </dd>
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(FUNCTION)</a> if the function code in request doesn't match the one in response </dd>
 <dd>
@@ -1012,7 +1010,9 @@ Result from the parsing function on success (modbusParseRequest*() functions) </
 <dd>
 <a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(CRC)</a> if the response CRC is invalid </dd>
 <dd>
-<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> if the address is 0 or if request/response addressess don't match </dd>
+<a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR(ADDRESS)</a> if the address in the request is 0 </dd>
+<dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR(ADDRESS)</a> if request/response addressess don't match </dd>
 <dd>
 Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response.">modbusParseResponsePDU()</a> otherwise </dd></dl>
 <div id="dynsection-9" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1020,7 +1020,7 @@ Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b4
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a151b85c221ae43804856eb92737498e5_cgraph.svg" width="434" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a151b85c221ae43804856eb92737498e5_cgraph.svg" width="576" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1098,7 +1098,7 @@ Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b4
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a53ea67c733b1e627e1cdcb0003270a1b_cgraph.svg" width="434" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master_8h_a53ea67c733b1e627e1cdcb0003270a1b_cgraph.svg" width="576" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

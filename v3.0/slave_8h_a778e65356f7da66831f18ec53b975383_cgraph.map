@@ -1,0 +1,10 @@
+<map id="modbusBuildExceptionTCP" name="modbusBuildExceptionTCP">
+<area shape="rect" id="node1" title="Builds a Modbus TCP exception." alt="" coords="5,69,184,96"/>
+<area shape="rect" id="node2" href="$slave_8impl_8h.html#a58243ce1e1adaffd0a3260edc2d03603" title="Builds an exception response frame." alt="" coords="232,12,385,39"/>
+<area shape="rect" id="node4" href="$base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error." alt="" coords="261,69,357,96"/>
+<area shape="rect" id="node7" href="$base_8h.html#a39dcd3aad118a779b7e1775fea3e5d77" title="Sets up the MBAP header in a Modbus TCP frame." alt="" coords="247,132,371,159"/>
+<area shape="rect" id="node3" href="$slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" title="Allocates memory for slave&#39;s response frame." alt="" coords="433,5,640,32"/>
+<area shape="rect" id="node5" href="$base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" title="Returns ModbusError contained in ModbusErrorInfo." alt="" coords="463,56,610,83"/>
+<area shape="rect" id="node6" href="$base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo." alt="" coords="458,107,615,133"/>
+<area shape="rect" id="node8" href="$base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="488,157,585,184"/>
+</map>

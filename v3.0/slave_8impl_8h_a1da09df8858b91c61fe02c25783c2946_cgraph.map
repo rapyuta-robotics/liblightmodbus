@@ -1,0 +1,11 @@
+<map id="modbusBuildExceptionRTU" name="modbusBuildExceptionRTU">
+<area shape="rect" id="node1" title="Builds a Modbus RTU exception." alt="" coords="5,81,185,108"/>
+<area shape="rect" id="node2" href="$slave_8impl_8h.html#a58243ce1e1adaffd0a3260edc2d03603" title="Builds an exception response frame." alt="" coords="233,19,387,45"/>
+<area shape="rect" id="node4" href="$base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error." alt="" coords="262,81,358,108"/>
+<area shape="rect" id="node7" href="$base_8h.html#af2cafe9debf86bea7042b4c40bb288cd" title="Sets up address and CRC in a Modbus RTU frame." alt="" coords="247,157,373,184"/>
+<area shape="rect" id="node3" href="$slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" title="Allocates memory for slave&#39;s response frame." alt="" coords="435,5,641,32"/>
+<area shape="rect" id="node5" href="$base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" title="Returns ModbusError contained in ModbusErrorInfo." alt="" coords="465,56,611,83"/>
+<area shape="rect" id="node6" href="$base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo." alt="" coords="459,107,617,133"/>
+<area shape="rect" id="node8" href="$base_8h.html#a11346a546b84663cd92cb30f4ffd1393" title="Calculates 16&#45;bit Modbus CRC of provided data." alt="" coords="491,157,585,184"/>
+<area shape="rect" id="node9" href="$base_8h.html#af718da7da634f311c2ae8db6be3d9027" title="Safely writes a little&#45;endian 16&#45;bit word to provided pointer." alt="" coords="490,208,586,235"/>
+</map>

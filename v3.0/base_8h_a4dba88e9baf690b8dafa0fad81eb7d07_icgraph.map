@@ -1,0 +1,5 @@
+<map id="modbusUnpackRTU" name="modbusUnpackRTU">
+<area shape="rect" id="node1" title="Unpacks data from a Modbus RTU frame and optionally checks CRC." alt="" coords="240,31,380,57"/>
+<area shape="rect" id="node2" href="$slave_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response." alt="" coords="10,5,187,32"/>
+<area shape="rect" id="node3" href="$master_8h.html#a151b85c221ae43804856eb92737498e5" title="Parses a Modbus RTU slave response." alt="" coords="5,56,192,83"/>
+</map>

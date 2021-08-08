@@ -128,6 +128,8 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a084ec56bbbca3d40231f7107fa578ae1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a>&#160;&#160;&#160;__attribute__((warn_unused_result))</td></tr>
 <tr class="separator:a084ec56bbbca3d40231f7107fa578ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a6ac3f27118a1228a6ad93ed982073"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a34a6ac3f27118a1228a6ad93ed982073">LIGHTMODBUS_ALWAYS_INLINE</a>&#160;&#160;&#160;__attribute__((always_inline))</td></tr>
+<tr class="separator:a34a6ac3f27118a1228a6ad93ed982073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aa574276c253eb3bfb7e504c37e1050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a8aa574276c253eb3bfb7e504c37e1050">MODBUS_PDU_MIN</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a8aa574276c253eb3bfb7e504c37e1050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum length of a PDU.  <a href="base_8h.html#a8aa574276c253eb3bfb7e504c37e1050">More...</a><br /></td></tr>
 <tr class="separator:a8aa574276c253eb3bfb7e504c37e1050"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,8 +312,34 @@ Functions</h2></td></tr>
 <tr class="memitem:acbf9b7e6b679be88ce4e10ffb617d3e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">modbusGetResponseError</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
 <tr class="memdesc:acbf9b7e6b679be88ce4e10ffb617d3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns response error from <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">More...</a><br /></td></tr>
 <tr class="separator:acbf9b7e6b679be88ce4e10ffb617d3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dba88e9baf690b8dafa0fad81eb7d07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a4dba88e9baf690b8dafa0fad81eb7d07">modbusUnpackRTU</a> (const uint8_t *frame, uint16_t length, uint8_t checkCRC, const uint8_t **pdu, uint16_t *pduLength, uint8_t *address)</td></tr>
+<tr class="memdesc:a4dba88e9baf690b8dafa0fad81eb7d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpacks data from a Modbus RTU frame and optionally checks CRC.  <a href="base_8h.html#a4dba88e9baf690b8dafa0fad81eb7d07">More...</a><br /></td></tr>
+<tr class="separator:a4dba88e9baf690b8dafa0fad81eb7d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2cafe9debf86bea7042b4c40bb288cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#af2cafe9debf86bea7042b4c40bb288cd">modbusPackRTU</a> (uint8_t *frame, uint16_t length, uint8_t address)</td></tr>
+<tr class="memdesc:af2cafe9debf86bea7042b4c40bb288cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up address and CRC in a Modbus RTU frame.  <a href="base_8h.html#af2cafe9debf86bea7042b4c40bb288cd">More...</a><br /></td></tr>
+<tr class="separator:af2cafe9debf86bea7042b4c40bb288cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616e5bdb5ebcd57b1604421f6ca22bc9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a616e5bdb5ebcd57b1604421f6ca22bc9">modbusUnpackTCP</a> (const uint8_t *frame, uint16_t length, const uint8_t **pdu, uint16_t *pduLength, uint16_t *transactionID, uint8_t *unitID)</td></tr>
+<tr class="memdesc:a616e5bdb5ebcd57b1604421f6ca22bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpacks data from a Modbus TCP frame.  <a href="base_8h.html#a616e5bdb5ebcd57b1604421f6ca22bc9">More...</a><br /></td></tr>
+<tr class="separator:a616e5bdb5ebcd57b1604421f6ca22bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39dcd3aad118a779b7e1775fea3e5d77"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a39dcd3aad118a779b7e1775fea3e5d77">modbusPackTCP</a> (uint8_t *frame, uint16_t length, uint16_t transactionID, uint8_t unitID)</td></tr>
+<tr class="memdesc:a39dcd3aad118a779b7e1775fea3e5d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the MBAP header in a Modbus TCP frame.  <a href="base_8h.html#a39dcd3aad118a779b7e1775fea3e5d77">More...</a><br /></td></tr>
+<tr class="separator:a39dcd3aad118a779b7e1775fea3e5d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a34a6ac3f27118a1228a6ad93ed982073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34a6ac3f27118a1228a6ad93ed982073">&#9670;&nbsp;</a></span>LIGHTMODBUS_ALWAYS_INLINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LIGHTMODBUS_ALWAYS_INLINE&#160;&#160;&#160;__attribute__((always_inline))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7c88698d15eed4b7fc4cee4938e57f56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c88698d15eed4b7fc4cee4938e57f56">&#9670;&nbsp;</a></span>LIGHTMODBUS_RET_ERROR</h2>
 
@@ -1049,7 +1077,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a11346a546b84663cd92cb30f4ffd1393_icgraph.svg" width="340" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a11346a546b84663cd92cb30f4ffd1393_icgraph.svg" width="528" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1142,7 +1170,7 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a29d2a7853b328113e4fcddae85fd3ce5_icgraph.svg" width="606" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a29d2a7853b328113e4fcddae85fd3ce5_icgraph.svg" width="610" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1184,7 +1212,7 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a9ee4c2e633c7a42f88acc09b95f8171e_icgraph.svg" width="538" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a9ee4c2e633c7a42f88acc09b95f8171e_icgraph.svg" width="542" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1347,7 +1375,7 @@ MODBUS_OK otherwise </dd></dl>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a64880e7075f445881485396f3aa869c5_icgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a64880e7075f445881485396f3aa869c5_icgraph.svg" width="336" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1467,6 +1495,155 @@ MODBUS_OK otherwise </dd></dl>
 
 </div>
 </div>
+<a id="af2cafe9debf86bea7042b4c40bb288cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2cafe9debf86bea7042b4c40bb288cd">&#9670;&nbsp;</a></span>modbusPackRTU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusPackRTU </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets up address and CRC in a Modbus RTU frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>Pointer to the frame data </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the frame (valid range: 4 - 256) </td></tr>
+    <tr><td class="paramname">address</td><td>Address of the slave </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_OK on success </dd>
+<dd>
+MODBUS_ERROR_LENGTH if the length of the frame is invalid </dd></dl>
+<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af2cafe9debf86bea7042b4c40bb288cd_cgraph.svg" width="280" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af2cafe9debf86bea7042b4c40bb288cd_icgraph.svg" width="364" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a39dcd3aad118a779b7e1775fea3e5d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39dcd3aad118a779b7e1775fea3e5d77">&#9670;&nbsp;</a></span>modbusPackTCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusPackTCP </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>transactionID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>unitID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets up the MBAP header in a Modbus TCP frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>Pointer to the frame data </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the frame (valid range: 8 - 260) </td></tr>
+    <tr><td class="paramname">transactionID</td><td>TCP transaction ID </td></tr>
+    <tr><td class="paramname">unitID</td><td>Slave unit ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_OK on success </dd>
+<dd>
+MODBUS_ERROR_LENGTH if the length of the frame is invalid </dd></dl>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a39dcd3aad118a779b7e1775fea3e5d77_cgraph.svg" width="280" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a39dcd3aad118a779b7e1775fea3e5d77_icgraph.svg" width="362" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="ace96da9afdf1e1796a6e2d7ac1f6c81a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace96da9afdf1e1796a6e2d7ac1f6c81a">&#9670;&nbsp;</a></span>modbusRBE()</h2>
 
@@ -1492,12 +1669,12 @@ MODBUS_OK otherwise </dd></dl>
 </div><div class="memdoc">
 
 <p>Safely reads a big-endian 16-bit word from provided pointer. </p>
-<div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-19-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ace96da9afdf1e1796a6e2d7ac1f6c81a_icgraph.svg" width="370" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_ace96da9afdf1e1796a6e2d7ac1f6c81a_icgraph.svg" width="604" height="418"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1528,12 +1705,200 @@ MODBUS_OK otherwise </dd></dl>
 </div><div class="memdoc">
 
 <p>Safely reads a little-endian 16-bit word from provided pointer. </p>
-<div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-20-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a0fc3f293c746d39a93e4c1158f792404_icgraph.svg" width="339" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a0fc3f293c746d39a93e4c1158f792404_icgraph.svg" width="527" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4dba88e9baf690b8dafa0fad81eb7d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dba88e9baf690b8dafa0fad81eb7d07">&#9670;&nbsp;</a></span>modbusUnpackRTU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusUnpackRTU </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>checkCRC</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t **&#160;</td>
+          <td class="paramname"><em>pdu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>pduLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unpacks data from a Modbus RTU frame and optionally checks CRC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>Pointer to the frame data </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the frame (valid range: 4 - 256) </td></tr>
+    <tr><td class="paramname">checkCRC</td><td>Controls whether the CRC of the frame should be checked </td></tr>
+    <tr><td class="paramname">pdu</td><td>Output: pointer to the PDU </td></tr>
+    <tr><td class="paramname">pduLength</td><td>Output: length of the PDU </td></tr>
+    <tr><td class="paramname">address</td><td>Output: Slave address </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_OK on success </dd>
+<dd>
+MODBUS_ERROR_LENGTH if the length of the frame is invalid </dd>
+<dd>
+MODBUS_ERROR_CRC if the CRC is incorrect </dd></dl>
+<div id="dynsection-21" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-21-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a4dba88e9baf690b8dafa0fad81eb7d07_cgraph.svg" width="294" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-22" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-22-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a4dba88e9baf690b8dafa0fad81eb7d07_icgraph.svg" width="386" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a616e5bdb5ebcd57b1604421f6ca22bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616e5bdb5ebcd57b1604421f6ca22bc9">&#9670;&nbsp;</a></span>modbusUnpackTCP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusUnpackTCP </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t **&#160;</td>
+          <td class="paramname"><em>pdu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>pduLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>transactionID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>unitID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unpacks data from a Modbus TCP frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>Pointer to the frame data </td></tr>
+    <tr><td class="paramname">length</td><td>Length of the frame (valid range: 8 - 260) </td></tr>
+    <tr><td class="paramname">pdu</td><td>Output: pointer to the PDU </td></tr>
+    <tr><td class="paramname">pduLength</td><td>Output: length of the PDU </td></tr>
+    <tr><td class="paramname">transactionID</td><td>Output: TCP transaction ID </td></tr>
+    <tr><td class="paramname">unitID</td><td>Output: Slave unit ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MODBUS_OK on success </dd>
+<dd>
+MODBUS_ERROR_LENGTH if the length of the frame is invalid or if the length declared inside the frame does not match the actual frame length </dd>
+<dd>
+MODBUS_ERROR_BAD_PROTOCOL if the protocol ID declared in frame is not 0 </dd></dl>
+<div id="dynsection-23" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-23-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a616e5bdb5ebcd57b1604421f6ca22bc9_cgraph.svg" width="292" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div id="dynsection-24" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-24-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a616e5bdb5ebcd57b1604421f6ca22bc9_icgraph.svg" width="384" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1574,12 +1939,12 @@ MODBUS_OK otherwise </dd></dl>
 </div><div class="memdoc">
 
 <p>Safely writes a big-endian 16-bit word to provided pointer. </p>
-<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-25-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a73b9f793bbe67a1968cc8c53a22d4c4b_icgraph.svg" width="570" height="696"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_a73b9f793bbe67a1968cc8c53a22d4c4b_icgraph.svg" width="590" height="646"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1620,12 +1985,12 @@ MODBUS_OK otherwise </dd></dl>
 </div><div class="memdoc">
 
 <p>Safely writes a little-endian 16-bit word to provided pointer. </p>
-<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-26-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af718da7da634f311c2ae8db6be3d9027_icgraph.svg" width="332" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="base_8h_af718da7da634f311c2ae8db6be3d9027_icgraph.svg" width="508" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

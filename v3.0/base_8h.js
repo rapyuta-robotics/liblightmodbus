@@ -2,6 +2,7 @@ var base_8h =
 [
     [ "ModbusErrorInfo", "structModbusErrorInfo.html", "structModbusErrorInfo" ],
     [ "ModbusFrameBuffer", "structModbusFrameBuffer.html", "structModbusFrameBuffer" ],
+    [ "LIGHTMODBUS_ALWAYS_INLINE", "base_8h.html#a34a6ac3f27118a1228a6ad93ed982073", null ],
     [ "LIGHTMODBUS_RET_ERROR", "base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56", null ],
     [ "LIGHTMODBUS_WARN_UNUSED", "base_8h.html#a084ec56bbbca3d40231f7107fa578ae1", null ],
     [ "MODBUS_ERROR_SOURCE_GENERAL", "base_8h.html#a73b551b47500629c9b764f52f8d044ba", null ],
@@ -76,8 +77,12 @@ var base_8h =
     [ "modbusIsOk", "base_8h.html#a64880e7075f445881485396f3aa869c5", null ],
     [ "modbusMaskRead", "base_8h.html#aff2248343762719cdacf818e4dae3709", null ],
     [ "modbusMaskWrite", "base_8h.html#a5d9947eb500e2d0c87491a0adce53c2a", null ],
+    [ "modbusPackRTU", "base_8h.html#af2cafe9debf86bea7042b4c40bb288cd", null ],
+    [ "modbusPackTCP", "base_8h.html#a39dcd3aad118a779b7e1775fea3e5d77", null ],
     [ "modbusRBE", "base_8h.html#ace96da9afdf1e1796a6e2d7ac1f6c81a", null ],
     [ "modbusRLE", "base_8h.html#a0fc3f293c746d39a93e4c1158f792404", null ],
+    [ "modbusUnpackRTU", "base_8h.html#a4dba88e9baf690b8dafa0fad81eb7d07", null ],
+    [ "modbusUnpackTCP", "base_8h.html#a616e5bdb5ebcd57b1604421f6ca22bc9", null ],
     [ "modbusWBE", "base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b", null ],
     [ "modbusWLE", "base_8h.html#af718da7da634f311c2ae8db6be3d9027", null ]
 ];

@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('porting.html',''); initResizable(); })
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Task   </th><th class="markdownTableHeadNone">Changes    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Slave init   </td><td class="markdownTableBodyNone">Update call to <code><a class="el" href="slave_8h.html#a70d001a589643a3d893924dbbd276e2f" title="Initializes slave device.">modbusSlaveInit()</a></code> according to <a class="el" href="slave.html#slave-init">Slave initialization</a>    </td></tr>
+<td class="markdownTableBodyNone">Slave init   </td><td class="markdownTableBodyNone">Update call to <code><a class="el" href="slave_8h.html#ae8280996989ef7c652502638a4d77c2f" title="Initializes slave device.">modbusSlaveInit()</a></code> according to <a class="el" href="slave.html#slave-init">Slave initialization</a>    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Master init   </td><td class="markdownTableBodyNone">Update call to <code><a class="el" href="master_8h.html#a4318ea143c223c051ea4d3e3543b796c" title="Initializes a ModbusMaster struct.">modbusMasterInit()</a></code> according to <a class="el" href="master.html#master-init">Master initialization</a>    </td></tr>
 <tr class="markdownTableRowOdd">
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('porting.html',''); initResizable(); })
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Error handling   </td><td class="markdownTableBodyNone">Use <code><a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a></code> and <code><a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo.">modbusGetGeneralError()</a></code>. See <a class="el" href="error-handling.html">Error handling</a>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Parsing requests   </td><td class="markdownTableBodyNone">Use <code><a class="el" href="slave_8h.html#a28b9fe2f4559cd0b1c39aff30099d591" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response.">modbusParseRequestRTU()</a></code> instead of <code><a class="el" href="slave_8h.html#a4be93ca41808b56714f199dd21302541" title="Parses provided PDU and generates response honorinng pduOffset and padding set in ModbusSlave during ...">modbusParseRequest()</a></code>. Provide the frame as an argument.    </td></tr>
+<td class="markdownTableBodyNone">Parsing requests   </td><td class="markdownTableBodyNone">Use <code><a class="el" href="slave_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response.">modbusParseRequestRTU()</a></code> instead of <code><a class="el" href="slave_8h.html#aff0a9164a0e37aa619232ae86e3ff97a" title="Parses provided PDU and generates response honorinng pduOffset and padding set in ModbusSlave during ...">modbusParseRequest()</a></code>. Provide the frame as an argument.    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Register callback   </td><td class="markdownTableBodyNone">Slave register callback now takes arguments in a struct. See <a class="el" href="slave.html#slave-register-callback">Register callback</a>    </td></tr>
 <tr class="markdownTableRowEven">

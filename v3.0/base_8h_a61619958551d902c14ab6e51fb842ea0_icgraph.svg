@@ -65,7 +65,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="slave__func_8h.html#aff8edb5d03d53414296edee03a83691a" target="_top" xlink:title="Handles requests 01, 02, 03 and 04 (Read Multiple XX) and generates response.">
+<g id="a_node9"><a xlink:href="slave__func_8h.html#aaff57f2a5c6a8e6c77d36c5dc7e48cfa" target="_top" xlink:title="Handles requests 01, 02, 03 and 04 (Read Multiple XX) and generates response.">
 <polygon fill="none" stroke="black" points="158.5,-114.5 158.5,-133.5 313.5,-133.5 313.5,-114.5 158.5,-114.5"/>
 <text text-anchor="middle" x="236" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseRequest01020304</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="slave__func_8h.html#a50a1e72594d7aec7101698bf9089b4de" target="_top" xlink:title="Handles requests 15 and 16 (Write Multiple XX) and generates response.">
+<g id="a_node10"><a xlink:href="slave__func_8h.html#a0cb2a7bf59d4014088e1ce1c61523071" target="_top" xlink:title="Handles requests 15 and 16 (Write Multiple XX) and generates response.">
 <polygon fill="none" stroke="black" points="169,-76.5 169,-95.5 303,-95.5 303,-76.5 169,-76.5"/>
 <text text-anchor="middle" x="236" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusParseRequest1516</text>
 </a>
