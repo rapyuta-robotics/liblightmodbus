@@ -157,9 +157,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ac21f10119a42e1b24d2d7362b3542c9e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#ac21f10119a42e1b24d2d7362b3542c9e">ModbusSlaveExceptionCallback</a>) (const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
 <tr class="memdesc:ac21f10119a42e1b24d2d7362b3542c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a callback called when a Modbus exception is generated (for slave)  <a href="slave_8h.html#ac21f10119a42e1b24d2d7362b3542c9e">More...</a><br /></td></tr>
 <tr class="separator:ac21f10119a42e1b24d2d7362b3542c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c7caaf17eec38740c3bafae83e7baf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a96c7caaf17eec38740c3bafae83e7baf">ModbusSlaveAllocator</a>) (const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
-<tr class="memdesc:a96c7caaf17eec38740c3bafae83e7baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to allocator function called to allocate frame buffers (for slave)  <a href="slave_8h.html#a96c7caaf17eec38740c3bafae83e7baf">More...</a><br /></td></tr>
-<tr class="separator:a96c7caaf17eec38740c3bafae83e7baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -173,9 +170,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae8280996989ef7c652502638a4d77c2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#ae8280996989ef7c652502638a4d77c2f">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, <a class="el" href="slave_8h.html#ab7c98629a544e29ddd328d19ad1c647c">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#ac21f10119a42e1b24d2d7362b3542c9e">ModbusSlaveExceptionCallback</a> exceptionCallback, <a class="el" href="slave_8h.html#a96c7caaf17eec38740c3bafae83e7baf">ModbusSlaveAllocator</a> allocator, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
-<tr class="memdesc:ae8280996989ef7c652502638a4d77c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes slave device.  <a href="slave_8h.html#ae8280996989ef7c652502638a4d77c2f">More...</a><br /></td></tr>
-<tr class="separator:ae8280996989ef7c652502638a4d77c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c30507da9547125c17f62e0e18d9194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a2c30507da9547125c17f62e0e18d9194">modbusSlaveInit</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, <a class="el" href="slave_8h.html#ab7c98629a544e29ddd328d19ad1c647c">ModbusRegisterCallback</a> registerCallback, <a class="el" href="slave_8h.html#ac21f10119a42e1b24d2d7362b3542c9e">ModbusSlaveExceptionCallback</a> exceptionCallback, <a class="el" href="base_8h.html#a8be3fb4274491536a8ae6cb528c1710b">ModbusAllocator</a> allocator, const <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a> *functions, uint8_t functionCount)</td></tr>
+<tr class="memdesc:a2c30507da9547125c17f62e0e18d9194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes slave device.  <a href="slave_8h.html#a2c30507da9547125c17f62e0e18d9194">More...</a><br /></td></tr>
+<tr class="separator:a2c30507da9547125c17f62e0e18d9194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">modbusSlaveDestroy</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
 <tr class="memdesc:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated in the <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> struct.  <a href="slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">More...</a><br /></td></tr>
 <tr class="separator:a70695c3b7355bc0a3e6d49c46a4eef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,15 +188,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a778e65356f7da66831f18ec53b975383"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a778e65356f7da66831f18ec53b975383">modbusBuildExceptionTCP</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint16_t transactionID, uint8_t unitID, uint8_t function, <a class="el" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</td></tr>
 <tr class="memdesc:a778e65356f7da66831f18ec53b975383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a Modbus TCP exception.  <a href="slave_8h.html#a778e65356f7da66831f18ec53b975383">More...</a><br /></td></tr>
 <tr class="separator:a778e65356f7da66831f18ec53b975383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09196cc7e43237c4a98b16c10109e56a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a09196cc7e43237c4a98b16c10109e56a">modbusSlaveDefaultAllocator</a> (const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td></tr>
-<tr class="memdesc:a09196cc7e43237c4a98b16c10109e56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default allocator for the slave based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>.  <a href="slave_8h.html#a09196cc7e43237c4a98b16c10109e56a">More...</a><br /></td></tr>
-<tr class="separator:a09196cc7e43237c4a98b16c10109e56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af92eebc644e36158bddfba128235fef6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#af92eebc644e36158bddfba128235fef6">modbusSlaveAllocateResponse</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint16_t size)</td></tr>
-<tr class="memdesc:af92eebc644e36158bddfba128235fef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for slave's response frame.  <a href="slave_8h.html#af92eebc644e36158bddfba128235fef6">More...</a><br /></td></tr>
-<tr class="separator:af92eebc644e36158bddfba128235fef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e517b65cb8b32010146fa80b78bc848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a5e517b65cb8b32010146fa80b78bc848">modbusSlaveFreeResponse</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
-<tr class="memdesc:a5e517b65cb8b32010146fa80b78bc848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for slave's response frame.  <a href="slave_8h.html#a5e517b65cb8b32010146fa80b78bc848">More...</a><br /></td></tr>
-<tr class="separator:a5e517b65cb8b32010146fa80b78bc848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff0a9164a0e37aa619232ae86e3ff97a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">modbusParseRequest</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, const uint8_t *request, uint8_t requestLength)</td></tr>
 <tr class="memdesc:aff0a9164a0e37aa619232ae86e3ff97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses provided PDU and generates response honorinng <code>pduOffset</code> and <code>padding</code> set in <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> during response generation.  <a href="slave_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">More...</a><br /></td></tr>
 <tr class="separator:aff0a9164a0e37aa619232ae86e3ff97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +212,12 @@ Functions</h2></td></tr>
 <tr class="memitem:abbbf205b4c4a0b74b5ae29b865ca3262"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#abbbf205b4c4a0b74b5ae29b865ca3262">modbusSlaveGetUserPointer</a> (const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
 <tr class="memdesc:abbbf205b4c4a0b74b5ae29b865ca3262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreieves the custom context pointer.  <a href="slave_8h.html#abbbf205b4c4a0b74b5ae29b865ca3262">More...</a><br /></td></tr>
 <tr class="separator:abbbf205b4c4a0b74b5ae29b865ca3262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1165bb6d12af1db502a05df5da55aed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#ad1165bb6d12af1db502a05df5da55aed">modbusSlaveAllocateResponse</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint16_t pduSize)</td></tr>
+<tr class="memdesc:ad1165bb6d12af1db502a05df5da55aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates memory for slave's response frame.  <a href="slave_8h.html#ad1165bb6d12af1db502a05df5da55aed">More...</a><br /></td></tr>
+<tr class="separator:ad1165bb6d12af1db502a05df5da55aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac289ce160ea61287c98e8a1ee4353d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#aac289ce160ea61287c98e8a1ee4353d5">modbusSlaveFreeResponse</a> (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status)</td></tr>
+<tr class="memdesc:aac289ce160ea61287c98e8a1ee4353d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory allocated for slave's response frame.  <a href="slave_8h.html#aac289ce160ea61287c98e8a1ee4353d5">More...</a><br /></td></tr>
+<tr class="separator:aac289ce160ea61287c98e8a1ee4353d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -311,23 +305,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a96c7caaf17eec38740c3bafae83e7baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96c7caaf17eec38740c3bafae83e7baf">&#9670;&nbsp;</a></span>ModbusSlaveAllocator</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a>(* ModbusSlaveAllocator) (const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t **ptr, uint16_t size, <a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A pointer to allocator function called to allocate frame buffers (for slave) </p>
-<p>Please refer to <a class="el" href="allocators.html">Custom allocators</a> for more information regarding custom allocator functions. </p>
 
 </div>
 </div>
@@ -458,7 +435,7 @@ Variables</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a58243ce1e1adaffd0a3260edc2d03603_cgraph.svg" width="419" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a58243ce1e1adaffd0a3260edc2d03603_cgraph.svg" width="658" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -520,7 +497,7 @@ Variables</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a384f75966903cc0c249eb68a6a20180e_cgraph.svg" width="648" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a384f75966903cc0c249eb68a6a20180e_cgraph.svg" width="887" height="164"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -585,7 +562,7 @@ Variables</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a1da09df8858b91c61fe02c25783c2946_cgraph.svg" width="647" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a1da09df8858b91c61fe02c25783c2946_cgraph.svg" width="886" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -655,7 +632,7 @@ Variables</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a778e65356f7da66831f18ec53b975383_cgraph.svg" width="646" height="190"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a778e65356f7da66831f18ec53b975383_cgraph.svg" width="884" height="215"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -710,7 +687,7 @@ The response frame can only be accessed if <a class="el" href="base_8h.html#a648
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_aff0a9164a0e37aa619232ae86e3ff97a_cgraph.svg" width="618" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_aff0a9164a0e37aa619232ae86e3ff97a_cgraph.svg" width="856" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-8" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -775,7 +752,7 @@ The <code>requestLength</code> argument is of type <code>uint8_t</code> and not 
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_ab5c5f3146a46cf8d221aca22e9c8a052_cgraph.svg" width="844" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_ab5c5f3146a46cf8d221aca22e9c8a052_cgraph.svg" width="1095" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -845,7 +822,7 @@ Any errors from parsing functions</dd></dl>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a6a1e63faa64b7ca4b91d1ce7988be850_cgraph.svg" width="882" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a6a1e63faa64b7ca4b91d1ce7988be850_cgraph.svg" width="1120" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -904,20 +881,23 @@ Any errors from parsing functions</dd></dl>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a5ad3fe86aa14f8982d7c459c68cd8b3e_cgraph.svg" width="846" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a5ad3fe86aa14f8982d7c459c68cd8b3e_cgraph.svg" width="1094" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="af92eebc644e36158bddfba128235fef6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af92eebc644e36158bddfba128235fef6">&#9670;&nbsp;</a></span>modbusSlaveAllocateResponse()</h2>
+<a id="ad1165bb6d12af1db502a05df5da55aed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1165bb6d12af1db502a05df5da55aed">&#9670;&nbsp;</a></span>modbusSlaveAllocateResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusSlaveAllocateResponse </td>
+          <td class="memname">static <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusSlaveAllocateResponse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
           <td class="paramname"><em>status</em>, </td>
@@ -934,6 +914,11 @@ Any errors from parsing functions</dd></dl>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Allocates memory for slave's response frame. </p>
@@ -943,76 +928,21 @@ Any errors from parsing functions</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> on allocation failure</dd></dl>
-<p>If called with size == 0, the response buffer is freed. Otherwise a buffer for <code>(pduSize + status-&gt;response.padding)</code> bytes is allocated. This guarantees that if a response is made, the buffer is big enough to hold the entire ADU.</p>
-<p>This function is responsible for managing <code>data</code>, <code>pdu</code> and <code>length</code> fields in the response struct. The <code>pdu</code> pointer is set up to point <code>pduOffset</code> bytes after the <code>data</code> pointer unless <code>data</code> is a null pointer. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> on allocation failure </dd></dl>
 <div id="dynsection-12" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_af92eebc644e36158bddfba128235fef6_icgraph.svg" width="932" height="494"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_ad1165bb6d12af1db502a05df5da55aed_cgraph.svg" width="456" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
-
-</div>
-</div>
-<a id="a09196cc7e43237c4a98b16c10109e56a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09196cc7e43237c4a98b16c10109e56a">&#9670;&nbsp;</a></span>modbusSlaveDefaultAllocator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusSlaveDefaultAllocator </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
-          <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t **&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a>&#160;</td>
-          <td class="paramname"><em>purpose</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default allocator for the slave based on <a class="el" href="base_8h.html#a44aa66c5af48ac588c9392b2e62b126b" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ptr</td><td>Pointer to the pointer to point to the allocated memory. </td></tr>
-    <tr><td class="paramname">size</td><td>Requested size of the memory block </td></tr>
-    <tr><td class="paramname">purpose</td><td>Purpose of the buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>MODBUS_ERROR_ALLOC on memory allocation failure </dd>
-<dd>
-MODBUS_OK on success </dd></dl>
 <div id="dynsection-13" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a09196cc7e43237c4a98b16c10109e56a_cgraph.svg" width="412" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_ad1165bb6d12af1db502a05df5da55aed_icgraph.svg" width="900" height="392"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1040,36 +970,43 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a70695c3b7355bc0a3e6d49c46a4eef1f_cgraph.svg" width="411" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a70695c3b7355bc0a3e6d49c46a4eef1f_cgraph.svg" width="768" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a5e517b65cb8b32010146fa80b78bc848"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e517b65cb8b32010146fa80b78bc848">&#9670;&nbsp;</a></span>modbusSlaveFreeResponse()</h2>
+<a id="aac289ce160ea61287c98e8a1ee4353d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac289ce160ea61287c98e8a1ee4353d5">&#9670;&nbsp;</a></span>modbusSlaveFreeResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void modbusSlaveFreeResponse </td>
+          <td class="memname">static void modbusSlaveFreeResponse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structModbusSlave.html">ModbusSlave</a> *&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Frees memory allocated for slave's response frame. </p>
-<p>Calls <a class="el" href="slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" title="Allocates memory for slave&#39;s response frame.">modbusSlaveAllocateResponse()</a> with size == 0. </p>
 <div id="dynsection-15" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-15-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a5e517b65cb8b32010146fa80b78bc848_cgraph.svg" width="451" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_aac289ce160ea61287c98e8a1ee4353d5_cgraph.svg" width="632" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-16" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -1077,7 +1014,7 @@ MODBUS_OK on success </dd></dl>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a5e517b65cb8b32010146fa80b78bc848_icgraph.svg" width="422" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_aac289ce160ea61287c98e8a1ee4353d5_icgraph.svg" width="422" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1166,11 +1103,19 @@ MODBUS_OK on success </dd></dl>
 </div><div class="memdoc">
 
 <p>Retreieves the custom context pointer. </p>
+<div id="dynsection-17" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-17-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_abbbf205b4c4a0b74b5ae29b865ca3262_icgraph.svg" width="1171" height="436"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
-<a id="ae8280996989ef7c652502638a4d77c2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8280996989ef7c652502638a4d77c2f">&#9670;&nbsp;</a></span>modbusSlaveInit()</h2>
+<a id="a2c30507da9547125c17f62e0e18d9194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c30507da9547125c17f62e0e18d9194">&#9670;&nbsp;</a></span>modbusSlaveInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1196,7 +1141,7 @@ MODBUS_OK on success </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="slave_8h.html#a96c7caaf17eec38740c3bafae83e7baf">ModbusSlaveAllocator</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8h.html#a8be3fb4274491536a8ae6cb528c1710b">ModbusAllocator</a>&#160;</td>
           <td class="paramname"><em>allocator</em>, </td>
         </tr>
         <tr>
@@ -1224,7 +1169,7 @@ MODBUS_OK on success </dd></dl>
   <table class="params">
     <tr><td class="paramname">registerCallback</td><td>Callback function for handling all register operations (required) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
-    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="slave_8impl_8h.html#a09196cc7e43237c4a98b16c10109e56a">modbusSlaveDefaultAllocator</a>) (required) </td></tr>
+    <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="base_8impl_8h.html#a85c4c4d0226d45b625c75912467aba44">modbusDefaultAllocator</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the slave. </td></tr>
     <tr><td class="paramname">functionCount</td><td>Number of function handlers in the array (required) </td></tr>
   </table>
@@ -1232,9 +1177,17 @@ MODBUS_OK on success </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>This function must not be called on an already initialized <a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a> struct. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="slave_8impl_8h.html#a09196cc7e43237c4a98b16c10109e56a" title="Default allocator for the slave based on modbusDefaultAllocator().">modbusSlaveDefaultAllocator()</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="base_8h.html#a85c4c4d0226d45b625c75912467aba44" title="The default memory allocator based on realloc()">modbusDefaultAllocator()</a> </dd>
 <dd>
 <a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3" title="Associates function IDs with pointers to functions responsible for parsing. Length of this array is s...">modbusSlaveDefaultFunctions</a> </dd></dl>
+<div id="dynsection-18" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-18-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="slave_8h_a2c30507da9547125c17f62e0e18d9194_cgraph.svg" width="298" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>

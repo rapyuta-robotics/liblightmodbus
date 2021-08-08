@@ -1,4 +1,0 @@
-<map id="modbusSlaveFreeResponse" name="modbusSlaveFreeResponse">
-<area shape="rect" id="node1" title="Frees memory allocated for slave&#39;s response frame." alt="" coords="5,5,191,32"/>
-<area shape="rect" id="node2" href="$slave_8impl_8h.html#aa87aa17ffca453550f7b0489b39f077b" title="Allocates memory for slave&#39;s response frame." alt="" coords="239,5,445,32"/>
-</map>

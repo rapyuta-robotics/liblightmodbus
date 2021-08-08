@@ -1,0 +1,5 @@
+<map id="modbusBufferDestroy" name="modbusBufferDestroy">
+<area shape="rect" id="node1" title="Equivalent of modbusBufferFree() \copydetail modbusBufferFree()" alt="" coords="205,31,352,57"/>
+<area shape="rect" id="node2" href="$master_8h.html#a5fe38fae0f89de04fa616d105f660d25" title="Deinitializes a ModbusMaster struct." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f" title="Frees memory allocated in the ModbusSlave struct." alt="" coords="9,56,154,83"/>
+</map>

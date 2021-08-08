@@ -1,6 +1,8 @@
 <map id="modbusBuildRequest05" name="modbusBuildRequest05">
-<area shape="rect" id="node1" title="Write single coil &#45; a wrapper for modbusBuildRequest0506()" alt="" coords="5,31,164,57"/>
-<area shape="rect" id="node2" href="$master__func_8h.html#a5309a3003ea2d248e51193e75ab30044" title="Write single coil/holding register." alt="" coords="212,31,385,57"/>
-<area shape="rect" id="node3" href="$master_8h.html#a2f754195d448ab90661dd55351064e59" title="Allocates memory for the request frame." alt="" coords="433,5,636,32"/>
-<area shape="rect" id="node4" href="$base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="486,56,583,83"/>
+<area shape="rect" id="node1" title="Write single coil &#45; a wrapper for modbusBuildRequest0506()" alt="" coords="5,56,164,83"/>
+<area shape="rect" id="node2" href="$master__func_8h.html#a5309a3003ea2d248e51193e75ab30044" title="Write single coil/holding register." alt="" coords="212,56,385,83"/>
+<area shape="rect" id="node3" href="$master_8h.html#a004b932b2b69ad0c6649c26d974146b2" title="Allocates memory for the request frame." alt="" coords="433,31,636,57"/>
+<area shape="rect" id="node6" href="$base_8h.html#a73b9f793bbe67a1968cc8c53a22d4c4b" title="Safely writes a big&#45;endian 16&#45;bit word to provided pointer." alt="" coords="486,81,583,108"/>
+<area shape="rect" id="node4" href="$base_8h.html#aab33bc005f4c5759d8ac918e5e8b71b9" title="Allocates memory to hold Modbus ADU." alt="" coords="709,5,858,32"/>
+<area shape="rect" id="node5" href="$master_8h.html#a6ecfd0864bb7cd392a04be7d47bcadfa" title="Retreieves the custom context pointer." alt="" coords="684,56,883,83"/>
 </map>

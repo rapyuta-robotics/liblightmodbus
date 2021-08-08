@@ -1,8 +1,8 @@
 var annotated_dup =
 [
+    [ "ModbusBuffer", "structModbusBuffer.html", "structModbusBuffer" ],
     [ "ModbusDataCallbackArgs", "structModbusDataCallbackArgs.html", "structModbusDataCallbackArgs" ],
     [ "ModbusErrorInfo", "structModbusErrorInfo.html", "structModbusErrorInfo" ],
-    [ "ModbusFrameBuffer", "structModbusFrameBuffer.html", "structModbusFrameBuffer" ],
     [ "ModbusMaster", "structModbusMaster.html", "structModbusMaster" ],
     [ "ModbusMasterFunctionHandler", "structModbusMasterFunctionHandler.html", "structModbusMasterFunctionHandler" ],
     [ "ModbusRegisterCallbackArgs", "structModbusRegisterCallbackArgs.html", "structModbusRegisterCallbackArgs" ],

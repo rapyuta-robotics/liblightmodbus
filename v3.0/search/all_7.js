@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['length_23',['length',['../structModbusFrameBuffer.html#a78957366a4822aa584702054a38c58b6',1,'ModbusFrameBuffer']]],
+  ['length_23',['length',['../structModbusBuffer.html#a049b643e8a2c00147f9015301385734e',1,'ModbusBuffer']]],
   ['liblightmodbus_20_2d_20a_20lightweight_2c_20header_2donly_2c_20cross_2dplatform_20modbus_20rtu_2ftcp_20library_24',['liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library',['../index.html',1,'']]],
   ['lightmodbus_2edox_25',['lightmodbus.dox',['../lightmodbus_8dox.html',1,'']]],
   ['lightmodbus_2eh_26',['lightmodbus.h',['../lightmodbus_8h.html',1,'']]],

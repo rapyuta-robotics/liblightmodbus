@@ -1,4 +1,0 @@
-<map id="modbusSlaveFreeResponse" name="modbusSlaveFreeResponse">
-<area shape="rect" id="node1" title="Frees memory allocated for slave&#39;s response frame." alt="" coords="231,5,416,32"/>
-<area shape="rect" id="node2" href="$slave_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850" title="Parses provided Modbus RTU request frame and generates a Modbus RTU response." alt="" coords="5,5,183,32"/>
-</map>

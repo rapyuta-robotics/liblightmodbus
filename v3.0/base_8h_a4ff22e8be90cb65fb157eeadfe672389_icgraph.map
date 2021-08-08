@@ -1,0 +1,5 @@
+<map id="modbusBufferInit" name="modbusBufferInit">
+<area shape="rect" id="node1" title="Initializes a buffer for use." alt="" coords="180,31,300,57"/>
+<area shape="rect" id="node2" href="$master_8h.html#af3c4b8930f540697662dfdb0788f38ef" title="Initializes a ModbusMaster struct." alt="" coords="5,5,132,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a2c30507da9547125c17f62e0e18d9194" title="Initializes slave device." alt="" coords="9,56,128,83"/>
+</map>

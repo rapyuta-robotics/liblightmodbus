@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('allocators.html',''); initResizable();
 <h1><a class="anchor" id="static-mem"></a>
 Static memory allocation</h1>
 <p>An example of a custom "allocator" relying only on statically allocated memory: </p><div class="fragment"><div class="line"><span class="comment">// !!! This only works if the allocator is used exclusively by a single instance of ModbusMaster and ModbusSlave !!!</span></div>
-<div class="line"><a class="code" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusStaticAllocator(uint8_t **ptr, uint16_t size, <a class="code" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</div>
+<div class="line"><a class="code" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusStaticAllocator(uint8_t **ptr, uint16_t size, ModbusBufferPurpose purpose)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">static</span> uint8_t request[256];</div>
 <div class="line">    <span class="keyword">static</span> uint8_t response[256];</div>
@@ -126,31 +126,29 @@ Static memory allocation</h1>
 <div class="line">        {</div>
 <div class="line">            <span class="comment">// Return a pointer to one of the static buffers depending </span></div>
 <div class="line">            <span class="comment">// on the declared purpose of the buffer</span></div>
-<div class="line">            *ptr = purpose == <a class="code" href="base_8h.html#a09746f06dca2690c9172c09e2edee187afc08cdf31cc125bfef8eef786078a59b">MODBUS_SLAVE_RESPONSE_BUFFER</a> ? response : request;</div>
+<div class="line">            *ptr = purpose == MODBUS_SLAVE_RESPONSE_BUFFER ? response : request;</div>
 <div class="line">            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Wrapper used by slave</span></div>
-<div class="line"><a class="code" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusSlaveStaticAllocator(<a class="code" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t **ptr, uint16_t size, <a class="code" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</div>
+<div class="line"><a class="code" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusSlaveStaticAllocator(<a class="code" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t **ptr, uint16_t size, ModbusBufferPurpose purpose)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> modbusStaticAllocator(ptr, size, purpose);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Wrapper used by master</span></div>
-<div class="line"><a class="code" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusMasterStaticAllocator(<a class="code" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, <a class="code" href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a> purpose)</div>
+<div class="line"><a class="code" href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> modbusMasterStaticAllocator(<a class="code" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t **ptr, uint16_t size, ModbusBufferPurpose purpose)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> modbusStaticAllocator(ptr, size, purpose);</div>
 <div class="line">}</div>
 <div class="ttc" id="abase_8h_html_a084ec56bbbca3d40231f7107fa578ae1"><div class="ttname"><a href="base_8h.html#a084ec56bbbca3d40231f7107fa578ae1">LIGHTMODBUS_WARN_UNUSED</a></div><div class="ttdeci">#define LIGHTMODBUS_WARN_UNUSED</div><div class="ttdef"><b>Definition:</b> base.h:14</div></div>
-<div class="ttc" id="abase_8h_html_a09746f06dca2690c9172c09e2edee187"><div class="ttname"><a href="base_8h.html#a09746f06dca2690c9172c09e2edee187">ModbusBufferPurpose</a></div><div class="ttdeci">ModbusBufferPurpose</div><div class="ttdoc">Describes what content will be held in the buffer.</div><div class="ttdef"><b>Definition:</b> base.h:240</div></div>
-<div class="ttc" id="abase_8h_html_a09746f06dca2690c9172c09e2edee187afc08cdf31cc125bfef8eef786078a59b"><div class="ttname"><a href="base_8h.html#a09746f06dca2690c9172c09e2edee187afc08cdf31cc125bfef8eef786078a59b">MODBUS_SLAVE_RESPONSE_BUFFER</a></div><div class="ttdeci">@ MODBUS_SLAVE_RESPONSE_BUFFER</div><div class="ttdoc">Slave's buffer holding response frame.</div><div class="ttdef"><b>Definition:</b> base.h:241</div></div>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6e"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a></div><div class="ttdeci">ModbusError</div><div class="ttdoc">Represtents different kinds of errors.</div><div class="ttdef"><b>Definition:</b> base.h:122</div></div>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a></div><div class="ttdeci">@ MODBUS_ERROR_ALLOC</div><div class="ttdoc">Memory allocation error.</div><div class="ttdef"><b>Definition:</b> base.h:148</div></div>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a></div><div class="ttdeci">@ MODBUS_OK</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> base.h:128</div></div>
-<div class="ttc" id="astructModbusMaster_html"><div class="ttname"><a href="structModbusMaster.html">ModbusMaster</a></div><div class="ttdoc">Master device status.</div><div class="ttdef"><b>Definition:</b> master.h:76</div></div>
-<div class="ttc" id="astructModbusSlave_html"><div class="ttname"><a href="structModbusSlave.html">ModbusSlave</a></div><div class="ttdoc">Slave device status.</div><div class="ttdef"><b>Definition:</b> slave.h:93</div></div>
+<div class="ttc" id="astructModbusMaster_html"><div class="ttname"><a href="structModbusMaster.html">ModbusMaster</a></div><div class="ttdoc">Master device status.</div><div class="ttdef"><b>Definition:</b> master.h:65</div></div>
+<div class="ttc" id="astructModbusSlave_html"><div class="ttname"><a href="structModbusSlave.html">ModbusSlave</a></div><div class="ttdoc">Slave device status.</div><div class="ttdef"><b>Definition:</b> slave.h:82</div></div>
 </div><!-- fragment --><p>One could also implement the buffers in <code>modbusSlaveStaticAllocator()</code> and <code>modbusMasterStaticAllocator()</code> and distinguish between <code><a class="el" href="structModbusSlave.html" title="Slave device status.">ModbusSlave</a></code> and <code><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a></code> instances based on the <code>status</code> argument. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

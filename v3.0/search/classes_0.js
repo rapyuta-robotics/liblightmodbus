@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['modbusdatacallbackargs_246',['ModbusDataCallbackArgs',['../structModbusDataCallbackArgs.html',1,'']]],
-  ['modbuserrorinfo_247',['ModbusErrorInfo',['../structModbusErrorInfo.html',1,'']]],
-  ['modbusframebuffer_248',['ModbusFrameBuffer',['../structModbusFrameBuffer.html',1,'']]],
+  ['modbusbuffer_246',['ModbusBuffer',['../structModbusBuffer.html',1,'']]],
+  ['modbusdatacallbackargs_247',['ModbusDataCallbackArgs',['../structModbusDataCallbackArgs.html',1,'']]],
+  ['modbuserrorinfo_248',['ModbusErrorInfo',['../structModbusErrorInfo.html',1,'']]],
   ['modbusmaster_249',['ModbusMaster',['../structModbusMaster.html',1,'']]],
   ['modbusmasterfunctionhandler_250',['ModbusMasterFunctionHandler',['../structModbusMasterFunctionHandler.html',1,'']]],
   ['modbusregistercallbackargs_251',['ModbusRegisterCallbackArgs',['../structModbusRegisterCallbackArgs.html',1,'']]],

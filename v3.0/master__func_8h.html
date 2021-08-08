@@ -295,9 +295,9 @@ Functions</h2></td></tr>
 <div class="line">        if (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err = modbusBuildRequest##f_suffix(status, __VA_ARGS__))) <span class="keywordflow">return</span> err; \</div>
 <div class="line">        return <a class="code" href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a>(status); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="abase_8h_html_a64880e7075f445881485396f3aa869c5"><div class="ttname"><a href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a></div><div class="ttdeci">static uint8_t modbusIsOk(ModbusErrorInfo err)</div><div class="ttdoc">Checks if ModbusErrorInfo contains an error.</div><div class="ttdef"><b>Definition:</b> base.h:380</div></div>
-<div class="ttc" id="amaster_8h_html_a973d0a0734fd9bf274a4dd0a43668144"><div class="ttname"><a href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Finalizes a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:188</div></div>
-<div class="ttc" id="amaster_8h_html_ad71d034901cd8e22b4d74da7f86cdda9"><div class="ttname"><a href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Begins a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:177</div></div>
+<div class="ttc" id="abase_8h_html_a64880e7075f445881485396f3aa869c5"><div class="ttname"><a href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a></div><div class="ttdeci">static uint8_t modbusIsOk(ModbusErrorInfo err)</div><div class="ttdoc">Checks if ModbusErrorInfo contains an error.</div><div class="ttdef"><b>Definition:</b> base.h:419</div></div>
+<div class="ttc" id="amaster_8h_html_a973d0a0734fd9bf274a4dd0a43668144"><div class="ttname"><a href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Finalizes a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:113</div></div>
+<div class="ttc" id="amaster_8h_html_ad71d034901cd8e22b4d74da7f86cdda9"><div class="ttname"><a href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Begins a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:103</div></div>
 </div><!-- fragment -->
 <p>Defines a body for a <code>modbusBuildRequest*PDU()</code> function. </p>
 
@@ -364,8 +364,8 @@ Functions</h2></td></tr>
 <div class="line">        if (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err = modbusBuildRequest##f_suffix(status, __VA_ARGS__))) <span class="keywordflow">return</span> err; \</div>
 <div class="line">        return <a class="code" href="master_8h.html#a4623d6d41d5e4a148e399fe19051183c">modbusEndRequestRTU</a>(status, address); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="amaster_8h_html_a4623d6d41d5e4a148e399fe19051183c"><div class="ttname"><a href="master_8h.html#a4623d6d41d5e4a148e399fe19051183c">modbusEndRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestRTU(ModbusMaster *status, uint8_t address)</div><div class="ttdoc">Finalizes a Modbus RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:209</div></div>
-<div class="ttc" id="amaster_8h_html_ade3cfa7c2201895b2f768cca5d424ee5"><div class="ttname"><a href="master_8h.html#ade3cfa7c2201895b2f768cca5d424ee5">modbusBeginRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestRTU(ModbusMaster *status)</div><div class="ttdoc">Begins a RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:197</div></div>
+<div class="ttc" id="amaster_8h_html_a4623d6d41d5e4a148e399fe19051183c"><div class="ttname"><a href="master_8h.html#a4623d6d41d5e4a148e399fe19051183c">modbusEndRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestRTU(ModbusMaster *status, uint8_t address)</div><div class="ttdoc">Finalizes a Modbus RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:133</div></div>
+<div class="ttc" id="amaster_8h_html_ade3cfa7c2201895b2f768cca5d424ee5"><div class="ttname"><a href="master_8h.html#ade3cfa7c2201895b2f768cca5d424ee5">modbusBeginRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestRTU(ModbusMaster *status)</div><div class="ttdoc">Begins a RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:122</div></div>
 </div><!-- fragment -->
 <p>Defines a body for a <code>modbusBuildRequest*RTU()</code> function. </p>
 
@@ -432,8 +432,8 @@ Functions</h2></td></tr>
 <div class="line">        if (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err = modbusBuildRequest##f_suffix(status, __VA_ARGS__))) <span class="keywordflow">return</span> err; \</div>
 <div class="line">        return <a class="code" href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a>(status, transaction, unit); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="amaster_8h_html_a117f6d4b5ec63dac5e4e5ea0af78d079"><div class="ttname"><a href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestTCP(ModbusMaster *status, uint16_t transaction, uint8_t unit)</div><div class="ttdoc">Finalizes a Modbus TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:238</div></div>
-<div class="ttc" id="amaster_8h_html_afd1467296480779237ab090a8579efb5"><div class="ttname"><a href="master_8h.html#afd1467296480779237ab090a8579efb5">modbusBeginRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestTCP(ModbusMaster *status)</div><div class="ttdoc">Begins a TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:226</div></div>
+<div class="ttc" id="amaster_8h_html_a117f6d4b5ec63dac5e4e5ea0af78d079"><div class="ttname"><a href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestTCP(ModbusMaster *status, uint16_t transaction, uint8_t unit)</div><div class="ttdoc">Finalizes a Modbus TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:161</div></div>
+<div class="ttc" id="amaster_8h_html_afd1467296480779237ab090a8579efb5"><div class="ttname"><a href="master_8h.html#afd1467296480779237ab090a8579efb5">modbusBeginRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestTCP(ModbusMaster *status)</div><div class="ttdoc">Begins a TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:150</div></div>
 </div><!-- fragment -->
 <p>Defines a body for a <code>modbusBuildRequest*TCP()</code> function. </p>
 
@@ -534,7 +534,7 @@ Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_aadb2b7e2d3ee4fbde22cdf076713d75e_cgraph.svg" width="670" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_aadb2b7e2d3ee4fbde22cdf076713d75e_cgraph.svg" width="916" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -602,7 +602,7 @@ Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_ad3a6d4576d762da3eb0bd73aa5bb24fe_cgraph.svg" width="463" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_ad3a6d4576d762da3eb0bd73aa5bb24fe_cgraph.svg" width="710" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-4" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -890,7 +890,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a2a6452a8200d77483254bef08ee2cf8c_cgraph.svg" width="670" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a2a6452a8200d77483254bef08ee2cf8c_cgraph.svg" width="916" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1170,7 +1170,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a1c7ed51c58b1ef42ee176833c7fd0515_cgraph.svg" width="670" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a1c7ed51c58b1ef42ee176833c7fd0515_cgraph.svg" width="916" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1450,7 +1450,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a22bf4541196b3e88c0a86861d334e3b1_cgraph.svg" width="670" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a22bf4541196b3e88c0a86861d334e3b1_cgraph.svg" width="916" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1725,7 +1725,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a7151355c8c34af355fd779f88a64e125_cgraph.svg" width="642" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a7151355c8c34af355fd779f88a64e125_cgraph.svg" width="888" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -1788,7 +1788,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a5309a3003ea2d248e51193e75ab30044_cgraph.svg" width="435" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a5309a3003ea2d248e51193e75ab30044_cgraph.svg" width="682" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-10" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -2056,7 +2056,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a56779853bdfd2bb75601be746c20eb09_cgraph.svg" width="642" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a56779853bdfd2bb75601be746c20eb09_cgraph.svg" width="888" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2316,7 +2316,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_ae9842e659ccd8942905e685923de8916_cgraph.svg" width="420" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_ae9842e659ccd8942905e685923de8916_cgraph.svg" width="667" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2600,7 +2600,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_aca022c438a427d8f4b03db4427c2b344_cgraph.svg" width="420" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_aca022c438a427d8f4b03db4427c2b344_cgraph.svg" width="667" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -2880,7 +2880,7 @@ Any errors from <a class="el" href="master_8h.html#afd1467296480779237ab090a8579
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a6f2c5d59dee73c80ad54e53cca38aeec_cgraph.svg" width="420" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="master__func_8h_a6f2c5d59dee73c80ad54e53cca38aeec_cgraph.svg" width="667" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

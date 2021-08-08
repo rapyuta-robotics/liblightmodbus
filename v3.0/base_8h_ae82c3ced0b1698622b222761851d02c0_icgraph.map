@@ -1,0 +1,5 @@
+<map id="modbusBufferModeTCP" name="modbusBufferModeTCP">
+<area shape="rect" id="node1" title="Prepares buffer to store a Modbus TCP message." alt="" coords="229,31,389,57"/>
+<area shape="rect" id="node2" href="$master_8h.html#afd1467296480779237ab090a8579efb5" title="Begins a TCP request." alt="" coords="6,5,181,32"/>
+<area shape="rect" id="node3" href="$slave_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e" title="Parses provided Modbus TCP request frame and generates a Modbus TCP response." alt="" coords="5,56,181,83"/>
+</map>
