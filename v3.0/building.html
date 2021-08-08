@@ -111,7 +111,9 @@ $(document).ready(function(){initNavTree('building.html',''); initResizable(); }
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><code>LIGHTMODBUS_MASTER_OMIT_REQUEST_CRC</code>   </td><td class="markdownTableBodyNone">Omits request CRC calculation for request on master side    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>LIGHTMODBUS_WARN_UNUSED</code>   </td><td class="markdownTableBodyNone">Compiler attribute to warn about unused return value. <code>__attribute__((warn_unused_result))</code> by default   </td></tr>
+<td class="markdownTableBodyNone"><code>LIGHTMODBUS_WARN_UNUSED</code>   </td><td class="markdownTableBodyNone">Compiler attribute to warn about unused return value. <code>__attribute__((warn_unused_result))</code> by default    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><code>LIGHTMODBUS_ALWAYS_INLINE</code>   </td><td class="markdownTableBodyNone">Compiler attribute to always inline a function. <code>__attribute__((always_inline))</code> by default   </td></tr>
 </table>
 <p>Specific master/slave functions can be enabled by defining macros like <code>LIGHTMODBUS_F01M</code> or <code>LIGHTMODBUS_F22S</code>. Defining these affects contents of <a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a> and <a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a> arrays.</p>
 <p>Each time <code><a class="el" href="lightmodbus_8h.html">lightmodbus.h</a></code> is included, the set of defined configuration macros must be the same (except from <code>LIGHTMODBUS_IMPL</code> which should only be used <b>once</b>).</p>

@@ -98,7 +98,7 @@ Master initialization</h1>
 <div class="line">    &amp;master,          </div>
 <div class="line">    myDataCallback,                  <span class="comment">// Callback for handling incoming data</span></div>
 <div class="line">    myExceptionCallback,             <span class="comment">// Optional slave exception callback</span></div>
-<div class="line">    modbusMasterDefaultAllocator,    <span class="comment">// Memory allocator for ModbusMaster</span></div>
+<div class="line">    <a class="code" href="base_8h.html#a85c4c4d0226d45b625c75912467aba44">modbusDefaultAllocator</a>,          <span class="comment">// Memory allocator used to allocate request</span></div>
 <div class="line">    <a class="code" href="master_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>,    <span class="comment">// Set of supported functions</span></div>
 <div class="line">    <a class="code" href="master_8h.html#abafe1a006897216d68be414d9f8623a7">modbusMasterDefaultFunctionCount</a> <span class="comment">// Number of supported functions</span></div>
 <div class="line">    );</div>
@@ -106,13 +106,14 @@ Master initialization</h1>
 <div class="line"><span class="comment">// Check for errors</span></div>
 <div class="line">assert(<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err) &amp;&amp; <span class="stringliteral">&quot;modbusMasterInit() failed&quot;</span>); </div>
 <div class="ttc" id="abase_8h_html_a64880e7075f445881485396f3aa869c5"><div class="ttname"><a href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a></div><div class="ttdeci">static uint8_t modbusIsOk(ModbusErrorInfo err)</div><div class="ttdoc">Checks if ModbusErrorInfo contains an error.</div><div class="ttdef"><b>Definition:</b> base.h:419</div></div>
+<div class="ttc" id="abase_8h_html_a85c4c4d0226d45b625c75912467aba44"><div class="ttname"><a href="base_8h.html#a85c4c4d0226d45b625c75912467aba44">modbusDefaultAllocator</a></div><div class="ttdeci">ModbusError modbusDefaultAllocator(ModbusBuffer *buffer, uint16_t size, void *context)</div><div class="ttdoc">The default memory allocator based on realloc()</div><div class="ttdef"><b>Definition:</b> base.impl.h:16</div></div>
 <div class="ttc" id="amaster_8h_html_ab7ae0464095b7a5f02a0dcb0643145f8"><div class="ttname"><a href="master_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a></div><div class="ttdeci">ModbusMasterFunctionHandler modbusMasterDefaultFunctions[]</div><div class="ttdoc">Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.</div><div class="ttdef"><b>Definition:</b> master.impl.h:13</div></div>
 <div class="ttc" id="amaster_8h_html_abafe1a006897216d68be414d9f8623a7"><div class="ttname"><a href="master_8h.html#abafe1a006897216d68be414d9f8623a7">modbusMasterDefaultFunctionCount</a></div><div class="ttdeci">const uint8_t modbusMasterDefaultFunctionCount</div><div class="ttdoc">Stores length of modbusMasterDefaultFunctions array.</div><div class="ttdef"><b>Definition:</b> master.impl.h:55</div></div>
 <div class="ttc" id="amaster_8h_html_af3c4b8930f540697662dfdb0788f38ef"><div class="ttname"><a href="master_8h.html#af3c4b8930f540697662dfdb0788f38ef">modbusMasterInit</a></div><div class="ttdeci">ModbusErrorInfo modbusMasterInit(ModbusMaster *status, ModbusDataCallback dataCallback, ModbusMasterExceptionCallback exceptionCallback, ModbusAllocator allocator, const ModbusMasterFunctionHandler *functions, uint8_t functionCount)</div><div class="ttdoc">Initializes a ModbusMaster struct.</div><div class="ttdef"><b>Definition:</b> master.impl.h:71</div></div>
 <div class="ttc" id="astructModbusErrorInfo_html"><div class="ttname"><a href="structModbusErrorInfo.html">ModbusErrorInfo</a></div><div class="ttdoc">Richer error represenation - source and type of error.</div><div class="ttdef"><b>Definition:</b> base.h:113</div></div>
 <div class="ttc" id="astructModbusMaster_html"><div class="ttname"><a href="structModbusMaster.html">ModbusMaster</a></div><div class="ttdoc">Master device status.</div><div class="ttdef"><b>Definition:</b> master.h:65</div></div>
-</div><!-- fragment --><p>Similarly to slave, master has two callbacks - data callback and exception callback. The first is used for processing all register data incoming to master, the latter for handling exceptions reported by the slave. These callback are described in more detail in <a class="el" href="master.html#master-data-callback">Data callback</a> and <a class="el" href="master.html#master-exception-callback">Exception callback</a>.</p>
-<p>Master also has its own memory allocator - please refer to <a class="el" href="allocators.html">Custom allocators</a> for more information.</p>
+</div><!-- fragment --><p>Similarly to slave, master has two callbacks - data callback and exception callback. The first is used for processing all register data incoming to master, the latter for handling exceptions reported by the slave. These callbacks are described in more detail in <a class="el" href="master.html#master-data-callback">Data callback</a> and <a class="el" href="master.html#master-exception-callback">Exception callback</a>.</p>
+<p>Master also relies on a memory allocator - please refer to <a class="el" href="allocators.html">Custom allocators</a> for more details.</p>
 <p>The 5th argument determines the set of functions supported by the master device. It should be a pointer to an array of <code><a class="el" href="structModbusMasterFunctionHandler.html" title="Associates Modbus function ID with a pointer to a response parsing function.">ModbusMasterFunctionHandler</a></code> structures which associate function codes with callbacks. The lifetime of this array must not be shorter than the lifetime of the master. The last argument should contain length of this array.</p>
 <h1><a class="anchor" id="master-data-callback"></a>
 Data callback</h1>
@@ -123,7 +124,7 @@ Data callback</h1>
 <p>An example of a simple data callback printing out all received data: </p><div class="fragment"><div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment">    Data callback for printing all incoming data</span></div>
 <div class="line"><span class="comment">*/</span></div>
-<div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> dataCallback(<a class="code" href="structModbusMaster.html">ModbusMaster</a> *master, <span class="keyword">const</span> <a class="code" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</div>
+<div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> dataCallback(<span class="keyword">const</span> <a class="code" href="structModbusMaster.html">ModbusMaster</a> *master, <span class="keyword">const</span> <a class="code" href="structModbusDataCallbackArgs.html">ModbusDataCallbackArgs</a> *args)</div>
 <div class="line">{</div>
 <div class="line">    printf(</div>
 <div class="line">        <span class="stringliteral">&quot;Received data:\n&quot;</span></div>
@@ -160,7 +161,7 @@ Exception callback</h1>
 <div class="line"><span class="comment">    Exception callback for printing out exceptions on master side</span></div>
 <div class="line"><span class="comment">*/</span></div>
 <div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> masterExceptionCallback(</div>
-<div class="line">    <a class="code" href="structModbusMaster.html">ModbusMaster</a> *master,</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="structModbusMaster.html">ModbusMaster</a> *master,</div>
 <div class="line">    uint8_t address,</div>
 <div class="line">    uint8_t <span class="keyword">function</span>,</div>
 <div class="line">    <a class="code" href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a> code)</div>
@@ -230,11 +231,11 @@ Building requests</h1>
 <code><a class="el" href="master__func_8h.html#a8febfb77e31253fe6ba709dfa13158a1" title="Mask write register request.">modbusBuildRequest22TCP()</a></code>   </td></tr>
 </table>
 <p>Please see <a class="el" href="master__func_8impl_8h.html">master_func.impl.h</a> for more details.</p>
-<p>For instance, a request to read holding register 17 from slave with id 1 can be built using: </p><div class="fragment"><div class="line"><span class="comment">// For Modbus RTU</span></div>
+<p>For instance, a request to read holding register 17 from slave with address 1 can be built using: </p><div class="fragment"><div class="line"><span class="comment">// For Modbus RTU</span></div>
 <div class="line"><a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err;</div>
 <div class="line">err = modbusMasterBuildRequest03RTU(&amp;master, 1, 17, 1);</div>
 <div class="line">assert(<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err) &amp;&amp; <span class="stringliteral">&quot;modbusMasterBuildRequest03RTU() failed&quot;</span>);</div>
-</div><!-- fragment --><p>If the request has been built successfully, it can be acquired using <code><a class="el" href="master_8h.html#a7bf896eb0e5ec0f2cfad680442342fd2" title="Returns a pointer to the request generated by the master.">modbusMasterGetRequest()</a></code>, has length of <code><a class="el" href="master_8h.html#a21bae28555e4781f79f2d7e4bf8a5d71" title="Returns the length of the request generated by the master.">modbusMasterGetRequestLength()</a></code> bytes and can be sent to the slave.</p>
+</div><!-- fragment --><p>If the request has been built successfully, it can be accessed by <code><a class="el" href="master_8h.html#a7bf896eb0e5ec0f2cfad680442342fd2" title="Returns a pointer to the request generated by the master.">modbusMasterGetRequest()</a></code> and has length of <code><a class="el" href="master_8h.html#a21bae28555e4781f79f2d7e4bf8a5d71" title="Returns the length of the request generated by the master.">modbusMasterGetRequestLength()</a></code> bytes and can be sent to the slave.</p>
 <h1><a class="anchor" id="master-response"></a>
 Processing responses</h1>
 <p>After obtaining the response from the slave, it's time to process it. In order to do that one of the <code>modbusParseResponse*()</code> functions can be used: </p><div class="fragment"><div class="line"><span class="comment">// For Modbus RTU</span></div>
@@ -251,10 +252,13 @@ Processing responses</h1>
 <div class="line">    handleMasterError(err);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Handle errors relate to the structure of the request frame</span></div>
+<div class="line"><span class="comment">// If the request produced by modbusBuildRequest*() caused</span></div>
+<div class="line"><span class="comment">// an error here, please report a bug</span></div>
 <div class="line"><span class="keywordflow">if</span> (<a class="code" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06">modbusGetRequestError</a>(err))</div>
 <div class="line">    handleRequestError(err);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Handle errors related to the structure of the response frame</span></div>
+<div class="line"><span class="comment">// e.g. invalid CRC</span></div>
 <div class="line"><span class="keywordflow">if</span> (<a class="code" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">modbusGetResponseError</a>(err))</div>
 <div class="line">    handleResponseError(err);</div>
 <div class="line"> </div>

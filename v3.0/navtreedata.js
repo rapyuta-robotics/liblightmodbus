@@ -60,6 +60,7 @@ var NAVTREE =
     ] ],
     [ "Examples", "examples.html", null ],
     [ "Porting code from v2.0 to v3.0", "porting.html", null ],
+    [ "User-defined functions", "user-functions.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
