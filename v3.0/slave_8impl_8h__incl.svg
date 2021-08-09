@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Slave&#39;s types and basic functions (implementation)">
 <polygon fill="#bfbfbf" stroke="black" points="18.83,-224.5 18.83,-254.5 121.83,-254.5 121.83,-224.5 18.83,-224.5"/>
 <text text-anchor="start" x="26.83" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="70.33" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">/slave.impl.h</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="slave_8h.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="slave_8h.html" target="_top" xlink:title="Slave&#39;s types and basic functions (header)">
 <polygon fill="none" stroke="black" points="14.83,-112.5 14.83,-131.5 61.83,-131.5 61.83,-112.5 14.83,-112.5"/>
 <text text-anchor="middle" x="38.33" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">slave.h</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="slave__func_8h.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="slave__func_8h.html" target="_top" xlink:title="Slave&#39;s functions for parsing requests (header)">
 <polygon fill="none" stroke="black" points="66.83,-168.5 66.83,-187.5 137.83,-187.5 137.83,-168.5 66.83,-168.5"/>
 <text text-anchor="middle" x="102.33" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">slave_func.h</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="base_8h.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="base_8h.html" target="_top" xlink:title="Common types and functions (header)">
 <polygon fill="none" stroke="black" points="80.83,-56.5 80.83,-75.5 125.83,-75.5 125.83,-56.5 80.83,-56.5"/>
 <text text-anchor="middle" x="103.33" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">base.h</text>
 </a>

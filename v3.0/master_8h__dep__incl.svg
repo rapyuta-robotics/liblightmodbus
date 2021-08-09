@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Master&#39;s types and basic functions (header)">
 <polygon fill="#bfbfbf" stroke="black" points="57.53,-268.5 57.53,-298.5 160.53,-298.5 160.53,-268.5 57.53,-268.5"/>
 <text text-anchor="start" x="65.53" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="109.03" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">/master.h</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="lightmodbus_8h.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="lightmodbus_8h.html" target="_top" xlink:title="The main library header file (include this one)">
 <polygon fill="none" stroke="black" points="57.53,-67.5 57.53,-97.5 160.53,-97.5 160.53,-67.5 57.53,-67.5"/>
 <text text-anchor="start" x="65.53" y="-85.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="109.03" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/lightmodbus.h</text>
@@ -37,7 +37,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="master_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="master_8impl_8h.html" target="_top" xlink:title="Master&#39;s types and basic functions (implementation)">
 <polygon fill="none" stroke="black" points="17.53,-134.5 17.53,-164.5 120.53,-164.5 120.53,-134.5 17.53,-134.5"/>
 <text text-anchor="start" x="25.53" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="69.03" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">/master.impl.h</text>
@@ -53,7 +53,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="master__func_8h.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="master__func_8h.html" target="_top" xlink:title="Master&#39;s functions for building requests and parsing responses (header)">
 <polygon fill="none" stroke="black" points="97.53,-201.5 97.53,-231.5 200.53,-231.5 200.53,-201.5 97.53,-201.5"/>
 <text text-anchor="start" x="105.53" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="149.03" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">/master_func.h</text>
@@ -69,7 +69,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="master__func_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="master__func_8impl_8h.html" target="_top" xlink:title="Master&#39;s functions for building requests and parsing responses (implementation)">
 <polygon fill="none" stroke="black" points="177.53,-134.5 177.53,-164.5 280.53,-164.5 280.53,-134.5 177.53,-134.5"/>
 <text text-anchor="start" x="185.53" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="229.03" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">/master_func.impl.h</text>
@@ -85,7 +85,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="lightmodbus_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="lightmodbus_8hpp.html" target="_top" xlink:title="(Very) experimental liblightmodbus C++ interface">
 <polygon fill="none" stroke="black" points="57.53,-0.5 57.53,-30.5 160.53,-30.5 160.53,-0.5 57.53,-0.5"/>
 <text text-anchor="start" x="65.53" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="109.03" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/lightmodbus.hpp</text>

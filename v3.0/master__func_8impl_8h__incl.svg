@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Master&#39;s functions for building requests and parsing responses (implementation)">
 <polygon fill="#bfbfbf" stroke="black" points="20.5,-224.5 20.5,-254.5 123.5,-254.5 123.5,-224.5 20.5,-224.5"/>
 <text text-anchor="start" x="28.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="72" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">/master_func.impl.h</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="master__func_8h.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="master__func_8h.html" target="_top" xlink:title="Master&#39;s functions for building requests and parsing responses (header)">
 <polygon fill="none" stroke="black" points="0,-168.5 0,-187.5 78,-187.5 78,-168.5 0,-168.5"/>
 <text text-anchor="middle" x="39" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">master_func.h</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="master_8h.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="master_8h.html" target="_top" xlink:title="Master&#39;s types and basic functions (header)">
 <polygon fill="none" stroke="black" points="67,-112.5 67,-131.5 121,-131.5 121,-112.5 67,-112.5"/>
 <text text-anchor="middle" x="94" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">master.h</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="base_8h.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="base_8h.html" target="_top" xlink:title="Common types and functions (header)">
 <polygon fill="none" stroke="black" points="18.5,-56.5 18.5,-75.5 63.5,-75.5 63.5,-56.5 18.5,-56.5"/>
 <text text-anchor="middle" x="41" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">base.h</text>
 </a>

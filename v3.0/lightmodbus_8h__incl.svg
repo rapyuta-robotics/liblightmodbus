@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="The main library header file (include this one)">
 <polygon fill="#bfbfbf" stroke="black" points="329.72,-280.5 329.72,-310.5 432.72,-310.5 432.72,-280.5 329.72,-280.5"/>
 <text text-anchor="start" x="337.72" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">include/lightmodbus</text>
 <text text-anchor="middle" x="381.22" y="-287.5" font-family="Helvetica,sans-Serif" font-size="10.00">/lightmodbus.h</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="base_8h.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="base_8h.html" target="_top" xlink:title="Common types and functions (header)">
 <polygon fill="none" stroke="black" points="392.72,-56.5 392.72,-75.5 437.72,-75.5 437.72,-56.5 392.72,-56.5"/>
 <text text-anchor="middle" x="415.22" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">base.h</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="slave_8h.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="slave_8h.html" target="_top" xlink:title="Slave&#39;s types and basic functions (header)">
 <polygon fill="none" stroke="black" points="183.72,-112.5 183.72,-131.5 230.72,-131.5 230.72,-112.5 183.72,-112.5"/>
 <text text-anchor="middle" x="207.22" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">slave.h</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="slave__func_8h.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="slave__func_8h.html" target="_top" xlink:title="Slave&#39;s functions for parsing requests (header)">
 <polygon fill="none" stroke="black" points="166.72,-168.5 166.72,-187.5 237.72,-187.5 237.72,-168.5 166.72,-168.5"/>
 <text text-anchor="middle" x="202.22" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">slave_func.h</text>
 </a>
@@ -66,7 +66,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="master_8h.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="master_8h.html" target="_top" xlink:title="Master&#39;s types and basic functions (header)">
 <polygon fill="none" stroke="black" points="320.22,-112.5 320.22,-131.5 374.22,-131.5 374.22,-112.5 320.22,-112.5"/>
 <text text-anchor="middle" x="347.22" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">master.h</text>
 </a>
@@ -81,7 +81,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="master__func_8h.html" target="_top" xlink:title=" ">
+<g id="a_node8"><a xlink:href="master__func_8h.html" target="_top" xlink:title="Master&#39;s functions for building requests and parsing responses (header)">
 <polygon fill="none" stroke="black" points="394.22,-168.5 394.22,-187.5 472.22,-187.5 472.22,-168.5 394.22,-168.5"/>
 <text text-anchor="middle" x="433.22" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">master_func.h</text>
 </a>
@@ -96,7 +96,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="debug_8h.html" target="_top" xlink:title=" ">
+<g id="a_node9"><a xlink:href="debug_8h.html" target="_top" xlink:title="Debug utilities (header)">
 <polygon fill="none" stroke="black" points="520.22,-168.5 520.22,-187.5 570.22,-187.5 570.22,-168.5 520.22,-168.5"/>
 <text text-anchor="middle" x="545.22" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">debug.h</text>
 </a>
@@ -111,7 +111,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="base_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node10"><a xlink:href="base_8impl_8h.html" target="_top" xlink:title="Common types and functions (implementation)">
 <polygon fill="none" stroke="black" points="666.72,-224.5 666.72,-243.5 731.72,-243.5 731.72,-224.5 666.72,-224.5"/>
 <text text-anchor="middle" x="699.22" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">base.impl.h</text>
 </a>
@@ -126,7 +126,7 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="slave_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node12"><a xlink:href="slave_8impl_8h.html" target="_top" xlink:title="Slave&#39;s types and basic functions (implementation)">
 <polygon fill="none" stroke="black" points="20.22,-224.5 20.22,-243.5 88.22,-243.5 88.22,-224.5 20.22,-224.5"/>
 <text text-anchor="middle" x="54.22" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">slave.impl.h</text>
 </a>
@@ -141,7 +141,7 @@
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="slave__func_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node13"><a xlink:href="slave__func_8impl_8h.html" target="_top" xlink:title="Slave&#39;s functions for parsing requests (implementation)">
 <polygon fill="none" stroke="black" points="106.22,-224.5 106.22,-243.5 198.22,-243.5 198.22,-224.5 106.22,-224.5"/>
 <text text-anchor="middle" x="152.22" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">slave_func.impl.h</text>
 </a>
@@ -156,7 +156,7 @@
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="master_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node14"><a xlink:href="master_8impl_8h.html" target="_top" xlink:title="Master&#39;s types and basic functions (implementation)">
 <polygon fill="none" stroke="black" points="292.22,-224.5 292.22,-243.5 366.22,-243.5 366.22,-224.5 292.22,-224.5"/>
 <text text-anchor="middle" x="329.22" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">master.impl.h</text>
 </a>
@@ -171,7 +171,7 @@
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="master__func_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node15"><a xlink:href="master__func_8impl_8h.html" target="_top" xlink:title="Master&#39;s functions for building requests and parsing responses (implementation)">
 <polygon fill="none" stroke="black" points="384.22,-224.5 384.22,-243.5 482.22,-243.5 482.22,-224.5 384.22,-224.5"/>
 <text text-anchor="middle" x="433.22" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">master_func.impl.h</text>
 </a>
@@ -186,7 +186,7 @@
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<g id="a_node16"><a xlink:href="debug_8impl_8h.html" target="_top" xlink:title=" ">
+<g id="a_node16"><a xlink:href="debug_8impl_8h.html" target="_top" xlink:title="Debug utilities (implementation)">
 <polygon fill="none" stroke="black" points="538.72,-224.5 538.72,-243.5 609.72,-243.5 609.72,-224.5 538.72,-224.5"/>
 <text text-anchor="middle" x="574.22" y="-231.5" font-family="Helvetica,sans-Serif" font-size="10.00">debug.impl.h</text>
 </a>
