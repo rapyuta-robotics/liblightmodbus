@@ -271,101 +271,101 @@ $(document).ready(function(){initNavTree('slave_8impl_8h_source.html',''); initR
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="slave_8impl_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">modbusParseRequest</a>(status, request, requestLength);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="slave_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850">  292</a></span>&#160;<a class="code" href="base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56">LIGHTMODBUS_RET_ERROR</a> <a class="code" href="slave_8impl_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850">modbusParseRequestRTU</a>(<a class="code" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t slaveAddress, <span class="keyword">const</span> uint8_t *request, uint16_t requestLength)</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;{</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="comment">// Unpack the request</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> uint8_t *pdu;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    uint16_t pduLength;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    uint8_t requestAddress;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> err = <a class="code" href="base_8h.html#a4dba88e9baf690b8dafa0fad81eb7d07">modbusUnpackRTU</a>(</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        request,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        requestLength,</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        1,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        &amp;pdu,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        &amp;pduLength,</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        &amp;requestAddress</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    );</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">MODBUS_ERROR_SOURCE_REQUEST</a>, err);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// Verify if the frame is meant for us</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">if</span> (requestAddress != 0 &amp;&amp; requestAddress != slaveAddress)</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976">MODBUS_REQUEST_ERROR</a>(ADDRESS);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">// Parse the request</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> errinfo;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="base_8h.html#ad274c6156d4373b79930b577e373692a">modbusBufferModeRTU</a>(&amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(errinfo = <a class="code" href="slave_8impl_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">modbusParseRequest</a>(status, pdu, pduLength)))</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">return</span> errinfo;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    </div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span> (status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="comment">// Discard any response frames if the request</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="comment">// was broadcast</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">if</span> (requestAddress == 0)</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <a class="code" href="slave_8h.html#aac289ce160ea61287c98e8a1ee4353d5">modbusSlaveFreeResponse</a>(status);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>();</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">// Pack the response frame</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        err = <a class="code" href="base_8h.html#af2cafe9debf86bea7042b4c40bb288cd">modbusPackRTU</a>(</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            &amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">data</a>[0],</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>,</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            slaveAddress);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>, err);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="slave_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">  355</a></span>&#160;<a class="code" href="base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56">LIGHTMODBUS_RET_ERROR</a> <a class="code" href="slave_8impl_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">modbusParseRequestTCP</a>(<a class="code" href="structModbusSlave.html">ModbusSlave</a> *status, <span class="keyword">const</span> uint8_t *request, uint16_t requestLength)</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">// Unpack the request</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">const</span> uint8_t *pdu;</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    uint16_t pduLength;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    uint16_t transactionID;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    uint8_t unitID;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> err = <a class="code" href="base_8h.html#a616e5bdb5ebcd57b1604421f6ca22bc9">modbusUnpackTCP</a>(</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        request,</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        requestLength,</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        &amp;pdu,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        &amp;pduLength,</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        &amp;transactionID,</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        &amp;unitID</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    );</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">MODBUS_ERROR_SOURCE_REQUEST</a>, err);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    </div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="comment">// Parse the request</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> errinfo;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="base_8h.html#ae82c3ced0b1698622b222761851d02c0">modbusBufferModeTCP</a>(&amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(errinfo = <a class="code" href="slave_8impl_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">modbusParseRequest</a>(status, pdu, pduLength)))</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">return</span> errinfo;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160; </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">// Write MBAP header</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="comment">// Pack the resonse</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        err = <a class="code" href="base_8h.html#a39dcd3aad118a779b7e1775fea3e5d77">modbusPackTCP</a>(</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            &amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">data</a>[0],</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>,</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            transactionID,</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            unitID</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        );</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>, err);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>();</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="slave_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850">  291</a></span>&#160;<a class="code" href="base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56">LIGHTMODBUS_RET_ERROR</a> <a class="code" href="slave_8impl_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850">modbusParseRequestRTU</a>(<a class="code" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t slaveAddress, <span class="keyword">const</span> uint8_t *request, uint16_t requestLength)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// Unpack the request</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keyword">const</span> uint8_t *pdu;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    uint16_t pduLength;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    uint8_t requestAddress;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> err = <a class="code" href="base_8h.html#a4dba88e9baf690b8dafa0fad81eb7d07">modbusUnpackRTU</a>(</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        request,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        requestLength,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        1,</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        &amp;pdu,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        &amp;pduLength,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        &amp;requestAddress</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    );</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">MODBUS_ERROR_SOURCE_REQUEST</a>, err);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="comment">// Verify if the frame is meant for us</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">if</span> (requestAddress != 0 &amp;&amp; requestAddress != slaveAddress)</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976">MODBUS_REQUEST_ERROR</a>(ADDRESS);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="comment">// Parse the request</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> errinfo;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <a class="code" href="base_8h.html#ad274c6156d4373b79930b577e373692a">modbusBufferModeRTU</a>(&amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(errinfo = <a class="code" href="slave_8impl_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">modbusParseRequest</a>(status, pdu, pduLength)))</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordflow">return</span> errinfo;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">if</span> (status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="comment">// Discard any response frames if the request</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="comment">// was broadcast</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span> (requestAddress == 0)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <a class="code" href="slave_8h.html#aac289ce160ea61287c98e8a1ee4353d5">modbusSlaveFreeResponse</a>(status);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>();</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="comment">// Pack the response frame</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        err = <a class="code" href="base_8h.html#af2cafe9debf86bea7042b4c40bb288cd">modbusPackRTU</a>(</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            &amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">data</a>[0],</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>,</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            slaveAddress);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>, err);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="slave_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">  354</a></span>&#160;<a class="code" href="base_8h.html#a7c88698d15eed4b7fc4cee4938e57f56">LIGHTMODBUS_RET_ERROR</a> <a class="code" href="slave_8impl_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">modbusParseRequestTCP</a>(<a class="code" href="structModbusSlave.html">ModbusSlave</a> *status, <span class="keyword">const</span> uint8_t *request, uint16_t requestLength)</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;{</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">// Unpack the request</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">const</span> uint8_t *pdu;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    uint16_t pduLength;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    uint16_t transactionID;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    uint8_t unitID;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> err = <a class="code" href="base_8h.html#a616e5bdb5ebcd57b1604421f6ca22bc9">modbusUnpackTCP</a>(</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        request,</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        requestLength,</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        &amp;pdu,</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        &amp;pduLength,</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        &amp;transactionID,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        &amp;unitID</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    );</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a4b683ba411cd60b253d98e0cf8c1dd54">MODBUS_ERROR_SOURCE_REQUEST</a>, err);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="comment">// Parse the request</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> errinfo;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="base_8h.html#ae82c3ced0b1698622b222761851d02c0">modbusBufferModeTCP</a>(&amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(errinfo = <a class="code" href="slave_8impl_8h.html#aff0a9164a0e37aa619232ae86e3ff97a">modbusParseRequest</a>(status, pdu, pduLength)))</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">return</span> errinfo;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">// Write MBAP header</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">if</span> (status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>)</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="comment">// Pack the resonse</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        err = <a class="code" href="base_8h.html#a39dcd3aad118a779b7e1775fea3e5d77">modbusPackTCP</a>(</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            &amp;status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">data</a>[0],</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            status-&gt;<a class="code" href="structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d">response</a>.<a class="code" href="structModbusBuffer.html#a049b643e8a2c00147f9015301385734e">length</a>,</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            transactionID,</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            unitID</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        );</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#aaa2bd1e697e8df6944aef344675dd123">MODBUS_MAKE_ERROR</a>(<a class="code" href="base_8h.html#a73b551b47500629c9b764f52f8d044ba">MODBUS_ERROR_SOURCE_GENERAL</a>, err);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1">MODBUS_NO_ERROR</a>();</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;}</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="abase_8h_html_a0b7f726dfaa2b4cf98aaaed1eb42fa72"><div class="ttname"><a href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72">ModbusExceptionCode</a></div><div class="ttdeci">ModbusExceptionCode</div><div class="ttdoc">Represents a Modbus exception code.</div><div class="ttdef"><b>Definition:</b> base.h:215</div></div>
 <div class="ttc" id="abase_8h_html_a0b7f726dfaa2b4cf98aaaed1eb42fa72af73f18e9dc57ee09169598f0ad5e6b54"><div class="ttname"><a href="base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72af73f18e9dc57ee09169598f0ad5e6b54">MODBUS_EXCEP_ILLEGAL_FUNCTION</a></div><div class="ttdeci">@ MODBUS_EXCEP_ILLEGAL_FUNCTION</div><div class="ttdoc">Illegal function code.</div><div class="ttdef"><b>Definition:</b> base.h:217</div></div>
 <div class="ttc" id="abase_8h_html_a102ec3dde6764e3ccdbc5b85f4e33976"><div class="ttname"><a href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976">MODBUS_REQUEST_ERROR</a></div><div class="ttdeci">#define MODBUS_REQUEST_ERROR(e)</div><div class="ttdoc">Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...</div><div class="ttdef"><b>Definition:</b> base.h:95</div></div>
@@ -405,8 +405,8 @@ $(document).ready(function(){initNavTree('slave_8impl_8h_source.html',''); initR
 <div class="ttc" id="aslave_8impl_8h_html_a2c30507da9547125c17f62e0e18d9194"><div class="ttname"><a href="slave_8impl_8h.html#a2c30507da9547125c17f62e0e18d9194">modbusSlaveInit</a></div><div class="ttdeci">ModbusErrorInfo modbusSlaveInit(ModbusSlave *status, ModbusRegisterCallback registerCallback, ModbusSlaveExceptionCallback exceptionCallback, ModbusAllocator allocator, const ModbusSlaveFunctionHandler *functions, uint8_t functionCount)</div><div class="ttdoc">Initializes slave device.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:71</div></div>
 <div class="ttc" id="aslave_8impl_8h_html_a384f75966903cc0c249eb68a6a20180e"><div class="ttname"><a href="slave_8impl_8h.html#a384f75966903cc0c249eb68a6a20180e">modbusBuildExceptionPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusBuildExceptionPDU(ModbusSlave *status, uint8_t function, ModbusExceptionCode code)</div><div class="ttdoc">Builds an exception PDU.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:135</div></div>
 <div class="ttc" id="aslave_8impl_8h_html_a58243ce1e1adaffd0a3260edc2d03603"><div class="ttname"><a href="slave_8impl_8h.html#a58243ce1e1adaffd0a3260edc2d03603">modbusBuildException</a></div><div class="ttdeci">ModbusErrorInfo modbusBuildException(ModbusSlave *status, uint8_t function, ModbusExceptionCode code)</div><div class="ttdoc">Builds an exception response frame.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:110</div></div>
-<div class="ttc" id="aslave_8impl_8h_html_a5ad3fe86aa14f8982d7c459c68cd8b3e"><div class="ttname"><a href="slave_8impl_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">modbusParseRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusParseRequestTCP(ModbusSlave *status, const uint8_t *request, uint16_t requestLength)</div><div class="ttdoc">Parses provided Modbus TCP request frame and generates a Modbus TCP response.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:355</div></div>
-<div class="ttc" id="aslave_8impl_8h_html_a6a1e63faa64b7ca4b91d1ce7988be850"><div class="ttname"><a href="slave_8impl_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850">modbusParseRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusParseRequestRTU(ModbusSlave *status, uint8_t slaveAddress, const uint8_t *request, uint16_t requestLength)</div><div class="ttdoc">Parses provided Modbus RTU request frame and generates a Modbus RTU response.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:292</div></div>
+<div class="ttc" id="aslave_8impl_8h_html_a5ad3fe86aa14f8982d7c459c68cd8b3e"><div class="ttname"><a href="slave_8impl_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e">modbusParseRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusParseRequestTCP(ModbusSlave *status, const uint8_t *request, uint16_t requestLength)</div><div class="ttdoc">Parses provided Modbus TCP request frame and generates a Modbus TCP response.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:354</div></div>
+<div class="ttc" id="aslave_8impl_8h_html_a6a1e63faa64b7ca4b91d1ce7988be850"><div class="ttname"><a href="slave_8impl_8h.html#a6a1e63faa64b7ca4b91d1ce7988be850">modbusParseRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusParseRequestRTU(ModbusSlave *status, uint8_t slaveAddress, const uint8_t *request, uint16_t requestLength)</div><div class="ttdoc">Parses provided Modbus RTU request frame and generates a Modbus RTU response.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:291</div></div>
 <div class="ttc" id="aslave_8impl_8h_html_a70695c3b7355bc0a3e6d49c46a4eef1f"><div class="ttname"><a href="slave_8impl_8h.html#a70695c3b7355bc0a3e6d49c46a4eef1f">modbusSlaveDestroy</a></div><div class="ttdeci">void modbusSlaveDestroy(ModbusSlave *status)</div><div class="ttdoc">Frees memory allocated in the ModbusSlave struct.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:91</div></div>
 <div class="ttc" id="aslave_8impl_8h_html_a778e65356f7da66831f18ec53b975383"><div class="ttname"><a href="slave_8impl_8h.html#a778e65356f7da66831f18ec53b975383">modbusBuildExceptionTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusBuildExceptionTCP(ModbusSlave *status, uint16_t transactionID, uint8_t unitID, uint8_t function, ModbusExceptionCode code)</div><div class="ttdoc">Builds a Modbus TCP exception.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:199</div></div>
 <div class="ttc" id="aslave_8impl_8h_html_ab5c5f3146a46cf8d221aca22e9c8a052"><div class="ttname"><a href="slave_8impl_8h.html#ab5c5f3146a46cf8d221aca22e9c8a052">modbusParseRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusParseRequestPDU(ModbusSlave *status, const uint8_t *request, uint8_t requestLength)</div><div class="ttdoc">Parses provided PDU and generates PDU for the response frame.</div><div class="ttdef"><b>Definition:</b> slave.impl.h:267</div></div>

@@ -5,6 +5,7 @@ var dir_dd3c966a887e279ef2e7260093008a14 =
     [ "debug.h", "debug_8h.html", "debug_8h" ],
     [ "debug.impl.h", "debug_8impl_8h.html", "debug_8impl_8h" ],
     [ "lightmodbus.h", "lightmodbus_8h.html", "lightmodbus_8h" ],
+    [ "lightmodbus.hpp", "lightmodbus_8hpp.html", "lightmodbus_8hpp" ],
     [ "master.h", "master_8h.html", "master_8h" ],
     [ "master.impl.h", "master_8impl_8h.html", "master_8impl_8h" ],
     [ "master_func.h", "master__func_8h.html", "master__func_8h" ],

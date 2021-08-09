@@ -1,6 +1,14 @@
 var searchData=
 [
-  ['registercallback_235',['registerCallback',['../structModbusSlave.html#a4950c9c65051d6ace03a97b8cf0811db',1,'ModbusSlave']]],
-  ['request_236',['request',['../structModbusMaster.html#ad772f58232e2467bd1019e73305abd81',1,'ModbusMaster']]],
-  ['response_237',['response',['../structModbusSlave.html#adeaf9d04fb708fb6d0601c7b701d611d',1,'ModbusSlave']]]
+  ['padding_280',['padding',['../structModbusBuffer.html#af071e584faa4bb9a34423eccd204d93f',1,'ModbusBuffer']]],
+  ['parserequestpdu_281',['parseRequestPDU',['../classllm_1_1Slave.html#af8cc9d8d58bf7f632f3f3cf7e6b9c84b',1,'llm::Slave']]],
+  ['parserequestrtu_282',['parseRequestRTU',['../classllm_1_1Slave.html#a001591b9a38b69cf29adc853872a09fe',1,'llm::Slave']]],
+  ['parserequesttcp_283',['parseRequestTCP',['../classllm_1_1Slave.html#a05169339916c3727c780c75157b399b9',1,'llm::Slave']]],
+  ['parseresponsepdu_284',['parseResponsePDU',['../classllm_1_1Master.html#a39b0210172c76ef4dc9e43668daef7c9',1,'llm::Master']]],
+  ['parseresponsertu_285',['parseResponseRTU',['../classllm_1_1Master.html#ab052e172e96808744ee43a8eff80b679',1,'llm::Master']]],
+  ['parseresponsetcp_286',['parseResponseTCP',['../classllm_1_1Master.html#ad1f614f5d44a61a8507ae34968fa7903',1,'llm::Master']]],
+  ['pdu_287',['pdu',['../structModbusBuffer.html#ae10b06d9913fe444dc75dfb875572d2e',1,'ModbusBuffer']]],
+  ['pduoffset_288',['pduOffset',['../structModbusBuffer.html#a25edc1eea4563ee3c563fbb7f8b3bda7',1,'ModbusBuffer']]],
+  ['porting_20code_20from_20v2_2e0_20to_20v3_2e0_289',['Porting code from v2.0 to v3.0',['../porting.html',1,'']]],
+  ['ptr_290',['ptr',['../structModbusMasterFunctionHandler.html#a89ada8f0bb70522306e4e698ebaf7269',1,'ModbusMasterFunctionHandler::ptr()'],['../structModbusSlaveFunctionHandler.html#a57cb33cc84310fe305ebaecee710b55b',1,'ModbusSlaveFunctionHandler::ptr()']]]
 ];
