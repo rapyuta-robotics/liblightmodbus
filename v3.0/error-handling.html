@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -89,36 +89,38 @@ $(document).ready(function(){initNavTree('error-handling.html',''); initResizabl
 <div class="title">Error handling </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Liblightmodbus v3.0 introduces a new type for error handling - <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> - returned by majority of the library functions. This new type allows to store both error type and its source (whether it was caused by an invalid request/response frame or by an actual library error).</p>
-<p>Previously, you would check for errors like this: </p><div class="fragment"><div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> err = modbusDoSomething();</div>
+<div class="textblock"><p>Liblightmodbus v3.0 introduces a new type for error handling - <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> - returned by majority of the library functions. This new type allows to store both error type and its source - whether it was caused by an invalid request/response frame or by an actual library/user error.</p>
+<p>In older versions, error checking would usually look like this: </p><div class="fragment"><div class="line"><a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a> err = modbusDoSomething();</div>
 <div class="line"><span class="keywordflow">if</span> (err != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
 <div class="line">    doSomething();</div>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6e"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6e">ModbusError</a></div><div class="ttdeci">ModbusError</div><div class="ttdoc">Represtents different kinds of errors.</div><div class="ttdef"><b>Definition:</b> base.h:127</div></div>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a></div><div class="ttdeci">@ MODBUS_OK</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> base.h:133</div></div>
 </div><!-- fragment --><p>In the new version, it's a bit more sophisticated: </p><div class="fragment"><div class="line"><a class="code" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err = modbusDoSomething();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// We can check if any error happened at all</span></div>
+<div class="line"><span class="comment">// We can check if any error happened at all.</span></div>
 <div class="line"><span class="comment">// modbusIsOk() returning true indicates that request/response</span></div>
-<div class="line"><span class="comment">// frame can be safely accessed and is ready to be sent</span></div>
-<div class="line"><span class="keywordflow">if</span> (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err))</div>
+<div class="line"><span class="comment">// frame can be safely accessed and is ready to be sent.</span></div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err))</div>
+<div class="line">    sendData();</div>
+<div class="line"><span class="keywordflow">else</span></div>
 <div class="line">    doSomething();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// We can check if the library reported any general errors</span></div>
+<div class="line"><span class="comment">// We can check if the library reported any general errors.</span></div>
 <div class="line"><span class="comment">// Those usually mean that the user provided an invalid argument</span></div>
-<div class="line"><span class="comment">// or something had failed internally. These are the serious ones.</span></div>
+<div class="line"><span class="comment">// or that something failed internally. These are the serious ones.</span></div>
 <div class="line"><span class="keywordflow">if</span> (<a class="code" href="base_8h.html#a84765449265aa5a31877b749f04cb568">modbusGetGeneralError</a>(err) != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
 <div class="line">    handleSeriousError();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// We can check if the request frame contained an error</span></div>
+<div class="line"><span class="comment">// We can check if the request frame contains an error.</span></div>
 <div class="line"><span class="comment">// This includes parsing a frame meant for other slave, invalid CRC value, etc.</span></div>
-<div class="line"><span class="comment">// Usually, you want to ignore those, because they are not application errors</span></div>
+<div class="line"><span class="comment">// Usually, you want to ignore these, because they are not application errors</span></div>
 <div class="line"><span class="comment">// and only provide additional information about what prevented the library</span></div>
-<div class="line"><span class="comment">// from processing request/response</span></div>
+<div class="line"><span class="comment">// from processing request/response.</span></div>
 <div class="line"><span class="keywordflow">if</span> (<a class="code" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06">modbusGetRequestError</a>(err) != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
 <div class="line">    handleRequestError();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// We can also check if the response frame contained an error</span></div>
-<div class="line"><span class="comment">// Interpretation is the same as for modbusGetRequestError()</span></div>
+<div class="line"><span class="comment">// Interpretation is analogous to the one for modbusGetRequestError()</span></div>
 <div class="line"><span class="keywordflow">if</span> (<a class="code" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">modbusGetResponseError</a>(err) != <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>)</div>
 <div class="line">    handleResponseError();</div>
 <div class="ttc" id="abase_8h_html_a5c6f792a259423b2df55d8d49e91fd06"><div class="ttname"><a href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06">modbusGetRequestError</a></div><div class="ttdeci">static ModbusError modbusGetRequestError(ModbusErrorInfo err)</div><div class="ttdoc">Returns request error from ModbusErrorInfo.</div><div class="ttdef"><b>Definition:</b> base.h:444</div></div>
@@ -126,8 +128,22 @@ $(document).ready(function(){initNavTree('error-handling.html',''); initResizabl
 <div class="ttc" id="abase_8h_html_a84765449265aa5a31877b749f04cb568"><div class="ttname"><a href="base_8h.html#a84765449265aa5a31877b749f04cb568">modbusGetGeneralError</a></div><div class="ttdeci">static ModbusError modbusGetGeneralError(ModbusErrorInfo err)</div><div class="ttdoc">Returns general error from ModbusErrorInfo.</div><div class="ttdef"><b>Definition:</b> base.h:434</div></div>
 <div class="ttc" id="abase_8h_html_acbf9b7e6b679be88ce4e10ffb617d3e9"><div class="ttname"><a href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9">modbusGetResponseError</a></div><div class="ttdeci">static ModbusError modbusGetResponseError(ModbusErrorInfo err)</div><div class="ttdoc">Returns response error from ModbusErrorInfo.</div><div class="ttdef"><b>Definition:</b> base.h:454</div></div>
 <div class="ttc" id="astructModbusErrorInfo_html"><div class="ttname"><a href="structModbusErrorInfo.html">ModbusErrorInfo</a></div><div class="ttdoc">Richer error represenation - source and type of error.</div><div class="ttdef"><b>Definition:</b> base.h:118</div></div>
-</div><!-- fragment --><p><code><a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo.">modbusGetGeneralError()</a></code>, <code><a class="el" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo.">modbusGetRequestError()</a></code> and <code><a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9" title="Returns response error from ModbusErrorInfo.">modbusGetResponseError()</a></code> return a <code>ModbusError</code> enum value which can be easily handled with a switch statement.</p>
-<dl class="section warning"><dt>Warning</dt><dd>You should <b>not</b> be accessing the fields of <code><a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a></code> directly. They are not considered a part of the library interface, and hence the internals of this struct are subject for change in future versions. For this exact reason the functions described above exist. </dd></dl>
+</div><!-- fragment --><p><code><a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo.">modbusGetGeneralError()</a></code>, <code><a class="el" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo.">modbusGetRequestError()</a></code> and <code><a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9" title="Returns response error from ModbusErrorInfo.">modbusGetResponseError()</a></code> return a <a class="el" href="base_8h.html#abe7d2ca32c0808656f4914bea803bc09">ModbusError</a> enum value which can be easily handled with a switch statement.</p>
+<p>You can find more information about errors returned by certain functions in their documentation. For example, please take a look at <code><a class="el" href="master_8h.html#a151b85c221ae43804856eb92737498e5" title="Parses a Modbus RTU slave response.">modbusParseResponseRTU()</a></code>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a102ec3dde6764e3ccdbc5b85f4e33976" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_REQUESTL and the error code i...">MODBUS_REQUEST_ERROR()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a251ef1759007d2a1d4f823492d1bbc57" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_RESPONSE and the error code i...">MODBUS_RESPONSE_ERROR()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo.">modbusGetErrorSource()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" title="Returns ModbusError contained in ModbusErrorInfo.">modbusGetErrorCode()</a> </dd>
+<dd>
+<a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>You should <b>not</b> be accessing the fields of <code><a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a></code> directly. They are not considered a part of the library interface, and hence are subject to change in future versions of the library. Instead, please use functions described above. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

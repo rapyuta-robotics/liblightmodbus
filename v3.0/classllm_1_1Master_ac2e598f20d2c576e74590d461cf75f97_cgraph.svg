@@ -35,7 +35,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" target="_top" xlink:title="Throws an exception based on ModbusErrorInfo.">
 <polygon fill="none" stroke="black" points="134,-57.5 134,-76.5 229,-76.5 229,-57.5 134,-57.5"/>
 <text text-anchor="middle" x="181.5" y="-64.5" font-family="Helvetica,sans-Serif" font-size="10.00">llm::throwErrorInfo</text>
 </a>

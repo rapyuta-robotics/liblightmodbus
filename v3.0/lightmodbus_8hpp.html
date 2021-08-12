@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -113,14 +113,19 @@ $(document).ready(function(){initNavTree('lightmodbus_8hpp.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllm_1_1RequestError.html">llm::RequestError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request error exception class.  <a href="classllm_1_1RequestError.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllm_1_1ResponseError.html">llm::ResponseError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Response error exception class.  <a href="classllm_1_1ResponseError.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllm_1_1GeneralError.html">llm::GeneralError</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General error exception class.  <a href="classllm_1_1GeneralError.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllm_1_1Slave.html">llm::Slave</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a Modbus slave device.  <a href="classllm_1_1Slave.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classllm_1_1Master.html">llm::Master</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a Modbus master device.  <a href="classllm_1_1Master.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -131,9 +136,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a823609688647d2301b2c0b81b97ace12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lightmodbus_8hpp.html#a823609688647d2301b2c0b81b97ace12">LIGHTMODBUS_DEBUG</a></td></tr>
-<tr class="memdesc:a823609688647d2301b2c0b81b97ace12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the library to include debug utilties.  <a href="lightmodbus_8hpp.html#a823609688647d2301b2c0b81b97ace12">More...</a><br /></td></tr>
-<tr class="separator:a823609688647d2301b2c0b81b97ace12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04489add6719adea3428fe9d72f5d0e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lightmodbus_8hpp.html#a04489add6719adea3428fe9d72f5d0e6">LIGHTMODBUS_DEFINE_MEMBER_BUILD_PDU_HEADER</a>(f_suffix, ...)&#160;&#160;&#160;	void buildRequest##f_suffix##PDU(__VA_ARGS__)</td></tr>
 <tr class="separator:a04489add6719adea3428fe9d72f5d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3575312322ab71e1647751693cbaadc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lightmodbus_8hpp.html#a3575312322ab71e1647751693cbaadc7">LIGHTMODBUS_DEFINE_MEMBER_BUILD_PDU_BODY</a>(f_suffix, ...)</td></tr>
@@ -150,28 +152,13 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a57bd253b3362a63c62c8c5b5b0391252"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252">llm::throwErrorInfo</a> (<a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a> err)</td></tr>
+<tr class="memdesc:a57bd253b3362a63c62c8c5b5b0391252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an exception based on <a class="el" href="structModbusErrorInfo.html" title="Richer error represenation - source and type of error.">ModbusErrorInfo</a>.  <a href="namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252">More...</a><br /></td></tr>
 <tr class="separator:a57bd253b3362a63c62c8c5b5b0391252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>(Very) experimental liblightmodbus C++ interface </p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS INTERFACE IS EXPERIMENTAL, NOT TESTED AND MAY CHANGE AT ANY TIME. </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a823609688647d2301b2c0b81b97ace12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a823609688647d2301b2c0b81b97ace12">&#9670;&nbsp;</a></span>LIGHTMODBUS_DEBUG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LIGHTMODBUS_DEBUG</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Configures the library to include debug utilties. </p>
-
-</div>
-</div>
 <a id="a3575312322ab71e1647751693cbaadc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3575312322ab71e1647751693cbaadc7">&#9670;&nbsp;</a></span>LIGHTMODBUS_DEFINE_MEMBER_BUILD_PDU_BODY</h2>
 

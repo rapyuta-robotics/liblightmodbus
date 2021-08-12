@@ -4,7 +4,7 @@
 <area shape="rect" id="node15" href="$base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo." alt="" coords="497,132,661,159"/>
 <area shape="rect" id="node16" href="$base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9" title="Returns response error from ModbusErrorInfo." alt="" coords="492,183,667,209"/>
 <area shape="rect" id="node17" href="$base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error." alt="" coords="531,360,627,387"/>
-<area shape="rect" id="node3" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title=" " alt="" coords="290,157,417,184"/>
+<area shape="rect" id="node3" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title="Throws an exception based on ModbusErrorInfo." alt="" coords="290,157,417,184"/>
 <area shape="rect" id="node4" href="$classllm_1_1Slave.html#ac915e0947f733a784a9069f5ff5b9737" title=" " alt="" coords="13,5,207,32"/>
 <area shape="rect" id="node5" href="$classllm_1_1Slave.html#a10e79600053c725e639225264d966e63" title=" " alt="" coords="13,360,207,387"/>
 <area shape="rect" id="node6" href="$classllm_1_1Slave.html#a844c37870a4e98bffc091ddfafb8f959" title=" " alt="" coords="13,461,207,488"/>

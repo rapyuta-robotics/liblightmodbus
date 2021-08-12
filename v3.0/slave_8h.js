@@ -8,10 +8,10 @@ var slave_8h =
     [ "ModbusRegisterCallbackArgs", "slave_8h.html#af8fcd41e7835c0f3a3db273b825fecdb", null ],
     [ "ModbusRegisterCallbackResult", "slave_8h.html#a7861fdcfba7900d1c7e78159374c62e0", null ],
     [ "ModbusRegisterQuery", "slave_8h.html#a9beec9b20c9bccb826fe2072c6362f88", null ],
+    [ "ModbusRequestParsingFunction", "slave_8h.html#a48cd7a7fbb8b9749a09333dcd6f6830c", null ],
     [ "ModbusSlave", "slave_8h.html#aa0d5a7f6e38aad10e5ef58443f31832a", null ],
     [ "ModbusSlaveExceptionCallback", "slave_8h.html#ac21f10119a42e1b24d2d7362b3542c9e", null ],
     [ "ModbusSlaveFunctionHandler", "slave_8h.html#a55a4829ed1b1fcec9b02960c99d9f2cf", null ],
-    [ "ModbusSlaveParsingFunction", "slave_8h.html#a12feb2bec008b2ae613afb728cbcda1b", null ],
     [ "ModbusRegisterQuery", "slave_8h.html#af3b062fa65ce1ab33f86b8cbc9d250bc", [
       [ "MODBUS_REGQ_R_CHECK", "slave_8h.html#af3b062fa65ce1ab33f86b8cbc9d250bca68672dc5badc4bd15dd12c168502930d", null ],
       [ "MODBUS_REGQ_W_CHECK", "slave_8h.html#af3b062fa65ce1ab33f86b8cbc9d250bca0c01fdc7e834c204e355a160790b9932", null ],

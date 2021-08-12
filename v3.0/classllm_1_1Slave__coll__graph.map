@@ -1,5 +1,5 @@
 <map id="llm::Slave" name="llm::Slave">
-<area shape="rect" id="node1" title=" " alt="" coords="141,276,220,303"/>
+<area shape="rect" id="node1" title="Represents a Modbus slave device." alt="" coords="141,276,220,303"/>
 <area shape="rect" id="node2" href="$structModbusSlave.html" title="Slave device status." alt="" coords="130,185,231,212"/>
 <area shape="rect" id="node3" href="$structModbusBuffer.html" title="Stores a Modbus frame." alt="" coords="5,95,108,121"/>
 <area shape="rect" id="node4" href="$structModbusSlaveFunctionHandler.html" title="Associates Modbus function ID with a pointer to a parsing function." alt="" coords="209,95,405,121"/>

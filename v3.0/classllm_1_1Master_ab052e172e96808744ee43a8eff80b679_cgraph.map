@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,157,213,184"/>
 <area shape="rect" id="node2" href="$base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error." alt="" coords="307,157,403,184"/>
 <area shape="rect" id="node5" href="$master_8h.html#a151b85c221ae43804856eb92737498e5" title="Parses a Modbus RTU slave response." alt="" coords="261,81,448,108"/>
-<area shape="rect" id="node10" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title=" " alt="" coords="291,259,418,285"/>
+<area shape="rect" id="node10" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title="Throws an exception based on ModbusErrorInfo." alt="" coords="291,259,418,285"/>
 <area shape="rect" id="node3" href="$base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" title="Returns ModbusError contained in ModbusErrorInfo." alt="" coords="732,259,879,285"/>
 <area shape="rect" id="node4" href="$base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo." alt="" coords="511,132,669,159"/>
 <area shape="rect" id="node6" href="$master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3" title="Parses a PDU section of a slave response." alt="" coords="496,81,684,108"/>

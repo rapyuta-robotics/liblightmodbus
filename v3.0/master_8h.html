@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -135,9 +135,9 @@ Data Structures</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMaster.html">ModbusMaster</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#ad0e3310720fcc07d509b0572dcea7cb6">ModbusMaster</a></td></tr>
 <tr class="separator:ad0e3310720fcc07d509b0572dcea7cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19654463fbbcf8c7e00f87a45afc73a8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8">ModbusMasterParsingFunction</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td></tr>
-<tr class="memdesc:a19654463fbbcf8c7e00f87a45afc73a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a response parsing function.  <a href="master_8h.html#a19654463fbbcf8c7e00f87a45afc73a8">More...</a><br /></td></tr>
-<tr class="separator:a19654463fbbcf8c7e00f87a45afc73a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e55a1052bfe4cadef166da70e6d8dca"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#a7e55a1052bfe4cadef166da70e6d8dca">ModbusResponseParsingFunction</a>) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td></tr>
+<tr class="memdesc:a7e55a1052bfe4cadef166da70e6d8dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to a response parsing function.  <a href="master_8h.html#a7e55a1052bfe4cadef166da70e6d8dca">More...</a><br /></td></tr>
+<tr class="separator:a7e55a1052bfe4cadef166da70e6d8dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbd68fce6ff652ebb88e3bf2412485b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b">ModbusMasterFunctionHandler</a></td></tr>
 <tr class="memdesc:abdbd68fce6ff652ebb88e3bf2412485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates Modbus function ID with a pointer to a response parsing function.  <a href="master_8h.html#abdbd68fce6ff652ebb88e3bf2412485b">More...</a><br /></td></tr>
 <tr class="separator:abdbd68fce6ff652ebb88e3bf2412485b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,14 +297,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a19654463fbbcf8c7e00f87a45afc73a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19654463fbbcf8c7e00f87a45afc73a8">&#9670;&nbsp;</a></span>ModbusMasterParsingFunction</h2>
+<a id="a7e55a1052bfe4cadef166da70e6d8dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e55a1052bfe4cadef166da70e6d8dca">&#9670;&nbsp;</a></span>ModbusResponseParsingFunction</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusMasterParsingFunction) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td>
+          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusResponseParsingFunction) (<a class="el" href="structModbusMaster.html">ModbusMaster</a> *status, uint8_t address, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength, const uint8_t *responsePDU, uint8_t responseLength)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -479,13 +479,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>transaction</em>, </td>
+          <td class="paramname"><em>transactionID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>unit</em>&#160;</td>
+          <td class="paramname"><em>unitID</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -496,6 +496,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Finalizes a Modbus TCP request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transactionID</td><td>Modbus TCP transaction identifier </td></tr>
+    <tr><td class="paramname">unitID</td><td>Modbus TCP Unit ID </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(LENGTH)</a> if the allocated frame has invalid length </dd>
 <dd>
 <a class="el" href="base_8h.html#a54565f6f8e69ad70c1eb6f78b4717aa1" title="Construcs a ModbusErrorInfo object for which modbusIsOK() is guaranteed to return true.">MODBUS_NO_ERROR()</a> on success </dd></dl>
@@ -820,7 +827,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td><a class="el" href="structModbusMaster.html" title="Master device status.">ModbusMaster</a> struct to be initialized </td></tr>
-    <tr><td class="paramname">dataCallback</td><td>Callback function for handling incoming data (required) </td></tr>
+    <tr><td class="paramname">dataCallback</td><td>Callback function for handling incoming data (may be required by used parsing functions) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
     <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="base_8h.html#a85c4c4d0226d45b625c75912467aba44">modbusDefaultAllocator()</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to an array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the master. </td></tr>

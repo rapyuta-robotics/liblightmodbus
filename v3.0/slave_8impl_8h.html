@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -798,7 +798,7 @@ Any errors from parsing functions</dd></dl>
 <p>Initializes slave device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">registerCallback</td><td>Callback function for handling all register operations (required) </td></tr>
+    <tr><td class="paramname">registerCallback</td><td>Callback function for handling all register operations (may be required by used parsing functions) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
     <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="base_8impl_8h.html#a85c4c4d0226d45b625c75912467aba44">modbusDefaultAllocator</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the slave. </td></tr>

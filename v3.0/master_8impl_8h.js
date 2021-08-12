@@ -5,7 +5,7 @@ var master_8impl_8h =
     [ "modbusBeginRequestTCP", "master_8impl_8h.html#afd1467296480779237ab090a8579efb5", null ],
     [ "modbusEndRequestPDU", "master_8impl_8h.html#a973d0a0734fd9bf274a4dd0a43668144", null ],
     [ "modbusEndRequestRTU", "master_8impl_8h.html#a4623d6d41d5e4a148e399fe19051183c", null ],
-    [ "modbusEndRequestTCP", "master_8impl_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079", null ],
+    [ "modbusEndRequestTCP", "master_8impl_8h.html#a7feaa87c1b0f6c9fbd565494b2b96c8d", null ],
     [ "modbusMasterDestroy", "master_8impl_8h.html#a5fe38fae0f89de04fa616d105f660d25", null ],
     [ "modbusMasterInit", "master_8impl_8h.html#af3c4b8930f540697662dfdb0788f38ef", null ],
     [ "modbusParseResponsePDU", "master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b406e3", null ],

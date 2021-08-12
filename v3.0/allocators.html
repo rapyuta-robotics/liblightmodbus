@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -89,17 +89,20 @@ $(document).ready(function(){initNavTree('allocators.html',''); initResizable();
 <div class="title">Custom allocators </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Liblightmodbus allows users to define their custom functions for memory management. This functionality is provided with mainly embedded systems in mind.</p>
-<p>The user defined allocator is a function compatible with ModbusAllocator pointer type.</p>
-<p>User-defined allocators must meet following requirements:</p><ul>
-<li>When <code>size</code> is 0, the memory allocated for the buffer (<code>buffer-&gt;data</code>) must be freed</li>
+<div class="textblock"><p>Liblightmodbus allows users to define their custom functions for memory management. This functionality is provided with embedded systems in mind.</p>
+<p>The user defined allocator is a function compatible with <a class="el" href="base_8h.html#a8be3fb4274491536a8ae6cb528c1710b">ModbusAllocator</a> pointer type.</p>
+<p>The allocator function <b>must</b> meet the following requirements:</p><ol type="1">
+<li>When <code>size</code> is 0, the memory allocated for the buffer (<code>buffer-&gt;data</code>) must be freed (if possible) and the <code>buffer-&gt;data</code> pointer should be set to <code>NULL</code>.</li>
 <li>When <code>size</code> is not 0, <code>buffer-&gt;data</code> should be set to point to a memory block of at least <code>size</code> bytes. If such block cannot be allocated, the allocator must return <a class="el" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6ea57a43c191982928c0b36f85a0dce29d2">MODBUS_ERROR_ALLOC</a> and free memory block pointed to by current <code>buffer-&gt;data</code> value. Consequently, <code>buffer-&gt;data</code> should be set to <code>NULL</code>.</li>
-</ul>
+</ol>
 <p>Additionally:</p><ul>
 <li>All errors returned from the allocator when <code>size</code> is greater than zero will be reported by the library as <code><a class="el" href="base_8h.html#acc0a0e92a43d63f96a642115e2b67e89" title="Constructs a ModbusErrorInfo where source is set to MODBUS_ERROR_SOURCE_GENERAL and the error code is...">MODBUS_GENERAL_ERROR(ALLOC)</a></code>.</li>
-<li>Errors reported from the allocator if <code>size</code> is 0 may or may not be reported by the library. This behavior might change depending on the context and in future versions of the library. For your safety, though, it is recommended that you do not any errors from the allocator if <code>size == 0</code>.</li>
-<li>The allocator can distinguish buffers by their addresses. Additionally it has access to the context provided by user (with <code>modbus*SetUserPointer()</code>).</li>
+<li>Similar guarantee cannot be made for the case where <code>size</code> is 0. Then, errors reported by the allocator may or may not be reported by the library interface. This behavior might change depending on the context and in future versions of the library.</li>
+<li>The user context pointer from <a class="el" href="structModbusMaster.html">ModbusMaster</a> or <a class="el" href="structModbusSlave.html">ModbusSlave</a> is provided to the callback via the <code>void *context</code> argument.</li>
 </ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="master_8h.html#a132c99f27b1c5132f38bef05e9c8e260" title="Allows user to set the custom context pointer.">modbusMasterSetUserPointer()</a> </dd>
+<dd>
+<a class="el" href="slave_8h.html#a0e716c502fbcd1785db66e545cec6b2d" title="Allows user to set the custom context pointer.">modbusSlaveSetUserPointer()</a></dd></dl>
 <h1><a class="anchor" id="static-mem"></a>
 Static memory allocation</h1>
 <p>An example of a custom allocator relying only on statically allocated memory: </p><div class="fragment"><div class="line"><span class="comment">// !!! This only works if the allocator is used exclusively by a single instance of ModbusMaster or ModbusSlave !!!</span></div>
@@ -136,7 +139,7 @@ Static memory allocation</h1>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a></div><div class="ttdeci">@ MODBUS_OK</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> base.h:133</div></div>
 <div class="ttc" id="astructModbusBuffer_html"><div class="ttname"><a href="structModbusBuffer.html">ModbusBuffer</a></div><div class="ttdoc">Stores a Modbus frame.</div><div class="ttdef"><b>Definition:</b> base.h:258</div></div>
 <div class="ttc" id="astructModbusBuffer_html_a84923d04c205a599d32f353e849adafb"><div class="ttname"><a href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">ModbusBuffer::data</a></div><div class="ttdeci">uint8_t * data</div><div class="ttdoc">Pointer to the frame buffer.</div><div class="ttdef"><b>Definition:</b> base.h:262</div></div>
-</div><!-- fragment --><p>One could also implement the allocator to allocate memory from different buffers based on <code>buffer</code> pointers, using the user context for bookkeeping. </p>
+</div><!-- fragment --><p>One could also implement the allocator to allocate memory from different statically allocated buffers based on <code>buffer</code> pointers, using the user context for bookkeeping. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

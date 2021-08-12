@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>liblightmodbus: liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library</title>
+<title>liblightmodbus: liblightmodbus - a lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -86,15 +86,16 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library </div>  </div>
+<div class="title">liblightmodbus - a lightweight, header-only, hardware-agnostic Modbus RTU/TCP library </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This is the reference manual for the version v3.0 liblightmodbus library.</p>
-<p>If you're looking for the docs for older versions, please visit: <a href="https://jacajack.github.io/liblightmodbus/olddocs/">https://jacajack.github.io/liblightmodbus/olddocs/</a></p>
+<div class="textblock"><p><img src="https://img.shields.io/github/license/Jacajack/liblightmodbus" alt="GitHub" class="inline"/> <a href="https://actions-badge.atrox.dev/jacajack/liblightmodbus/goto?ref=dev-v3.0"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fjacajack%2Fliblightmodbus%2Fbadge%3Fref%3Ddev-v3.0&amp;style=flat" alt="Build Status" style="pointer-events: none;" class="inline"/></a> <img src="https://img.shields.io/coveralls/github/Jacajack/liblightmodbus/dev-v3.0" alt="Coveralls branch" class="inline"/> <a href="https://www.paypal.com/donate?hosted_button_id=KZ7DV93D98GAL"><img src="https://img.shields.io/badge/Donate-PayPal-blue" alt="Donate" class="inline"/></a></p>
+<p>This is the reference manual for version v3.0 of the liblightmodbus library.</p>
+<p>If you're looking for documentation for older versions, please visit: <a href="https://jacajack.github.io/liblightmodbus/olddocs/">https://jacajack.github.io/liblightmodbus/olddocs/</a></p>
 <h1><a class="anchor" id="about"></a>
 About this release</h1>
-<p>Version v3.0 brings the most changes in the history of liblightmodbus. Majority of the source code has been rewritten from scratch. The library is now header-only, which makes it much easier to compile on different platforms and introduces support for Modbus TCP.</p>
-<p>All this changes resulted in a significant binary size reduction (around 2x) and more maintainable and flexible code.</p>
+<p>Version v3.0 brings the most changes in the history of liblightmodbus. Majority of the source code has been rewritten from scratch. The library is now header-only, which makes it much easier to compile on different platforms. This release also introduces support for Modbus TCP, improved error handling, and a much more elegant API.</p>
+<p>All these changes resulted in a significant binary size reduction (around 2x) and more maintainable and flexible code.</p>
 <p>If you suspect you found a bug in liblightmodbus, please <a href="https://github.com/Jacajack/liblightmodbus/issues/new">open an issue on GitHub</a>. If you have any questions about the usage please ask them in GitHub issues as well. Hopefully this will help to form some kind of a FAQ list after some time.</p>
 <p>If you find liblightmodbus useful in your work and would like to support it somehow, please consider <a href="https://www.paypal.com/donate?hosted_button_id=KZ7DV93D98GAL">making a donation</a>.</p>
 <h1><a class="anchor" id="getting-started"></a>

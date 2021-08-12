@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,208,196,235"/>
 <area shape="rect" id="node2" href="$base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error." alt="" coords="507,208,603,235"/>
 <area shape="rect" id="node5" href="$slave_8h.html#a5ad3fe86aa14f8982d7c459c68cd8b3e" title="Parses provided Modbus TCP request frame and generates a Modbus TCP response." alt="" coords="244,132,420,159"/>
-<area shape="rect" id="node16" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title=" " alt="" coords="269,284,395,311"/>
+<area shape="rect" id="node16" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title="Throws an exception based on ModbusErrorInfo." alt="" coords="269,284,395,311"/>
 <area shape="rect" id="node3" href="$base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" title="Returns ModbusError contained in ModbusErrorInfo." alt="" coords="696,284,843,311"/>
 <area shape="rect" id="node4" href="$base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo." alt="" coords="691,208,848,235"/>
 <area shape="rect" id="node6" href="$base_8h.html#ae82c3ced0b1698622b222761851d02c0" title="Prepares buffer to store a Modbus TCP message." alt="" coords="475,56,635,83"/>

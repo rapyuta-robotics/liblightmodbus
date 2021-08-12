@@ -30,7 +30,7 @@
    <div id="projectname">liblightmodbus
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">A lightweight, header-only, cross-platform Modbus RTU/TCP library</div>
+   <div id="projectbrief">A lightweight, header-only, hardware-agnostic Modbus RTU/TCP library</div>
   </td>
  </tr>
  </tbody>
@@ -139,9 +139,9 @@ Data Structures</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:aa0d5a7f6e38aad10e5ef58443f31832a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusSlave.html">ModbusSlave</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#aa0d5a7f6e38aad10e5ef58443f31832a">ModbusSlave</a></td></tr>
 <tr class="separator:aa0d5a7f6e38aad10e5ef58443f31832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12feb2bec008b2ae613afb728cbcda1b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a12feb2bec008b2ae613afb728cbcda1b">ModbusSlaveParsingFunction</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength)</td></tr>
-<tr class="memdesc:a12feb2bec008b2ae613afb728cbcda1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to request parsing function.  <a href="slave_8h.html#a12feb2bec008b2ae613afb728cbcda1b">More...</a><br /></td></tr>
-<tr class="separator:a12feb2bec008b2ae613afb728cbcda1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48cd7a7fbb8b9749a09333dcd6f6830c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a48cd7a7fbb8b9749a09333dcd6f6830c">ModbusRequestParsingFunction</a>) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength)</td></tr>
+<tr class="memdesc:a48cd7a7fbb8b9749a09333dcd6f6830c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to request parsing function.  <a href="slave_8h.html#a48cd7a7fbb8b9749a09333dcd6f6830c">More...</a><br /></td></tr>
+<tr class="separator:a48cd7a7fbb8b9749a09333dcd6f6830c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55a4829ed1b1fcec9b02960c99d9f2cf"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8h.html#a55a4829ed1b1fcec9b02960c99d9f2cf">ModbusSlaveFunctionHandler</a></td></tr>
 <tr class="memdesc:a55a4829ed1b1fcec9b02960c99d9f2cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates Modbus function ID with a pointer to a parsing function.  <a href="slave_8h.html#a55a4829ed1b1fcec9b02960c99d9f2cf">More...</a><br /></td></tr>
 <tr class="separator:a55a4829ed1b1fcec9b02960c99d9f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,6 +299,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a48cd7a7fbb8b9749a09333dcd6f6830c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48cd7a7fbb8b9749a09333dcd6f6830c">&#9670;&nbsp;</a></span>ModbusRequestParsingFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusRequestParsingFunction) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer to request parsing function. </p>
+
+</div>
+</div>
 <a id="aa0d5a7f6e38aad10e5ef58443f31832a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0d5a7f6e38aad10e5ef58443f31832a">&#9670;&nbsp;</a></span>ModbusSlave</h2>
 
@@ -343,22 +359,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Associates Modbus function ID with a pointer to a parsing function. </p>
-
-</div>
-</div>
-<a id="a12feb2bec008b2ae613afb728cbcda1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12feb2bec008b2ae613afb728cbcda1b">&#9670;&nbsp;</a></span>ModbusSlaveParsingFunction</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structModbusErrorInfo.html">ModbusErrorInfo</a>(* ModbusSlaveParsingFunction) (<a class="el" href="structModbusSlave.html">ModbusSlave</a> *status, uint8_t function, const uint8_t *requestPDU, uint8_t requestLength)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A pointer to request parsing function. </p>
 
 </div>
 </div>
@@ -1242,7 +1242,7 @@ Any errors from parsing functions</dd></dl>
 <p>Initializes slave device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">registerCallback</td><td>Callback function for handling all register operations (required) </td></tr>
+    <tr><td class="paramname">registerCallback</td><td>Callback function for handling all register operations (may be required by used parsing functions) </td></tr>
     <tr><td class="paramname">exceptionCallback</td><td>Callback function for handling slave exceptions (optional) </td></tr>
     <tr><td class="paramname">allocator</td><td>Memory allocator to be used (see <a class="el" href="base_8impl_8h.html#a85c4c4d0226d45b625c75912467aba44">modbusDefaultAllocator</a>) (required) </td></tr>
     <tr><td class="paramname">functions</td><td>Pointer to array of supported function handlers (required). The lifetime of this array must not be shorter than the lifetime of the slave. </td></tr>

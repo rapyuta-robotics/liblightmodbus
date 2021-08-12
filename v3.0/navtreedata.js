@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "liblightmodbus", "index.html", [
-    [ "liblightmodbus - a lightweight, header-only, cross-platform Modbus RTU/TCP library", "index.html", [
+    [ "liblightmodbus - a lightweight, header-only, hardware-agnostic Modbus RTU/TCP library", "index.html", [
       [ "About this release", "index.html#about", null ],
       [ "Getting started", "index.html#getting-started", null ]
     ] ],
@@ -96,7 +96,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "allocators.html",
-"master_8h.html#a72568d58b84e35534eda87b106b34271"
+"master_8h.html#a7e55a1052bfe4cadef166da70e6d8dca"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

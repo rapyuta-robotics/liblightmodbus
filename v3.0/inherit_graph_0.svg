@@ -20,7 +20,7 @@
 <!-- Node0 -->
 <g id="node2" class="node">
 <title>Node0</title>
-<g id="a_node2"><a xlink:href="classllm_1_1GeneralError.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classllm_1_1GeneralError.html" target="_top" xlink:title="General error exception class.">
 <polygon fill="none" stroke="black" points="117,-76.5 117,-95.5 205,-95.5 205,-76.5 117,-76.5"/>
 <text text-anchor="middle" x="161" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">llm::GeneralError</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classllm_1_1RequestError.html" target="_top" xlink:title=" ">
+<g id="a_node3"><a xlink:href="classllm_1_1RequestError.html" target="_top" xlink:title="Request error exception class.">
 <polygon fill="none" stroke="black" points="116,-38.5 116,-57.5 206,-57.5 206,-38.5 116,-38.5"/>
 <text text-anchor="middle" x="161" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">llm::RequestError</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classllm_1_1ResponseError.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classllm_1_1ResponseError.html" target="_top" xlink:title="Response error exception class.">
 <polygon fill="none" stroke="black" points="112,-0.5 112,-19.5 210,-19.5 210,-0.5 112,-0.5"/>
 <text text-anchor="middle" x="161" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">llm::ResponseError</text>
 </a>

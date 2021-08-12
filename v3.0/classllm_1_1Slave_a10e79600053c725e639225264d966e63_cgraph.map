@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,169,200,196"/>
 <area shape="rect" id="node2" href="$slave_8h.html#a1da09df8858b91c61fe02c25783c2946" title="Builds a Modbus RTU exception." alt="" coords="248,119,428,145"/>
 <area shape="rect" id="node7" href="$base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error." alt="" coords="515,169,611,196"/>
-<area shape="rect" id="node13" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title=" " alt="" coords="275,245,401,272"/>
+<area shape="rect" id="node13" href="$namespacellm.html#a57bd253b3362a63c62c8c5b5b0391252" title="Throws an exception based on ModbusErrorInfo." alt="" coords="275,245,401,272"/>
 <area shape="rect" id="node3" href="$slave_8impl_8h.html#a58243ce1e1adaffd0a3260edc2d03603" title="Builds an exception response frame." alt="" coords="487,43,640,69"/>
 <area shape="rect" id="node10" href="$base_8h.html#af2cafe9debf86bea7042b4c40bb288cd" title="Sets up address and CRC in a Modbus RTU frame." alt="" coords="501,119,626,145"/>
 <area shape="rect" id="node4" href="$slave_8h.html#ad1165bb6d12af1db502a05df5da55aed" title="Allocates memory for slave&#39;s response frame." alt="" coords="699,31,905,57"/>
