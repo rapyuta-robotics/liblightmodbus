@@ -9,7 +9,7 @@
 <area shape="rect" id="node7" href="$slave_8impl_8h.html#aff0a9164a0e37aa619232ae86e3ff97a" title="Parses provided PDU and generates response honorinng pduOffset and padding set in ModbusSlave during ..." alt="" coords="484,31,635,57"/>
 <area shape="rect" id="node8" href="$slave_8impl_8h.html#a58243ce1e1adaffd0a3260edc2d03603" title="Builds an exception response frame." alt="" coords="695,31,848,57"/>
 <area shape="rect" id="node9" href="$slave_8h.html#ad1165bb6d12af1db502a05df5da55aed" title="Allocates memory for slave&#39;s response frame." alt="" coords="896,31,1103,57"/>
-<area shape="rect" id="node10" href="$base_8h.html#aab33bc005f4c5759d8ac918e5e8b71b9" title="Allocates memory to hold Modbus ADU." alt="" coords="1171,5,1321,32"/>
+<area shape="rect" id="node10" href="$base_8h.html#a54f7d1db7f58ffd329b1955ad1a66f37" title="Allocates memory to hold Modbus ADU." alt="" coords="1157,5,1335,32"/>
 <area shape="rect" id="node11" href="$slave_8h.html#abbbf205b4c4a0b74b5ae29b865ca3262" title="Retreieves the custom context pointer." alt="" coords="1151,56,1341,83"/>
 <area shape="rect" id="node13" href="$base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo." alt="" coords="479,284,640,311"/>
 <area shape="rect" id="node14" href="$base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo." alt="" coords="477,335,641,361"/>

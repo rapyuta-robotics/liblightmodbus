@@ -62,7 +62,7 @@ var base_8h =
       [ "MODBUS_EXCEP_NACK", "base_8h.html#a0b7f726dfaa2b4cf98aaaed1eb42fa72ab24ca3a3b7540bcb1dc7d4d49912d85d", null ]
     ] ],
     [ "modbusBitsToBytes", "base_8h.html#af23a50b36bef9c09ac82214a52ff4d58", null ],
-    [ "modbusBufferAllocate", "base_8h.html#aab33bc005f4c5759d8ac918e5e8b71b9", null ],
+    [ "modbusBufferAllocateADU", "base_8h.html#a54f7d1db7f58ffd329b1955ad1a66f37", null ],
     [ "modbusBufferDestroy", "base_8h.html#ac4ff5a6ae685570f045448e76e518a0c", null ],
     [ "modbusBufferFree", "base_8h.html#a00605b5ebcf90f8035bfaa7a7c039776", null ],
     [ "modbusBufferInit", "base_8h.html#a4ff22e8be90cb65fb157eeadfe672389", null ],

@@ -1,6 +1,6 @@
 var base_8impl_8h =
 [
-    [ "modbusBufferAllocate", "base_8impl_8h.html#aab33bc005f4c5759d8ac918e5e8b71b9", null ],
+    [ "modbusBufferAllocateADU", "base_8impl_8h.html#a54f7d1db7f58ffd329b1955ad1a66f37", null ],
     [ "modbusBufferDestroy", "base_8impl_8h.html#ac4ff5a6ae685570f045448e76e518a0c", null ],
     [ "modbusBufferFree", "base_8impl_8h.html#a00605b5ebcf90f8035bfaa7a7c039776", null ],
     [ "modbusBufferInit", "base_8impl_8h.html#a4ff22e8be90cb65fb157eeadfe672389", null ],

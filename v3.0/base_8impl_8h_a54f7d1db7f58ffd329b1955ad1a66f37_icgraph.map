@@ -1,5 +1,5 @@
-<map id="modbusBufferAllocate" name="modbusBufferAllocate">
-<area shape="rect" id="node1" title="Allocates memory to hold Modbus ADU." alt="" coords="1247,360,1396,387"/>
+<map id="modbusBufferAllocateADU" name="modbusBufferAllocateADU">
+<area shape="rect" id="node1" title="Allocates memory to hold Modbus ADU." alt="" coords="1247,360,1424,387"/>
 <area shape="rect" id="node2" href="$base_8h.html#a00605b5ebcf90f8035bfaa7a7c039776" title="Frees memory allocated inside the buffer." alt="" coords="1031,183,1159,209"/>
 <area shape="rect" id="node14" href="$master_8h.html#a004b932b2b69ad0c6649c26d974146b2" title="Allocates memory for the request frame." alt="" coords="994,664,1197,691"/>
 <area shape="rect" id="node26" href="$slave_8h.html#ad1165bb6d12af1db502a05df5da55aed" title="Allocates memory for slave&#39;s response frame." alt="" coords="992,360,1199,387"/>

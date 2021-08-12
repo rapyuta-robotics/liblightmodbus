@@ -206,17 +206,17 @@
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="base_8h.html#aab33bc005f4c5759d8ac918e5e8b71b9" target="_top" xlink:title="Allocates memory to hold Modbus ADU.">
-<polygon fill="none" stroke="black" points="874.5,-209.5 874.5,-228.5 986.5,-228.5 986.5,-209.5 874.5,-209.5"/>
-<text text-anchor="middle" x="930.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBufferAllocate</text>
+<g id="a_node12"><a xlink:href="base_8h.html#a54f7d1db7f58ffd329b1955ad1a66f37" target="_top" xlink:title="Allocates memory to hold Modbus ADU.">
+<polygon fill="none" stroke="black" points="864,-209.5 864,-228.5 997,-228.5 997,-209.5 864,-209.5"/>
+<text text-anchor="middle" x="930.5" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">modbusBufferAllocateADU</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge12" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M823.05,-207.95C836.78,-209.37 850.98,-210.85 864.36,-212.24"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="864.1,-215.73 874.41,-213.28 864.82,-208.77 864.1,-215.73"/>
+<path fill="none" stroke="midnightblue" d="M823.05,-207.95C833.19,-209 843.57,-210.08 853.7,-211.13"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="853.41,-214.62 863.72,-212.17 854.13,-207.66 853.41,-214.62"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
