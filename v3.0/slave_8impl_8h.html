@@ -154,7 +154,7 @@ Variables</h2></td></tr>
 <tr class="memitem:a0c75d5358eca0b3d71261269c55870d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusSlaveFunctionHandler.html">ModbusSlaveFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a> []</td></tr>
 <tr class="memdesc:a0c75d5358eca0b3d71261269c55870d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates function IDs with pointers to functions responsible for parsing. Length of this array is stored in modbusSlaveDefaultFunctionCount.  <a href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">More...</a><br /></td></tr>
 <tr class="separator:a0c75d5358eca0b3d71261269c55870d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ed4f578aa9ac64591f7da2a50aca910"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a1ed4f578aa9ac64591f7da2a50aca910">modbusSlaveDefaultFunctionCount</a> = sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>) / sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>[0])</td></tr>
+<tr class="memitem:a1ed4f578aa9ac64591f7da2a50aca910"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="slave_8impl_8h.html#a1ed4f578aa9ac64591f7da2a50aca910">modbusSlaveDefaultFunctionCount</a> = sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>) / sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>[0]) - 1</td></tr>
 <tr class="memdesc:a1ed4f578aa9ac64591f7da2a50aca910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores length of modbusSlaveDefaultFunctions.  <a href="slave_8impl_8h.html#a1ed4f578aa9ac64591f7da2a50aca910">More...</a><br /></td></tr>
 <tr class="separator:a1ed4f578aa9ac64591f7da2a50aca910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -838,7 +838,7 @@ Any errors from parsing functions</dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t modbusSlaveDefaultFunctionCount = sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>) / sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>[0])</td>
+          <td class="memname">const uint8_t modbusSlaveDefaultFunctionCount = sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>) / sizeof(<a class="el" href="slave_8impl_8h.html#a0c75d5358eca0b3d71261269c55870d3">modbusSlaveDefaultFunctions</a>[0]) - 1</td>
         </tr>
       </table>
 </div><div class="memdoc">

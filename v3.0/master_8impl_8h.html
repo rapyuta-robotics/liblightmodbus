@@ -157,7 +157,7 @@ Variables</h2></td></tr>
 <tr class="memitem:ab7ae0464095b7a5f02a0dcb0643145f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structModbusMasterFunctionHandler.html">ModbusMasterFunctionHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a> []</td></tr>
 <tr class="memdesc:ab7ae0464095b7a5f02a0dcb0643145f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default array of supported functions. Length is stored in modbusMasterDefaultFunctionCount.  <a href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">More...</a><br /></td></tr>
 <tr class="separator:ab7ae0464095b7a5f02a0dcb0643145f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abafe1a006897216d68be414d9f8623a7"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#abafe1a006897216d68be414d9f8623a7">modbusMasterDefaultFunctionCount</a> = sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>) / sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>[0])</td></tr>
+<tr class="memitem:abafe1a006897216d68be414d9f8623a7"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="master_8impl_8h.html#abafe1a006897216d68be414d9f8623a7">modbusMasterDefaultFunctionCount</a> = sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>) / sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>[0]) - 1</td></tr>
 <tr class="memdesc:abafe1a006897216d68be414d9f8623a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores length of modbusMasterDefaultFunctions array.  <a href="master_8impl_8h.html#abafe1a006897216d68be414d9f8623a7">More...</a><br /></td></tr>
 <tr class="separator:abafe1a006897216d68be414d9f8623a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -754,7 +754,7 @@ Result of <a class="el" href="master_8impl_8h.html#ad8e87b7bdda035ea42cacc2241b4
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t modbusMasterDefaultFunctionCount = sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>) / sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>[0])</td>
+          <td class="memname">const uint8_t modbusMasterDefaultFunctionCount = sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>) / sizeof(<a class="el" href="master_8impl_8h.html#ab7ae0464095b7a5f02a0dcb0643145f8">modbusMasterDefaultFunctions</a>[0]) - 1</td>
         </tr>
       </table>
 </div><div class="memdoc">

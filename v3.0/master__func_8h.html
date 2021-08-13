@@ -301,8 +301,8 @@ Functions</h2></td></tr>
 <div class="line">        return <a class="code" href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a>(status); \</div>
 <div class="line">    }</div>
 <div class="ttc" id="abase_8h_html_a64880e7075f445881485396f3aa869c5"><div class="ttname"><a href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a></div><div class="ttdeci">static uint8_t modbusIsOk(ModbusErrorInfo err)</div><div class="ttdoc">Checks if ModbusErrorInfo contains an error.</div><div class="ttdef"><b>Definition:</b> base.h:424</div></div>
-<div class="ttc" id="amaster_8h_html_a973d0a0734fd9bf274a4dd0a43668144"><div class="ttname"><a href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Finalizes a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:118</div></div>
-<div class="ttc" id="amaster_8h_html_ad71d034901cd8e22b4d74da7f86cdda9"><div class="ttname"><a href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Begins a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:108</div></div>
+<div class="ttc" id="amaster_8h_html_a973d0a0734fd9bf274a4dd0a43668144"><div class="ttname"><a href="master_8h.html#a973d0a0734fd9bf274a4dd0a43668144">modbusEndRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Finalizes a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:121</div></div>
+<div class="ttc" id="amaster_8h_html_ad71d034901cd8e22b4d74da7f86cdda9"><div class="ttname"><a href="master_8h.html#ad71d034901cd8e22b4d74da7f86cdda9">modbusBeginRequestPDU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestPDU(ModbusMaster *status)</div><div class="ttdoc">Begins a PDU-only request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:111</div></div>
 </div><!-- fragment -->
 <p>Defines a body for a <code>modbusBuildRequest*PDU()</code> function. </p>
 
@@ -369,8 +369,8 @@ Functions</h2></td></tr>
 <div class="line">        if (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err = modbusBuildRequest##f_suffix(status, __VA_ARGS__))) <span class="keywordflow">return</span> err; \</div>
 <div class="line">        return <a class="code" href="master_8h.html#a4623d6d41d5e4a148e399fe19051183c">modbusEndRequestRTU</a>(status, address); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="amaster_8h_html_a4623d6d41d5e4a148e399fe19051183c"><div class="ttname"><a href="master_8h.html#a4623d6d41d5e4a148e399fe19051183c">modbusEndRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestRTU(ModbusMaster *status, uint8_t address)</div><div class="ttdoc">Finalizes a Modbus RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:138</div></div>
-<div class="ttc" id="amaster_8h_html_ade3cfa7c2201895b2f768cca5d424ee5"><div class="ttname"><a href="master_8h.html#ade3cfa7c2201895b2f768cca5d424ee5">modbusBeginRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestRTU(ModbusMaster *status)</div><div class="ttdoc">Begins a RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:127</div></div>
+<div class="ttc" id="amaster_8h_html_a4623d6d41d5e4a148e399fe19051183c"><div class="ttname"><a href="master_8h.html#a4623d6d41d5e4a148e399fe19051183c">modbusEndRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestRTU(ModbusMaster *status, uint8_t address)</div><div class="ttdoc">Finalizes a Modbus RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:141</div></div>
+<div class="ttc" id="amaster_8h_html_ade3cfa7c2201895b2f768cca5d424ee5"><div class="ttname"><a href="master_8h.html#ade3cfa7c2201895b2f768cca5d424ee5">modbusBeginRequestRTU</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestRTU(ModbusMaster *status)</div><div class="ttdoc">Begins a RTU request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:130</div></div>
 </div><!-- fragment -->
 <p>Defines a body for a <code>modbusBuildRequest*RTU()</code> function. </p>
 
@@ -437,8 +437,8 @@ Functions</h2></td></tr>
 <div class="line">        if (!<a class="code" href="base_8h.html#a64880e7075f445881485396f3aa869c5">modbusIsOk</a>(err = modbusBuildRequest##f_suffix(status, __VA_ARGS__))) <span class="keywordflow">return</span> err; \</div>
 <div class="line">        return <a class="code" href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a>(status, transactionID, unitID); \</div>
 <div class="line">    }</div>
-<div class="ttc" id="amaster_8h_html_a117f6d4b5ec63dac5e4e5ea0af78d079"><div class="ttname"><a href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestTCP(ModbusMaster *status, uint16_t transaction, uint8_t unit)</div><div class="ttdoc">Finalizes a Modbus TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:168</div></div>
-<div class="ttc" id="amaster_8h_html_afd1467296480779237ab090a8579efb5"><div class="ttname"><a href="master_8h.html#afd1467296480779237ab090a8579efb5">modbusBeginRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestTCP(ModbusMaster *status)</div><div class="ttdoc">Begins a TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:155</div></div>
+<div class="ttc" id="amaster_8h_html_a117f6d4b5ec63dac5e4e5ea0af78d079"><div class="ttname"><a href="master_8h.html#a117f6d4b5ec63dac5e4e5ea0af78d079">modbusEndRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusEndRequestTCP(ModbusMaster *status, uint16_t transaction, uint8_t unit)</div><div class="ttdoc">Finalizes a Modbus TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:171</div></div>
+<div class="ttc" id="amaster_8h_html_afd1467296480779237ab090a8579efb5"><div class="ttname"><a href="master_8h.html#afd1467296480779237ab090a8579efb5">modbusBeginRequestTCP</a></div><div class="ttdeci">ModbusErrorInfo modbusBeginRequestTCP(ModbusMaster *status)</div><div class="ttdoc">Begins a TCP request.</div><div class="ttdef"><b>Definition:</b> master.impl.h:158</div></div>
 </div><!-- fragment -->
 <p>Defines a body for a <code>modbusBuildRequest*TCP()</code> function. </p>
 
