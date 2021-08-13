@@ -108,6 +108,19 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Richer error represenation - source and type of error. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="base_8h.html#abe7d2ca32c0808656f4914bea803bc09" title="Represtents different kinds of errors.">ModbusError</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo.">modbusGetGeneralError()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo.">modbusGetRequestError()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9" title="Returns response error from ModbusErrorInfo.">modbusGetResponseError()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo.">modbusGetErrorSource()</a> </dd>
+<dd>
+<a class="el" href="base_8h.html#a29d2a7853b328113e4fcddae85fd3ce5" title="Returns ModbusError contained in ModbusErrorInfo.">modbusGetErrorCode()</a></dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>You should not be accessing <code>source</code> and <code>error</code> directly. The internal implementation of this struct may change in future releases. For this reason, please use <a class="el" href="base_8h.html#a84765449265aa5a31877b749f04cb568" title="Returns general error from ModbusErrorInfo.">modbusGetGeneralError()</a>, <a class="el" href="base_8h.html#a5c6f792a259423b2df55d8d49e91fd06" title="Returns request error from ModbusErrorInfo.">modbusGetRequestError()</a>, <a class="el" href="base_8h.html#acbf9b7e6b679be88ce4e10ffb617d3e9" title="Returns response error from ModbusErrorInfo.">modbusGetResponseError()</a>, <a class="el" href="base_8h.html#a9ee4c2e633c7a42f88acc09b95f8171e" title="Returns uint8_t describing error source of ModbusErrorInfo.">modbusGetErrorSource()</a> and <a class="el" href="base_8h.html#a64880e7075f445881485396f3aa869c5" title="Checks if ModbusErrorInfo contains an error.">modbusIsOk()</a> instead. </dd></dl>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a8d9ae151fcc30572bef6f80c347fbd23"></a>

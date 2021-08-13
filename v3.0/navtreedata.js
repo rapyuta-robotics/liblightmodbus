@@ -46,7 +46,7 @@ var NAVTREE =
       [ "Request processing", "slave.html#slave-requests", null ],
       [ "Slave cleanup", "slave.html#slave-cleanup", null ]
     ] ],
-    [ "Master", "master.html", [
+    [ "Master device", "master.html", [
       [ "Master initialization", "master.html#master-init", null ],
       [ "Data callback", "master.html#master-data-callback", null ],
       [ "Exception callback", "master.html#master-exception-callback", null ],
