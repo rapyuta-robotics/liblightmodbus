@@ -1,4 +1,0 @@
-<map id="modbusSlaveDestroy" name="modbusSlaveDestroy">
-<area shape="rect" id="node1" title="Frees memory allocated in the ModbusSlave struct." alt="" coords="5,5,151,32"/>
-<area shape="rect" id="node2" href="$slave_8impl_8h.html#a9171547f92321e8a5c9ed60cec59f00a" title="Allocates memory for slave&#39;s response frame." alt="" coords="199,5,405,32"/>
-</map>

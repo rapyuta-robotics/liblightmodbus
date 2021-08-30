@@ -1,4 +1,0 @@
-<map id="modbusMasterDestroy" name="modbusMasterDestroy">
-<area shape="rect" id="node1" title="Deinitializes a ModbusMaster struct." alt="" coords="5,5,157,32"/>
-<area shape="rect" id="node2" href="$master_8impl_8h.html#a066afa4560907a7cdd46f2c887790bd6" title="Allocates memory for the request frame." alt="" coords="205,5,408,32"/>
-</map>

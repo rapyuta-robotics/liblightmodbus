@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['disabling_20dynamic_20memory_20allocation',['Disabling dynamic memory allocation',['../static-mem.html',1,'']]]
+  ['error_20handling_635',['Error handling',['../error-handling.html',1,'']]],
+  ['examples_636',['Examples',['../examples.html',1,'']]]
 ];

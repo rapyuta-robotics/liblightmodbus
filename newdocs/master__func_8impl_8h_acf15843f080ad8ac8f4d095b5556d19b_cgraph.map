@@ -1,6 +1,0 @@
-<map id="modbusParseResponse01020304" name="modbusParseResponse01020304">
-<area shape="rect" id="node1" title="Parses response to requests 01, 02, 03 and 04." alt="" coords="5,56,221,83"/>
-<area shape="rect" id="node2" href="$base_8h.html#a98cb625b5c4b9ee5d7f529650c4d9112" title="Returns number of bytes necessary to hold given number of bits." alt="" coords="269,5,408,32"/>
-<area shape="rect" id="node3" href="$base_8h.html#ad0d4b7190cf5fcc183f3656ce1c03b0b" title="Reads n&#45;th bit from an array." alt="" coords="273,56,404,83"/>
-<area shape="rect" id="node4" href="$base_8h.html#a724223277fcf6255904a91f181aa1ac8" title="Safely reads a big&#45;endian 16&#45;bit word from provided pointer." alt="" coords="291,107,386,133"/>
-</map>

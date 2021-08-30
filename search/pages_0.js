@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['advanced_20configuration',['Advanced configuration',['../advanced-configuration.html',1,'']]]
+  ['building_20and_20integrating_20liblightmodbus_633',['Building and integrating liblightmodbus',['../building.html',1,'']]]
 ];
