@@ -126,8 +126,7 @@ Static memory allocation</h1>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">        {</div>
-<div class="line">            <span class="comment">// Return a pointer to one of the static buffers depending </span></div>
-<div class="line">            <span class="comment">// on the declared purpose of the buffer</span></div>
+<div class="line">            <span class="comment">// Return a pointer to our buffer</span></div>
 <div class="line">            buffer-&gt;<a class="code" href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">data</a> = request;</div>
 <div class="line">            <span class="keywordflow">return</span> <a class="code" href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a>;</div>
 <div class="line">        }</div>
@@ -139,7 +138,7 @@ Static memory allocation</h1>
 <div class="ttc" id="abase_8h_html_a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2"><div class="ttname"><a href="base_8h.html#a3e91ea9ea1b4d5927573e6ec1d1cce6eafbb178df49063323a6dcbf03dd0d88d2">MODBUS_OK</a></div><div class="ttdeci">@ MODBUS_OK</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> base.h:143</div></div>
 <div class="ttc" id="astructModbusBuffer_html"><div class="ttname"><a href="structModbusBuffer.html">ModbusBuffer</a></div><div class="ttdoc">Stores a Modbus frame.</div><div class="ttdef"><b>Definition:</b> base.h:276</div></div>
 <div class="ttc" id="astructModbusBuffer_html_a84923d04c205a599d32f353e849adafb"><div class="ttname"><a href="structModbusBuffer.html#a84923d04c205a599d32f353e849adafb">ModbusBuffer::data</a></div><div class="ttdeci">uint8_t * data</div><div class="ttdoc">Pointer to the frame buffer.</div><div class="ttdef"><b>Definition:</b> base.h:280</div></div>
-</div><!-- fragment --><p>One could also implement the allocator to allocate memory from different statically allocated buffers based on <code>buffer</code> pointers, using the user context for bookkeeping. </p>
+</div><!-- fragment --><p>One could also implement an allocator allocating memory from different statically allocated buffers based on <code>buffer</code> pointers, using the user context for bookkeeping. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
