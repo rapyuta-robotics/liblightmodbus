@@ -17,6 +17,10 @@
 #define MODBUS_ERROR_OTHER 16 //Other reason function was exited (eg. bad function parameter)
 #define MODBUS_ERROR_FRAME 32 //Frame contained incorrect data, and exception could not be thrown (eg. bytes count != reg count * 2 in slave's response)
 
+#define MODBUS_MASTER_MAX_REQUEST_SIZE 64
+#define MODBUS_MASTER_MAX_RESPONSE_SIZE 64
+#define MODBUS_MASTER_MAX_DATA_COUNT 8
+
 //Types
 typedef struct
 {
