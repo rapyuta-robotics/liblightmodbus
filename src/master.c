@@ -60,10 +60,10 @@ uint8_t modbusParseResponse( ModbusMasterStatus *status )
 	}
 
 	union ModbusParser *parser = &(status->parser); 
-	memcpy( parser, status->response.frame, status->response.length );
+	memcpy( parser->frame, status->response.frame, status->response.length );
 
 	union ModbusParser *requestParser = &(status->requestParser);
-	memcpy( requestParser,  status->request.frame, status->request.length );
+	memcpy( requestParser->frame,  status->request.frame, status->request.length );
 
 	//Check if frame is exception response
 	if ( parser->base.function & 128 )
