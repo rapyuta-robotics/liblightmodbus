@@ -90,7 +90,7 @@ void Test( )
 
 	//Process response
 	printf( "Let master process response...\n" );
-	mstatus.response.frame = sstatus.response.frame;
+	memcpy(mstatus.response.frame, sstatus.response.frame, sstatus.response.length);
 	mstatus.response.length = sstatus.response.length;
 	MasterError = modbusParseResponse( &mstatus );
 

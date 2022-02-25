@@ -59,23 +59,10 @@ uint8_t modbusParseResponse( ModbusMasterStatus *status )
 		return MODBUS_ERROR_OTHER;
 	}
 
-	//Allocate memory for union and copy frame to it
-	union ModbusParser *parser = (union ModbusParser *) malloc( status->response.length );
-	if ( parser == NULL )
-	{
-		status->finished = 1;
-		return MODBUS_ERROR_ALLOC;
-	}
+	union ModbusParser *parser = &(status->parser); 
 	memcpy( parser->frame, status->response.frame, status->response.length );
 
-	//Allocate memory for request union and copy frame to it
-	union ModbusParser *requestParser = (union ModbusParser *) malloc( status->request.length );
-	if ( requestParser == NULL )
-	{
-		free( parser );
-		status->finished = 1;
-		return MODBUS_ERROR_ALLOC;
-	}
+	union ModbusParser *requestParser = &(status->requestParser);
 	memcpy( requestParser->frame,  status->request.frame, status->request.length );
 
 	//Check if frame is exception response
@@ -133,9 +120,6 @@ uint8_t modbusParseResponse( ModbusMasterStatus *status )
 		}
 	}
 
-	//Free used memory
-	free( parser );
-	free( requestParser );
 	status->finished = 1;
 
 	return err;
@@ -144,16 +128,23 @@ uint8_t modbusParseResponse( ModbusMasterStatus *status )
 uint8_t modbusMasterInit( ModbusMasterStatus *status )
 {
 	//Very basic init of master side
-	if ( ( status->request.frame = (uint8_t *) malloc( 8 ) ) == NULL )
+	if ( ( status->request.frame = (uint8_t *) malloc( MODBUS_MASTER_MAX_REQUEST_SIZE ) ) == NULL )
 	{
 		return MODBUS_ERROR_ALLOC;
 	}
 
 	status->request.length = 0;
 	status->response.length = 0;
-	if ( ( status->data = (ModbusData *) malloc( sizeof( ModbusData ) ) ) == NULL )
+	if ( ( status->data = (ModbusData *) malloc( MODBUS_MASTER_MAX_DATA_COUNT * sizeof( ModbusData ) ) ) == NULL )
 	{
 		free( status->request.frame );
+		return MODBUS_ERROR_ALLOC;
+	}
+
+	if ( ( status->response.frame = (uint8_t *) malloc( MODBUS_MASTER_MAX_RESPONSE_SIZE ) ) == NULL )
+	{
+		free( status->request.frame );
+		free( status->data );
 		return MODBUS_ERROR_ALLOC;
 	}
 
@@ -172,4 +163,5 @@ void modbusMasterEnd( ModbusMasterStatus *status )
 	//Free memory
 	free( status->request.frame );
 	free( status->data );
+	free( status->response.frame );
 }

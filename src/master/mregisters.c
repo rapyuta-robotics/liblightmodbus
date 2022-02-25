@@ -15,10 +15,8 @@ uint8_t modbusBuildRequest03( ModbusMasterStatus *status, uint8_t address, uint1
 	status->request.length = 0;
 	status->finished = 0;
 
-	//Reallocate memory for final frame
-	status->request.frame = (uint8_t *) realloc( status->request.frame, frameLength );
-	if ( status->request.frame == NULL )
-	{
+	//Avoid buffer overflow
+	if (MODBUS_MASTER_MAX_REQUEST_SIZE < frameLength) {
 		status->finished = 1;
 		return MODBUS_ERROR_ALLOC;
 	}
@@ -50,10 +48,8 @@ uint8_t modbusBuildRequest06( ModbusMasterStatus *status, uint8_t address, uint1
 	status->request.length = 0;
 	status->finished = 0;
 
-	//Reallocate memory for final frame
-	status->request.frame = (uint8_t *) realloc( status->request.frame, frameLength );
-	if ( status->request.frame == NULL )
-	{
+	//Avoid buffer overflow
+	if (MODBUS_MASTER_MAX_REQUEST_SIZE < frameLength) {
 		status->finished = 1;
 		return MODBUS_ERROR_ALLOC;
 	}
@@ -88,10 +84,8 @@ uint8_t modbusBuildRequest16( ModbusMasterStatus *status, uint8_t address, uint1
 
 	if ( registerCount > 123 ) return MODBUS_ERROR_OTHER;
 
-	//Reallocate memory for final frame
-	status->request.frame = (uint8_t *) realloc( status->request.frame, frameLength );
-	if ( status->request.frame == NULL )
-	{
+	//Avoid buffer overflow
+	if (MODBUS_MASTER_MAX_REQUEST_SIZE < frameLength) {
 		status->finished = 1;
 		return MODBUS_ERROR_ALLOC;
 	}
@@ -143,10 +137,8 @@ uint8_t modbusParseResponse03( ModbusMasterStatus *status, union ModbusParser *p
 		return MODBUS_ERROR_FRAME;
 	}
 
-	//Allocate memory for ModbusData structures array
-	status->data = (ModbusData *) realloc( status->data, ( parser->response03.byteCount >> 1 ) * sizeof( ModbusData ) );
-	if ( status->data == NULL )
-	{
+	// Avoid buffer overflow
+	if (MODBUS_MASTER_MAX_DATA_COUNT < parser->response03.byteCount >> 1){
 		status->finished = 1;
 		return MODBUS_ERROR_ALLOC;
 	}
@@ -198,13 +190,6 @@ uint8_t modbusParseResponse06( ModbusMasterStatus *status, union ModbusParser *p
 	parser->response06.reg = modbusSwapEndian( parser->response06.reg );
 	parser->response06.value = modbusSwapEndian( parser->response06.value );
 
-	//Set up new data table
-	status->data = (ModbusData *) realloc( status->data, sizeof( ModbusData ) );
-	if ( status->data == NULL )
-	{
-		status->finished = 1;
-		return MODBUS_ERROR_ALLOC;
-	}
 
 	status->data[0].address = parser->base.address;
 	status->data[0].dataType = holdingRegister;
